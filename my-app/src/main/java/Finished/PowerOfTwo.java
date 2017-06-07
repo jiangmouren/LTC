@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 
 /**
  * Created by jiangmouren on 6/4/17.
@@ -21,5 +21,15 @@ public class PowerOfTwo {
 
         //Recursive case
         return isPowerOfTwo(n/2);
+    }
+
+
+    public boolean isPowerOfTwoLoop(int n) {
+        while(n>=1){
+            if(n==1) return true;
+            if(n%2!=0) return false;
+            n=n/2;
+        }
+        return false;
     }
 }

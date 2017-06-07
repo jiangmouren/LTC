@@ -1,5 +1,6 @@
-package com.mycompany.app;
+package Finished;
 
+import Finished.ShortestWordDistance;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

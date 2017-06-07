@@ -7,7 +7,7 @@ package com.mycompany.app;
 /**
  * Question:Invert a binary tree.
 
-     4
+      4
    /   \
   2     7
  / \   / \
@@ -27,8 +27,6 @@ to
  *     TreeNode right;
  *     TreeNode(int x) { val = x; }
  * }
-
-
  *
  */
 

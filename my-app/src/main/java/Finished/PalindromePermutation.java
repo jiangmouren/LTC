@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 
 /**
  * Created by jiangmouren on 6/1/17.
