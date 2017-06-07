@@ -20,6 +20,12 @@ The maximum depth is the number of nodes along the longest path from the root no
  */
 
 public class MaximumDepthofBinaryTree {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) { val = x; }
+    }
     public int maxDepth(TreeNode root) {
         //TODO:
         return 1;
