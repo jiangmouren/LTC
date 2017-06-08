@@ -1,8 +1,7 @@
-package com.mycompany.app;
+package Finished;
 
+import Finished.InvertBinaryTree;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by eljian on 6/7/2017.
