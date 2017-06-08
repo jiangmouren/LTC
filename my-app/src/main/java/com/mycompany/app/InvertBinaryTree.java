@@ -30,8 +30,14 @@ to
  *
  */
 
+/**
+ * Analysis:
+ * 3 types of tree traversal, following any typs this can be done.
+ * All we need is to traverse this tree.
+ */
+
 public class InvertBinaryTree {
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -39,8 +45,14 @@ public class InvertBinaryTree {
     }
 
     public TreeNode invertTree(TreeNode root) {
-        //TODO:
-        return null;
-
+        //Termination conditions
+        if(root==null) return root;
+        TreeNode tmp;
+        tmp = root.left;
+        root.left = root.right;
+        root.right = tmp;
+        invertTree(root.left);
+        invertTree(root.right);
+        return root;
     }
 }
