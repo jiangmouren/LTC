@@ -1,7 +1,8 @@
-package com.mycompany.app;
+package Finished;
 
+import Finished.MaximumDepthofBinaryTree;
 import org.junit.Test;
-import com.mycompany.app.MaximumDepthofBinaryTree.*;
+import Finished.MaximumDepthofBinaryTree.*;
 
 import static org.junit.Assert.*;
 
