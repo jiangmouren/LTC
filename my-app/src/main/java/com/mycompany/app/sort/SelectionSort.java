@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.mycompany.app.sort;
 
 /**
  * Created by eljian on 6/16/2017.

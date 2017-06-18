@@ -1,5 +1,6 @@
-package com.mycompany.app;
+package com.mycompany.app.sort;
 
+import com.mycompany.app.sort.SelectionSort;
 import org.junit.Test;
 import java.util.*;
 import static org.junit.Assert.*;
