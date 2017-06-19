@@ -1,9 +1,10 @@
-package com.mycompany.app;
+package Finished;
 
+import Finished.BalancedBinaryTree;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import com.mycompany.app.BalancedBinaryTree.*;
+import Finished.BalancedBinaryTree.*;
 
 /**
  * Created by eljian on 6/13/2017.

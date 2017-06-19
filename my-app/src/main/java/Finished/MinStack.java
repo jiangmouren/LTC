@@ -25,7 +25,7 @@ minStack.getMin();   --> Returns -2.
  * Use a stack and inside the stack store both the value and up to point min value.
  */
 
-package com.mycompany.app;
+package Finished;
 import java.util.*;
 
 public class MinStack {

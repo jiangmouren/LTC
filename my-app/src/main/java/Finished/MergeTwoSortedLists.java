@@ -8,7 +8,7 @@
  * Analysis:
  * Say our goal is to merge the original two lists instead of constructing a new list.
  */
-package com.mycompany.app;
+package Finished;
 
 public class MergeTwoSortedLists{
     public static class ListNode {

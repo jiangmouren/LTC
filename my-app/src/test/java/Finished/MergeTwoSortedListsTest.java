@@ -1,9 +1,10 @@
-package com.mycompany.app;
+package Finished;
 
+import Finished.MergeTwoSortedLists;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import com.mycompany.app.MergeTwoSortedLists.*;
+import Finished.MergeTwoSortedLists.*;
 
 /**
  * Created by eljian on 6/14/2017.
