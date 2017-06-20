@@ -25,7 +25,7 @@
         <module name="my-app" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="1.8">
+    <bytecodeTargetLevel>
       <module name="my-app" target="1.8" />
     </bytecodeTargetLevel>
   </component>
