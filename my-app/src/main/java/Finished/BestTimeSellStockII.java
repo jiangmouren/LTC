@@ -26,7 +26,6 @@ package Finished;
  * Get the recursive function, and figure out the edge cases(be careful and patient when doing this).
  *
  * The art and tricks are how you pick sub-problems.
- * TODO: Review previous DP notes.
  *
  * In this problem, at every day you need to decide: buy, sell or nothing, until the last day.
  * Among all the different paths, which one gives the the best result is the question.

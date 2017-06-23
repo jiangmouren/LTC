@@ -40,7 +40,7 @@ public class PalindromePermutation {
 
         //all value in boolean array will be default to "False"
         //assume all inputs are alphabetical, and all letters are in lower case
-        //TODO: in leetcode, the above assumption is not true. Need to fix this.
+        //In leetcode, the above assumption is not true. Need to fix this.
         boolean[] map = new boolean[26];
         for(int i=0; i<l; i++){
             int key = s.charAt(i) - 'a';
