@@ -51,9 +51,16 @@ public class CountingSort {
         // then when you move to arr[3] how do I know this one I have already worked on
         // and not putting into the next arr[3]'s position or
         // even do a out of bound because count[arr[3]] goes negative.
-        for(int token: arr){
-            output[count[token]-1] = token;
-            --count[token];
+        //for(int token: arr){
+        //    output[count[token]-1] = token;
+        //    --count[token];
+        //}
+        /**
+         * Very Important to know that when dumping the result, we have to move from right to left!!!!
+         */
+        for(int i=arr.length-1; i>=0; i--){
+            output[count[arr[i]]-1] = arr[i];
+            --count[arr[i]];
         }
 
         // Copy the output array to arr, so that arr now
