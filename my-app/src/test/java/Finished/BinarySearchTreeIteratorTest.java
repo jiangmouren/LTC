@@ -1,8 +1,7 @@
-package com.mycompany.app;
+package Finished;
 
 import org.junit.Test;
-import com.mycompany.app.BinarySearchTreeIterator.*;
-import static org.junit.Assert.*;
+import Finished.BinarySearchTreeIterator.*;
 
 /**
  * Created by eljian on 6/27/2017.

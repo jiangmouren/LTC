@@ -1,4 +1,10 @@
+package com.mycompany.app;
 /**
-Given an integer n, return the number of trailing zeroes in n!.
-Note: Your solution should be in logarithmic time complexity.
+ * Question:
+ * Given an integer n, return the number of trailing zeroes in n!.
+ * Note: Your solution should be in logarithmic time complexity.
  */
+
+public class FactorialTrailingZeroes{
+
+}

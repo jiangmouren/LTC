@@ -11,7 +11,7 @@ public class RotateArrayTest {
     int[] nums = {1,2,3,4,5,6,7};
     @Test
     public void rotateArray() throws Exception {
-        objectUnderTest.rotateArray(nums, 3);
+        objectUnderTest.rotateArray2(nums, 3);
         for(int tmp : nums){
             System.out.print(tmp);
         }

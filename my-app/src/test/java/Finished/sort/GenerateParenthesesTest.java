@@ -1,8 +1,8 @@
-package com.mycompany.app;
+package Finished.sort;
 
+import Finished.GenerateParentheses;
 import org.junit.Test;
 import java.util.*;
-import static org.junit.Assert.*;
 
 /**
  * Created by eljian on 6/24/2017.

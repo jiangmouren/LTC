@@ -14,3 +14,4 @@ Given word1 = "makes", word2 = "makes", return 3.
 Note:
 You may assume word1 and word2 are both in the list.
  */
+package com.mycompany.app;

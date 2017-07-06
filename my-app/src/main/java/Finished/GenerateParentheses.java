@@ -16,7 +16,7 @@
  * Analysis:
  * "Find a valid decision path" typical "BackTracking" problem.
  */
-package com.mycompany.app;
+package Finished;
 import java.util.*;
 public class GenerateParentheses{
     public List<String> generateParentheses(int n){

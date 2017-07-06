@@ -12,7 +12,7 @@
  * Cannot do it recursively, because we need that stack in our control.
  */
 
-package com.mycompany.app;
+package Finished;
 
 import java.util.Stack;
 

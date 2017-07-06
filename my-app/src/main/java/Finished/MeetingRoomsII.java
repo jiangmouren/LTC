@@ -17,7 +17,7 @@
  * I don't care if it is meeting_1 overlaps with meeting_3 or meeting_2 overlaps with meeting_3.
  *
  */
-package com.mycompany.app;
+package Finished;
 
 import java.util.*;
 public class MeetingRoomsII {

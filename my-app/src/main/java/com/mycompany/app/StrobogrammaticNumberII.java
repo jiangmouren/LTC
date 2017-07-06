@@ -6,3 +6,4 @@ Find all strobogrammatic numbers that are of length = n.
 For example,
 Given n = 2, return ["11","69","88","96"].
  */
+package com.mycompany.app;
