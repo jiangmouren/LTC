@@ -2,42 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d7e6c45-d86c-44f9-9859-092494c68a62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinimumDepthOfBinaryTreeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/AddBinary.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/AddBinary.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/AddDigits.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/AddDigits.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/BalancedBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/BalancedBinaryTree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/BestTimeSellStockII.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/dp/BestTimeSellStockII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/BinarySearchTreeIterator.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/BinarySearchTreeIterator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/BinaryTreeInorderTraversal.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/BinaryTreeInorderTraversal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/BinaryTreeLevelOrderTraversal.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/BinaryTreeLevelOrderTraversal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ClimbingStairs.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/dp/ClimbingStairs.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ConvertSortedArrayToBST.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/ConvertSortedArrayToBST.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/CountPrimes.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/CountPrimes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ExcelSheetColumnNumber.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/ExcelSheetColumnNumber.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ExcelSheetColumnTitle.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/ExcelSheetColumnTitle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/FlipGame.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/FlipGame.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/FlipGameII.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/FlipGameII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/GraphValidTree.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/GraphValidTree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/LinkedListCycle.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/linkedlist/LinkedListCycle.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/AddBinaryTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/AddBinaryTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/AddDigitsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/AddDigitsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/BalancedBinaryTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/BalancedBinaryTreeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/BestTimeSellStockIITest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/dp/BestTimeSellStockIITest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/BinarySearchTreeIteratorTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/BinarySearchTreeIteratorTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/BinaryTreeInorderTraversalTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/BinaryTreeInorderTraversalTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/BinaryTreeLevelOrderTraversalTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/BinaryTreeLevelOrderTraversalTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ClimbingStairsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/dp/ClimbingStairsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ConvertSortedArrayToBSTTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/ConvertSortedArrayToBSTTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/CountPrimesTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/CountPrimesTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ExcelSheetColumnNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/ExcelSheetColumnNumberTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ExcelSheetColumnTitleTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/ExcelSheetColumnTitleTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/FlipGameIITest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/backtracking/FlipGameIITest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/FlipGameTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/backtracking/FlipGameTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/GraphValidTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/GraphValidTreeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/LinkedListCycleTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/linkedlist/LinkedListCycleTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ReadNCharactersGivenRead4Test.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/GenerateParentheses.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/GenerateParentheses.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/GrayCode.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/bitManipulation/GrayCode.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/HappyNumber.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/HappyNumber.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/InvertBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/InvertBinaryTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MajorityElement.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MajorityElement.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MaximumDepthofBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/MaximumDepthofBinaryTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MaximumSubarray.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MaximumSubarray.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MeetingRooms.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRooms.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MeetingRoomsII.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRoomsII.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MergeTwoSortedLists.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/sort/MergeTwoSortedLists.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/MinStack.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/design/MinStack.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/PaintFence.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/dp/PaintFence.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/PaintHouse.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/dp/PaintHouse.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/PalindromeNumber.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PalindromeNumber.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/PalindromePermutation.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PalindromePermutation.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/Permutations.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/Permutations.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/PlusOne.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PlusOne.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/PowerOfTwo.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/PowerOfTwo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ReadNCharactersGivenRead4.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/design/ReadNCharactersGivenRead4.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ReverseLinkedList.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/linkedlist/ReverseLinkedList.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/RomanToInteger.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/math/RomanToInteger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/RotateArray.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/RotateArray.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/RotateImage.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/RotateImage.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/SameTree.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/tree/SameTree.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ShortestWordDistance.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ShortestWordDistance.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/SingleNumber.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/bitManipulation/SingleNumber.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/StrobogrammaticNumber.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/StrobogrammaticNumber.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ThreeSumSmaller.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ThreeSumSmaller.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/TwoSum.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/TwoSum.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/TwoSumInputArraySorted.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/TwoSumInputArraySorted.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ValidAnagram.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ValidAnagram.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ValidPalindrome.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ValidPalindrome.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/ValidParentheses.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/design/ValidParentheses.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/GrayCodeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/bitManipulation/GrayCodeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/HappyNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/HappyNumberTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/InvertBinaryTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/InvertBinaryTreeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MajorityElementTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/MajorityElementTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MaximumDepthofBinaryTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/MaximumDepthofBinaryTreeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MaximumSubarrayTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/MaximumSubarrayTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MeetingRoomsIITest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/MeetingRoomsIITest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MeetingRoomsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/MeetingRoomsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MergeTwoSortedListsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/sort/MergeTwoSortedListsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/MinStackTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/design/MinStackTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PaintFenceTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/dp/PaintFenceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PaintHouseTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/dp/PaintHouseTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PalindromeNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/PalindromeNumberTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PalindromePermutationTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/PalindromePermutationTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PermutationsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/backtracking/PermutationsTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PlusOneTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/PlusOneTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/PowerOfTwoTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/PowerOfTwoTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ReverseLinkedListTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/linkedlist/ReverseLinkedListTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/RomanToIntegerTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/math/RomanToIntegerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/RotateArrayTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/RotateArrayTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/RotateImageTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/RotateImageTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/SameTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/tree/SameTreeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ShortestWordDistanceTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/ShortestWordDistanceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/SingleNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/bitManipulation/SingleNumberTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/StrobogrammaticNumberTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/StrobogrammaticNumberTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ThreeSumSmallerTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/ThreeSumSmallerTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/TwoSumInputArraySortedTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/TwoSumInputArraySortedTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/TwoSumTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/TwoSumTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ValidAnagramTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/ValidAnagramTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ValidPalindromeTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/ValidPalindromeTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/ValidParenthesesTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/design/ValidParenthesesTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/GenerateParenthesesTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/graph/backtracking/GenerateParenthesesTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumDepthOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumDepthOfBinaryTree.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,41 +80,9 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.85505676">
+    <splitter split-orientation="horizontal" split-proportion="0.7707442">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="GameOfLife.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="375">
-                  <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-                  <folding>
-                    <element signature="e#0#3602#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AddBinary.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/AddBinary.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="475">
-                  <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="AddDigits.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/math/AddDigits.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="424">
-                  <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="BalancedBinaryTree.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/tree/BalancedBinaryTree.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -94,21 +93,91 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GrayCode.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/GrayCode.java">
+          <file leaf-file-name="Permutations.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/Permutations.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="724">
-                  <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="27" />
+                <state relative-caret-position="550">
+                  <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="GraphValidTree.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/GraphValidTree.java">
+          <file leaf-file-name="ReadNCharactersGivenRead4.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/design/ReadNCharactersGivenRead4.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+                <state relative-caret-position="400">
+                  <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ReadNCharactersGivenRead4Test.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/Finished/design/ReadNCharactersGivenRead4Test.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="175">
+                  <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SameTreeTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/Finished/graph/tree/SameTreeTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="175">
+                  <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SameTree.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/tree/SameTree.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="675">
+                  <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ShortestWordDistance.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ShortestWordDistance.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="SingleNumber.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/bitManipulation/SingleNumber.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="250">
+                  <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="ValidParentheses.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/design/ValidParentheses.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="350">
+                  <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MeetingRoomsII.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRoomsII.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="250">
+                  <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -118,11 +187,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="ValidParenthesesTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/Finished/ValidParenthesesTest.java">
+          <file leaf-file-name="ValidParenthesesTest.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/java/Finished/design/ValidParenthesesTest.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="325">
-                  <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+                  <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GenerateParentheses.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/GenerateParentheses.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="24">
+                  <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
                   <folding />
                 </state>
               </provider>
@@ -150,19 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinarySearchTreeIterator.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinarySearchTreeIteratorTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidPalindromeTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidPalindrome.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Finished/RotateArray.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Finished/RotateArrayTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintFenceTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintFence.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateImageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReadNCharactersGivenRead4Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4.java" />
         <option value="$PROJECT_DIR$/src/test/java/Finished/PaintFenceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/Finished/ValidParenthesesTest.java" />
@@ -201,6 +267,19 @@
         <option value="$PROJECT_DIR$/src/main/java/Finished/math/AddDigits.java" />
         <option value="$PROJECT_DIR$/src/main/java/Finished/graph/Tree/BalancedBinaryTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/Finished/graph/tree/BalancedBinaryTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/bitManipulation/GrayCode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRooms.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/sort/MergeTwoSortedLists.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/design/MinStack.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PalindromeNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/Permutations.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/math/PowerOfTwo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/design/ReadNCharactersGivenRead4.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/graph/tree/SameTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ShortestWordDistance.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/bitManipulation/SingleNumber.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/design/ValidParentheses.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRoomsII.java" />
       </list>
     </option>
   </component>
@@ -261,532 +340,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linkedlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backtracking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arrayANDstring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tree" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="linkedlist" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="graph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="backtracking" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="arrayANDstring" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -805,11 +358,11 @@
       <recent name="Finished.sort" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="Finished.graph.backtracking" />
-      <recent name="Finished.math" />
-      <recent name="Finished.graph.tree" />
-      <recent name="Finished.dp" />
       <recent name="Finished.arrayANDstring" />
+      <recent name="Finished.design" />
+      <recent name="Finished.bitManipulation" />
+      <recent name="Finished.graph.linkedlist" />
+      <recent name="Finished.math" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -838,8 +391,8 @@
       <module name="my-app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Finished" />
-      <option name="MAIN_CLASS_NAME" value="Finished.RotateArrayTest" />
+      <option name="PACKAGE_NAME" value="Finished.arrayANDstring" />
+      <option name="MAIN_CLASS_NAME" value="Finished.arrayANDstring.RotateArrayTest" />
       <option name="METHOD_NAME" value="rotateArray" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -864,8 +417,8 @@
       <module name="my-app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Finished" />
-      <option name="MAIN_CLASS_NAME" value="Finished.PaintFenceTest" />
+      <option name="PACKAGE_NAME" value="Finished.dp" />
+      <option name="MAIN_CLASS_NAME" value="Finished.dp.PaintFenceTest" />
       <option name="METHOD_NAME" value="paintFence" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -890,8 +443,8 @@
       <module name="my-app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Finished" />
-      <option name="MAIN_CLASS_NAME" value="Finished.RotateImageTest" />
+      <option name="PACKAGE_NAME" value="Finished.arrayANDstring" />
+      <option name="MAIN_CLASS_NAME" value="Finished.arrayANDstring.RotateImageTest" />
       <option name="METHOD_NAME" value="rotate" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -916,8 +469,8 @@
       <module name="my-app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Finished" />
-      <option name="MAIN_CLASS_NAME" value="Finished.ReadNCharactersGivenRead4Test" />
+      <option name="PACKAGE_NAME" value="Finished.design" />
+      <option name="MAIN_CLASS_NAME" value="Finished.design.ReadNCharactersGivenRead4Test" />
       <option name="METHOD_NAME" value="read" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -1304,7 +857,6 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1724138" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1316,8 +868,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24054053" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33837837" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1328,7 +879,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1349,160 +902,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/PaintFence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/RotateImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/ReadNCharactersGivenRead4Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="26" column="34" lean-forward="false" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/ReadNCharactersGivenRead4.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="63" lean-forward="false" selection-start-line="13" selection-start-column="63" selection-end-line="13" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="5" lean-forward="false" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/graph/tree/BinarySearchTreeIteratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/PaintFenceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/graph/backtracking/FlipGameIITest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/RotateImageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/MeetingRoomsII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="43" column="14" lean-forward="false" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/MajorityElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePreorderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchA2DMatrixII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="2" lean-forward="false" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/VerifyPreorderSequenceInBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupShiftedStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="31" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenBinaryTreeToLinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeVerticalOrderTraversal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="61" column="0" lean-forward="false" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeRightSideView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorCombinations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="695">
@@ -1626,10 +1025,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <element signature="e#623#624#0" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1637,16 +1032,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/ValidParenthesesTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/design/ValidParenthesesTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
-          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1655,13 +1047,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/GraphValidTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
+        <state relative-caret-position="675">
           <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
           <folding />
         </state>
@@ -1671,16 +1062,15 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="1125">
           <caret line="75" column="13" lean-forward="false" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
           <folding>
-            <element signature="e#0#3602#0" expanded="true" />
+            <element signature="e#0#3602#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1693,6 +1083,93 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/FlipGameII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/GenerateParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ValidPalindrome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/math/HappyNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/bitManipulation/GrayCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="523">
+          <caret line="38" column="13" lean-forward="false" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRooms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="925">
+          <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/sort/MergeTwoSortedLists.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="22" column="39" lean-forward="false" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/design/MinStackTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/design/MinStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PalindromeNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PlusOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Finished/math/AddDigits.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="424">
@@ -1701,10 +1178,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/FlipGameII.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/PalindromePermutation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="1100">
+          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1717,10 +1194,98 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/GrayCode.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/Permutations.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="724">
-          <caret line="46" column="26" lean-forward="false" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="550">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/math/PowerOfTwo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/design/ReadNCharactersGivenRead4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="40" column="26" lean-forward="false" selection-start-line="40" selection-start-column="26" selection-end-line="40" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/design/ReadNCharactersGivenRead4Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/graph/tree/SameTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/math/RomanToInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="43" column="4" lean-forward="false" selection-start-line="43" selection-start-column="4" selection-end-line="43" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/tree/SameTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ShortestWordDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/StrobogrammaticNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/bitManipulation/SingleNumber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="79" lean-forward="false" selection-start-line="10" selection-start-column="79" selection-end-line="10" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/design/ValidParentheses.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MeetingRoomsII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="1" lean-forward="false" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding />
         </state>
       </provider>
