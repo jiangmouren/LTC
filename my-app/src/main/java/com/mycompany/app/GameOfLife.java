@@ -16,10 +16,76 @@
  * In this question, we represent the board using a 2D array.
  * In principle, the board is infinite, which would cause problems when the active area encroaches the border of the array.
  * How would you address these problems?
- * TODO:
+ */
+
+/**
+ * Analysis:
+ * The only catch for the 1st "State Transitioning" problem, is that remember the state transition should happen
+ * in parallel. Basically cannot loop through and mix new state with old state.
+ * To get around that we can either construct a new array, or
+ * to encode state in a way it will represent both current the previous state.
+ * The encoding should avoid overlap with original representation.
+ *
+ * The catch for the follow up question is that we need to redesign the object. It is a design question.
+ *
  */
 package com.mycompany.app;
 
 public class GameOfLife{
+    /**
+     * Avoid 0 and 1
+     * 2: (dead, dead)
+     * 3: (dead, live)
+     * 4: (live, dead)
+     * 5: (live, live)
+     * @param board
+     */
+    public void nextState(int[][] board){
+        for(int i=0; i<board.length; i++){
+            for(int j=0; j<board[0].length; j++){
+                board[i][j] = getNext(board, i, j);
+            }
+        }
+        for(int i=0; i<board.length; i++){
+            for(int j=0; j<board[0].length; j++){
+                if(board[i][j]==2 || board[i][j]==4) board[i][j] = 0;
+                else board[i][j] = 1;
+            }
+        }
+        return;
+    }
+
+    private int getNext(int[][] board, int x, int y){
+        int cnt = 0;
+        int yLen = board.length;
+        int xLen = board[0].length;
+        int result;
+        //left
+        if(y-1>0 && board[x][y-1]==1 || board[x][y-1]==4 || board[x][y-1]==5) cnt++;
+        //right
+        if(y+1<xLen && board[x][y+1]==1 || board[x][y-1]==4 || board[x][y-1]==5) cnt++;
+        //up
+        if(x-1>0 && board[x-1][y]==1 || board[x][y-1]==4 || board[x][y-1]==5) cnt++;
+        //down
+        if(x+1<yLen && board[x+1][y]==1 || board[x][y-1]==4 || board[x][y-1]==5) cnt++;
+
+        if(board[x][y]==1){
+            if(cnt==2 || cnt==3) result = 5;
+            else result = 4;
+        }
+        else{
+            if(cnt==3) result = 3;
+            else result = 2;
+        }
+        return result;
+    }
+
+    /**
+     * Refer to the following link:
+     * https://segmentfault.com/a/1190000003819277
+     * To deal with the infinity, we need more than an 2-D array.
+     * We need a Node class which will have 8 neighbors.
+     * We will also need a boundary which
+     */
 
 }
