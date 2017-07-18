@@ -1,8 +1,6 @@
-package Finished.sort;
+package Finished.arrayANDstring.sort;
 
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by eljian on 6/27/2017.

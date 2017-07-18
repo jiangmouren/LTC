@@ -1,6 +1,6 @@
-package Finished.arrayANDstring;
+package Finished.dp;
 
-import Finished.arrayANDstring.MaximumSubarray;
+import Finished.dp.MaximumSubarray;
 import org.junit.Test;
 
 /**

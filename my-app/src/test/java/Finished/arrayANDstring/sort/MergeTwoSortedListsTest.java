@@ -1,10 +1,9 @@
-package Finished.sort;
+package Finished.arrayANDstring.sort;
 
-import Finished.sort.MergeTwoSortedLists;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
-import Finished.sort.MergeTwoSortedLists.*;
+import Finished.arrayANDstring.sort.MergeTwoSortedLists.*;
 
 /**
  * Created by eljian on 6/14/2017.

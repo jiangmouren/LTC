@@ -1,0 +1,18 @@
+Graph Theory is one the few important fundamentals.
+It is the foundation for many algorithms.
+1. Graph types:
+   Directed&Undirected
+2. Graph representation:
+   Adjacency List and Adjacency Matrix.
+   This often lead to the thought that why in the case of LinkedList and Tree, we only used one vertex to represent
+   the whole graph? That's is because in those cases, the graph is connected and all the connected nodes and edges
+   are of interest. Refer to "GameOfLife" for more detail.
+3. Graph traversal:
+   Directed&Undirected + DFS&BFS.
+4. Connectivity & Cycle Detection:
+   Can use either DFS or BFS. Check if current vertex visited(undirected)/on the current path(directed), to check cycle.
+   By the end of the traversal, need to check all nodes are visited, to check the connectivity.
+5. Shortest Path:
+   BFS&2-directional BFS.
+
+Refer to "DirectedGraph" and "UndirectedGraph" for details.

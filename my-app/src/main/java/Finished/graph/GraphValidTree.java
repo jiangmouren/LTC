@@ -72,6 +72,8 @@ public class GraphValidTree {
         else {
             color[node] = true;
             for(int neighbor : graph.get(node)){
+                //Because we have to do this remove operation, it's better to use "Set" instead of "List"
+                //It will be O(n) operation to remove.
                 graph.get(neighbor).remove(node);//Need to remove to avoid looking back
                 if(!checkLoop(graph, neighbor, color)) return false;
                 //graph.get(neighbor).add()//If we don't care about protecting the graph, no need to add it back.

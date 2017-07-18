@@ -1,4 +1,4 @@
-package Finished.sort;
+package Finished.arrayANDstring.sort;
 
 import org.junit.Test;
 
