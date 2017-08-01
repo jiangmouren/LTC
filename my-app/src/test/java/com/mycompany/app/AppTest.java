@@ -30,4 +30,11 @@ public class AppTest {
         assertEquals(expectedValue, actualValue);
     }
 
+    @Test
+    public void test(){
+        int result = Integer.MIN_VALUE - 10;
+        System.out.println("Integer MIN_VALUE: " + Integer.MIN_VALUE);
+        System.out.println("Integer MIN_VALUE-10: " + result);
+    }
+
 }

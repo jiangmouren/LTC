@@ -16,3 +16,13 @@ It is the foundation for many algorithms.
    BFS&2-directional BFS.
 
 Refer to "DirectedGraph" and "UndirectedGraph" for details.
+
+How "Searching" is different from "Backtracking"?
+When using DFS to do Searching, it is really similar to a Backtracking. 
+But they are still different in the sense that Searching is trying go find a node, while backtracking is trying to find a path.
+Because in "Searching" case, we only care about the node, so what we do is:
+1. at every step, we simply looking through all children nodes without condition check;
+2. the DFS helper function will directly return the info of interest, that's to say a boolean type in case of exist or not, or a node type in case of returning the node.
+But in "Backtracking" case, because we care about the whole path, so what do is:
+1. at every step, we will only DFS forward to children nodes, where certain conditions met. We need to check conditions at every point, because the whole path matters;
+2. the DFS helper function will have a boolean type in case of exit or not, or a void type in case of finding one/all valid paths. 

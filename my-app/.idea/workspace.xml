@@ -2,36 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d7e6c45-d86c-44f9-9859-092494c68a62" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/DirectedGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/README" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/UndirectedGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GameOfLifeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MaximumSubarray.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/dp/MaximumSubarray.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/BubbleSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/BubbleSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/CountingSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/CountingSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/InsertionSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/InsertionSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/MergeSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/MergeSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/MergeTwoSortedLists.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/MergeTwoSortedLists.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/QuickSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/QuickSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/RadixSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/RadixSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/Finished/sort/SelectionSort.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/sort/SelectionSort.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/MaximumSubarrayTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/dp/MaximumSubarrayTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/BubbleSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/BubbleSortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/CountingSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/CountingSortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/InsertionSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/InsertionSortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/MergeSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/MergeSortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/MergeTwoSortedListsTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/MergeTwoSortedListsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/QuickSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/QuickSortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/RadixSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/RadixSortTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/Finished/sort/SelectionSortTest.java" afterPath="$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/sort/SelectionSortTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Finished/dp/README" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldownTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HouseRobberTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InorderSuccessorInBSTTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePreorderTraversal.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Finished/graph/GraphValidTree.java" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/GraphValidTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Finished/graph/README" afterPath="$PROJECT_DIR$/src/main/java/Finished/graph/README" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,56 +27,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6661238">
+    <splitter split-orientation="horizontal" split-proportion="0.55917484">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="InorderSuccessorInBST.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java">
+          <file leaf-file-name="BinaryTreeTraversal.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BinaryTreePreorderTraversal.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePreorderTraversal.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="275">
-                  <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BestTimeToBuyAndSellStockWithCooldown.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="FindTheCelebrity.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HouseRobber.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                <state relative-caret-position="3750">
+                  <caret line="174" column="30" lean-forward="true" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
@@ -102,14 +44,12 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="ClosestBinarySearchTreeValueTest.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java">
+          <file leaf-file-name="BinaryTreeTraversalTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
+                <state relative-caret-position="250">
+                  <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -137,16 +77,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/VerifyPreorderSequenceInBinarySearchTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupShiftedStrings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenBinaryTreeToLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeVerticalOrderTraversal.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeRightSideView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorCombinations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorialTrailingZeroes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Implement_strStr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthSmallestElementInBST.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfBinarySearchTree.java" />
@@ -182,12 +112,22 @@
         <option value="$PROJECT_DIR$/src/main/java/Finished/graph/GraphValidTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/Finished/graph/README" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/GameOfLifeTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/HouseRobberTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Finished/dp/README" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldownTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/InorderSuccessorInBSTTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePreorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java" />
       </list>
     </option>
   </component>
@@ -200,8 +140,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
+    <option name="y" value="3" />
     <option name="width" value="1934" />
-    <option name="height" value="1030" />
+    <option name="height" value="1027" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -219,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,8 +186,22 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="my-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -267,7 +223,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -279,59 +235,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Finished" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="my-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,20 +276,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ClosestBinarySearchTreeValueTest.find">
-    <configuration default="false" name="ReadNCharactersGivenRead4Test.read" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.InorderSuccessorInBSTTest.successor">
+    <configuration default="false" name="AppTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="Finished.dp.*" />
+          <option name="PATTERN" value="com.mycompany.app.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <module name="my-app" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="Finished.design" />
-      <option name="MAIN_CLASS_NAME" value="Finished.design.ReadNCharactersGivenRead4Test" />
-      <option name="METHOD_NAME" value="read" />
+      <option name="PACKAGE_NAME" value="com.mycompany.app" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.AppTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -396,7 +303,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="MinimumDepthOfBinaryTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="HouseRobberTest.maxRobber" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.mycompany.app.*" />
@@ -407,34 +314,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.mycompany.app" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.MinimumDepthOfBinaryTreeTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameOfLifeTest.nextState" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="my-app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mycompany.app" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.GameOfLifeTest" />
-      <option name="METHOD_NAME" value="nextState" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.HouseRobberTest" />
+      <option name="METHOD_NAME" value="maxRobber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -448,7 +329,7 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="GameOfLifeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="FindTheCelebrityTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.mycompany.app.*" />
@@ -459,34 +340,60 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.mycompany.app" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.GameOfLifeTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="ClosestBinarySearchTreeValueTest.find" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="my-app" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.mycompany.app" />
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.ClosestBinarySearchTreeValueTest" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.FindTheCelebrityTest" />
       <option name="METHOD_NAME" value="find" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BestTimeToBuyAndSellStockWithCooldownTest.bestTransaction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="my-app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mycompany.app" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.BestTimeToBuyAndSellStockWithCooldownTest" />
+      <option name="METHOD_NAME" value="bestTransaction" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="InorderSuccessorInBSTTest.successor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="my-app" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mycompany.app" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.InorderSuccessorInBSTTest" />
+      <option name="METHOD_NAME" value="successor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -762,19 +669,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ReadNCharactersGivenRead4Test.read" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MinimumDepthOfBinaryTreeTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameOfLifeTest.nextState" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameOfLifeTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ClosestBinarySearchTreeValueTest.find" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.HouseRobberTest.maxRobber" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.FindTheCelebrityTest.find" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest.bestTransaction" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.InorderSuccessorInBSTTest.successor" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ClosestBinarySearchTreeValueTest.find" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.GameOfLifeTest.nextState" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.GameOfLifeTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MinimumDepthOfBinaryTreeTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ReadNCharactersGivenRead4Test.read" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.InorderSuccessorInBSTTest.successor" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.BestTimeToBuyAndSellStockWithCooldownTest.bestTransaction" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.FindTheCelebrityTest.find" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.HouseRobberTest.maxRobber" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.test" />
       </list>
     </recent_temporary>
   </component>
@@ -800,35 +707,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 22h 48m 59s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 22h 54m 00s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 22h 54m 35s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 22h 55m 37s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 23h 02m 04s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 23h 04m 23s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 23h 05m 08s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 23h 15m 17s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 23h 15m 23s.xml">
-      <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
+    <history-entry file="BestTimeToBuyAndSellStockWithCooldownTest_bestTransaction - 2017.07.20 at 16h 38m 48s.xml">
+      <configuration name="BestTimeToBuyAndSellStockWithCooldownTest.bestTransaction" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ClosestBinarySearchTreeValueTest_find - 2017.07.17 at 23h 15m 31s.xml">
       <configuration name="ClosestBinarySearchTreeValueTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheCelebrityTest_find - 2017.07.20 at 16h 03m 16s.xml">
+      <configuration name="FindTheCelebrityTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheCelebrityTest_find - 2017.07.20 at 16h 03m 46s.xml">
+      <configuration name="FindTheCelebrityTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheCelebrityTest_find - 2017.07.20 at 16h 03m 49s.xml">
+      <configuration name="FindTheCelebrityTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheCelebrityTest_find - 2017.07.20 at 16h 03m 52s.xml">
+      <configuration name="FindTheCelebrityTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheCelebrityTest_find - 2017.07.20 at 16h 03m 55s.xml">
+      <configuration name="FindTheCelebrityTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="FindTheCelebrityTest_find - 2017.07.20 at 16h 03m 59s.xml">
+      <configuration name="FindTheCelebrityTest.find" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HouseRobberTest_maxRobber - 2017.07.20 at 13h 56m 28s.xml">
+      <configuration name="HouseRobberTest.maxRobber" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InorderSuccessorInBSTTest_successor - 2017.07.20 at 18h 45m 02s.xml">
+      <configuration name="InorderSuccessorInBSTTest.successor" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -841,24 +748,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-10" y="0" width="1934" height="1030" extended-state="0" />
+    <frame x="-10" y="3" width="1934" height="1027" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30321047" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5266344" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23884198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23849879" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.334962" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36807817" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -869,6 +775,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3293124" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -899,83 +806,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceIII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ProductOfArrayExceptSelf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/IntersectionOfTwoLinkedLists.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/IsomorphicStrings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="11" lean-forward="false" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/AddBinaryTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/dp/BestTimeSellStockII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="53" column="13" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/AddBinary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/graph/backtracking/FlipGameII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="37" column="31" lean-forward="false" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ValidPalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/math/HappyNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-355">
-          <caret line="23" column="38" lean-forward="false" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Finished/bitManipulation/GrayCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="523">
@@ -1095,13 +925,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ShortestWordDistance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="53" lean-forward="false" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Finished/arrayANDstring/StrobogrammaticNumberTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1148,7 +971,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="643">
           <caret line="42" column="40" lean-forward="false" selection-start-line="42" selection-start-column="40" selection-end-line="42" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,7 +978,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1216,58 +1037,131 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/dp/BestTimeSellStockII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="58" column="25" lean-forward="false" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/ShortestWordDistance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="2" lean-forward="false" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/HouseRobberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="300">
+          <caret line="14" column="33" lean-forward="false" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="3" lean-forward="false" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" column="3" lean-forward="false" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        <state relative-caret-position="225">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/dp/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="27" column="22" lean-forward="false" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/InorderSuccessorInBSTTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="23" column="23" lean-forward="false" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePreorderTraversal.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePreorderTraversal.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldownTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="62" lean-forward="true" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
+        <state relative-caret-position="375">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/MajorityElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="725">
+          <caret line="29" column="8" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Finished/arrayANDstring/AddBinary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3750">
+          <caret line="174" column="30" lean-forward="true" selection-start-line="174" selection-start-column="30" selection-end-line="174" selection-end-column="30" />
           <folding />
         </state>
       </provider>

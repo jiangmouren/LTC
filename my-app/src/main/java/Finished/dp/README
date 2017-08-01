@@ -1,0 +1,108 @@
+/**
+ * Question:
+ * Say you have an array for which the ith element is the price of a given stock on day i.
+ * Design an algorithm to find the maximum profit.
+ * You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times).
+ * However, you may not engage in multiple transactions at the same time
+ * (ie, you must sell the stock before you buy again).
+ */
+
+ Analysis:
+ This is a very good DP example.
+ Need to understand the problem description:
+ 1st. At any given time, only 1 share at hand, multiple transactions per day is Okay,
+ but sell+buy makes sense, while buy+sell doesn't make sense, though valid operation.
+ 2nd. Only one share to trade at a time.
+ Quick notes about DP:
+ The overall approach is to split the original problem into recursive sub-problems,
+ if the original problem itself is not recursive.
+ Get the recursive function, and figure out the edge cases(be careful and patient when doing this).
+
+ The art and tricks are how you pick sub-problems.
+
+ In this problem, at every day you need to decide: buy, sell or nothing, until the last day.
+ Among all the different paths, which one gives the the best result is the question.
+ Backtracking is the naive way.
+ DP is a more educated way.
+ S(n): the max profit for the nth day, with the latest valid operation is "Sell"
+ B(n): the max profit for the nth day, with the latest valid operation is "Buy"
+ N(n): the max profit for the nth day, with the latest valid operation is "Nothing"
+ P(n): the stock price on nth day.
+ S(n) = Max{B(n-1)+P(n), S(n-1)}; n>=2, possibilities: buy before sell today
+ B(n) = Max{S(n-1)-P(n), S(n)-P(n), B(n-1)}; n>=2, possibilities: sell before buy today, sell today and buy today
+ N(n) = 0;
+ The target function: Max{S(n), B(n), N(n)} = Max{S(n), N(n)}
+ S(0): invalid; S(1): P(1)-P(0);
+ B(0): -P(0); B(1): -P(1)
+
+ Further Analysis:
+ If looking at the following example:
+ prices = {1, 2, 4, 100, 15};
+ Because we cannot hold, so every transaction(buy+sell) is an independent transaction.
+ So this is actually a Divide and Conquer problem:
+ whenever there is profit margin, do the transaction, sum up the profit.
+
+ Normally if a DP problem can be simplified into a DC problem, it will be easier to handle.
+
+
+
+ Question:
+ Why "up to now" design? This is essentially how we design our sub-problems.
+ We defined it in such a "up to now" pattern because that is the info we needed to proceed.
+ Say you want it happened sometime before and you don't really mind when, that's why we defined it this way.
+
+/**
+ * Question:
+ * Say you have an array for which the ith element is the price of a given stock on day i.
+ * Design an algorithm to find the maximum profit.
+ * You may complete as many transactions as you like (ie, buy one and sell one share of the stock multiple times)
+ * with the following restrictions:
+ * You may not engage in multiple transactions at the same time (ie, you must sell the stock before you buy again).
+ * After you sell your stock, you cannot buy stock on next day. (ie, cooldown 1 day)
+ * Example:
+ * prices = [1, 2, 3, 0, 2]
+ * maxProfit = 3
+ * transactions = [buy, sell, cooldown, buy, sell]
+ */
+
+With the above extra cooldown requirement, just need to twist the original model:
+
+S(n) = Max{B(n-1)+P(n), S(n-1)}; n>=2, possibilities: buy before sell today, the reason n>=2 is because S(0) is invalid
+B(n) = Max{S(n-2)-P(n), N(n)-P(n), B(n-1)}; n>=3, possibilities: sell before buy today, sell today and buy today
+N(n) = 0;
+
+The target function should be Max{S(n), B(n), N(n)} but actually we only need to consider Max{S(n), N(n)}.
+
+PROVE THE ABOVE THEORY:
+We only need to prove that the 3 components from B(n) is less than those in S(n) and N(n).
+N(n)-P(n): less than N(n)
+B(n-1): less than B(n-1)+P(n) in S(n)
+S(n-2)-P(n): need to prove it is less than S(n-1). Because S(n) = Max{B(n-1)+P(n), S(n-1)}, we should have S(n)>=S(n-1), so we have S(n-1)>=S(n-2)
+So we have S(n-2)-P(n)<=S(n-2)<=S(n-1)
+
+Cooldown at (n-1) is nothing but Sell at (n-2), no need to introduce new variable.
+
+There are two levels of complexity of DP problems. The first one is to build the Math model.
+The second levels is to code it correctly, especially for the edge cases.
+The way to get the edge cases correct is to first manually derive all the initial cases
+(will end up as special cases in code) and figure out what programming variables needed for general cases.
+
+Discuss the Initial cases for both questions here:
+S(0): invalid, so make it to 0, because 0 is already the worst cases, need to check if this assignment will make some nearby cases invalid.
+B(0), logically, it should be -P(0).
+S(1) = Max{B(0)+P(1), S(0)} = Max{-P(0)+P(1), 0}
+VIOLATION!!! Because we give S(0), which is a invalid value 0, it will overtake -P(0)+P(1). We should give S(0) Integer.MIN_VALUE
+So new design:
+S(0): invalid, S(0)=Integer.MIN_VALUE
+B(0) = -P(0)
+S(1) = Max{-P(0)+P(1), Integer.MIN_VALUE} = -P(0)+P(1);
+B(1) = Max{-P(1), B(0)} = Max{-P(1), -P(0)}
+S(2) = Max{B(1)+P(2), S(1)}
+B(2) = Max{S(0)-P(2), -P(2), B(1)} = Max{Integer.MIN_VALUE-P(2), -P(2), Max{-P(1), -P(0)}} "no violation"?
+Actually there is a big violation here: Integer.MIN_VALUE-P(2) will be an "Overflow" case and will be a "very big" number!!!
+From n=3, everything is normal.
+So the best practice should be just take n = {0, 1, 2} as special cases and start recursion from n=3.
+S(2) = Max{B(1)+P(2), S(1)} = Max{Max{-P(1), -P(0)}+P(2), -P(0)+P(1)} = Max{P(2)-P(1), P(2)-P(0), -P(0)+P(1)}
+B(2) = Max{-P(2), Max{-P(1), -P(0)}} = Max{-P(2), -P(1), -P(0)};
+
+And we need S1, S2, B2 to construct S_next and B_next; and we will shift S1=S2; S2=S_next; B2=B_next;
