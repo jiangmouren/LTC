@@ -1,9 +1,8 @@
-package com.mycompany.app;
+package Finished;
 
 import org.junit.Test;
 import java.util.*;
-import com.mycompany.app.GameOfLife.*;
-import static org.junit.Assert.*;
+import Finished.GameOfLife.*;
 
 /**
  * Created by eljian on 7/8/2017.

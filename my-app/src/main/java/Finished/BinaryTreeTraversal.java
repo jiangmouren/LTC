@@ -22,7 +22,7 @@
  *
  */
 
-package com.mycompany.app;
+package Finished;
 import java.util.*;
 public class BinaryTreeTraversal {
     public static class TreeNode{
@@ -225,11 +225,10 @@ public class BinaryTreeTraversal {
                 stack.pop();
             }
             else{
-                if(tmp.node.right!=null) stack.add(new ExtendedNode(false, root.right));
-                if(tmp.node.left!=null) stack.add(new ExtendedNode(false, root.left));
+                if(tmp.node.right!=null) stack.push(new ExtendedNode(false, tmp.node.right));
+                if(tmp.node.left!=null) stack.push(new ExtendedNode(false, tmp.node.left));
                 tmp.visited = true;
             }
-
         }
         return list;
     }

@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 /**
  * Question:
  * Given a binary tree, find its minimum depth.

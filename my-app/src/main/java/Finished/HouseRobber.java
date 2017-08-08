@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 /**
  * Question:
  * You are a professional robber planning to rob houses along a street.

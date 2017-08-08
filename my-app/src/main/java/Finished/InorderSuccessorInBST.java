@@ -21,7 +21,7 @@
  * is the one successor.
  */
 
-package com.mycompany.app;
+package Finished;
 import java.util.*;
 public class InorderSuccessorInBST {
     public static class TreeNode{

@@ -1,7 +1,7 @@
-package com.mycompany.app;
+package Finished;
 
 import org.junit.Test;
-import com.mycompany.app.InorderSuccessorInBST.*;
+import Finished.InorderSuccessorInBST.*;
 import static org.junit.Assert.*;
 
 /**

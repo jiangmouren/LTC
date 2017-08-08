@@ -13,6 +13,7 @@ package com.mycompany.app;
  * Given word1 = "makes", word2 = "coding", return 1.
  * Note:
  * You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
+ * TODO:
  */
 
 public class ShortestWordDistanceII{

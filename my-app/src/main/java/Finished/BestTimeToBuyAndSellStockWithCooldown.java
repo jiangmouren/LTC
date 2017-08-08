@@ -30,7 +30,7 @@
  * B(2) = Max{-P(2), Max{-P(1), -P(0)}} = Max{-P(2), -P(1), -P(0)};
  * And we need S1, S2, B2 to construct S_next and B_next; and we will shift S1=S2; S2=S_next; B2=B_next;
  */
-package com.mycompany.app;
+package Finished;
 public class BestTimeToBuyAndSellStockWithCooldown {
     public int bestTransaction(int[] price){
         if(price==null) throw new IllegalArgumentException("Input cannot be null");

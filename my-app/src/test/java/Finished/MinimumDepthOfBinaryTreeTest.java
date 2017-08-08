@@ -1,8 +1,7 @@
-package com.mycompany.app;
+package Finished;
 
 import org.junit.Test;
-import com.mycompany.app.MinimumDepthOfBinaryTree.*;
-import static org.junit.Assert.*;
+import Finished.MinimumDepthOfBinaryTree.*;
 
 /**
  * Created by eljian on 7/7/2017.

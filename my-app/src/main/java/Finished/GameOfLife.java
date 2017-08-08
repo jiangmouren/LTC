@@ -29,7 +29,7 @@
  * The catch for the follow up question is that we need to redesign the object. It is a design question.
  *
  */
-package com.mycompany.app;
+package Finished;
 import java.util.*;
 
 public class GameOfLife{
