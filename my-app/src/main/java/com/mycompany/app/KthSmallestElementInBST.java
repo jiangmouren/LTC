@@ -7,7 +7,6 @@ package com.mycompany.app;
  * Follow up:
  * What if the BST is modified (insert/delete operations) often and you need to find the kth smallest frequently?
  * How would you optimize the kthSmallest routine?
- * TODO:
  */
 
 /**
@@ -37,17 +36,16 @@ public class KthSmallestElementInBST{
         Stack<Node> stack = new Stack<>();
         push(root, stack);
         int cnt = 0;
-        Node ptr;
+        Node ptr = null;
         while(!stack.isEmpty() && cnt<k){
-            Node tmp = stack.pop();
-            if(tmp.right!=null){
-                stack.push(tmp.right);
+            ptr = stack.pop();
+            if(ptr.right!=null){
+                push(ptr.right, stack);
             }
             cnt++;
         }
-
-
-
+        //because we assume k is always valid, so once exit the loop, it can only be cnt==k.
+        return ptr;
     }
 
     private void push(Node root, Stack<Node> stack){
@@ -56,6 +54,29 @@ public class KthSmallestElementInBST{
             stack.push(ptr);
             ptr = ptr.left;
         }
+    }
+
+    public Node find2(Node root, int k){
+        int[] cnt = {0};
+        Node[] ptr = {null};
+        helper(root, cnt, k, ptr);
+        return ptr[0];
+    }
+
+    private void helper(Node root, int[] cnt, int k, Node[] ptr){
+        if(root==null) return;
+
+        helper(root.left, cnt, k, ptr);
+        if(cnt[0]==k) return;
+        else{
+            cnt[0]++;
+            if(cnt[0]==k){
+                ptr[0] = root;
+                return;
+            }
+            helper(root.right, cnt, k, ptr);
+        }
+
     }
 
 }

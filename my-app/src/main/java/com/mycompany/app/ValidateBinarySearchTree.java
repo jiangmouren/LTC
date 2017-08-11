@@ -28,8 +28,8 @@ Binary tree [1,2,3], return false.
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public boolean isValidBST(TreeNode root) {
-        
-    }
+public class ValidateBinarySearchTree {
+    //public boolean isValidBST(TreeNode root) {
+    //
+    //}
 }

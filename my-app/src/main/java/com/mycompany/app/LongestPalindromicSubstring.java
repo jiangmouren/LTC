@@ -15,8 +15,8 @@ Input: "cbbd"
 Output: "bb"
  */
 
-public class Solution {
-    public String longestPalindrome(String s) {
-        
-    }
+public class LongestPalindromicSubstring {
+    //public String longestPalindrome(String s) {
+    //
+    //}
 }

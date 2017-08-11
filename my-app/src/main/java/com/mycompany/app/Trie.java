@@ -20,14 +20,14 @@ public class Trie {
     }
     
     /** Returns if the word is in the trie. */
-    public boolean search(String word) {
-        
-    }
+    //public boolean search(String word) {
+    //
+    //}
     
     /** Returns if there is any word in the trie that starts with the given prefix. */
-    public boolean startsWith(String prefix) {
-        
-    }
+    ///public boolean startsWith(String prefix) {
+    ///
+    ///}
 }
 
 /**

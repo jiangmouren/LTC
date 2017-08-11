@@ -14,8 +14,18 @@ You may assume that duplicates do not exist in the tree.
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public TreeNode buildTree(int[] inorder, int[] postorder) {
-        
+public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
     }
+
+    //public TreeNode buildTree(int[] inorder, int[] postorder) {
+    //
+    //}
 }

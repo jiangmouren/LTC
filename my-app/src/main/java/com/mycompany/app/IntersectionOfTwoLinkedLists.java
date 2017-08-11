@@ -15,7 +15,6 @@ package com.mycompany.app;
  * The linked lists must retain their original structure after the function returns.
  * You may assume there are no cycles anywhere in the entire linked structure.
  * Your code should preferably run in O(n) time and use only O(1) memory.
- * TODO:
  */
 
 /**
@@ -38,7 +37,7 @@ public class IntersectionOfTwoLinkedLists{
         Node ptr1 = root1;
         Node ptr2 = root2;
         int loop = 0;
-        while(ptr1!=ptr2 && loop==2){
+        while(ptr1!=ptr2 && loop<2){
             if(ptr1.next==null){
                 loop++;
                 ptr1 = root2;

@@ -12,8 +12,8 @@ Return a deep copy of the list.
  *     RandomListNode(int x) { this.label = x; }
  * };
  */
-public class Solution {
-    public RandomListNode copyRandomList(RandomListNode head) {
-        
-    }
+public class CopyListWithRandomPointer {
+    //public RandomListNode copyRandomList(RandomListNode head) {
+    //
+    //}
 }

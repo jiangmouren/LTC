@@ -9,8 +9,8 @@ Some examples:
  */ 
 
 
-public class Solution {
-    public int evalRPN(String[] tokens) {
-        
-    }
+public class EvaluateReversePolishNotation {
+    //public int evalRPN(String[] tokens) {
+    //
+    //}
 }

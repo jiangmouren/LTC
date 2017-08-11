@@ -20,8 +20,13 @@ Try to do this in one pass.
  *     ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public ListNode removeNthFromEnd(ListNode head, int n) {
-        
+public class RemoveNthNodeFromEndOfList {
+    public static class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) { val = x; }
     }
+    //public ListNode removeNthFromEnd(ListNode head, int n) {
+    //
+    //}
 }

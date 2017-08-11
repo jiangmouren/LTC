@@ -28,17 +28,17 @@ Do not use class member/global/static variables to store states. Your encode and
 Do not rely on any library method such as eval or serialize methods. You should implement your own encode/decode algorithm.
  */ 
 
-public class Codec {
+public class EncodeAndDecodeStrings {
 
     // Encodes a list of strings to a single string.
-    public String encode(List<String> strs) {
-        
-    }
+    //public String encode(List<String> strs) {
+    //
+    //}
 
     // Decodes a single string to a list of strings.
-    public List<String> decode(String s) {
-        
-    }
+    //public List<String> decode(String s) {
+    //
+    //}
 }
 
 // Your Codec object will be instantiated and called as such:

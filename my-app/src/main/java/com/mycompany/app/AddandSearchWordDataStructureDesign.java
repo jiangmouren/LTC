@@ -22,10 +22,10 @@ click to show hint.
 You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
  */ 
 
-public class WordDictionary {
+public class AddandSearchWordDataStructureDesign {
 
     /** Initialize your data structure here. */
-    public WordDictionary() {
+    public AddandSearchWordDataStructureDesign() {
         
     }
     
@@ -35,9 +35,9 @@ public class WordDictionary {
     }
     
     /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
-    public boolean search(String word) {
-        
-    }
+    //public boolean search(String word) {
+    //
+    //}
 }
 
 /**

@@ -11,7 +11,7 @@ Could you do it in-place without allocating extra space?
 Related problem: Rotate Array
 */
 
-public class Solution {
+public class ReverseWordsInAStringII {
     public void reverseWords(char[] s) {
         
     }

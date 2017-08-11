@@ -8,8 +8,8 @@ For example, given citations = [3, 0, 6, 1, 5], which means the researcher has 5
 Note: If there are several possible values for h, the maximum one is taken as the h-index.
  */ 
 
-public class Solution {
-    public int hIndex(int[] citations) {
-        
-    }
+public class HIndex {
+    //public int hIndex(int[] citations) {
+    //
+    //}
 }

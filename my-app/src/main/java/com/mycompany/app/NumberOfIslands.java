@@ -18,8 +18,8 @@ Example 2:
 Answer: 3
  */ 
 
-public class Solution {
-    public int numIslands(char[][] grid) {
-        
-    }
+public class NumberOfIslands {
+    //public int numIslands(char[][] grid) {
+    //
+    //}
 }

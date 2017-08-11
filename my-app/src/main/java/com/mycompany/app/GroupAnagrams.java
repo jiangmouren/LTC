@@ -12,9 +12,9 @@ Return:
 Note: All inputs will be in lower-case.
  */ 
 
-public class Solution {
-    public List<List<String>> groupAnagrams(String[] strs) {
-        
-    }
+public class GroupAnagrams {
+    //public List<List<String>> groupAnagrams(String[] strs) {
+    //
+    //}
 }
 

@@ -25,8 +25,8 @@ Topological sort could also be done via BFS.
  * 
  */ 
 
-public class Solution {
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        
-    }
+public class CourseSchedule {
+    //public boolean canFinish(int numCourses, int[][] prerequisites) {
+    //
+    //}
 }

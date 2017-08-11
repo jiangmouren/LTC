@@ -22,8 +22,8 @@ For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3. Another exa
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        
-    }
+public class LowestCommonAncestorOfABinaryTree {
+    //public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    //
+    //}
 }

@@ -9,8 +9,8 @@ Both num1 and num2 does not contain any leading zero.
 You must not use any built-in BigInteger library or convert the inputs to integer directly.
  */ 
 
-public class Solution {
-    public String multiply(String num1, String num2) {
-        
-    }
+public class MultiplyStrings {
+    //public String multiply(String num1, String num2) {
+    //
+    //}
 }

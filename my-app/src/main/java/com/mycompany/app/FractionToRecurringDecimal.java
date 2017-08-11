@@ -10,8 +10,8 @@ Given numerator = 2, denominator = 1, return "2".
 Given numerator = 2, denominator = 3, return "0.(6)".
  */ 
 
-public class Solution {
-    public String fractionToDecimal(int numerator, int denominator) {
-        
-    }
+public class FractionToRecurringDecimal {
+    //public String fractionToDecimal(int numerator, int denominator) {
+    //
+    //}
 }

@@ -19,8 +19,8 @@ How about multiple spaces between two words?
 Reduce them to a single space in the reversed string.
  */ 
 
-public class Solution {
-    public String reverseWords(String s) {
-        
-    }
+public class ReverseWordsInAString {
+    //public String reverseWords(String s) {
+    //
+    //}
 }

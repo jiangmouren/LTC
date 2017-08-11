@@ -14,8 +14,8 @@ return 4->5->1->2->3->NULL.
  *     ListNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public ListNode rotateRight(ListNode head, int k) {
-        
-    }
+public class RotateList {
+    //public ListNode rotateRight(ListNode head, int k) {
+    //
+    //}
 }

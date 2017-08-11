@@ -6,8 +6,8 @@
     The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
  */ 
 
-public class Solution {
-    public int threeSumClosest(int[] nums, int target) {
-        
-    }
+public class ThreeSumClosest {
+    //public int threeSumClosest(int[] nums, int target) {
+    //
+    //}
 }

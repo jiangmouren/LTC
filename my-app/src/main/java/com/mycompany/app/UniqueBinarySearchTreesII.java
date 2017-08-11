@@ -20,8 +20,8 @@ Given n = 3, your program should return all 5 unique BST's shown below.
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public List<TreeNode> generateTrees(int n) {
-        
-    }
+public class UniqueBinarySearchTreesII {
+    //public List<TreeNode> generateTrees(int n) {
+    //
+    //}
 }

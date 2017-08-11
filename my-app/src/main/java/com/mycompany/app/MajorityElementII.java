@@ -4,8 +4,8 @@ Given an integer array of size n, find all elements that appear more than ⌊ n/
  * 
  */ 
 
-public class Solution {
-    public List<Integer> majorityElement(int[] nums) {
-        
-    }
+public class MajorityElementII {
+    //public List<Integer> majorityElement(int[] nums) {
+    //
+    //}
 }

@@ -12,8 +12,8 @@ Some examples:
 Note: Do not use the eval built-in library function.
  */ 
 
-public class Solution {
-    public int calculate(String s) {
-        
-    }
+public class BasicCalculatorII {
+    //public int calculate(String s) {
+    //
+    //}
 }

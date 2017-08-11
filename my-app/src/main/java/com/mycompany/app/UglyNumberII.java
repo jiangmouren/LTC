@@ -6,8 +6,8 @@ Ugly numbers are positive numbers whose prime factors only include 2, 3, 5. For 
 Note that 1 is typically treated as an ugly number, and n does not exceed 1690.
  */ 
 
-public class Solution {
-    public int nthUglyNumber(int n) {
-        
-    }
+public class UglyNumberII {
+    //public int nthUglyNumber(int n) {
+    //
+    //}
 }

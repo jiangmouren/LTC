@@ -22,8 +22,10 @@ UPDATE (2017/1/20):
 The wordList parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
  */
 
-public class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        
-    }
+import java.util.*;
+
+public class WordLadder {
+    //public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+    //
+    //}
 }

@@ -10,7 +10,6 @@ package Finished.arrayANDstring;
  * For the purpose of this problem, we define empty string as valid palindrome.
  */
 
-import com.sun.deploy.util.StringUtils;
 
 /**
  * Analysis:

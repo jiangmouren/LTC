@@ -31,15 +31,15 @@ isUnique("make") ->
 true
  */ 
 
-public class ValidWordAbbr {
+public class UniqueWordAbbreviation {
 
-    public ValidWordAbbr(String[] dictionary) {
+    public UniqueWordAbbreviation(String[] dictionary) {
         
     }
     
-    public boolean isUnique(String word) {
-        
-    }
+    //public boolean isUnique(String word) {
+    //
+    //}
 }
 
 /**

@@ -11,8 +11,10 @@ Return:
 ["AAAAACCCCC", "CCCCCAAAAA"].
  */ 
 
-public class Solution {
+import java.util.*;
+public class RepeatedDNASequences {
     public List<String> findRepeatedDnaSequences(String s) {
+        return null;
         
     }
 }

@@ -14,8 +14,8 @@ You may assume that duplicates do not exist in the tree.
  *     TreeNode(int x) { val = x; }
  * }
  */
-public class Solution {
-    public TreeNode buildTree(int[] preorder, int[] inorder) {
-        
-    }
+public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
+    //public TreeNode buildTree(int[] preorder, int[] inorder) {
+    //
+    //}
 }

@@ -15,8 +15,8 @@ The number of ways decoding "12" is 2.
  * 
  */ 
 
-public class Solution {
-    public int numDecodings(String s) {
-        
-    }
+public class DecodeWays {
+    //public int numDecodings(String s) {
+    //
+    //}
 }
