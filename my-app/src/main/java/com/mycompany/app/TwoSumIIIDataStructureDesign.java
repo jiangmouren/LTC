@@ -1,4 +1,7 @@
 package com.mycompany.app;
+
+import java.util.*;
+
 /**
  * Question:
  * Design and implement a TwoSum class.
@@ -9,9 +12,26 @@ package com.mycompany.app;
  * add(1); add(3); add(5);
  * find(4) -> true
  * find(7) -> false
- * TODO:
  */
 
+/**
+ * Use a set, so add will be O(1) and find will be O(n);
+ * If use sorted array, both add and find will be O(n).
+ */
 public class TwoSumIIIDataStructureDesign {
+    private Set<Integer> set;
+    public TwoSumIIIDataStructureDesign(){
+        this.set = new HashSet<>();
+    }
 
+    public void add(int val){
+        this.set.add(val);
+    }
+
+    public boolean find(int x){
+        for(int tmp : this.set){
+            if(set.contains(x-tmp)) return true;
+        }
+        return false;
+    }
 }
