@@ -15,7 +15,6 @@ package com.mycompany.app;
  * Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [3, 4]], return 1.
  * Note:
  * You can assume that no duplicate edges will appear in edges. Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
- * TODO:
  */
 
 /**
@@ -27,10 +26,10 @@ package com.mycompany.app;
 import java.util.*;
 public class NumberOfConnectedComponentsInAnUndirectedGraph{
     public int solution(int n, int[][] edges){
-        //build graph
+        //build graph, Need to initialize the graph.
         List<List<Integer>> graph = new ArrayList<>();
-        for(List<Integer> list : graph){
-            list = new ArrayList<>();
+        for(int i=0; i<n; i++){
+            graph.add(new ArrayList<>());
         }
         for(int[] edge : edges){
             graph.get(edge[0]).add(edge[1]);
