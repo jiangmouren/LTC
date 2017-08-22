@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 
 import org.junit.Test;
 import static org.junit.Assert.*;

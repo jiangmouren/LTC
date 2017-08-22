@@ -13,28 +13,13 @@ import static org.junit.Assert.*;
  * Map<K,V> map = new HashMap<>(); //is Okay in java 1.7 and latter, not Okay in java 1.5
  */
 public class AppTest {
+    App obj = new App();
+    int[] input = {3, 1, 2, 2, 4};
     @Test
     public void testConcatAndUpperString() throws Exception {
-        String expectedValue="HELLOWORLD";
-        App app=new App();
-        String actualValue=app.concatAndUpperString("Hello", "World");
-        assertEquals(expectedValue, actualValue);
+        obj.customSort(input);
+        for(int i : input){
+            System.out.print(i);
+        }
     }
-
-
-    @Test
-    public void testConcatAndLowerString() throws Exception {
-        String expectedValue="HELLOWORLD";
-        App app=new App();
-        String actualValue=app.concatAndLowerString("Hello", "World");
-        assertEquals(expectedValue, actualValue);
-    }
-
-    @Test
-    public void test(){
-        int result = Integer.MIN_VALUE - 10;
-        System.out.println("Integer MIN_VALUE: " + Integer.MIN_VALUE);
-        System.out.println("Integer MIN_VALUE-10: " + result);
-    }
-
 }

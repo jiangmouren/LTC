@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 /**
  * Question:
  * Given two 1d vectors, implement an iterator to return their elements alternately.
