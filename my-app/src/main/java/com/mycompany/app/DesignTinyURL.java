@@ -28,8 +28,8 @@ If you can enable caching, what would you cache and what's the expiry time? (Con
 
 // You can type code here and execute it.
 
-class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
-    }
-}
+//class Main {
+//    public static void main(String[] args) {
+//        System.out.println("Hello World!");
+//    }
+//}

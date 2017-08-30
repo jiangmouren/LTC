@@ -11,8 +11,8 @@ return 2.
 Note: You may assume the string contain only lowercase letters.
  */
 
-class Solution {
-    public int firstUniqChar(String s) {
-        
-    }
-}
+//class Solution {
+//    public int firstUniqChar(String s) {
+//
+//    }
+//}

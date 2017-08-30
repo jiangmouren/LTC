@@ -25,8 +25,8 @@ Output: "No solution"
  *
  */
 
-class Solution {
-    public String solveEquation(String equation) {
-        
-    }
-}
+//class Solution {
+//    public String solveEquation(String equation) {
+//
+//    }
+//}

@@ -14,8 +14,8 @@ Return the array [2, 1, 1, 0].
  *
  */
 
-class Solution {
-    public List<Integer> countSmaller(int[] nums) {
-        
-    }
-}
+//class Solution {
+//    public List<Integer> countSmaller(int[] nums) {
+//
+//    }
+//}

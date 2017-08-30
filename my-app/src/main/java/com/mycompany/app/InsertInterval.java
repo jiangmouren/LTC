@@ -21,8 +21,8 @@ This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
  *     Interval(int s, int e) { start = s; end = e; }
  * }
  */
-class Solution {
-    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
-        
-    }
-}
+//class Solution {
+//    public List<Interval> insert(List<Interval> intervals, Interval newInterval) {
+//
+//    }
+//}

@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 /**
  *Implement a basic calculator to evaluate a simple expression string.
 
@@ -12,8 +14,8 @@ Some examples:
 Note: Do not use the eval built-in library function.
  */
 
-class Solution {
-    public int calculate(String s) {
-        
-    }
+class BasicCalculator {
+    //public int calculate(String s) {
+    //
+    //}
 }

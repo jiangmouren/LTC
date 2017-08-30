@@ -22,20 +22,20 @@ You may assume the number of calls to update and sumRegion function is distribut
 You may assume that row1 ≤ row2 and col1 ≤ col2.
  */
 
-class NumMatrix {
-
-    public NumMatrix(int[][] matrix) {
-        
-    }
-    
-    public void update(int row, int col, int val) {
-        
-    }
-    
-    public int sumRegion(int row1, int col1, int row2, int col2) {
-        
-    }
-}
+//class NumMatrix {
+//
+//    public NumMatrix(int[][] matrix) {
+//
+//    }
+//
+//    public void update(int row, int col, int val) {
+//
+//    }
+//
+//    public int sumRegion(int row1, int col1, int row2, int col2) {
+//
+//    }
+//}
 
 /**
  * Your NumMatrix object will be instantiated and called as such:

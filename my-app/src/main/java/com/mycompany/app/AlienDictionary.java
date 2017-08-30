@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 /**
 There is a new alien language which uses the latin alphabet. However, the order among letters are unknown to you. You receive a list of non-empty words from the dictionary, where words are sorted lexicographically by the rules of this new language. Derive the order of letters in this language.
 
@@ -40,9 +42,9 @@ There may be multiple valid order of letters, return any one of them is fine.
  *
  */
 
-class Solution {
-    public String alienOrder(String[] words) {
-        
-    }
+class AlienDictionary {
+    //public String alienOrder(String[] words) {
+    //
+    //}
 }
 

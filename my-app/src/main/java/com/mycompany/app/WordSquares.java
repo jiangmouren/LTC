@@ -59,8 +59,8 @@ The output consists of two word squares. The order of output does not matter (ju
  *
  */
 
-class Solution {
-    public List<List<String>> wordSquares(String[] words) {
-        
-    }
-}
+//class Solution {
+//    public List<List<String>> wordSquares(String[] words) {
+//
+//    }
+//}

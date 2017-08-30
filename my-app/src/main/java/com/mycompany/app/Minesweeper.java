@@ -55,8 +55,8 @@ For simplicity, not mentioned rules should be ignored in this problem. For examp
  *
  */
 
-class Solution {
-    public char[][] updateBoard(char[][] board, int[] click) {
-        
-    }
-}
+//class Solution {
+//    public char[][] updateBoard(char[][] board, int[] click) {
+//
+//    }
+//}

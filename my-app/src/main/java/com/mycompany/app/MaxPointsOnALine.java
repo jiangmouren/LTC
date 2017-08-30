@@ -11,8 +11,8 @@
  *     Point(int a, int b) { x = a; y = b; }
  * }
  */
-class Solution {
-    public int maxPoints(Point[] points) {
-        
-    }
-}
+//class Solution {
+//    public int maxPoints(Point[] points) {
+//
+//    }
+//}

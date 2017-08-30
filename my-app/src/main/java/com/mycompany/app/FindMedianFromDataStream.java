@@ -19,21 +19,21 @@ addNum(3)
 findMedian() -> 2
  */
 
-class MedianFinder {
-
-    /** initialize your data structure here. */
-    public MedianFinder() {
-        
-    }
-    
-    public void addNum(int num) {
-        
-    }
-    
-    public double findMedian() {
-        
-    }
-}
+//class MedianFinder {
+//
+//    /** initialize your data structure here. */
+//    public MedianFinder() {
+//
+//    }
+//
+//    public void addNum(int num) {
+//
+//    }
+//
+//    public double findMedian() {
+//
+//    }
+//}
 
 /**
  * Your MedianFinder object will be instantiated and called as such:

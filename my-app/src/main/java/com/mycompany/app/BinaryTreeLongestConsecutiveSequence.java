@@ -1,4 +1,4 @@
-/**
+package com.mycompany.app; /**
  *Given a binary tree, find the length of the longest consecutive sequence path.
 
 The path refers to any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The longest consecutive path need to be from parent to child (cannot be the reverse).
@@ -31,8 +31,8 @@ Longest consecutive sequence path is 2-3,not3-2-1, so return 2.
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
-    public int longestConsecutive(TreeNode root) {
-        
-    }
+class BinaryTreeLongestConsecutiveSequence {
+    //public int longestConsecutive(TreeNode root) {
+    //
+    //}
 }

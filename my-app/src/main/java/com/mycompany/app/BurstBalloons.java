@@ -17,8 +17,8 @@ Return 167
    coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
  */ 
 
-class Solution {
-    public int maxCoins(int[] nums) {
-        
-    }
-}
+//class Solution {
+//    public int maxCoins(int[] nums) {
+//
+//    }
+//}

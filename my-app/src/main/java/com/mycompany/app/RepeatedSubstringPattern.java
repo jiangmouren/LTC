@@ -20,8 +20,8 @@ Explanation: It's the substring "abc" four times. (And the substring "abcabc" tw
  *
  */
 
-class Solution {
-    public boolean repeatedSubstringPattern(String s) {
-        
-    }
-}
+//class Solution {
+//    public boolean repeatedSubstringPattern(String s) {
+//
+//    }
+//}

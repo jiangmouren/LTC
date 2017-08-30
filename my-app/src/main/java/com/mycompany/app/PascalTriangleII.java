@@ -8,8 +8,8 @@ Note:
 Could you optimize your algorithm to use only O(k) extra space?
  */
 
-class Solution {
-    public List<Integer> getRow(int rowIndex) {
-        
-    }
-}
+//class Solution {
+//    public List<Integer> getRow(int rowIndex) {
+//
+//    }
+//}

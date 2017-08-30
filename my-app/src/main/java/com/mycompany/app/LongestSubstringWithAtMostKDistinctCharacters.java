@@ -6,8 +6,8 @@ For example, Given s = “eceba” and k = 2,
 T is "ece" which its length is 3.
  */
 
-class Solution {
-    public int lengthOfLongestSubstringKDistinct(String s, int k) {
-        
-    }
-}
+//class Solution {
+//    public int lengthOfLongestSubstringKDistinct(String s, int k) {
+//
+//    }
+//}

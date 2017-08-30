@@ -63,8 +63,8 @@ Note: Answer will in the range of 32-bit signed integer.
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
-    public int widthOfBinaryTree(TreeNode root) {
-        
-    }
-}
+//class Solution {
+//    public int widthOfBinaryTree(TreeNode root) {
+//
+//    }
+//}

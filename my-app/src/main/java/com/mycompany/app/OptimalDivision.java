@@ -24,8 +24,8 @@ There is only one optimal division for each test case.
  *
  */
 
-class Solution {
-    public String optimalDivision(int[] nums) {
-        
-    }
-}
+//class Solution {
+//    public String optimalDivision(int[] nums) {
+//
+//    }
+//}

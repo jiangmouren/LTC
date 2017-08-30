@@ -13,9 +13,9 @@ Could you do it in O(n) time and O(1) space?
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
-    public boolean isPalindrome(ListNode head) {
-        
-    }
-}
+//class Solution {
+//    public boolean isPalindrome(ListNode head) {
+//
+//    }
+//}
 

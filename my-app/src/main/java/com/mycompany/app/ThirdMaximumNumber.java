@@ -22,8 +22,8 @@ Explanation: Note that the third maximum here means the third maximum distinct n
 Both numbers with value 2 are both considered as second maximum.
  */
 
-class Solution {
-    public int thirdMax(int[] nums) {
-        
-    }
-}
+//class Solution {
+//    public int thirdMax(int[] nums) {
+//
+//    }
+//}

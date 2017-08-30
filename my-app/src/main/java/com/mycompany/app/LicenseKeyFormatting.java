@@ -24,8 +24,8 @@ String S is non-empty.
  *
  */
 
-class Solution {
-    public String licenseKeyFormatting(String S, int K) {
-        
-    }
-}
+//class Solution {
+//    public String licenseKeyFormatting(String S, int K) {
+//
+//    }
+//}

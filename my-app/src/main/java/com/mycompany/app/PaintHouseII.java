@@ -10,8 +10,8 @@ Follow up:
 Could you solve it in O(nk) runtime?
  */
 
-class Solution {
-    public int minCostII(int[][] costs) {
-        
-    }
-}
+//class Solution {
+//    public int minCostII(int[][] costs) {
+//
+//    }
+//}

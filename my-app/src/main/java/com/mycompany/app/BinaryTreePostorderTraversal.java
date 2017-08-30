@@ -22,10 +22,10 @@ Note: Recursive solution is trivial, could you do it iteratively?
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
-    public List<Integer> postorderTraversal(TreeNode root) {
-        
-    }
-}
+//class Solution {
+//    public List<Integer> postorderTraversal(TreeNode root) {
+//
+//    }
+//}
 
 

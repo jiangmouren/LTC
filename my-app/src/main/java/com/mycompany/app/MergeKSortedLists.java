@@ -10,8 +10,8 @@
  *     ListNode(int x) { val = x; }
  * }
  */
-class Solution {
-    public ListNode mergeKLists(ListNode[] lists) {
-        
-    }
-}
+//class Solution {
+//    public ListNode mergeKLists(ListNode[] lists) {
+//
+//    }
+//}

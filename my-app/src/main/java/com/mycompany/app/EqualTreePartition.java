@@ -47,8 +47,8 @@ The range of tree node value is in the range of [-100000, 100000].
  *     TreeNode(int x) { val = x; }
  * }
  */
-class Solution {
-    public boolean checkEqualTree(TreeNode root) {
-        
-    }
-}
+//class Solution {
+//    public boolean checkEqualTree(TreeNode root) {
+//
+//    }
+//}

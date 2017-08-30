@@ -36,8 +36,8 @@ Challenge:
 Can you do it in time complexity O(k log mn), where k is the length of the positions?
  */
 
-class Solution {
-    public List<Integer> numIslands2(int m, int n, int[][] positions) {
-        
-    }
-}
+//class Solution {
+//    public List<Integer> numIslands2(int m, int n, int[][] positions) {
+//
+//    }
+//}

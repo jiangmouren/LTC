@@ -20,8 +20,8 @@ The length of the array won't exceed 10,000.
 All the integers in the given input belong to the range: [-1e7, 1e7].
  */
 
-class Solution {
-    public int findPairs(int[] nums, int k) {
-        
-    }
-}
+//class Solution {
+//    public int findPairs(int[] nums, int k) {
+//
+//    }
+//}

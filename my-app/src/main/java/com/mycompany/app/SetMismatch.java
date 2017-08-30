@@ -11,8 +11,8 @@ The given array size will in the range [2, 10000].
 The given array's numbers won't have any order.
  */
 
-class Solution {
-    public int[] findErrorNums(int[] nums) {
-        
-    }
-}
+//class Solution {
+//    public int[] findErrorNums(int[] nums) {
+//
+//    }
+//}
