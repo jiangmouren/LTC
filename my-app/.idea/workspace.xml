@@ -2,83 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bafe23cb-8f96-4983-98e8-80ea20865daa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AlienDictionary.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AlienDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockIV.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockIV.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimetoBuyAndSellStockIII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimetoBuyAndSellStockIII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLongestConsecutiveSequence.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLongestConsecutiveSequence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeMaximumPathSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeMaximumPathSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePostorderTraversal.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePostorderTraversal.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BombEnemy.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BombEnemy.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BoundaryOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BoundaryOfBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BurstBalloons.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BurstBalloons.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValueII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValueII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ComplexNumberMultiplication.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ComplexNumberMultiplication.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromString.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructStringFromBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructStringFromBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertBSTToGreaterTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertBSTToGreaterTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountOfSmallerNumbersAfterSelf.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountOfSmallerNumbersAfterSelf.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTinyURL.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTinyURL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTwitter.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTwitter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EditDistance.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EditDistance.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeAndDecodeTinyURL.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeAndDecodeTinyURL.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EqualTreePartition.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EqualTreePartition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExpressionAddOperators.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExpressionAddOperators.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindAllAnagramsInAString.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindAllAnagramsInAString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindMedianFromDataStream.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindMedianFromDataStream.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstMissingPositive.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstMissingPositive.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstUniqueCharacterInAString.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstUniqueCharacterInAString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImageSmoother.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImageSmoother.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertDeleteGetRandomO1.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertDeleteGetRandomO1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertInterval.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertInterval.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KDiffPairsInAnArray.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KDiffPairsInAnArray.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LicenseKeyFormatting.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LicenseKeyFormatting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestAbsoluteFilePath.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestAbsoluteFilePath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostKDistinctCharacters.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostKDistinctCharacters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostTwoDistinctCharacters.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostTwoDistinctCharacters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestValidParentheses.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestValidParentheses.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaxPointsOnALine.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaxPointsOnALine.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumLengthOfPairChain.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumLengthOfPairChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumWidthOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumWidthOfBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MedianOfTwoSortedArrays.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MedianOfTwoSortedArrays.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeKSortedLists.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeKSortedLists.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoBinaryTrees.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoBinaryTrees.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Minesweeper.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Minesweeper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MostFrequentSubtreeSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MostFrequentSubtreeSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslandsII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslandsII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OptimalDivision.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OptimalDivision.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouseII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouseII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeLinkedList.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeLinkedList.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PascalTriangleII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PascalTriangleII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RangeSumQuery2DMutable.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RangeSumQuery2DMutable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4IICallMultipleTimes.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4IICallMultipleTimes.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RegularExpressionMatching.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RegularExpressionMatching.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveDuplicateLetters.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveDuplicateLetters.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RepeatedSubstringPattern.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RepeatedSubstringPattern.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateFunction.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateFunction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ScrambleString.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ScrambleString.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SentenceScreenFitting.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SentenceScreenFitting.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SetMismatch.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SetMismatch.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SlidingWindowMaximum.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SlidingWindowMaximum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SolveTheEquation.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SolveTheEquation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortCharactersByFrequency.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortCharactersByFrequency.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SuperWashingMachines.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SuperWashingMachines.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TheSkylineProblem.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TheSkylineProblem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThirdMaximumNumber.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThirdMaximumNumber.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WildcardMatching.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WildcardMatching.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadderII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadderII.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -93,16 +18,6 @@
     <splitter split-orientation="horizontal" split-proportion="0.73783785">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="SuperWashingMachines.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SuperWashingMachines.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="517">
-                  <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="TheSkylineProblem.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TheSkylineProblem.java">
               <provider selected="true" editor-type-id="text-editor">
@@ -183,11 +98,21 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="WordSquares.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="WordSquares.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="0">
                   <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/README">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="80">
+                  <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
                   <folding />
                 </state>
               </provider>
@@ -230,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindAllAnagramsInAString.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindMedianFromDataStream.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstMissingPositive.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstUniqueCharacterInAString.java" />
@@ -281,6 +205,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadderII.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" />
       </list>
     </option>
   </component>
@@ -292,10 +217,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="64" />
-    <option name="y" value="-11" />
-    <option name="width" value="1857" />
-    <option name="height" value="1092" />
+    <option name="x" value="177" />
+    <option name="y" value="162" />
+    <option name="width" value="1855" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -315,9 +240,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -394,6 +316,9 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -898,11 +823,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="177" y="162" width="1855" height="1056" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18789144" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19354838" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -915,7 +839,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35765615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3620785" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -945,22 +869,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FindMedianFromDataStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="42" column="1" lean-forward="false" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstMissingPositive.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstUniqueCharacterInAString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
@@ -1351,6 +1259,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="2" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding />
         </state>
       </provider>
