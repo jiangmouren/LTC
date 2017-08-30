@@ -1,3 +1,5 @@
+package com.mycompany.app;
+
 /**
  * Design a data structure that supports the following two operations:
 
@@ -20,6 +22,7 @@ You may assume that all words are consist of lowercase letters a-z.
 click to show hint.
 
 You should be familiar with how a Trie works. If not, please work on this problem: Implement Trie (Prefix Tree) first.
+ TODO:
  */ 
 
 public class AddandSearchWordDataStructureDesign {
