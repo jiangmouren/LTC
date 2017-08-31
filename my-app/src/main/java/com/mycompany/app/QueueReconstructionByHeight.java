@@ -13,8 +13,8 @@ Output:
 [[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
  */
 
-class Solution {
-    public int[][] reconstructQueue(int[][] people) {
-        
-    }
-}
+//class Solution {
+//    public int[][] reconstructQueue(int[][] people) {
+//
+//    }
+//}

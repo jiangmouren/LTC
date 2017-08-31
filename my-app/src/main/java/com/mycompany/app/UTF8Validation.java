@@ -34,8 +34,8 @@ But the second continuation byte does not start with 10, so it is invalid.
  *
  */
 
-class Solution {
-    public boolean validUtf8(int[] data) {
-        
-    }
-}
+//class Solution {
+//    public boolean validUtf8(int[] data) {
+//
+//    }
+//}
