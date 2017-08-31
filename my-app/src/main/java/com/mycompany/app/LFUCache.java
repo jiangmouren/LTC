@@ -9,7 +9,7 @@ Could you do both operations in O(1) time complexity?
 
 Example:
 
-LFUCache cache = new LFUCache( 2 /* capacity */ );
+LFUCache cache = new LFUCache(capacity);
 
 cache.put(1, 1);
 cache.put(2, 2);
@@ -22,7 +22,7 @@ cache.get(1);       // returns -1 (not found)
 cache.get(3);       // returns 3
 cache.get(4);       // returns 4
  */
-
+/*
 class LFUCache {
 
     public LFUCache(int capacity) {
@@ -37,7 +37,7 @@ class LFUCache {
         
     }
 }
-
+*/
 /**
  * Your LFUCache object will be instantiated and called as such:
  * LFUCache obj = new LFUCache(capacity);
