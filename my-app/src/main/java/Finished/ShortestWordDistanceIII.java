@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 
 import java.util.*;
 
@@ -14,7 +14,6 @@ import java.util.*;
  * Given word1 = "makes", word2 = "makes", return 3.
  * Note:
  * You may assume word1 and word2 are both in the list.
- * TODO:
  */
 
 public class ShortestWordDistanceIII{

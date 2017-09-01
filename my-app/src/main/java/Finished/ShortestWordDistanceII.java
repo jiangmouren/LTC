@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 /**
  * Question:
  * This is a follow up of Shortest Word Distance.
@@ -13,7 +13,6 @@ package com.mycompany.app;
  * Given word1 = "makes", word2 = "coding", return 1.
  * Note:
  * You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
- * TODO:
  */
 
 
@@ -91,7 +90,7 @@ public class ShortestWordDistanceII{
                     minValue = Math.min(minValue, Math.abs(nodeList1.get(ptr1).pos-nodeList1.get(ptr2).pos));
                 }
             }
-            if(nodeList2.get(i).str.equals(word2)){
+            if(nodeList1.get(i).str.equals(word2)){
                 ptr2 = i;
                 if(ptr1!=-1){
                     minValue = Math.min(minValue, Math.abs(nodeList1.get(ptr1).pos-nodeList1.get(ptr2).pos));

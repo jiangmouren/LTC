@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 /**
  * Given two words (beginWord and endWord), and a dictionary's word list,
  * find the length of shortest transformation sequence from beginWord to endWord, such that:
@@ -20,7 +20,6 @@ package com.mycompany.app;
  * UPDATE (2017/1/20):
  * The wordList parameter had been changed to a list of strings (instead of a set of strings).
  * Please reload the code definition to get the latest changes.
- * TODO:
  */
 
 /**

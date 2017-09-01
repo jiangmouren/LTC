@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package Finished;
 /**
  * Question:
  * Write an efficient algorithm that searches for a value in an m x n matrix.
@@ -16,7 +16,6 @@ package com.mycompany.app;
  * ]
  * Given target = 5, return true.
  * Given target = 20, return false.
- * TODO:
  */
 
 /**
@@ -46,7 +45,7 @@ public class SearchA2DMatrixII{
         int[] up = {0};
         int[] down = {matrix.length-1};
         int[] left = {0};
-        int[] right = {matrix[0].length};
+        int[] right = {matrix[0].length-1};
         boolean checkRow = (matrix.length < matrix[0].length);
         while(up[0]!=down[0] && left[0]!=right[0]){
             if(checkRow){
