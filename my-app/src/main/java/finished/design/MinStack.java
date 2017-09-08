@@ -23,6 +23,7 @@ minStack.getMin();   --> Returns -2.
  * Because we only have getMin(), not popMin() so Stack would be easier to modify.
  *
  * Use a stack and inside the stack store both the value and up to point min value.
+ * TODO: improve this.
  */
 
 package finished.design;
