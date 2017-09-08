@@ -1,6 +1,11 @@
-/**
+package com.mycompany.app; /**
  * Sort a linked list in O(n log n) time using constant space complexity.
- */ 
+ */
+/**
+ * Analysis:
+ * Theoretically, we can do either Merge/Quick sort for this, both in place.
+ * TODO: DO BOTH.
+ */
 
 /**
  * Definition for singly-linked list.
