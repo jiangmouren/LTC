@@ -1,6 +1,8 @@
-package com.mycompany.app.sep21;
+package finished;
+import java.util.*;
 
 /**
+ * Question:
  * Design and implement a data structure for Least Recently Used (LRU) cache.
  * It should support the following operations: get and put.
  * get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
@@ -23,12 +25,11 @@ package com.mycompany.app.sep21;
  * LRUCache obj = new LRUCache(capacity);
  * int param_1 = obj.get(key);
  * obj.put(key,value);
- TODO:
  */
 
-import java.util.*;
 
 /**
+ * Analysis:
  * I need a HashMap to give it O(1) operation for get() and put();
  * I also need a Queue structure to maintain the order.
  * But unlike a typical queue, I need to "refresh" the order, every time a old element is accessed.
@@ -45,15 +46,18 @@ import java.util.*;
  * Then within that bucket, you will need the equals() method to check if anything in the bucket really
  * equals to this key.
  *
+ *
+ * Attention: This is good example showing you should try not to hash on non-premitive type, in case you do not want to use
+ * the address for the hashing.
  */
-class LRUCache {
+class LRUCacheWrong {
 
     private Map<KeyNode, Integer> map;
     private int capacity;
     private KeyNode dummyHead;
     private KeyNode dummyTail;
 
-    public LRUCache(int capacity) {
+    public LRUCacheWrong(int capacity) {
         this.capacity = capacity;
         map = new HashMap<>(capacity);
         dummyHead = new KeyNode(-1);
@@ -65,11 +69,13 @@ class LRUCache {
     public int get(int key) {
         KeyNode keyNode = new KeyNode(key);
         if(this.map.containsKey(keyNode)){
-            //need to refresh the order for this access activity.
-            //but you cannot use the the newly generated keyNode to do refresh(),
-            //because it's a different object!!! Now you will want to get the actual object after accessing
-            //the Map, you can in this case, but does not worth the effort!!!
-            //Conclusion: Better to put the link on the value side!!!
+            /**
+             * need to refresh the order for this access activity.
+             * but you cannot use the the newly generated keyNode to do refresh(),
+             * because it's a different object!!! Now you will want to get the actual object after accessing
+             * the Map, you can in this case, but does not worth the effort!!!
+             * Conclusion: Better to put the link on the value side!!!
+             */
             refresh(keyNode);
             return map.get(keyNode);
         }

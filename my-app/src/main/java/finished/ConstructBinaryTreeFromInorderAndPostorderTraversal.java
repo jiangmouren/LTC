@@ -1,4 +1,4 @@
-package com.mycompany.app.sep21;
+package finished;
 
 /**
  * Analysis:
@@ -13,7 +13,7 @@ package com.mycompany.app.sep21;
  */
 
 public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
-    public class TreeNode {
+    public static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
@@ -24,7 +24,7 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
     }
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-
+        return helper(inorder, postorder, postorder.length-1, 0, inorder.length-1);
     }
 
     private TreeNode helper(int[] inorder, int[] postorder, int postEnd, int inStart, int inEnd){
@@ -42,9 +42,9 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
             }
         }
         //because we have postorder, so do right subtree first
-        TreeNode right = helper(inorder, postorder, postEnd-1, rootIdx+1, inEnd);
+        root.right = helper(inorder, postorder, postEnd-1, rootIdx+1, inEnd);
         //inEnd-rootIdx is the number of elements in right subtree
-        TreeNode left = helper(inorder, postorder, postEnd-1-inEnd+rootIdx, inStart, rootIdx-1);
+        root.left = helper(inorder, postorder, postEnd-1-inEnd+rootIdx, inStart, rootIdx-1);
         return root;
     }
 }
