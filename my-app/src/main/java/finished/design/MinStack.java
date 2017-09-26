@@ -1,19 +1,19 @@
 /**
-Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
-
-push(x) -- Push element x onto stack.
-pop() -- Removes the element on top of the stack.
-top() -- Get the top element.
-getMin() -- Retrieve the minimum element in the stack.
-Example:
-MinStack minStack = new MinStack();
-minStack.push(-2);
-minStack.push(0);
-minStack.push(-3);
-minStack.getMin();   --> Returns -3.
-minStack.pop();
-minStack.top();      --> Returns 0.
-minStack.getMin();   --> Returns -2.
+ * Question:
+ * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
+ * push(x) -- Push element x onto stack.
+ * pop() -- Removes the element on top of the stack.
+ * top() -- Get the top element.
+ * getMin() -- Retrieve the minimum element in the stack.
+ * Example:
+ * MinStack minStack = new MinStack();
+ * minStack.push(-2);
+ * minStack.push(0);
+ * minStack.push(-3);
+ * minStack.getMin();   --> Returns -3.
+ * minStack.pop();
+ * minStack.top();      --> Returns 0.
+ * minStack.getMin();   --> Returns -2.
  */
 
 /**
@@ -21,9 +21,16 @@ minStack.getMin();   --> Returns -2.
  * 2 primary types of data structures come into picture: Stack or MinHeap.
  * Or use both.
  * Because we only have getMin(), not popMin() so Stack would be easier to modify.
- *
  * Use a stack and inside the stack store both the value and up to point min value.
- * TODO: improve this.
+ *
+ * Improvements:
+ * Use two stack instead of one.
+ * In this case, do not store min_value for each node, put up to date min_value in a separate stack.
+ * Every time you push a new value into the stack, check if you also need to push a new min_value to the min_stack.
+ * Every time you pop a new value from the stack, check if you need to pop out a value from min_stack.
+ * The special case for this one is when the stack_value == min_value, you either need to push a min_value into
+ * min_stack or you need to pop a min_value out of the min_stack.
+ * Will do this in class "MinStackOptimized".
  */
 
 package finished.design;
@@ -65,5 +72,4 @@ public class MinStack {
         if(stack.empty()) throw new NullPointerException("stack is empty");
         return this.stack.peek().min;
     }
-
 }

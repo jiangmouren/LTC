@@ -106,3 +106,6 @@ S(2) = Max{B(1)+P(2), S(1)} = Max{Max{-P(1), -P(0)}+P(2), -P(0)+P(1)} = Max{P(2)
 B(2) = Max{-P(2), Max{-P(1), -P(0)}} = Max{-P(2), -P(1), -P(0)};
 
 And we need S1, S2, B2 to construct S_next and B_next; and we will shift S1=S2; S2=S_next; B2=B_next;
+
+TODO:
+Add generic DP Notes.
