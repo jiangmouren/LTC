@@ -75,7 +75,10 @@ public class LRUCache {
     public void put(int key, int value) {
         Node node = new Node(key, value);
         //refresh if exit
+        //Attention: more than refresh, we also need to update the contents!!!
         if(this.map.containsKey(key)){
+            Node tmp = map.get(key);
+            tmp.value = value;
             refresh(map.get(key));
         }
         //else put
