@@ -2,224 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="119f6e4c-1d51-4ba0-8d57-605b0911105f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LRUCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/AddTwoNumbers.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/AddTwoNumbersII.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/EditDistance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/EncodeStringWithShortestLength.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/ImplementQueueUsingStacks.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/LongestPalindromicSubsequence.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/LowestCommonAncestorOfABinaryTree.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/MergeIntervals.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/OneEditDistance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/finished/design/MinStackOptimized.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/LRUCacheTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/AddTwoNumbersIITest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/AddTwoNumbersTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/EditDistanceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/EncodeStringWithShortestLengthTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/EvaluateReversePolishNotationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/ImplementQueueUsingStacksTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/LongestPalindromicSubsequenceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/LowestCommonAncestorOfABinaryTreeTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/OneEditDistanceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/finished/design/MinStackOptimizedTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbersII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AndroidUnlockPatterns.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockIV.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeMaximumPathSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePostorderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BombEnemy.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BoundaryOfBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BurstBalloons.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValueII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CombinationSumIV.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ComplexNumberMultiplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructStringFromBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertBSTToGreaterTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountAndSay.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountOfSmallerNumbersAfterSelf.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTinyURL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTwitter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EditDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeAndDecodeTinyURL.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeStringWithShortestLength.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EqualTreePartition.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExpressionAddOperators.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindAllAnagramsInAString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindMedianFromDataStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstBadVersion.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstMissingPositive.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstUniqueCharacterInAString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenNestedListIterator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GeneralizedAbbreviation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupAnagrams.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImageSmoother.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Implement_strStr.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IncreasingTripletSubsequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertDeleteGetRandomO1.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertInterval.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntegerToEnglishWords.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IsomorphicStrings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KDiffPairsInAnArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LFUCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCache.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LetterCombinationsOfAPhoneNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LicenseKeyFormatting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestAbsoluteFilePath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestConsecutiveSequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestIncreasingPathInAMatrix.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubstring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostKDistinctCharacters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostTwoDistinctCharacters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithoutRepeatingCharacters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestValidParentheses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfABinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MajorityElementII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaxPointsOnALine.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximalRectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximalSquare.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumLengthOfPairChain.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumProductSubarray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSizeSubarraySumEqualsK.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumWidthOfBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MedianOfTwoSortedArrays.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeIntervals.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeKSortedLists.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoBinaryTrees.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Minesweeper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumSizeSubarraySum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MissingRanges.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MostFrequentSubtreeSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MoveZeroes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MovingAverageFromDataStream.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MultiStack.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MultiplyStrings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslands.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslandsII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OneEditDistance.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OptimalDivision.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PacificAtlanticWaterFlow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouseII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeLinkedList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PascalTriangleII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PerfectRectangle.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PerfectSquares.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PermutationsII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PopulatingNextRightPointersInEachNodeII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Pow.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ProductOfArrayExceptSelf.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QueueReconstructionByHeight.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RandomPickIndex.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RangeSumQuery2DMutable.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4IICallMultipleTimes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RegularExpressionMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveDuplicateLetters.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveInvalidParentheses.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveNthNodeFromEndOfList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RepeatedDNASequences.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RepeatedSubstringPattern.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseNodesInKGroup.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseWordsInAStringII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateFunction.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ScrambleString.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchInRotatedSortedArray.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SentenceScreenFitting.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBST.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SetMatrixZeroes.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SetMismatch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestDistanceFromAllBuildings.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SimplifyPath.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SlidingWindowMaximum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SolveTheEquation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortCharactersByFrequency.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortColors.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SparseMatrixMultiplication.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Sqrt.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StringToInteger.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SubsetsII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SummaryRanges.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SuperWashingMachines.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SurroundedRegions.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TargetSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TextJustification.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TheSkylineProblem.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThirdMaximumNumber.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumClosest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UTF8Validation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UglyNumberII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTreesII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueWordAbbreviation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidateBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/VerifyPreorderSequenceInBinarySearchTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WallsAndGates.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WildcardMatching.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadderII.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddandSearchWordDataStructureDesign.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/AddandSearchWordDataStructureDesign.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AlienDictionary.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/AlienDictionary.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/BasicCalculator.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BasicCalculatorII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/BestTimeToBuyAndSellStock.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimetoBuyAndSellStockIII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BestTimetoBuyAndSellStockIII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLongestConsecutiveSequence.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BinaryTreeLongestConsecutiveSequence.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeRightSideView.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BinaryTreeRightSideView.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeVerticalOrderTraversal.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/BinaryTreeVerticalOrderTraversal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeZigzagLevelOrderTraversal.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BinaryTreeZigzagLevelOrderTraversal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CloneGraph.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/CloneGraph.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CopyListWithRandomPointer.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/CopyListWithRandomPointer.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseSchedule.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/CourseSchedule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseScheduleII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/CourseScheduleII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeWays.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/DecodeWays.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeAndDecodeStrings.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/EncodeAndDecodeStrings.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EvaluateReversePolishNotation.java" afterPath="$PROJECT_DIR$/src/main/java/finished/EvaluateReversePolishNotation.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FractionToRecurringDecimal.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/FractionToRecurringDecimal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LinkedListLoopDetection.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LinkedListLoopDetection.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PathSumII.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/PathSumII.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseVowelsOfAString.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/ReverseVowelsOfAString.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortList.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/SortList.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/BestTimeToBuyAndSellStockWithCooldown.java" afterPath="$PROJECT_DIR$/src/main/java/finished/dp/BestTimeToBuyAndSellStockWithCooldown.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/BinaryTreePaths.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/BinaryTreePaths.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/BinaryTreeTraversal.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/tree/BinaryTreeTraversal.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/ClosestBinarySearchTreeValue.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/ClosestBinarySearchTreeValue.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/DeleteMiddleNode.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/DeleteMiddleNode.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/FactorCombinations.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/FactorCombinations.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/FactorialTrailingZeroes.java" afterPath="$PROJECT_DIR$/src/main/java/finished/math/FactorialTrailingZeroes.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/finished/MinimumDepthOfBinaryTree.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/MinimumDepthOfBinaryTree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/BestTimeToBuyAndSellStockWithCooldownTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/dp/BestTimeToBuyAndSellStockWithCooldownTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/BinaryTreePathsTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/graph/BinaryTreePathsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/BinaryTreeTraversalTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/graph/tree/BinaryTreeTraversalTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/ClosestBinarySearchTreeValueTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/graph/ClosestBinarySearchTreeValueTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/DeleteMiddleNodeTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/graph/DeleteMiddleNodeTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/FactorCombinationsTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/graph/backtracking/FactorCombinationsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/FactorialTrailingZeroesTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/math/FactorialTrailingZeroesTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/finished/MinimumDepthOfBinaryTreeTest.java" afterPath="$PROJECT_DIR$/src/test/java/finished/graph/MinimumDepthOfBinaryTreeTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/finished/design/MinStack.java" afterPath="$PROJECT_DIR$/src/main/java/finished/design/MinStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/finished/dp/README" afterPath="$PROJECT_DIR$/src/main/java/finished/dp/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/finished/graph/DirectedGraph.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/DirectedGraph.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/finished/graph/README" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/finished/graph/UndirectedGraph.java" afterPath="$PROJECT_DIR$/src/main/java/finished/graph/UndirectedGraph.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/EncodeAndDecodeTinyURL.java" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/EncodeAndDecodeTinyURL.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -236,14 +20,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.15900487">
+    <splitter split-orientation="horizontal" split-proportion="0.49297297">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="LRUCache.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="LRUCache.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LRUCache.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="675">
-                  <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+                <state relative-caret-position="-2251">
+                  <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
                   <folding />
                 </state>
               </provider>
@@ -254,7 +38,10 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="475">
                   <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                  <folding />
+                  <folding>
+                    <element signature="e#857#858#0" expanded="false" />
+                    <element signature="e#888#889#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -269,11 +56,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/finished/dp/README">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="100" column="35" lean-forward="false" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+                <state relative-caret-position="2375">
+                  <caret line="95" column="36" lean-forward="false" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -284,7 +71,11 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="1200">
                   <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-                  <folding />
+                  <folding>
+                    <element signature="e#0#7681#0" expanded="false" />
+                    <element signature="e#874#875#0" expanded="false" />
+                    <element signature="e#910#911#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -294,7 +85,14 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="275">
                   <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-                  <folding />
+                  <folding>
+                    <element signature="e#691#692#0" expanded="false" />
+                    <element signature="e#727#728#0" expanded="false" />
+                    <element signature="e#840#841#0" expanded="false" />
+                    <element signature="e#883#884#0" expanded="false" />
+                    <element signature="e#914#915#0" expanded="false" />
+                    <element signature="e#952#953#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -303,21 +101,41 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-          <file leaf-file-name="LRUCacheTest.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="LRUCacheTest.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/LRUCacheTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+                <state relative-caret-position="475">
+                  <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/README">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                  <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+                <state relative-caret-position="275">
+                  <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="UndirectedGraph.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/finished/graph/UndirectedGraph.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="375">
+                  <caret line="207" column="18" lean-forward="false" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="EncodeAndDecodeTinyURL.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/EncodeAndDecodeTinyURL.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
@@ -328,7 +146,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="200">
                   <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-                  <folding />
+                  <folding>
+                    <element signature="imports" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -356,7 +176,12 @@
       <find>stoci</find>
       <find>stoc</find>
       <find>stock</find>
+      <find>u</find>
+      <find>url</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\eljian\gitHub\Leetcode\my-app</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -369,7 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/OneEditDistanceTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/EvaluateReversePolishNotation.java" />
@@ -420,6 +244,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/LRUCacheTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LRUCache.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/EncodeAndDecodeTinyURL.java" />
       </list>
     </option>
   </component>
@@ -452,6 +277,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -528,9 +356,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1062,6 +887,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29027027" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.4858757" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1075,7 +901,6 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24972972" sideWeight="0.5141243" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1157,13 +982,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/finished/LongestPalindromicSubsequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1550">
-          <caret line="62" column="73" lean-forward="false" selection-start-line="62" selection-start-column="73" selection-end-line="62" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finished/ImplementQueueUsingStacks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
@@ -1408,7 +1226,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1423,13 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finished/graph/UndirectedGraph.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2976">
-          <caret line="15" column="72" lean-forward="false" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
         </state>
       </provider>
     </entry>
@@ -1454,27 +1267,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/LRUCacheTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LRUCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/finished/graph/tree/BinarySearchTreeIterator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="65" lean-forward="false" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding />
+          <folding>
+            <element signature="e#691#692#0" expanded="false" />
+            <element signature="e#727#728#0" expanded="false" />
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+            <element signature="e#914#915#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1482,7 +1286,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1200">
           <caret line="72" column="25" lean-forward="false" selection-start-line="72" selection-start-column="25" selection-end-line="72" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#0#7681#0" expanded="false" />
+            <element signature="e#874#875#0" expanded="false" />
+            <element signature="e#910#911#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1490,6 +1298,41 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <element signature="e#857#858#0" expanded="false" />
+            <element signature="e#888#889#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="14" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finished/graph/UndirectedGraph.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="207" column="18" lean-forward="false" selection-start-line="207" selection-start-column="18" selection-end-line="207" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/EncodeAndDecodeTinyURL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finished/dp/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2375">
+          <caret line="95" column="36" lean-forward="false" selection-start-line="95" selection-start-column="36" selection-end-line="95" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -1502,18 +1345,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finished/dp/README">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LRUCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="100" column="35" lean-forward="false" selection-start-line="100" selection-start-column="35" selection-end-line="100" selection-end-column="35" />
+        <state relative-caret-position="-2251">
+          <caret line="32" column="44" lean-forward="false" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/README">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/LRUCacheTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        <state relative-caret-position="475">
+          <caret line="21" column="33" lean-forward="true" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
           <folding />
         </state>
       </provider>
