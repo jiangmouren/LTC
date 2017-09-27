@@ -1,5 +1,6 @@
-package com.mycompany.app.sep21;
+package finished;
 
+import finished.LRUCache;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -14,11 +15,12 @@ public class LRUCacheTest {
         obj.put(1, 1);
         obj.put(2, 2);
         assertEquals(obj.get(1), 1);
+        //System.out.print(obj.get(1));
         obj.put(3, 3);
         assertEquals(obj.get(2), -1);
         obj.put(4, 4);
         assertEquals(obj.get(1), -1);
         assertEquals(obj.get(3), 3);
-        assertEquals(obj.get(2), 4);
+        assertEquals(obj.get(2), -1);
     }
 }
