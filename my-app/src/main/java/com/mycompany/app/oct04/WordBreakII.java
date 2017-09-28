@@ -13,6 +13,10 @@ UPDATE (2017/1/4):
 The wordDict parameter had been changed to a list of strings (instead of a set of strings). Please reload the code definition to get the latest changes.
  */
 
+/**
+ * Analysis: think about DP
+ */
+
 //class Solution {
 //    public List<String> wordBreak(String s, List<String> wordDict) {
 //
