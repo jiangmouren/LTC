@@ -24,6 +24,11 @@ import java.util.*;
  * What you do is do shortest path for both v1-->v2 and v2-->v1 and then combine them.
  *
  * Attention when doing DFS or BFS, unless told graph is a DAG, otherwise has to be careful for cycles.
+ *
+ * TODO:
+ * shortestPath()
+ * LongestDistance/Path() both BFS && DFS
+ * topologicalSort()
  */
 public class DirectedGraph {
     List<Node> graph;

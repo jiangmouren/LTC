@@ -19,6 +19,10 @@ import java.util.function.Function;
  * BFS(Node node),
  * BFS(Node node),//BFS this whole graph
  * shortestDistance(Node node1, Node node2)
+ *
+ * TODO:
+ * shortestPath()
+ * LongestDistance/Path() both BFS && DFS
  */
 public class UndirectedGraph {
     private List<Node> graph;
@@ -39,12 +43,9 @@ public class UndirectedGraph {
         while(!queue.isEmpty()){
             BNode node = queue.remove();
             for(Node nbor : node.node.neighbors){
-                nbor.neighbors.remove(node);
-                queue.add(new BNode(nbor, node.node));
-            }
-            //Keep a parent pointer is how we restore the neighbors
-            if(node.parentNode!=null){
-                node.node.neighbors.add(node.parentNode);
+                if(nbor!=node.parentNode.node){
+                    queue.add(new BNode(nbor, node));
+                }
             }
             return func.apply(node.node);
         }
@@ -166,17 +167,16 @@ public class UndirectedGraph {
             BNode current = queue.remove();
             int currDistance = current.distance1;
             List<Node> nbors = current.node.neighbors;
-            if(current.parentNode!=null){
-                current.node.neighbors.add(current.parentNode);
-            }
             //check if match and return distance in case of yes
             if(current.node.equals(node2)){//I am assuming we are looking for a reference match, looking for exact one.
                 return new ShortestDistance(currDistance);
             }
             for(Node tmp : nbors){
-                BNode nxt = new BNode(tmp, current.node);
-                nxt.distance1 = currDistance+1;
-                queue.add(nxt);
+                if(tmp!=current.parentNode.node){
+                    BNode nxt = new BNode(tmp, current);
+                    nxt.distance1 = currDistance+1;
+                    queue.add(nxt);
+                }
             }
         }
         return new ShortestDistance(-1);//return -1 if can not find node2 from node1
@@ -222,15 +222,15 @@ public class UndirectedGraph {
             }
 
             for(Node tmp : nbors1){
-                if(!(tmp==current1.parentNode)){
-                    BNode nxt = new BNode(tmp, current1.node);
+                if(!(tmp==current1.parentNode.node)){
+                    BNode nxt = new BNode(tmp, current1);
                     nxt.distance1 = currDistance1+1;
                     queue1.add(nxt);
                 }
             }
             for(Node tmp : nbors2){
-                if(!(tmp==current2.parentNode)){
-                    BNode nxt = new BNode(tmp, current2.node);
+                if(!(tmp==current2.parentNode.node)){
+                    BNode nxt = new BNode(tmp, current2);
                     nxt.distance2 = currDistance2+1;
                     queue2.add(nxt);
                 }
@@ -254,15 +254,16 @@ public class UndirectedGraph {
      * These are internal data type, should be private
      * BNode used in BFS Traversals.
      * We need to store the parent node, so we can avoid going back to its parent node
+     * We will also need parentNode as parent pointer for us to construct the shortest path.
      */
     private class BNode{
         Node node;
-        Node parentNode;
+        BNode parentNode;//ParentNode use Wrapper Node not the original node in order to create chain.
         int distance1;
         int distance2;
         boolean visited1;
         boolean visited2;
-        BNode(Node node, Node parentNode){
+        BNode(Node node, BNode parentNode){
             this.node = node;
             this.parentNode = parentNode;
         }
