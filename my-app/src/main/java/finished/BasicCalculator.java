@@ -1,4 +1,5 @@
 package finished;
+import com.mycompany.app.sep21.BasicCalculatorGeneric;
 
 /**
  * Question:
@@ -15,17 +16,16 @@ package finished;
 
 /**
  * Analysis:
- * The normal way to solve this kind of Calculator problem is to use "recursion".
- * Because the problem solving process is essentially a "recursive process".
- * You recursively evaluate expression values, and with all the sub-expression values, original one is solved.
+ * Refer to BasicCalculatorGeneric for the generic type and solution of calculator problem.
+ * For this specific problem, it is a near normalized version: we don't need to worry about the parenthesis,
+ * but we still need to remove the spaces.
  *
- * But for this specific problem, we can do it easier because we only have "+" and "-".
- * The order does not really matters, we can just sum from left to right.
- * Just be careful with the ptr manipulation.
- * TODO:
+ * One common mistake for this problem is that think the "()" does not really matter in this problem because we do not
+ * have '*' / '/'. But actually it matters because 5-(3-2) is different from 5-3-2 !!!
  */
 class BasicCalculator {
-    //public int calculate(String s) {
-    //}
-
+    BasicCalculatorGeneric obj = new BasicCalculatorGeneric();
+    public int calculate(String s) {
+        return obj.calculate(s);
+    }
 }
