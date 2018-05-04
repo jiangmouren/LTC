@@ -46,9 +46,10 @@ public class UndirectedGraph {
      ***************************************************************************************************************/
 
     /**
-     * A recursive DFS search
      * @param root
-     * @return return true if found, otherwise false;
+     * @param target
+     * @param visitedSet
+     * @return
      */
     public boolean dFSSearchR(Node root, Node target, Set<Node> visitedSet){
         //base case
@@ -63,11 +64,41 @@ public class UndirectedGraph {
         visitedSet.add(root);
         for(Node nbor : root.neighbors){
             if(!visitedSet.contains(nbor)){
+                //Bad practice in real production, multiple threads accessing the same node will have problem.
                 nbor.neighbors.remove(root);
                 if(dFSSearchR(nbor, target, visitedSet)){
                     return true;
                 }
                 nbor.neighbors.add(root);
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Preferred!!!
+     * @param root
+     * @param target
+     * @param parent
+     * @param visitedSet
+     * @return
+     */
+    public boolean dFSSearchR(Node root, Node target, Node parent, Set<Node> visitedSet){
+        //base case
+        if(root==null){
+            return false;
+        }
+
+        //Recursive case
+        if(root==target){
+            return true;
+        }
+        visitedSet.add(root);
+        for(Node nbor : root.neighbors){
+            if(!visitedSet.contains(nbor) && nbor!=parent){
+                if(dFSSearchR(nbor, target, root, visitedSet)){
+                    return true;
+                }
             }
         }
         return false;
@@ -88,12 +119,12 @@ public class UndirectedGraph {
 
         //Initialize the stack
         Stack<DNode> stack = new Stack<>();
-        DNode rootD = new DNode(root);
+        DNode rootD = new DNode(root, null);
         stack.add(rootD);
         DNode ptr = rootD;
         while(!ptr.nborEmpty()){
             Node tmp = ptr.visitNbor();
-            DNode tmpD = new DNode(tmp);
+            DNode tmpD = new DNode(tmp, ptr.node);
             stack.add(tmpD);
             ptr = tmpD;
         }
@@ -107,12 +138,11 @@ public class UndirectedGraph {
                 }
                 visitedSet.add(tmp.node);
                 stack.pop();
-                tmp.restore();
             }
             else{
                 Node nxt = tmp.visitNbor();
-                if(nxt!=tmp.node && !visitedSet.contains(nxt)){
-                    stack.add(new DNode(nxt));
+                if(nxt!=tmp.parentNOde && !visitedSet.contains(nxt)){
+                    stack.add(new DNode(nxt, tmp.node));
                 }
             }
         }
@@ -125,24 +155,22 @@ public class UndirectedGraph {
      */
     private class DNode{
         Node node;
-        List<Node> visitedList;
-        public DNode(Node node){
+        Node parentNOde;
+        int ptr = 0;
+        public DNode(Node node, Node parent){
             this.node = node;
+            this.parentNOde = parent;
         }
 
         public Node visitNbor(){
             List<Node> nbors = this.node.neighbors;
-            Node nxt = nbors.remove(nbors.size()-1);
-            this.visitedList.add(nxt);
+            Node nxt = nbors.get(ptr);
+            ptr++;
             return nxt;
         }
 
         public boolean nborEmpty(){
-            return this.node.neighbors.isEmpty();
-        }
-
-        public void restore(){
-            this.node.neighbors.addAll(visitedList);
+            return ptr>=this.node.neighbors.size();
         }
     }
 
@@ -150,7 +178,7 @@ public class UndirectedGraph {
         Set<Node> visitedSet = new HashSet<>();
         for(Node node : graph){
             if(!visitedSet.contains(node)){
-                if(dFSSearchR(node, target, visitedSet)){
+                if(dFSSearchR(node, target, null, visitedSet)){
                     return true;
                 }
             }
