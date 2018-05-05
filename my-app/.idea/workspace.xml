@@ -2,247 +2,148 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="628b4965-2ccb-4133-89a2-dfd527b617e3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct01/IntegerToEnglishWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntegerToEnglishWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct01/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct01/PalindromeLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct01/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct01/SubsetsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SubsetsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/FirstUniqueCharacterInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstUniqueCharacterInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/GeneralizedAbbreviation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GeneralizedAbbreviation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/LongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestConsecutiveSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/LongestSubstringWithAtMostTwoDistinctCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostTwoDistinctCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/MaxPointsOnALine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaxPointsOnALine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeKSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct02/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/LongestSubstringWithAtMostKDistinctCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithAtMostKDistinctCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/MergeSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/MissingRanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MissingRanges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/PascalTriangleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PascalTriangleII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/RemoveDuplicateLetters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveDuplicateLetters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/RemoveInvalidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveInvalidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/SearchInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchInRotatedSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/SurroundedRegions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SurroundedRegions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/UglyNumberII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UglyNumberII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct03/VerifyPreorderSequenceInBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/VerifyPreorderSequenceInBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/CombinationSumIV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CombinationSumIV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/ConvertBSTToGreaterTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertBSTToGreaterTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/DesignTinyURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTinyURL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/PaintHouseII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouseII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/SetMismatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SetMismatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/StringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StringToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/UTF8Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UTF8Validation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/UniqueBinarySearchTreesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTreesII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/WallsAndGates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WallsAndGates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct04/WordBreakII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeMaximumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/IsomorphicStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IsomorphicStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/LongestIncreasingPathInAMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestIncreasingPathInAMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/MaximumLengthOfPairChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumLengthOfPairChain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/MaximumSizeSubarraySumEqualsK.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSizeSubarraySumEqualsK.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/MovingAverageFromDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MovingAverageFromDataStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/RepeatedSubstringPattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RepeatedSubstringPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/ThirdMaximumNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThirdMaximumNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct05/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/BestTimeToBuyAndSellStockIV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockIV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/LetterCombinationsOfAPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/LongestValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/MedianOfTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MedianOfTwoSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/MoveZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MoveZeroes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/RotateList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/SetMatrixZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SetMatrixZeroes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/SparseMatrixMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SparseMatrixMultiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct06/ThreeSumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumClosest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/BinaryTreePostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePostorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/BombEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BombEnemy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/CountAndSay.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountAndSay.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/CountOfSmallerNumbersAfterSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountOfSmallerNumbersAfterSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/ExpressionAddOperators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExpressionAddOperators.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/IncreasingTripletSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IncreasingTripletSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/MinimumSizeSubarraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumSizeSubarraySum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/MultiplyStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MultiplyStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/NumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/ProductOfArrayExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ProductOfArrayExceptSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/QueueReconstructionByHeight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QueueReconstructionByHeight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/RepeatedDNASequences.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RepeatedDNASequences.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/ReverseWordsInAStringII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseWordsInAStringII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/SimplifyPath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SimplifyPath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/oct07/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/AddandSearchWordDataStructureDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddandSearchWordDataStructureDesign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/BasicCalculatorGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/BestTimeToBuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/BinaryTreeVerticalOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeVerticalOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/CloneGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CloneGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/CourseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseScheduleII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/FractionToRecurringDecimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FractionToRecurringDecimal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/LinkedListLoopDetection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LinkedListLoopDetection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/PathSumII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PathSumII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep21/ReverseVowelsOfAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseVowelsOfAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AlienDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BestTimetoBuyAndSellStockIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimetoBuyAndSellStockIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BinaryTreeLongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLongestConsecutiveSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BinaryTreeRightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeRightSideView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/BinaryTreeZigzagLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeZigzagLevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/CopyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CopyListWithRandomPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/DecodeWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/EncodeAndDecodeStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeAndDecodeStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep22/SortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep23/Implement_strStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Implement_strStr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep23/MajorityElementII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MajorityElementII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep23/Pow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Pow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep23/RegularExpressionMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RegularExpressionMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep23/Sqrt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Sqrt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep23/SummaryRanges.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SummaryRanges.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/ComplexNumberMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ComplexNumberMultiplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/DesignTwitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignTwitter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/FirstMissingPositive.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstMissingPositive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/FlattenNestedListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenNestedListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/InsertInterval.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertInterval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/LongestAbsoluteFilePath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestAbsoluteFilePath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/MaximalRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximalRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/MaximalSquare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximalSquare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/MaximumProductSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumProductSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/OptimalDivision.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OptimalDivision.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/PacificAtlanticWaterFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PacificAtlanticWaterFlow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/PerfectRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PerfectRectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep24/ScrambleString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ScrambleString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/MaximumWidthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumWidthOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/Minesweeper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Minesweeper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/PerfectSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PerfectSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/PermutationsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PermutationsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/SortColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortColors.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep25/ValidateBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidateBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/ConstructBinaryTreeFromString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/EqualTreePartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EqualTreePartition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/FindAllAnagramsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindAllAnagramsInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/FindMedianFromDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindMedianFromDataStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/KDiffPairsInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KDiffPairsInAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/MostFrequentSubtreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MostFrequentSubtreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/RandomPickIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RandomPickIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/SentenceScreenFitting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SentenceScreenFitting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SlidingWindowMaximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep26/WordLadderII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadderII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/BurstBalloons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BurstBalloons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/ConstructStringFromBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructStringFromBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/EncodeAndDecodeTinyURL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeAndDecodeTinyURL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstBadVersion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/HIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/ImageSmoother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImageSmoother.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/RangeSumQuery2DMutable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RangeSumQuery2DMutable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/ReverseNodesInKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseNodesInKGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/ShortestDistanceFromAllBuildings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestDistanceFromAllBuildings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep27/UniqueWordAbbreviation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueWordAbbreviation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/AndroidUnlockPatterns.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AndroidUnlockPatterns.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/LowestCommonAncestorOfBinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfBinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/MergeTwoBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoBinaryTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/PopulatingNextRightPointersInEachNodeII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PopulatingNextRightPointersInEachNodeII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/RotateFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/SerializeAndDeserializeBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/SortCharactersByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortCharactersByFrequency.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/SuperWashingMachines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SuperWashingMachines.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/TargetSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TargetSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep28/TextJustification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TextJustification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/BoundaryOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BoundaryOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/ClosestBinarySearchTreeValueII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValueII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/InsertDeleteGetRandomO1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertDeleteGetRandomO1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/LFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LFUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/NumberOfIslandsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslandsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/ReadNCharactersGivenRead4IICallMultipleTimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4IICallMultipleTimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/SolveTheEquation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SolveTheEquation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/TheSkylineProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TheSkylineProblem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/WildcardMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WildcardMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep29/WordSquares.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep30/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep30/LicenseKeyFormatting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LicenseKeyFormatting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep30/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep30/RemoveNthNodeFromEndOfList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveNthNodeFromEndOfList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/sep30/SerializeAndDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/AddTwoNumbersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/BasicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EditDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/EncodeStringWithShortestLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeStringWithShortestLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/EvaluateReversePolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EvaluateReversePolishNotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/FindTheCelebrity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/GroupShiftedStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupShiftedStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/ImplementQueueUsingStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImplementQueueUsingStacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/InorderSuccessorInBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/IntersectionOfTwoLinkedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntersectionOfTwoLinkedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/KthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthLargestElementInAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/KthSmallestElementInBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthSmallestElementInBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/LRUCacheWrong.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCacheWrong.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/LongestPalindromicSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/LowestCommonAncestorOfABinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfABinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/NumberOfConnectedComponentsInAnUndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/OneEditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OneEditDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/ReversePolishDeconstruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReversePolishDeconstruct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/SearchA2DMatrixII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchA2DMatrixII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/ShortestWordDistanceII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/ShortestWordDistanceIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceIII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/StrobogrammaticNumberII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumberII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/TwoSumIIIDataStructureDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumIIIDataStructureDesign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/UniqueBinarySearchTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/WiggleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/finished/ZigZagIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/BasicCalculatorGenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorGenericTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/BestTimeToBuyAndSellStockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/BinaryTreeVerticalOrderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeVerticalOrderTraversalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep21/CloneGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CloneGraphTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/sep22/BasicCalculatorIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/AddTwoNumbersIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/AddTwoNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/BasicCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/ConstructBinaryTreeFromInorderAndPostorderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/EditDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EditDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/EncodeStringWithShortestLengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EncodeStringWithShortestLengthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/EvaluateReversePolishNotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EvaluateReversePolishNotationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/FindTheCelebrityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/FlattenBinaryTreeToLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlattenBinaryTreeToLinkedListTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/GameOfLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GameOfLifeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/GroupShiftedStringsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GroupShiftedStringsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/HouseRobberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HouseRobberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/ImplementQueueUsingStacksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ImplementQueueUsingStacksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/InorderSuccessorInBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InorderSuccessorInBSTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/IntersectionOfTwoLinkedListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/IntersectionOfTwoLinkedListsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/KthLargestElementInAnArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthLargestElementInAnArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/KthSmallestElementInBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthSmallestElementInBSTTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/LRUCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LRUCacheTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/LongestPalindromicSubsequenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LongestPalindromicSubsequenceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/LowestCommonAncestorOfABinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LowestCommonAncestorOfABinaryTreeTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/MergeIntervalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeIntervalsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/NumberOfConnectedComponentsInAnUndirectedGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraphTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/OneEditDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/OneEditDistanceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/PathSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PathSumTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/SearchA2DMatrixIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SearchA2DMatrixIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/ShortestWordDistanceIIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/ShortestWordDistanceIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/StrobogrammaticNumberIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/SubsetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SubsetsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/TrieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TrieTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/TwoSumIIIDataStructureDesignTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumIIIDataStructureDesignTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/UniqueBinarySearchTreesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/UniqueBinarySearchTreesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/WiggleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WiggleSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/finished/ZigZagIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ZigZagIteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/AddBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MajorityElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/MeetingRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/MeetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRoomsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/PalindromePermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromePermutation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PlusOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/ReverseWordsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseWordsInAString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/RotateArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/ShortestWordDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/StrobogrammaticNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/ThreeSumSmaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumSmaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/TwoSumInputArraySorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumInputArraySorted.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidAnagram.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidPalindrome.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BubbleSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountingSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoSortedLists.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RadixSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/array_and_string/sort/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SelectionSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/bit_manipulation/GrayCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GrayCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/bit_manipulation/SingleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SingleNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/design/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/design/MinStackOptimized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStackOptimized.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/design/ReadNCharactersGivenRead4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/design/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/BestTimeSellStockII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeSellStockII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/BestTimeToBuyAndSellStockWithCooldown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClimbingStairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/PaintFence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintFence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/PaintHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/dp/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/BinaryTreePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/ClosestBinarySearchTreeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/DeleteMiddleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DeleteMiddleNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/GraphValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GraphValidTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/MinimumDepthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumDepthOfBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UndirectedGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/FactorCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/FlipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlipGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/FlipGameII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlipGameII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/GenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GenerateParentheses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Permutations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/backtracking/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/linkedlist/LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LinkedListCycle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/linkedlist/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/BalancedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BalancedBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/BinarySearchTreeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinarySearchTreeIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/BinaryTreeInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeInorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/BinaryTreeLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLevelOrderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/BinaryTreeTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/ConvertSortedArrayToBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertSortedArrayToBST.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/InvertBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InvertBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/MaximumDepthofBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumDepthofBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/graph/tree/SameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SameTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/AddDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/CountPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountPrimes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/ExcelSheetColumnNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/ExcelSheetColumnTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/FactorialTrailingZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorialTrailingZeroes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/HappyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HappyNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/PowerOfTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PowerOfTwo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/math/RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RomanToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/multi_threading/RunnableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RunnableDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/multi_threading/ThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/finished/multi_threading/ThreadPoolDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadPoolDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/AddBinaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddBinaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/MajorityElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MajorityElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/MeetingRoomsIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/MeetingRoomsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/PalindromeNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromeNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/PalindromePermutationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromePermutationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/PlusOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlusOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/ReverseWordsInAStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseWordsInAStringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/RotateArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/RotateImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/ShortestWordDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/StrobogrammaticNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/ThreeSumSmallerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ThreeSumSmallerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/TwoSumInputArraySortedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumInputArraySortedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/TwoSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/ValidAnagramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidAnagramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/ValidPalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidPalindromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BubbleSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/CountingSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CountingSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InsertionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/MergeTwoSortedListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeTwoSortedListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/QuickSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/RadixSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RadixSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/array_and_string/sort/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SelectionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/bit_manipulation/GrayCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GrayCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/bit_manipulation/SingleNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SingleNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/design/MinStackOptimizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackOptimizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/design/MinStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/design/ReadNCharactersGivenRead4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReadNCharactersGivenRead4Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/design/ValidParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/dp/BestTimeSellStockIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeSellStockIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/dp/BestTimeToBuyAndSellStockWithCooldownTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldownTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/dp/ClimbingStairsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClimbingStairsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/dp/MaximumSubarrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumSubarrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/dp/PaintFenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintFenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/dp/PaintHouseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintHouseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/BinaryTreePathsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreePathsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/ClosestBinarySearchTreeValueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/DeleteMiddleNodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/DeleteMiddleNodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/GraphValidTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GraphValidTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/MinimumDepthOfBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinimumDepthOfBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/WordLadderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/backtracking/FactorCombinationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorCombinationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/backtracking/FlipGameIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlipGameIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/backtracking/FlipGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlipGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/backtracking/GenerateParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/backtracking/PermutationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PermutationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/linkedlist/LinkedListCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LinkedListCycleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/linkedlist/ReverseLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/BalancedBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BalancedBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/BinarySearchTreeIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinarySearchTreeIteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/BinaryTreeInorderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeInorderTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/BinaryTreeLevelOrderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeLevelOrderTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/BinaryTreeTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/ConvertSortedArrayToBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ConvertSortedArrayToBSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/InvertBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InvertBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/MaximumDepthofBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumDepthofBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/graph/tree/SameTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SameTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/AddDigitsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddDigitsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/CountPrimesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CountPrimesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/ExcelSheetColumnNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/ExcelSheetColumnTitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnTitleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/FactorialTrailingZeroesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorialTrailingZeroesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/HappyNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HappyNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/PowerOfTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PowerOfTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/finished/math/RomanToIntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RomanToIntegerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -254,88 +155,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="WordSplit.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="WordSplit.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameOfLifeTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/GameOfLifeTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="9" selection-start-line="33" selection-start-column="9" selection-end-line="33" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BestTimeToBuyAndSellStockTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongestPalindromicSubsequence.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="57" selection-start-line="28" selection-start-column="57" selection-end-line="28" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IntegerToEnglishWords.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/IntegerToEnglishWords.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#386#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LongestPalindromicSubstring.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubstring.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AddTwoNumbers.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="391">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -382,6 +206,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -389,13 +216,41 @@
               <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-app" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -736,36 +591,36 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-1208" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" weight="0.32987747" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32987747" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32291666" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.40520832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info id="Nl-Palette" order="2" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Nl-Palette" order="2" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -776,6 +631,93 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/finished/GameOfLifeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finished/LongestPalindromicSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="50" selection-start-line="3" selection-start-column="50" selection-end-line="3" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finished/GameOfLifeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="9" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finished/GameOfLifeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="31" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/finished/GameOfLifeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finished/AddTwoNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/sep30/DecodeString.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeSellStockII.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/finished/LongestPalindromicSubsequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="42" column="58" lean-forward="true" selection-start-line="42" selection-start-column="58" selection-end-line="42" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -965,14 +907,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finished/graph/tree/BinaryTreeTraversal.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/finished/dp/BestTimeSellStockII.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeSellStockII.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="524">
           <caret line="53" column="13" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="13" />
@@ -981,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        <state relative-caret-position="391">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1008,9 +950,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/oct01/README.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubstring.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1044,9 +983,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
