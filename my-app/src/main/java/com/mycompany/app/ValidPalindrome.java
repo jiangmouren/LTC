@@ -11,30 +11,6 @@ package com.mycompany.app;
  */
 
 
-/**
- * Analysis:
- * The only catch is all the edge cases, Character.isAlphabetic and out of bound cases
- */
 
 public class ValidPalindrome {
-    public boolean validPalindrome(String str){
-        if(str==null) throw new IllegalArgumentException("Input cannot be null");
-        if(str.length()==0) return true;
-        int ptr1 = 0, ptr2 = str.length()-1;
-        while(ptr1<=ptr2){
-            //whenever using pointers, especially in nested loops, pay special attention to bound conditions.
-            while(ptr1<=ptr2 && !Character.isAlphabetic(str.charAt(ptr1))){
-                ptr1++;
-            }
-            while(ptr1<=ptr2 && !Character.isAlphabetic(str.charAt(ptr2))){
-                ptr2--;
-            }
-            if(ptr1<=ptr2 && Character.toLowerCase(str.charAt(ptr1))!=Character.toLowerCase(str.charAt(ptr2))) return false;
-            else{
-                ptr1++;
-                ptr2--;
-            }
-        }
-        return true;
-    }
 }

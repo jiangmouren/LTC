@@ -10,45 +10,7 @@ package com.mycompany.app;
  * The read function will only be called once for each test case.
  */
 
-/**
- * The only problem with this question is to understand the API.
- */
 
 public class ReadNCharactersGivenRead4 {
-    /**
-     * So in my API, read4 will overwrite buf contents
-     */
-    public static class File{
-        static StringBuilder buf;
-        static int ptr;
-        File(String str){
-            ptr = 0;
-            buf = new StringBuilder();
-            buf.append(str);
-        }
-        public static int read4(char[] buffer){
-            int cnt = 0;
-            while(ptr<buf.length() && cnt<4){
-                buffer[cnt] = buf.charAt(ptr);
-                ptr++;
-                cnt++;
-            }
-            return cnt;
-        }
-    }
-
-    public int read(char[] buf, int n){
-        int readLength = 0;
-        boolean eof = false;
-        while(!eof && readLength<n){
-            char[] tmp = new char[4];
-            int sz = File.read4(tmp);
-            if(sz<4) eof=true;
-            int inc = Math.min(sz, n-readLength);
-            System.arraycopy(tmp, 0, buf, readLength, inc);
-            readLength += inc;
-        }
-        return readLength;
-    }
 
 }

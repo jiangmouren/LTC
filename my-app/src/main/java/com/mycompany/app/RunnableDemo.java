@@ -1,8 +1,5 @@
 package com.mycompany.app;
 
-/**
- * Created by eljian on 10/18/2017.
- */
 class RunnableDemo implements Runnable {
     private String threadName;
 

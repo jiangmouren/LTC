@@ -1,4 +1,5 @@
-package com.mycompany.app; /**
+package com.mycompany.app;
+/**
  * Given an integer n, generate all structurally unique BST's (binary search trees) that store values 1...n.
 
 For example,

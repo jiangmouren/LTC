@@ -2,9 +2,6 @@ package com.mycompany.app;
 
 import java.util.concurrent.*;
 
-/**
- * Created by eljian on 10/18/2017.
- */
 public class ThreadPoolDemo {
     public static void main(String[] args){
         ExecutorService executor = Executors.newFixedThreadPool(5);

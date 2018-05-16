@@ -16,60 +16,9 @@
  * minStack.getMin();   --> Returns -2.
  */
 
-/**
- * Analysis:
- * 2 primary types of data structures come into picture: Stack or MinHeap.
- * Or use both.
- * Because we only have getMin(), not popMin() so Stack would be easier to modify.
- * Use a stack and inside the stack store both the value and up to point min value.
- *
- * Improvements:
- * Use two stack instead of one.
- * In this case, do not store min_value for each node, put up to date min_value in a separate stack.
- * Every time you push a new value into the stack, check if you also need to push a new min_value to the min_stack.
- * Every time you pop a new value from the stack, check if you need to pop out a value from min_stack.
- * The special case for this one is when the stack_value == min_value, you either need to push a min_value into
- * min_stack or you need to pop a min_value out of the min_stack.
- * Will do this in class "MinStackOptimized".
- */
 
 package com.mycompany.app;
 import java.util.*;
 
 public class MinStack {
-    private class Node {
-        int val;
-        int min;
-        Node(int val, int min){
-            this.val = val;
-            this.min = min;
-        }
-    }
-    Stack<Node> stack = new Stack<>();
-    public void push(int x){
-        int tmp;
-        if(this.stack.empty())
-            tmp = x;
-        else{
-            Node top = this.stack.peek();
-            tmp = Math.min(top.min, x);
-        }
-        Node newNode = new Node(x, tmp);
-        this.stack.push(newNode);
-    }
-
-    public int pop(){
-        if(stack.empty()) throw new NullPointerException("stack is empty");
-        return this.stack.pop().val;
-    }
-
-    public int top(){
-        if(stack.empty()) throw new NullPointerException("stack is empty");
-        return stack.peek().val;
-    }
-
-    public int getMin(){
-        if(stack.empty()) throw new NullPointerException("stack is empty");
-        return this.stack.peek().min;
-    }
 }

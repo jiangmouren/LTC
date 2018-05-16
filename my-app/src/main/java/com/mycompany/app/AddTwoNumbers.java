@@ -8,37 +8,4 @@ package com.mycompany.app;
  * Output: 7 -> 0 -> 8
  */
 public class AddTwoNumbers {
-    public static class ListNode{
-        int val;
-        ListNode next;
-        ListNode(int x){
-            this.val = x;
-        }
-    }
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        ListNode ptr1 = l1;
-        ListNode ptr2 = l2;
-        ListNode dummyHead = new ListNode(0);
-        ListNode ptr = dummyHead;
-        int c = 0;
-        while(ptr1!=null || ptr2!=null){
-            int tmp = c;
-            if(ptr1!=null){
-                tmp += ptr1.val;
-                ptr1 = ptr1.next;
-            }
-            if(ptr2!=null){
-                tmp += ptr2.val;
-                ptr2 = ptr2.next;
-            }
-            if(tmp>9){//maximum 18 for LSB and 19 for others
-                tmp -= 10;
-                c = 1;
-            }
-            ListNode node = new ListNode(tmp);
-            ptr.next = node;
-            ptr = ptr.next;
-        }
-        return dummyHead.next;
-    }
 }

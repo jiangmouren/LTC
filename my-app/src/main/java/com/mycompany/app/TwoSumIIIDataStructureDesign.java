@@ -19,19 +19,4 @@ import java.util.*;
  * If use sorted array, both add and find will be O(n).
  */
 public class TwoSumIIIDataStructureDesign {
-    private Set<Integer> set;
-    public TwoSumIIIDataStructureDesign(){
-        this.set = new HashSet<>();
-    }
-
-    public void add(int val){
-        this.set.add(val);
-    }
-
-    public boolean find(int x){
-        for(int tmp : this.set){
-            if(set.contains(x-tmp)) return true;
-        }
-        return false;
-    }
 }

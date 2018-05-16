@@ -7,15 +7,5 @@ package com.mycompany.app;
  */
 
 public class PalindromeNumber{
-    public boolean isPalindrome(int n){
-        String str = String.valueOf(n);
-        int ptr1=0, ptr2=str.length()-1;
-        while(ptr1<=ptr2){
-            if(str.charAt(ptr1)!=str.charAt(ptr2)) return false;
-            ptr1++;
-            ptr2--;
-        }
-        return true;
-    }
 
 }

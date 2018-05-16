@@ -16,28 +16,7 @@ package com.mycompany.app;
  * Output: index1=1, index2=2
  */
 
-/**
- * Analysis:
- * The key points:
- * 1. because it is sorted, you can to something like a binary search.
- * 2. once you moved away from a point, you can prove you will never needed it.
- */
 
 public class TwoSumInputArraySorted {
-    public int[] twoSum(int[] numbers, int target) {
-        int i=0, j=numbers.length-1;
-        int[] result = new int[2];
-        while(i<j){
-            if(numbers[i]+numbers[j]==target){
-                result[0] = i+1;
-                result[1] = j+1;
-                return result;
-            }
-            if(numbers[i]+numbers[j]<target) i++;
-            if(numbers[i]+numbers[j]>target) j--;
-        }
-        //if returned from here, no result.
-        return result;
-    }
 
 }

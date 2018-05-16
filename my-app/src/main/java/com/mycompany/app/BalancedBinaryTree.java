@@ -25,35 +25,5 @@ package com.mycompany.app;
  */
 public class BalancedBinaryTree {
 
-    public static class TreeNode {
-        int val;
-        TreeNode left, right;
-        TreeNode(int x){this.val = x;}
-    }
-
-    private class NodeStats {
-        boolean balanced;
-        int depth;
-        NodeStats(boolean balanced, int depth){
-            this.balanced = balanced;
-            this.depth = depth;
-        }
-    }
-
-    boolean balanced(TreeNode root){
-        return helper(root).balanced;
-    }
-
-    private NodeStats helper(TreeNode root){
-        //Termination Cases
-        if(root==null){
-            return new NodeStats(true, 0);
-        }
-        //Recursive cases
-        boolean balanced = helper(root.left).balanced && helper(root.right).balanced
-                && Math.abs(helper(root.left).depth - helper(root.right).depth)<2;
-        int depth = Math.max(helper(root.left).depth, helper(root.right).depth)+1;
-        return new NodeStats(balanced, depth);
-    }
 }
 

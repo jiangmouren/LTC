@@ -22,37 +22,4 @@ import java.util.*;
  * minStack.getMin();   --> Returns -2.
  */
 public class MinStackOptimized {
-    private Stack<Integer> valueStack;
-    private Stack<Integer> minStack;
-
-    public MinStackOptimized(){
-        valueStack = new Stack<>();
-        minStack = new Stack<>();
-    }
-
-    public void push(int x){
-        this.valueStack.push(x);
-        if(minStack.isEmpty() || x<=minStack.peek()){
-            minStack.push(x);
-        }
-    }
-
-    //retrieve top value
-    public int pop(){
-        int result = valueStack.pop();
-        if(result<=minStack.peek()){
-            minStack.pop();
-        }
-        return result;
-    }
-
-    //return top_value
-    public int top(){
-        return valueStack.peek();
-    }
-
-    //return min_value
-    public int getMin(){
-        return minStack.peek();
-    }
 }

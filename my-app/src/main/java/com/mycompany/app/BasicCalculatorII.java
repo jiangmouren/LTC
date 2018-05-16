@@ -15,8 +15,4 @@ import com.mycompany.app.BasicCalculatorGeneric;
  */
 
 public class BasicCalculatorII {
-    BasicCalculatorGeneric obj = new BasicCalculatorGeneric();
-    public int calculate(String s) {
-        return obj.calculate(s);
-    }
 }

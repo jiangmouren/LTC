@@ -21,65 +21,6 @@ package com.mycompany.app;
 
 import java.util.*;
 
-/**
- * Analysis:
- * Essentially this is a traversal issue.
- * The key to this problem is you need to traverse both graph simultaneously.
- * Either BFS/DFS will work.
- */
 public class CloneGraph {
-    //dFS
-    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        UndirectedGraphNode newRoot = new UndirectedGraphNode(node.label);
-        dFS(node, newRoot);
-        return newRoot;
-    }
-
-    //bFS
-    public UndirectedGraphNode cloneGraph2(UndirectedGraphNode node) {
-        UndirectedGraphNode newRoot = new UndirectedGraphNode(node.label);
-        bFS(node, newRoot);
-        return newRoot;
-    }
-
-    private void bFS(UndirectedGraphNode oldRoot, UndirectedGraphNode newRoot){
-        Queue<UndirectedGraphNode> queue1 = new LinkedList<>();
-        Queue<UndirectedGraphNode> queue2 = new LinkedList<>();
-        queue1.add(oldRoot);
-        queue2.add(newRoot);
-        while(!queue1.isEmpty()){
-            UndirectedGraphNode tmp1 = queue1.remove();
-            UndirectedGraphNode tmp2 = queue2.remove();
-            for(UndirectedGraphNode tmp : tmp1.neighbors){
-                UndirectedGraphNode tmp3 = new UndirectedGraphNode(tmp.label);
-                tmp2.neighbors.add(tmp3);
-                queue1.add(tmp);
-                queue2.add(tmp3);
-            }
-        }
-        return;
-    }
-
-    private void dFS(UndirectedGraphNode oldRoot, UndirectedGraphNode newRoot){
-        //base case
-        if(oldRoot==null){
-            return;
-        }
-        for(UndirectedGraphNode tmp : oldRoot.neighbors){
-            UndirectedGraphNode tmpNew = new UndirectedGraphNode(tmp.label);
-            newRoot.neighbors.add(tmpNew);
-            dFS(tmp, tmpNew);
-        }
-        return;
-    }
-
-    public static class UndirectedGraphNode {
-        int label;
-        List<UndirectedGraphNode> neighbors;
-        UndirectedGraphNode(int x){
-            label = x;
-            neighbors = new ArrayList<UndirectedGraphNode>();
-        }
-    }
 
 }
