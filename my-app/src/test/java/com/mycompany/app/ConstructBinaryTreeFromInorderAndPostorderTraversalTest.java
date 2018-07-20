@@ -13,23 +13,4 @@ import com.mycompany.app.ConstructBinaryTreeFromInorderAndPostorderTraversal.*;
  * the postorder = {3, 4, 1, 5, 6, 2, 0};
  */
 public class ConstructBinaryTreeFromInorderAndPostorderTraversalTest {
-    ConstructBinaryTreeFromInorderAndPostorderTraversal obj = new ConstructBinaryTreeFromInorderAndPostorderTraversal();
-    int[] inorder = {3, 1, 4, 0, 5, 2, 6};
-    int[] postorder = {3, 4, 1, 5, 6, 2, 0};
-    @Test
-    public void buildTree() throws Exception {
-        TreeNode root = obj.buildTree(inorder, postorder);
-        printTree(root);
-    }
-
-    private void printTree(TreeNode root){
-        //base cases
-        if(root==null){
-            return;
-        }
-        //recursion case
-        printTree(root.left);
-        printTree(root.right);
-        System.out.print(root.val);
-    }
 }

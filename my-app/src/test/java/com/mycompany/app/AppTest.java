@@ -13,9 +13,5 @@ public class AppTest {
     int[] input = {3, 1, 2, 2, 4};
     @Test
     public void testConcatAndUpperString() throws Exception {
-        obj.customSort(input);
-        for(int i : input){
-            System.out.print(i);
-        }
     }
 }

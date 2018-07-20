@@ -2,126 +2,121 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="628b4965-2ccb-4133-89a2-dfd527b617e3" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddBinary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddDigits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddDigits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbersII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbersII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BalancedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BalancedBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorGeneric.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeSellStockII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeSellStockII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldown.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinarySearchTreeIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinarySearchTreeIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeInorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLevelOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeLevelOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeVerticalOrderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeVerticalOrderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BubbleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClimbingStairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClimbingStairs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CloneGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CloneGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ClosestBinarySearchTreeValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertSortedArrayToBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConvertSortedArrayToBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountPrimes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountPrimes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountingSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CountingSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DeleteMiddleNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DeleteMiddleNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EditDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeStringWithShortestLength.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EncodeStringWithShortestLength.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EvaluateReversePolishNotation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EvaluateReversePolishNotation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnTitle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorCombinations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorCombinations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorialTrailingZeroes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FactorialTrailingZeroes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FindTheCelebrity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenBinaryTreeToLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlattenBinaryTreeToLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlipGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlipGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlipGameII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FlipGameII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GameOfLife.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GenerateParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GraphValidTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GraphValidTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GrayCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GrayCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupShiftedStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupShiftedStrings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HappyNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HappyNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/HouseRobber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImplementQueueUsingStacks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ImplementQueueUsingStacks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InorderSuccessorInBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InsertionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntersectionOfTwoLinkedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntersectionOfTwoLinkedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InvertBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/InvertBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthLargestElementInAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthSmallestElementInBST.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthSmallestElementInBST.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCacheWrong.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LinkedListCycle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LinkedListCycle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubsequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfABinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LowestCommonAncestorOfABinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MajorityElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MajorityElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumDepthofBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumDepthofBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRooms.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRoomsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStackOptimized.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStackOptimized.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumDepthOfBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumDepthOfBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OneEditDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/OneEditDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintFence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintFence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromePermutation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromePermutation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Permutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PlusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PlusOne.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PowerOfTwo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/PowerOfTwo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RadixSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RadixSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReversePolishDeconstruct.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReversePolishDeconstruct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseWordsInAString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseWordsInAString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RomanToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RomanToInteger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RunnableDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RunnableDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SameTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchA2DMatrixII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchA2DMatrixII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SelectionSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SelectionSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceIII.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SingleNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SingleNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SpiralMatrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SpiralMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumberII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumberII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Subsets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Subsets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadPoolDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadPoolDemo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumSmaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumSmaller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Trie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumIIIDataStructureDesign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumIIIDataStructureDesign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumInputArraySorted.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumInputArraySorted.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UndirectedGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UndirectedGraph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTreesII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTreesII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidAnagram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidAnagram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidPalindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidPalindrome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddBinaryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddBinaryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddDigitsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddDigitsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BalancedBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BalancedBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorGenericTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorGenericTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeSellStockIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeSellStockIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldownTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockWithCooldownTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinarySearchTreeIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinarySearchTreeIteratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeInorderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeInorderTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeLevelOrderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeLevelOrderTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreePathsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreePathsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeVerticalOrderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BinaryTreeVerticalOrderTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BubbleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BubbleSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClimbingStairsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClimbingStairsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CloneGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CloneGraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClosestBinarySearchTreeValueTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ConstructBinaryTreeFromInorderAndPostorderTraversalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ConvertSortedArrayToBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ConvertSortedArrayToBSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CountPrimesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CountPrimesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CountingSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/CountingSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EditDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EditDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EncodeStringWithShortestLengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EncodeStringWithShortestLengthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EvaluateReversePolishNotationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/EvaluateReversePolishNotationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnTitleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnTitleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorCombinationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorCombinationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorialTrailingZeroesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorialTrailingZeroesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlattenBinaryTreeToLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlattenBinaryTreeToLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlipGameIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlipGameIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlipGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/FlipGameTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GameOfLifeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GameOfLifeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GraphValidTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GraphValidTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GrayCodeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GrayCodeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GroupShiftedStringsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GroupShiftedStringsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HappyNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HappyNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HouseRobberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/HouseRobberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ImplementQueueUsingStacksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ImplementQueueUsingStacksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InorderSuccessorInBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InorderSuccessorInBSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InsertionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InsertionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/IntersectionOfTwoLinkedListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/IntersectionOfTwoLinkedListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InvertBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/InvertBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthLargestElementInAnArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthLargestElementInAnArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthSmallestElementInBSTTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthSmallestElementInBSTTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LRUCacheTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LRUCacheTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LinkedListCycleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LinkedListCycleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LongestPalindromicSubsequenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LongestPalindromicSubsequenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LowestCommonAncestorOfABinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/LowestCommonAncestorOfABinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MajorityElementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MajorityElementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumDepthofBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumDepthofBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumSubarrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumSubarrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeIntervalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeIntervalsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeTwoSortedListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeTwoSortedListsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackOptimizedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackOptimizedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinimumDepthOfBinaryTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinimumDepthOfBinaryTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraphTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraphTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/OneEditDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/OneEditDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintFenceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintFenceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintHouseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PaintHouseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromeNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromeNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromePermutationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromePermutationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PathSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PathSumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PermutationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PermutationsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlusOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PlusOneTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PowerOfTwoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PowerOfTwoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/QuickSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RadixSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RadixSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReadNCharactersGivenRead4Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReadNCharactersGivenRead4Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseLinkedListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseWordsInAStringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseWordsInAStringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RomanToIntegerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RomanToIntegerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateArrayTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateImageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateImageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SameTreeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SameTreeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SearchA2DMatrixIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SearchA2DMatrixIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SelectionSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SelectionSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SingleNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SingleNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberIITest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SubsetsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SubsetsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ThreeSumSmallerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ThreeSumSmallerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TrieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TrieTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumIIIDataStructureDesignTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumIIIDataStructureDesignTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumInputArraySortedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumInputArraySortedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/UniqueBinarySearchTreesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/UniqueBinarySearchTreesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidAnagramTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidAnagramTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidPalindromeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidPalindromeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WiggleSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WiggleSortTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordSplitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordSplitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ZigZagIteratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ZigZagIteratorTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -133,29 +128,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="WordSplit.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
+      <file leaf-file-name="SingleNumber.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SingleNumber.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WordSquares.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ZigZagIterator.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -176,57 +153,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStack.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinStackOptimized.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/OneEditDistance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintFence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PaintHouse.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromeNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PalindromePermutation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PathSum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Permutations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PlusOne.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/PowerOfTwo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/RadixSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/README" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReadNCharactersGivenRead4.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReversePolishDeconstruct.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseWordsInAString.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/RomanToInteger.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateArray.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/RunnableDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/SameTree.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchA2DMatrixII.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/SelectionSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceII.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestWordDistanceIII.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/TrieTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/EncodeStringWithShortestLengthTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeSellStockIITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ClimbingStairsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorialTrailingZeroesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/GrayCodeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/GroupShiftedStringsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/KthLargestElementInAnArrayTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/LongestPalindromicSubsequenceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/LRUCacheTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/MajorityElementTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumSubarrayTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/PowerOfTwoTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/SearchA2DMatrixIITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIIITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/SingleNumberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberIITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ThreeSumSmallerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumIIIDataStructureDesignTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidPalindromeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/WiggleSortTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddBinaryTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddDigitsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraphTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackOptimizedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromeNumberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorIITest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnTitleTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/GraphValidTreeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseWordsInAStringTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/RomanToIntegerTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateImageTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/SelectionSortTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/SubsetsTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumInputArraySortedTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/UniqueBinarySearchTreesTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/ZigZagIteratorTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/SingleNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortList.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumber.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumberII.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Subsets.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadPoolDemo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumSmaller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/Trie.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSum.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumIIIDataStructureDesign.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumInputArraySorted.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/UndirectedGraph.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTreesII.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidAnagram.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidPalindrome.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java" />
       </list>
     </option>
   </component>
@@ -237,9 +214,9 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-14" />
+    <option name="y" value="181" />
     <option name="width" value="1944" />
     <option name="height" value="1104" />
   </component>
@@ -250,6 +227,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -284,30 +262,19 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-app" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
   </component>
@@ -331,7 +298,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.AddBinaryTest.sum">
+  <component name="RunManager" selected="JUnit.AddTwoNumbersTest.addTwoNumbers">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -351,6 +318,52 @@
       <option name="PACKAGE_NAME" value="com.mycompany.app" />
       <option name="MAIN_CLASS_NAME" value="com.mycompany.app.AddBinaryTest" />
       <option name="METHOD_NAME" value="sum" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AddTwoNumbersTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mycompany.app" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.AddTwoNumbersTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="AddTwoNumbersTest.addTwoNumbers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="my-app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.mycompany.app" />
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.AddTwoNumbersTest" />
+      <option name="METHOD_NAME" value="addTwoNumbers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -638,9 +651,13 @@
       <item itemvalue="JUnit.AppTest.testConcatAndUpperString" />
       <item itemvalue="JUnit.BestTimeToBuyAndSellStockTest.maxProfit" />
       <item itemvalue="JUnit.AddBinaryTest.sum" />
+      <item itemvalue="JUnit.AddTwoNumbersTest.addTwoNumbers" />
+      <item itemvalue="JUnit.AddTwoNumbersTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AddTwoNumbersTest.addTwoNumbers" />
+        <item itemvalue="JUnit.AddTwoNumbersTest" />
         <item itemvalue="JUnit.AddBinaryTest.sum" />
         <item itemvalue="JUnit.BestTimeToBuyAndSellStockTest.maxProfit" />
         <item itemvalue="JUnit.AppTest.testConcatAndUpperString" />
@@ -661,36 +678,61 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BestTimeToBuyAndSellStockTest_maxProfit - 2018.05.05 at 00h 03m 30s.xml">
-      <configuration name="BestTimeToBuyAndSellStockTest.maxProfit" configurationId="JUnit" />
+    <history-entry file="AddTwoNumbersTest_addTwoNumbers - 2018.07.19 at 16h 23m 28s.xml">
+      <configuration name="AddTwoNumbersTest.addTwoNumbers" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AddBinaryTest_sum - 2018.05.09 at 18h 12m 50s.xml">
-      <configuration name="AddBinaryTest.sum" configurationId="JUnit" />
+    <history-entry file="AddTwoNumbersTest_addTwoNumbers - 2018.07.19 at 16h 23m 31s.xml">
+      <configuration name="AddTwoNumbersTest.addTwoNumbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest - 2018.07.19 at 16h 23m 41s.xml">
+      <configuration name="AddTwoNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest - 2018.07.19 at 16h 23m 53s.xml">
+      <configuration name="AddTwoNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest - 2018.07.19 at 16h 24m 12s.xml">
+      <configuration name="AddTwoNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest - 2018.07.19 at 16h 24m 31s.xml">
+      <configuration name="AddTwoNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest - 2018.07.19 at 16h 27m 27s.xml">
+      <configuration name="AddTwoNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest - 2018.07.19 at 16h 43m 26s.xml">
+      <configuration name="AddTwoNumbersTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest_addTwoNumbers - 2018.07.19 at 16h 52m 18s.xml">
+      <configuration name="AddTwoNumbersTest.addTwoNumbers" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="AddTwoNumbersTest_addTwoNumbers - 2018.07.19 at 16h 55m 09s.xml">
+      <configuration name="AddTwoNumbersTest.addTwoNumbers" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32943678" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32987747" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27417642" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27166277" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18489583" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.19234857" />
       <window_info anchor="right" id="Properties" order="3" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -699,411 +741,385 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32987747" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java</url>
+          <line>51</line>
+          <properties />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/StringToInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/StrobogrammaticNumberII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Subsets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SubsetsII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#360#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SummaryRanges.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateArrayTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SumOfTwoIntegers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#145#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SuperWashingMachines.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1253#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SurroundedRegions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SymmetricTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#366#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TargetSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#791#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TextJustification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1206#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TheSkylineProblem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#2154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ThirdMaximumNumber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#652#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadDemo.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreadPoolDemo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#423#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumClosest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSumSmaller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TopKFrequentElements.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#310#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#548#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/Trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
           <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSum.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/OneEditDistanceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumIIIDataStructureDesign.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/EncodeStringWithShortestLengthTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TwoSumInputArraySorted.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="85">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UglyNumberII.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeSellStockIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BestTimeToBuyAndSellStockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ClimbingStairsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/FactorialTrailingZeroesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/GrayCodeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/GroupShiftedStringsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/KthLargestElementInAnArrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/LongestPalindromicSubsequenceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/LRUCacheTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/MajorityElementTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/MaximumSubarrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PowerOfTwoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/SearchA2DMatrixIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ShortestWordDistanceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumIIIDataStructureDesignTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ThreeSumSmallerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/WiggleSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AddBinaryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AddDigitsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/SingleNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidPalindromeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/NumberOfConnectedComponentsInAnUndirectedGraphTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/MinStackOptimizedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/PalindromeNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ExcelSheetColumnTitleTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/FindTheCelebrityTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/RotateImageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/SelectionSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/StrobogrammaticNumberTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/SubsetsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/TwoSumInputArraySortedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/UniqueBinarySearchTreesTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ZigZagIteratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/RomanToIntegerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ReverseWordsInAStringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/GraphValidTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UndirectedGraph.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorIITest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTrees.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SingleNumber.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueBinarySearchTreesII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UniquePaths.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#687#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UniqueWordAbbreviation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/UTF8Validation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1610#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidAnagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidateBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidPalindrome.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidSudoku.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#1714#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/VerifyPreorderSequenceInBinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WallsAndGates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#708#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WiggleSortII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WildcardMatching.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#620#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#730#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#735#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadderII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#591#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSearchII.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSplit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSquares.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/mycompany/app/ZigZagIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
@@ -1164,7 +1180,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
@@ -1184,7 +1199,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:4.11</last-edited>
+          <last-edited>Maven: junit:junit:4.12</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
