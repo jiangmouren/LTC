@@ -1,6 +1,7 @@
 package com.mycompany.app;
 
 /**
+ * https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
  * Say you have an array for which the ith element is the price of a given stock on day i.
  * If you were only permitted to complete at most one transaction (ie, buy one and sell one share of the stock),
  * design an algorithm to find the maximum profit.
@@ -25,14 +26,17 @@ package com.mycompany.app;
  */
 class BestTimeToBuyAndSellStock {
     public int maxProfit(int[] prices) {
-        int min = prices[0];
-        int res = 0;
-        for(int i=0; i<prices.length; i++){
-            if(prices[i]<min){
-                min = prices[i];
-            }
-            res = Math.max(res, prices[i]-min);
+        //只需要关注任何一个点的左侧最小值，就能知道当天卖出所可能获得的最大收获
+        //keep一个running左侧最小值，就可以获得每天可能的最大值，进而获得全域最大值
+        if(prices==null || prices.length==0){
+            return 0;
         }
-        return res;
+        int min = prices[0];
+        int max = 0;
+        for(int i=0; i<prices.length; i++){
+            max = Math.max(max, prices[i]-min);
+            min = Math.min(min, prices[i]);
+        }
+        return max;
     }
 }

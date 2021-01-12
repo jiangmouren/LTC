@@ -1,5 +1,6 @@
 package com.mycompany.app;
 /**
+ * https://leetcode.com/problems/merge-intervals/submissions/
  * Given a collection of intervals, merge all overlapping intervals.
  * For example,
  * Given [1,3],[2,6],[8,10],[15,18],
@@ -14,36 +15,29 @@ package com.mycompany.app;
 import java.util.*;
 
 public class MergeIntervals {
-
-    public static class Interval{
-        int start;
-        int end;
-        Interval() { start = 0; end = 0; }
-        Interval(int s, int e) { start = s; end = e; }
-    }
-
-    public List<Interval> merge(List<Interval> intervals) {
-        List<Interval> list = new ArrayList<>();
-        Collections.sort(intervals, new Helper());
-        list.add(intervals.get(0));
-        int i;
-        for(i=1; i<intervals.size(); i++){
-            //merge case
-            if(list.get(list.size()-1).end>=intervals.get(i).start){
-                Interval pre = list.remove(list.size()-1);
-                list.add(new Interval(pre.start, intervals.get(i).end));
+    public int[][] merge(int[][] intervals) {
+        //After java 8, you can use lambda function instead of implement comparator.
+        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
+        List<int[]> resultList = new ArrayList<>();
+        int ptr0 = 0;
+        int ptr1 = 0;
+        int end = intervals[0][1];
+        while(ptr1<intervals.length){
+            if(intervals[ptr1][0]<=end && intervals[ptr1][1]>end){
+                end = intervals[ptr1][1];
             }
-            else{
-                list.add(new Interval(intervals.get(i).start, intervals.get(i).end));
+            else if(intervals[ptr1][0]>end){
+                int[] temp = {intervals[ptr0][0], end};
+                resultList.add(temp);
+                ptr0 = ptr1;
+                end = intervals[ptr0][1];
             }
+            ptr1++;
         }
-        return list;
-    }
-
-    private class Helper implements Comparator<Interval>{
-        @Override
-        public int compare(Interval o1, Interval o2) {
-            return o1.start-o2.start;
-        }
+        //add the last interval
+        resultList.add(new int[]{intervals[ptr0][0], end});
+        int[][] result = new int[resultList.size()][resultList.get(0).length];
+        result = resultList.toArray(result);
+        return result;
     }
 }

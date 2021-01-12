@@ -1,10 +1,6 @@
 package com.mycompany.app;
 
 /**
- * Created by jiangmouren on 6/4/17.
- */
-
-/**
  * Question:
  * Reverse a singly linked list.
  * Definition for singly-linked list.
@@ -27,17 +23,50 @@ public class ReverseLinkedList {
     public static class ListNode{
         int val;
         ListNode next;
+        ListNode(){}
         ListNode(int x){val=x;}
-    }
-    public ListNode reverseList(ListNode head) {
-        ListNode ptr1=null, ptr2=head, ptr3=head.next;
-        while(ptr2!=null){
-            ptr2.next=ptr1;
-            ptr1=ptr2;
-            ptr2=ptr3;
-            if(ptr3!=null)
-                ptr3=ptr3.next;
+        ListNode(int x, ListNode next){
+            this.val = x;
+            this.next = next;
         }
-        return ptr1;
+    }
+
+    public ListNode reverseList(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        ListNode pre = null;
+        ListNode cur = head;
+        ListNode nxt = head.next;
+        while(cur!=null){
+            cur.next = pre;
+            pre = cur;
+            cur = nxt;
+            if(nxt!=null){
+                nxt = nxt.next;
+            }
+        }
+        return pre;
+    }
+
+    public ListNode reverseListSln2(ListNode head) {
+        if(head==null){
+            return null;
+        }
+        ListNode dummyHead = new ListNode();
+        helper(head, dummyHead);
+        return dummyHead.next;
+    }
+
+    private void helper(ListNode cur, ListNode ptr){
+        if(cur.next==null){
+            ptr.next = cur;
+            return;
+        }
+
+        helper(cur.next, ptr);
+        cur.next.next = cur;
+        cur.next = null;//不要遗忘了这个，否则就会在新list尾部出现cycle
+        return;
     }
 }

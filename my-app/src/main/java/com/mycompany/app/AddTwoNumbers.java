@@ -1,5 +1,6 @@
 package com.mycompany.app;
 /**
+ * https://leetcode.com/problems/add-two-numbers/
  * You are given two non-empty linked lists representing two non-negative integers.
  * The digits are stored in reverse order and each of their nodes contain a single digit.
  * Add the two numbers and return it as a linked list.
@@ -8,37 +9,43 @@ package com.mycompany.app;
  * Output: 7 -> 0 -> 8
  */
 public class AddTwoNumbers {
-    public static class ListNode{
+    public class ListNode {
         int val;
-        ListNode next;
-        ListNode(int x){
-            this.val = x;
-        }
+         ListNode next;
+         ListNode() {}
+         ListNode(int val) { this.val = val; }
+         ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode head = new ListNode();
+        ListNode ptr = head;
         ListNode ptr1 = l1;
         ListNode ptr2 = l2;
-        ListNode dummyHead = new ListNode(0);
-        ListNode ptr = dummyHead;
         int c = 0;
         while(ptr1!=null || ptr2!=null){
-            int tmp = c;
             if(ptr1!=null){
-                tmp += ptr1.val;
+                c += ptr1.val;
                 ptr1 = ptr1.next;
             }
             if(ptr2!=null){
-                tmp += ptr2.val;
+                c += ptr2.val;
                 ptr2 = ptr2.next;
             }
-            if(tmp>9){//maximum 18 for LSB and 19 for others
-                tmp -= 10;
+            if(c<10){
+                ptr.next = new ListNode(c);
+                ptr = ptr.next;
+                c = 0;
+            }
+            else{
+                ptr.next = new ListNode(c-10);
+                ptr = ptr.next;
                 c = 1;
             }
-            ListNode node = new ListNode(tmp);
-            ptr.next = node;
-            ptr = ptr.next;
         }
-        return dummyHead.next;
+        //check c by the end
+        if(c>0){
+            ptr.next = new ListNode(c);
+        }
+        return head.next;
     }
 }

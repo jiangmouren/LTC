@@ -1,8 +1,9 @@
 package com.mycompany.app;
-import com.mycompany.app.BasicCalculatorGeneric;
+import java.util.Stack;
 
 /**
  * Question:
+ * https://leetcode.com/problems/basic-calculator/
  * Implement a basic calculator to evaluate a simple expression string.
  * The expression string may contain open ( and closing parentheses ),
  * the plus + or minus sign -, non-negative integers and empty spaces .
@@ -16,16 +17,45 @@ import com.mycompany.app.BasicCalculatorGeneric;
 
 /**
  * Analysis:
- * Refer to BasicCalculatorGeneric for the generic type and solution of calculator problem.
- * For this specific problem, it is a near normalized version: we don't need to worry about the parenthesis,
- * but we still need to remove the spaces.
- *
  * One common mistake for this problem is that think the "()" does not really matter in this problem because we do not
  * have '*' / '/'. But actually it matters because 5-(3-2) is different from 5-3-2 !!!
+ *
+ * 思路就是从左到右把每个遇到的Operand accumulate起来，当中要“是+，还是-”的问题。
+ * 这个问题主要由括号引进的。所以本质上只要figure out如何处理括号导致的加减变号的问题就可以了。
+ * 然后就是要考虑到nested括号，用stack来buffer括号的总符号。
  */
 class BasicCalculator {
-    BasicCalculatorGeneric obj = new BasicCalculatorGeneric();
     public int calculate(String s) {
-        return obj.calculate(s);
+        Stack<Integer> stack = new Stack<>();
+        int res = 0;
+        int sign = 1;
+        stack.push(1);
+
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)==' '){
+                continue;
+            }
+            else if(s.charAt(i)=='('){
+                stack.push(stack.peek()*sign);//Buffer the outer sign for current parenthesis.
+                sign = 1;//Reset sign once enters parenthesis.
+            }
+            else if(s.charAt(i)==')'){
+                stack.pop();//drop the sign for just closed parenthesis.
+            }
+            else if(s.charAt(i)=='+'){
+                sign = 1;
+            }
+            else if(s.charAt(i)=='-'){
+                sign = -1;
+            }
+            else{
+                int temp = s.charAt(i) - '0';
+                while(i+1<s.length() && Character.isDigit(s.charAt(i+1))){//check i+1 before apply it to s
+                    temp = temp*10 + s.charAt(++i) - '0';
+                }
+                res += sign*stack.peek()*temp;
+            }
+        }
+        return res;
     }
 }

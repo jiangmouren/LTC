@@ -1,7 +1,25 @@
 /**
  * Question:
- * Merge two sorted linked lists and return it as a new list.
- * The new list should be made by splicing together the nodes of the first two lists.
+ * https://leetcode.com/problems/merge-two-sorted-lists/
+ * Merge two sorted linked lists and return it as a sorted list.
+ * The list should be made by splicing together the nodes of the first two lists.
+ *
+ * Example 1:
+ * Input: l1 = [1,2,4], l2 = [1,3,4]
+ * Output: [1,1,2,3,4,4]
+ *
+ * Example 2:
+ * Input: l1 = [], l2 = []
+ * Output: []
+ *
+ * Example 3:
+ * Input: l1 = [], l2 = [0]
+ * Output: [0]
+ *
+ * Constraints:
+ * The number of nodes in both lists is in the range [0, 50].
+ * -100 <= Node.val <= 100
+ * Both l1 and l2 are sorted in non-decreasing order.
  */
 
 /**
@@ -11,67 +29,39 @@
 package com.mycompany.app;
 
 public class MergeTwoSortedLists{
-    public static class ListNode {
+    class ListNode {
         int val;
         ListNode next;
-        ListNode(int x){this.val=x;}
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) { this.val = val; this.next = next; }
     }
 
-    public ListNode mergeTwoSortedLists(ListNode root1, ListNode root2){
-        ListNode head=null, tail=null;
-        ListNode ptr1=root1, ptr2=root2;
-        while(ptr1!=null || ptr2!=null){
-            if(ptr1==null){
-                //for sure ptr2!=null
-                if(head==null){
-                    head = ptr2;
-                    break;
-                }
-                else{
-                    tail.next = ptr2;
-                    //tail = tail.next;
-                    break;
-                }
-            }
-            else if(ptr2==null){
-                if(head==null){
-                    head = ptr1;
-                    break;
-                }
-                else{
-                    tail.next = ptr1;
-                    break;
-                }
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        ListNode ptr1 = l1;
+        ListNode ptr2 = l2;
+        ListNode dummyHead = new ListNode();
+        ListNode ptr = dummyHead;
+
+        while(ptr1!=null && ptr2!=null){
+            if(ptr1.val<=ptr2.val){
+                ptr.next = ptr1;
+                ptr1 = ptr1.next;
             }
             else{
-                if(head==null){
-                    //assume the sorted in ascending order
-                    if(ptr1.val<ptr2.val){
-                        head = ptr1;
-                        tail = ptr1;
-                        ptr1 = ptr1.next;
-                    }
-                    else{
-                        head = ptr2;
-                        tail = ptr2;
-                        ptr2 = ptr2.next;
-                    }
-                }
-                else{
-                    if(ptr1.val<ptr2.val){
-                        tail.next = ptr1;
-                        ptr1 = ptr1.next;
-                        tail = tail.next;
-                    }
-                    else{
-                        tail.next = ptr2;
-                        ptr2 = ptr2.next;
-                        tail = tail.next;
-                    }
-                }
+                ptr.next = ptr2;
+                ptr2 = ptr2.next;
             }
+            ptr = ptr.next;
         }
-        return head;
+
+        if(ptr1!=null){
+            ptr.next = ptr1;
+        }
+        else{
+            ptr.next = ptr2;
+        }
+        return dummyHead.next;
     }
 
 }
