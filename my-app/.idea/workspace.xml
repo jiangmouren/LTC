@@ -20,69 +20,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628b4965-2ccb-4133-89a2-dfd527b617e3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AsFarFromLandAsPossible.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorIV.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/EscapeLargeMaze.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FirstCommonAncestor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Game24.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KClosestPointsToOrigin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimalBst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RobotRoomCleaner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SortLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TopologicalSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniquePathsII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniquePathsIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidateBST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/VerifyingAlienDictionary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/consecutiveNumbersSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MinimalBstTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/SortLinkedListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/TopologicalSortTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidateBstTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CriticalConnectionsInNetwork.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UndergroundSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/DfsWithBacktrackingComplexity.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/WhyUseVisiting.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/3Sum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AddTwoNumbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorGeneric.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BasicCalculatorII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BestTimeToBuyAndSellStock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseSchedule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseScheduleII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CourseScheduleII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeWays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DecodeWays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntegerToEnglishWords.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/IntegerToEnglishWords.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LRUCacheWrong.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestPalindromicSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithoutRepeatingCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestSubstringWithoutRepeatingCharacters.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumSubarray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MedianOfTwoSortedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MedianOfTwoSortedArrays.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRoomsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MeetingRoomsII.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeIntervals.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeIntervals.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeTwoSortedLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfIslands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ProductOfArrayExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ProductOfArrayExceptSelf.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestDistanceFromAllBuildings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShortestDistanceFromAllBuildings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TextJustification.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TextJustification.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ThreeSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TrappingRainWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/UniquePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ValidateBinarySearchTree.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AddTwoNumbersTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorGenericTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsIITest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MeetingRoomsIITest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeIntervalsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeIntervalsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeTwoSortedListsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/MergeTwoSortedListsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidParenthesesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/my-app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeKSortedLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MergeKSortedLists.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,9 +61,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.27868852" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -289,11 +234,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.App" />
       <item itemvalue="JUnit.ValidateBstTest.ValidateBstTest" />
       <item itemvalue="JUnit.TopologicalSortTest.InBondBasedTopoSortTest" />
       <item itemvalue="JUnit.TopologicalSortTest.TopoSortTest" />
       <item itemvalue="JUnit.BasicCalculatorTest.calculate" />
-      <item itemvalue="Application.App" />
     </list>
     <recent_temporary>
       <list>
@@ -330,7 +275,14 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2000" y="236" key="#Project_Structure" timestamp="1610861885838">
+      <screen x="1920" y="-278" width="1200" height="1880" />
+    </state>
+    <state x="2000" y="236" key="#Project_Structure/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610861885838" />
     <state x="2250" y="405" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609485529104">
       <screen x="1920" y="-282" width="1200" height="1880" />
     </state>
@@ -339,21 +291,25 @@
       <screen x="1920" y="-282" width="1200" height="1880" />
     </state>
     <state width="418" height="466" key="DebuggerActiveHint/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059108719" />
-    <state width="1157" height="566" key="GridCell.Tab.0.bottom" timestamp="1609059076693">
-      <screen x="1920" y="-282" width="1200" height="1880" />
+    <state width="1157" height="304" key="GridCell.Tab.0.bottom" timestamp="1610437366702">
+      <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
+    <state width="1157" height="304" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610437366702" />
     <state width="1157" height="566" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="566" key="GridCell.Tab.0.center" timestamp="1609059076693">
-      <screen x="1920" y="-282" width="1200" height="1880" />
+    <state width="1157" height="304" key="GridCell.Tab.0.center" timestamp="1610437366701">
+      <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
+    <state width="1157" height="304" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610437366701" />
     <state width="1157" height="566" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="566" key="GridCell.Tab.0.left" timestamp="1609059076693">
-      <screen x="1920" y="-282" width="1200" height="1880" />
+    <state width="1157" height="304" key="GridCell.Tab.0.left" timestamp="1610437366701">
+      <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
+    <state width="1157" height="304" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610437366701" />
     <state width="1157" height="566" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="566" key="GridCell.Tab.0.right" timestamp="1609059076693">
-      <screen x="1920" y="-282" width="1200" height="1880" />
+    <state width="1157" height="304" key="GridCell.Tab.0.right" timestamp="1610437366702">
+      <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
+    <state width="1157" height="304" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610437366702" />
     <state width="1157" height="566" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
     <state width="1157" height="566" key="GridCell.Tab.1.bottom" timestamp="1609059076988">
       <screen x="1920" y="-282" width="1200" height="1880" />
@@ -380,11 +336,11 @@
     </state>
     <state x="2227" y="261" width="585" height="801" key="find.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610406428532" />
     <state x="2227" y="257" width="585" height="801" key="find.popup/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609051055850" />
-    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup" timestamp="1610153876698">
+    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup" timestamp="1610860465113">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
     <state x="421" y="268" width="1076" height="419" key="search.everywhere.popup/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1610086597759" />
-    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610153876698" />
+    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1610860465113" />
     <state x="2183" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1608981472389" />
   </component>
   <component name="XDebuggerManager">
