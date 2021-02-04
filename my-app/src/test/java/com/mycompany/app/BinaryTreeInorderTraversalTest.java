@@ -18,6 +18,7 @@ public class BinaryTreeInorderTraversalTest {
         root.left.right = new TreeNode(5);
     }
     //Expected result: 42513
+    /*
     @Test
     public void iterativeInorderTraversal() throws Exception {
         printList(objectUnderTest.iterativeInorderTraversal(root));
@@ -41,5 +42,6 @@ public class BinaryTreeInorderTraversalTest {
             System.out.print(token);
         }
     }
+     */
 
 }

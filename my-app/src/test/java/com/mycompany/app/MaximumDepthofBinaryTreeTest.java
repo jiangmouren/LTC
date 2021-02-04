@@ -26,7 +26,7 @@ public class MaximumDepthofBinaryTreeTest {
         root.right.left = new TreeNode(3);
         root.right.right = new TreeNode(1);
     }
-
+/*
     @Test
     public void maxDepth1() throws Exception {
         int depth = objectUnderTest.maxDepth1(root);
@@ -38,5 +38,6 @@ public class MaximumDepthofBinaryTreeTest {
         int depth = objectUnderTest.maxDepth2(root);
         assertTrue(depth==3);
     }
+ */
 
 }

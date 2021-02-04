@@ -6,6 +6,7 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class ValidateBstTest {
+    /**
     //     20    //
     //    /      //
     //  20       //
@@ -72,4 +73,5 @@ public class ValidateBstTest {
         assertFalse(obj.validatePostOrder(root3));
         assertTrue(obj.validatePostOrder(root4));
     }
+     **/
 }

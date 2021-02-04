@@ -1,7 +1,7 @@
 package com.mycompany.app;
 
 /**
- * Question:
+ * Question: https://leetcode.com/problems/binary-tree-inorder-traversal/
  * Given a binary tree, return the inorder traversal of its nodes' values.
  * For example:
  * Given binary tree [1,null,2,3],
@@ -22,21 +22,19 @@ public class BinaryTreeInorderTraversal {
         TreeNode(int x){this.val = x;}
     }
 
-    public List<Integer> iterativeInorderTraversal(TreeNode root){
-        List<Integer> result = new LinkedList<>();
-        if(root==null) return result;
+    //Iterative solution
+    public List<Integer> inorderTraversalIterative(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
         Stack<TreeNode> stack = new Stack<>();
-        //Initialize Stack
         pushStack(root, stack);
-
-        while(!stack.empty()){
-            TreeNode tmp = stack.pop();
-            result.add(tmp.val);
-            if(tmp.right!=null){
-                pushStack(tmp.right, stack);
+        while(!stack.isEmpty()){
+            TreeNode node = stack.pop();
+            res.add(node.val);
+            if(node.right!=null){
+                pushStack(node.right, stack);
             }
         }
-        return result;
+        return res;
     }
 
     private void pushStack(TreeNode root, Stack<TreeNode> stack){
@@ -47,39 +45,19 @@ public class BinaryTreeInorderTraversal {
         }
     }
 
-    public List<Integer> recursiveInorderTraversal(TreeNode root){
-        //Termination Cases
-        if(root==null) return new LinkedList<Integer>();
-
-        List<Integer> leftList = recursiveInorderTraversal(root.left);
-        leftList.add(root.val);
-        List<Integer> rightList = recursiveInorderTraversal(root.right);
-        leftList.addAll(rightList);
-        return leftList;
+    //recursive solution
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> res = new ArrayList<>();
+        inorder(root, res);
+        return res;
     }
 
-    public List<Integer> recursiveInorderTraversal2(TreeNode root){
-        List<Integer> result = new LinkedList<>();
-        recursionHelper(root, result);
-        return result;
+    private void inorder(TreeNode root, List<Integer> res){
+        if(root==null){
+            return;
+        }
+        inorder(root.left, res);
+        res.add(root.val);
+        inorder(root.right, res);
     }
-
-    private void recursionHelper(TreeNode root, List<Integer> list){
-        //Termination Cases
-        if(root==null) return;
-
-        recursionHelper(root.left, list);
-        list.add(root.val);
-        recursionHelper(root.right, list);
-    }
-
-
-    /**
-     * Another way I have thought about is to use a dummy root,
-     * just like the dummy head we use in LinkedList.
-     * And the reason for that is to avoid the initial initialization loop,
-     * but as we can reuse the initialization code, it will be cleaner to do the above.
-     * Using a Dummy Root, we need to ignore the first element in the result list.
-     */
-
 }

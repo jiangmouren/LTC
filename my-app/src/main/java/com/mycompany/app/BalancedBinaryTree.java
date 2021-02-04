@@ -1,28 +1,28 @@
 package com.mycompany.app;
 
 /**
- * Question:
+ * Question: https://leetcode.com/problems/balanced-binary-tree/
  * Given a binary tree, determine if it is height-balanced.
- * For this problem, a height-balanced binary tree
- * is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1.
+ * For this problem, a height-balanced binary tree is defined as:
+ * a binary tree in which the left and right subtrees of every node differ in height by no more than 1.
+ *
+ * Example 1:
+ * Input: root = [3,9,20,null,null,15,7]
+ * Output: true
+ *
+ * Example 2:
+ * Input: root = [1,2,2,3,3,null,null,4,4]
+ * Output: false
+ *
+ * Example 3:
+ * Input: root = []
+ * Output: true
+ *
+ * Constraints:
+ * The number of nodes in the tree is in the range [0, 5000].
+ * -104 <= Node.val <= 104
  */
 
-/**
- * Analysis:
- * I think the tricky part of this problem is understanding the complexity of the recursion,
- * and how to optimize it.
- * Specifically for this problem, the recursion logic without any decoration, should be:
- * boolean Balanced(root){
- *     return Balanced(root.left) && Balanced(root.right) && Math.abs(Depth(root.left)-Depth(right))<2;
- * }
- *
- * Then the problem is how to do Depth()?
- * We need to derive parent tree Depth from subtree Depths so as to avoid subtree depths recalculation.
- *
- * This is more like a DP. I am doing conduction from leaf to root, so every node will only need to be
- * visited once. If the other way round, from root, to leaf, many nodes will need to be visited
- * multiple times. In that case, we need to store those nodes' value some where like a HashMap.
- */
 public class BalancedBinaryTree {
 
     public static class TreeNode {
@@ -31,29 +31,24 @@ public class BalancedBinaryTree {
         TreeNode(int x){this.val = x;}
     }
 
-    private class NodeStats {
-        boolean balanced;
-        int depth;
-        NodeStats(boolean balanced, int depth){
-            this.balanced = balanced;
-            this.depth = depth;
-        }
+    public boolean isBalanced(TreeNode root) {
+        int[] height = new int[1];
+        return isBalanced(root, height);
     }
 
-    boolean balanced(TreeNode root){
-        return helper(root).balanced;
-    }
-
-    private NodeStats helper(TreeNode root){
-        //Termination Cases
+    private boolean isBalanced(TreeNode root, int[] height){
+        //termination case
         if(root==null){
-            return new NodeStats(true, 0);
+            height[0] = 0;
+            return true;
         }
-        //Recursive cases
-        boolean balanced = helper(root.left).balanced && helper(root.right).balanced
-                && Math.abs(helper(root.left).depth - helper(root.right).depth)<2;
-        int depth = Math.max(helper(root.left).depth, helper(root.right).depth)+1;
-        return new NodeStats(balanced, depth);
+
+        int[] leftH = new int[1];
+        boolean leftBalanced = isBalanced(root.left, leftH);
+        int[] rightH = new int[1];
+        boolean rightBalanced = isBalanced(root.right, rightH);
+        height[0] = Math.max(leftH[0], rightH[0]) + 1;
+        return leftBalanced && rightBalanced && Math.abs(leftH[0]-rightH[0])<2;
     }
 }
 

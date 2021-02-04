@@ -9,6 +9,7 @@ import static org.junit.Assert.*;
  * Created by eljian on 6/14/2017.
  */
 public class MinStackTest {
+    /*
     MinStack objectUnderTest= new MinStack();
     @Test
     public void test() throws Exception {
@@ -23,4 +24,5 @@ public class MinStackTest {
         assertTrue(objectUnderTest.top()==1);
     }
 
+     */
 }

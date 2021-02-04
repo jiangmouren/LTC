@@ -1,10 +1,7 @@
 package com.mycompany.app;
 
 /**
- * Created by jiangmouren on 6/4/17.
- */
-
-/**
+ * https://leetcode.com/problems/invert-binary-tree/
  * Question:Invert a binary tree.
 
       4
@@ -30,12 +27,6 @@ to
  *
  */
 
-/**
- * Analysis:
- * 3 types of tree traversal, following any typs this can be done.
- * All we need is to traverse this tree.
- */
-
 public class InvertBinaryTree {
     public static class TreeNode {
         int val;
@@ -45,14 +36,16 @@ public class InvertBinaryTree {
     }
 
     public TreeNode invertTree(TreeNode root) {
-        //Termination conditions
-        if(root==null) return root;
-        TreeNode tmp;
-        tmp = root.left;
-        root.left = root.right;
-        root.right = tmp;
-        invertTree(root.left);
-        invertTree(root.right);
+        //termination case
+        if(root==null){
+            return null;
+        }
+
+        TreeNode left = invertTree(root.left);
+        TreeNode right = invertTree(root.right);
+        root.left = right;
+        root.right = left;
         return root;
     }
+
 }
