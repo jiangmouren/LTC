@@ -1,7 +1,7 @@
 package com.mycompany.app;
 
 /**
- * Question:
+ * Question: https://leetcode.com/problems/permutations/
  * Given a collection of distinct numbers, return all possible permutations.
  * For example,
  * [1,2,3] have the following permutations:
@@ -21,37 +21,34 @@ package com.mycompany.app;
 import java.util.*;
 
 public class Permutations{
-    public List<List<Integer>> permutation(int[] nums){
-        List<List<Integer>> result = new ArrayList<List<Integer>>();
+    public List<List<Integer>> permute(int[] nums) {
         List<Integer> buf = new ArrayList<>();
-        helper(nums, 0, result, buf);
-        return result;
+        List<List<Integer>> res = new ArrayList<>();
+        permute(nums, 0, buf, res);
+        return res;
     }
 
-    private void helper(int[] nums, int start, List<List<Integer>> result, List<Integer> buf){
-        //Termination Cases
-        if(start==nums.length-1){
-            buf.add(nums[start]);
-            List<Integer> tmp = new ArrayList<Integer>();//Must create a new object
-            tmp.addAll(buf);
-            result.add(tmp);
-            buf.remove(start);
+    private void permute(int[] nums, int pos, List<Integer> buf, List<List<Integer>> res){
+        //termination condition
+        if(pos>=nums.length){
+            List<Integer> temp = new ArrayList<>();
+            temp.addAll(buf);
+            res.add(temp);
             return;
         }
 
-        for(int i=start; i<nums.length; i++){
-            swap(nums, start, i);
-            buf.add(nums[start]);
-            helper(nums, start+1, result, buf);
-            buf.remove(start);
-            swap(nums, start, i);
+        for(int i=pos; i<nums.length; i++){
+            swap(nums, pos, i);
+            buf.add(nums[pos]);
+            permute(nums, pos+1, buf, res);
+            buf.remove(buf.size()-1);
+            swap(nums, pos, i);
         }
     }
 
-    private void swap(int[] nums, int ptr1, int ptr2){
-        int tmp = nums[ptr1];
-        nums[ptr1] = nums[ptr2];
-        nums[ptr2] = tmp;
+    private void swap(int[] nums, int pos1, int pos2){
+        int temp = nums[pos1];
+        nums[pos1] = nums[pos2];
+        nums[pos2] = temp;
     }
-
 }

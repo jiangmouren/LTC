@@ -9,6 +9,8 @@ package com.mycompany.app;
  * Implement QuickSort
  */
 
+import java.util.*;
+
 /**
  * Analysis:
  * QuickSort is the most commonly used sort algorithm.
@@ -17,16 +19,23 @@ package com.mycompany.app;
  * Not stable, but in place.
  */
 public class QuickSort {
-    public int[] quickSort(int[] nums){
-        if(nums==null) throw new IllegalArgumentException("Inputs cannot be null");
-        if(nums.length<2) return nums;
-        quickSortHelper(nums, 0, nums.length-1);
-        return nums;
+    public static void main(String[] args){
+        int[] nums = {4, 1, 2, 4, 6, 10};
+        QuickSort instance = new QuickSort();
+        instance.quickSort(nums);
+        for(int num : nums){
+            System.out.println(num);
+        }
     }
 
-    //The pivot function cannot be recursive, have to use this wrapper function.
+    public void quickSort(int[] nums){
+        if(nums==null) throw new IllegalArgumentException("Inputs cannot be null");
+        if(nums.length<2) return;
+        quickSortHelper(nums, 0, nums.length-1);
+    }
+
     private void quickSortHelper(int[] nums, int start, int end){
-        int pivot = pivot(nums, start, end);
+        int pivot = partition(nums, start, end);
         if(pivot-1>start){
             quickSortHelper(nums, start, pivot-1);
         }
@@ -35,7 +44,7 @@ public class QuickSort {
         }
     }
 
-    private int pivot(int[] nums, int start, int end){
+    private int partition(int[] nums, int start, int end){
         //take nums[start] as the pivot point.
         int ptr1 = start+1, ptr2 = end;
         while(ptr1<=ptr2){
@@ -57,6 +66,10 @@ public class QuickSort {
         //in the end ptr2 will point to the right most "<=" element
         //We need to do the last swap because of the way we split sub-problems.
         //If we split it as [start, pivot] and [pivot+1, end], then last swap not needed.
+        //我们这样做的目的是为了drop pivot位置的那个element，这样能保证每一步我们sub-problem的sized都是在缩小的
+        //{4, 1, 2, 4, 6, 10}，比如左边的例子，我们以第一个4为pivot去partition，最后ptr2为停在中间那个4的位置。
+        //这个时候，如果我们按照上面"[start, pivot] + [pivot+1, end]"的办法拆分sub-problem，
+        //就会发现{4, 1, 2, 4}这部分会陷入死循环。
         swap(nums, start, ptr2);
         return ptr2;
     }
@@ -65,5 +78,35 @@ public class QuickSort {
         int tmp = nums[ptr1];
         nums[ptr1] = nums[ptr2];
         nums[ptr2] = tmp;
+    }
+
+    //上面的quickSort也可以写成iterative的。没有办法借鉴merge sort iterative的写法，因为这里没有固定的区间宽度。
+    //在merge sort那边可以在外层loop on待sort的区间宽度。
+    //这里可以借鉴BFS用一个queue来register待处理的job
+
+    private void quickSortIterative(int[] nums){
+        Queue<List<Integer>> jobs = new LinkedList<>();
+        List<Integer> job = new ArrayList<>();
+        job.add(0);
+        job.add(nums.length-1);
+        jobs.add(job);
+        while(!jobs.isEmpty()){
+            List<Integer> cur = jobs.poll();
+            int left = cur.get(0);
+            int right = cur.get(1);
+            int pivot = partition(nums, left, right);
+            if(pivot-1>left){
+                List<Integer> leftJob = new ArrayList<>();
+                leftJob.add(left);
+                leftJob.add(pivot-1);
+                jobs.add(leftJob);
+            }
+            if(pivot+1<right){
+                List<Integer> rightJob = new ArrayList<>();
+                rightJob.add(pivot+1);
+                rightJob.add(right);
+                jobs.add(rightJob);
+            }
+        }
     }
 }

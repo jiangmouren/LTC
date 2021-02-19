@@ -19,32 +19,27 @@
 package com.mycompany.app;
 import java.util.*;
 public class GenerateParentheses{
-    public List<String> generateParentheses(int n){
-        if(n<0) throw new IllegalArgumentException("input cannot be negative");
-
-        List<String> result = new ArrayList<>();
-        int left = 0, right = 0;
+    public List<String> generateParenthesis(int n) {
+        List<String> res = new ArrayList<>();
         StringBuilder buf = new StringBuilder();
-        helper(result, buf, left, right, n);
-        return result;
+        backtrack(n, 0, 0, buf, res);
+        return res;
     }
 
-    private void helper(List<String> result, StringBuilder buf, int left, int right, int n){
-        //Termination Case
-        if(left>=n && right >=n){
-            result.add(buf.toString());
+    private void backtrack(int n, int leftCnt, int rightCnt, StringBuilder buf, List<String> res){
+        if(leftCnt==n && rightCnt==n){
+            res.add(buf.toString());
             return;
         }
 
-        //Recursive Cases
-        if(left<n){
+        if(leftCnt<n){
             buf.append('(');
-            helper(result, buf, left+1, right, n);
+            backtrack(n, leftCnt+1, rightCnt, buf, res);
             buf.deleteCharAt(buf.length()-1);
         }
-        if(right<left){
+        if(rightCnt<leftCnt){
             buf.append(')');
-            helper(result, buf, left, right+1, n);
+            backtrack(n, leftCnt, rightCnt+1, buf, res);
             buf.deleteCharAt(buf.length()-1);
         }
     }

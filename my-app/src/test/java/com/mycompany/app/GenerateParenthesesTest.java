@@ -8,6 +8,7 @@ import java.util.*;
  * Created by eljian on 6/24/2017.
  */
 public class GenerateParenthesesTest {
+    /**
     GenerateParentheses objectUnderTest = new GenerateParentheses();
     @Test
     public void generateParentheses() throws Exception {
@@ -27,5 +28,6 @@ public class GenerateParenthesesTest {
         }
         System.out.println();
     }
+    **/
 
 }

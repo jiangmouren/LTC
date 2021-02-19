@@ -1,5 +1,6 @@
 package com.mycompany.app;
 /**
+ * https://leetcode.com/problems/kth-largest-element-in-an-array/
  * Find the kth largest element in an unsorted array.
  * Note that it is the kth largest element in the sorted order, not the kth distinct element.
  * For example,
@@ -17,6 +18,11 @@ import java.util.*;
  * Will implement both kth largest and kth smallest.
  */
 public class KthLargestElementInAnArray{
+    public static void main(String[] args){
+        KthLargestElementInAnArray instance = new KthLargestElementInAnArray();
+        int[] nums = {4, 1, 2, 4, 6, 10};
+        System.out.println(instance.kthLargest(2, nums));
+    }
     public int kthLargest(int k, int[] array){
         PriorityQueue<Integer> minHeap = new PriorityQueue<>(k);
         for(int tmp : array){
@@ -29,6 +35,14 @@ public class KthLargestElementInAnArray{
                     minHeap.add(tmp);
                 }
             }
+            /*
+            上面写法可以说是对下面的小优化
+            要避免在size==k的时候先poll，再add，错误的！
+            minHeap.add(tmp);
+            if(minHeap.size()>k){
+                minHeap.poll();
+            }
+             */
         }
         return minHeap.peek();
     }
@@ -48,4 +62,61 @@ public class KthLargestElementInAnArray{
         }
         return maxHeap.peek();
     }
+
+    //下面这种是用quickSelect实现的O(n)的算法。
+    //关于quickSelect的复杂度分析详见：com\mycompany\app\QuickSelect.java
+    public int findKthLargest(int[] nums, int k) {
+        int l = nums.length-k+1;
+        return quickSelect(nums, l);
+    }
+
+    private int quickSelect(int[] nums, int k){
+        if(k==0 || k>nums.length){
+            return Integer.MIN_VALUE;
+        }
+        return search(nums, 0, nums.length-1, k);
+    }
+
+    private int search(int[] nums, int left, int right, int k){
+        //termination condition
+        if(left==right){
+            return nums[left];
+        }
+
+        int idx = partition(nums, left, right);
+        if(idx==k-1){
+            return nums[idx];
+        }
+        else if(idx>k-1){
+            return search(nums, left, idx-1, k);
+        }
+        else{
+            return search(nums, idx+1, right, k);
+        }
+    }
+
+    private int partition(int[] nums, int start, int end){
+        int left = start + 1;
+        int right = end;
+        while(left<=right){
+            while(right>=start && nums[right]>nums[start]){
+                right--;
+            }
+            while(left<=end && nums[left]<=nums[start]){
+                left++;
+            }
+            if(left<right){
+                swap(nums, right, left);
+            }
+        }
+        swap(nums, start, right);
+        return right;
+    }
+
+    private void swap(int[] nums, int ptr1, int ptr2){
+        int tmp = nums[ptr1];
+        nums[ptr1] = nums[ptr2];
+        nums[ptr2] = tmp;
+    }
+
 }

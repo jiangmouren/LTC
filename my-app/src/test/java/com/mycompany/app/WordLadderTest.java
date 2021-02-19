@@ -22,9 +22,9 @@ public class WordLadderTest {
         wordList.add("log");
         wordList.add("cog");
     }
-    @Test
-    public void ladderLength() throws Exception {
-        assertEquals(5, obj.ladderLength(beginWord, endWord, wordList));
-    }
+    //@Test
+    //public void ladderLength() throws Exception {
+    //    assertEquals(5, obj.ladderLength(beginWord, endWord, wordList));
+    //}
 
 }
