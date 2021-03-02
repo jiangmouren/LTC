@@ -1,12 +1,14 @@
 package com.mycompany.app;
-import java.util.*;
 
-public class App
-{
-    public static void main(String[] args){
-        //no overlap
-
-    }
+/**
+ * # 计算图像中的两个矩形的重叠面积 #
+ *
+ * 分别给定两个矩形的左上角顶点坐标（矩形1：(t1, l1)
+ * 矩形2：(t2, l2)） 和右下角顶点坐标（矩形1：(b1, r1)
+ * 矩形2：(b2, r2)）。计算其重叠部分面积。
+ *
+ */
+public class AreaOfOverlappingRectangles {
     //矩形1：A, B; 矩形2：c, D
     public int overlapArea(int[] A, int[] B, int[] C, int[] D){
         //no overlap
