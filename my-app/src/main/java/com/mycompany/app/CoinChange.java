@@ -4,7 +4,9 @@ import java.util.*;
 
 /**
  * https://leetcode.com/problems/coin-change/
- * You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1.
+ * You are given coins of different denominations and a total amount of money amount.
+ * Write a function to compute the fewest number of coins that you need to make up that amount.
+ * If that amount of money cannot be made up by any combination of the coins, return -1.
  * You may assume that you have an infinite number of each kind of coin.
  *
  * Example 1:
@@ -103,14 +105,11 @@ public class CoinChange{
             dp[i] = Integer.MAX_VALUE;
             for(int coin : coins){
                 if(i-coin>=0 && dp[i-coin]!=-1){
-                    dp[i] = Math.min(dp[i], dp[i-coin]);
+                    dp[i] = Math.min(dp[i], dp[i-coin]+1);
                 }
             }
             if(dp[i]==Integer.MAX_VALUE){
                 dp[i] = -1;
-            }
-            else{
-                dp[i] += 1;
             }
         }
 

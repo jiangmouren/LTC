@@ -81,11 +81,13 @@ public class WordBreak{
                 if(j<0){
                     if(dict.contains(s.substring(0, i+1))){
                         dp[i] = true;
+                        continue;
                     }
                 }
                 else{
                     if(dp[j]&&dict.contains(s.substring(j+1, i+1))){
                         dp[i] = true;
+                        continue;
                     }
                 }
             }

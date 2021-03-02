@@ -13,13 +13,13 @@ public class PermutationsTest {
 
     @Test
     public void permutation() throws Exception {
-        List<List<Integer>> result = objectUnderTest.permutation(nums);
-        for(List<Integer> list : result){
-            for(int num: list){
-                System.out.print(num + "' ");
-            }
-            System.out.println();
-        }
+        //List<List<Integer>> result = objectUnderTest.permutation(nums);
+        //for(List<Integer> list : result){
+        //    for(int num: list){
+        //        System.out.print(num + "' ");
+        //    }
+        //    System.out.println();
+        //}
     }
 
 }

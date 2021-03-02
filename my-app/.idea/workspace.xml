@@ -20,46 +20,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="628b4965-2ccb-4133-89a2-dfd527b617e3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignInMemoryFileSystem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LastSubstringInLexicographicalOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumProfitInJobScheduling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/NumberOfProvinces.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSelect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/StringCompression.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TimeBasedKeyValueStore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/InkedLastSubstringLexicographicalOrder_LI.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/LastSubstringLexicographicalOrder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/MaximumSlidingWindow.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/NoDfs4ShortestDistance.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/QuickSortQuickSelectComplexity.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/UnionFind.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CoinChange2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FourSum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/FourSumII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LeftmostColumnWithALeastAOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaxAreaOfIsland.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumPerformanceOfATeam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumKnightMoves.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RandomPickWithWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveAllAdjacentDuplicatesInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RemoveAllAdjacentDuplicatesInStringII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReorganizeString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RottingOranges.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ShoppingOptions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TaskScheduler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TopKFrequentWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/CoinChange2.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Matrix Rotation.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/AlienDictionary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeMaximumPathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeMaximumPathSum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeRightSideView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/BinaryTreeRightSideView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ContainerWithMostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ContainerWithMostWater.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CopyListWithRandomPointer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/CopyListWithRandomPointer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GenerateParentheses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GenerateParentheses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/GroupAnagrams.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthLargestElementInAnArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/KthLargestElementInAnArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LFUCache.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LFUCache.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LargestRectangleInHistogram.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LargestRectangleInHistogram.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LetterCombinationsOfAPhoneNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LetterCombinationsOfAPhoneNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ConstructBinaryTreeFromPreorderAndInorderTraversal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ExcelSheetColumnTitle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestConsecutiveSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/LongestConsecutiveSequence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Permutations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/Permutations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RegularExpressionMatching.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RegularExpressionMatching.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SlidingWindowMaximum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SpiralMatrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SpiralMatrix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/TopKFrequentElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/GenerateParenthesesTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/QuickSortTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/QuickSortTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/WordLadderTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumProductSubarray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/MaximumProductSubarray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseNodesInKGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/ReverseNodesInKGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/RotateImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchInRotatedSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/SearchInRotatedSortedArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreak.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycompany/app/WordBreakII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/LeetCode Problems.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/LeetCode Problems.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PermutationsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/mycompany/app/PermutationsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,9 +102,23 @@
       <recent name="C:\Users\eljian\gitHome\LTC\my-app\src\main\java\com\mycompany\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.KthLargestElementInAnArray">
+  <component name="RunManager" selected="Application.App">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.App" />
+      <module name="my-app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -131,8 +137,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LFUCache" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.LFUCache" />
+    <configuration name="LongestConsecutiveSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.LongestConsecutiveSequence" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -161,20 +167,6 @@
     </configuration>
     <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.app.QuickSort" />
-      <module name="my-app" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.app.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SerializeAndDeserializeBinaryTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.SerializeAndDeserializeBinaryTree" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -254,19 +246,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.SerializeAndDeserializeBinaryTree" />
-      <item itemvalue="Application.LFUCache" />
-      <item itemvalue="Application.QuickSort" />
-      <item itemvalue="Application.QuickSelect" />
+      <item itemvalue="Application.App" />
       <item itemvalue="Application.KthLargestElementInAnArray" />
+      <item itemvalue="Application.LongestConsecutiveSequence" />
+      <item itemvalue="Application.QuickSelect" />
+      <item itemvalue="Application.QuickSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.LongestConsecutiveSequence" />
         <item itemvalue="Application.KthLargestElementInAnArray" />
         <item itemvalue="Application.QuickSelect" />
         <item itemvalue="Application.QuickSort" />
-        <item itemvalue="Application.LFUCache" />
-        <item itemvalue="Application.SerializeAndDeserializeBinaryTree" />
       </list>
     </recent_temporary>
   </component>
@@ -317,241 +309,73 @@
     <state width="669" height="288" key="DebuggerActiveHint/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1611442070247" />
     <state width="419" height="467" key="DebuggerActiveHint/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613189968119" />
     <state width="418" height="466" key="DebuggerActiveHint/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059108719" />
-    <state width="1157" height="406" key="GridCell.Tab.0.bottom" timestamp="1613631182464">
+    <state width="1157" height="209" key="GridCell.Tab.0.bottom" timestamp="1614327448794">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="127" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613257876619" />
-    <state width="1157" height="406" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613631182464" />
+    <state width="1877" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972997257" />
+    <state width="1157" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448794" />
     <state width="1157" height="566" key="GridCell.Tab.0.bottom/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="406" key="GridCell.Tab.0.center" timestamp="1613631182464">
+    <state width="1157" height="209" key="GridCell.Tab.0.center" timestamp="1614327448794">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="127" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613257876619" />
-    <state width="1157" height="406" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613631182464" />
+    <state width="1877" height="209" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972997257" />
+    <state width="1157" height="209" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448794" />
     <state width="1157" height="566" key="GridCell.Tab.0.center/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="406" key="GridCell.Tab.0.left" timestamp="1613631182464">
+    <state width="1157" height="209" key="GridCell.Tab.0.left" timestamp="1614327448794">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="127" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613257876618" />
-    <state width="1157" height="406" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613631182464" />
+    <state width="1877" height="209" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972997257" />
+    <state width="1157" height="209" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448794" />
     <state width="1157" height="566" key="GridCell.Tab.0.left/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="406" key="GridCell.Tab.0.right" timestamp="1613631182464">
+    <state width="1157" height="209" key="GridCell.Tab.0.right" timestamp="1614327448794">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="127" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613257876619" />
-    <state width="1157" height="406" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613631182464" />
+    <state width="1877" height="209" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972997257" />
+    <state width="1157" height="209" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448794" />
     <state width="1157" height="566" key="GridCell.Tab.0.right/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076693" />
-    <state width="1157" height="329" key="GridCell.Tab.1.bottom" timestamp="1613629533463">
+    <state width="1877" height="329" key="GridCell.Tab.1.bottom" timestamp="1614327448700">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1612685277306" />
-    <state width="1157" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613629533463" />
+    <state width="1877" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972969756" />
+    <state width="1877" height="329" key="GridCell.Tab.1.bottom/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448700" />
     <state width="1157" height="566" key="GridCell.Tab.1.bottom/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076988" />
-    <state width="1157" height="329" key="GridCell.Tab.1.center" timestamp="1613629533463">
+    <state width="1877" height="329" key="GridCell.Tab.1.center" timestamp="1614327448700">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="329" key="GridCell.Tab.1.center/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1612685277306" />
-    <state width="1157" height="329" key="GridCell.Tab.1.center/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613629533463" />
+    <state width="1877" height="329" key="GridCell.Tab.1.center/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972969756" />
+    <state width="1877" height="329" key="GridCell.Tab.1.center/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448700" />
     <state width="1157" height="566" key="GridCell.Tab.1.center/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076987" />
-    <state width="1157" height="329" key="GridCell.Tab.1.left" timestamp="1613629533463">
+    <state width="1877" height="329" key="GridCell.Tab.1.left" timestamp="1614327448700">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="329" key="GridCell.Tab.1.left/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1612685277306" />
-    <state width="1157" height="329" key="GridCell.Tab.1.left/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613629533463" />
+    <state width="1877" height="329" key="GridCell.Tab.1.left/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972969756" />
+    <state width="1877" height="329" key="GridCell.Tab.1.left/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448700" />
     <state width="1157" height="566" key="GridCell.Tab.1.left/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076987" />
-    <state width="1157" height="329" key="GridCell.Tab.1.right" timestamp="1613629533463">
+    <state width="1877" height="329" key="GridCell.Tab.1.right" timestamp="1614327448700">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state width="1877" height="329" key="GridCell.Tab.1.right/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1612685277306" />
-    <state width="1157" height="329" key="GridCell.Tab.1.right/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613629533463" />
+    <state width="1877" height="329" key="GridCell.Tab.1.right/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613972969756" />
+    <state width="1877" height="329" key="GridCell.Tab.1.right/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614327448700" />
     <state width="1157" height="566" key="GridCell.Tab.1.right/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609059076988" />
-    <state x="2048" y="309" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1613467356587">
+    <state x="2048" y="309" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1614211685455">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state x="2048" y="309" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613467356587" />
+    <state x="2048" y="309" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614211685455" />
     <state x="2048" y="305" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1608976166185" />
-    <state x="2247" y="430" width="585" height="801" key="find.popup" timestamp="1612749789165">
+    <state x="2301" y="402" width="819" height="801" key="find.popup" timestamp="1614239924525">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
-    <state x="2247" y="430" width="585" height="801" key="find.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1612749789165" />
+    <state x="817" y="624" width="936" height="534" key="find.popup/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1613715491821" />
+    <state x="2301" y="402" width="819" height="801" key="find.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614239924525" />
     <state x="2227" y="257" width="585" height="801" key="find.popup/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1609051055850" />
-    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup" timestamp="1613679668514">
+    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup" timestamp="1614063211097">
       <screen x="1920" y="-278" width="1200" height="1880" />
     </state>
     <state x="421" y="268" width="1076" height="419" key="search.everywhere.popup/0.0.1920.1160/1920.-278.1200.1880@0.0.1920.1160" timestamp="1612739291496" />
-    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1613679668514" />
+    <state x="2183" y="156" width="673" height="680" key="search.everywhere.popup/0.0.1920.1160/1920.-278.1200.1880@1920.-278.1200.1880" timestamp="1614063211097" />
     <state x="2183" y="153" width="672" height="678" key="search.everywhere.popup/0.0.1920.1160/1920.-282.1200.1880@1920.-282.1200.1880" timestamp="1608981472389" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/SortLinkedListTest.java</url>
-          <line>24</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SortLinkedList.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SortLinkedList.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SortLinkedList.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/SortLinkedListTest.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/MinimalBstTest.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimalBst.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/ValidateBstTest.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TopologicalSort.java</url>
-          <line>207</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TopologicalSort.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/TopologicalSort.java</url>
-          <line>213</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/mycompany/app/BasicCalculatorTest.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/App.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BiDirectionalBFS.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BiDirectionalBFS.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/BiDirectionalBFS.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/StrongPasswordChecker.java</url>
-          <line>167</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/StrongPasswordChecker.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/StrongPasswordChecker.java</url>
-          <line>138</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java</url>
-          <line>147</line>
-          <option name="timeStamp" value="54" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/WordLadder.java</url>
-          <line>169</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/MinimumWindowSubstring.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignInMemoryFileSystem.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignInMemoryFileSystem.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignInMemoryFileSystem.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignInMemoryFileSystem.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/DesignInMemoryFileSystem.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SerializeAndDeserializeBinaryTree.java</url>
-          <line>145</line>
-          <option name="timeStamp" value="69" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/LFUCache.java</url>
-          <line>39</line>
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSort.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="72" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSelect.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/QuickSelect.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo typeName="com.mycompany.app.LFUCache" fieldName="cntMap" />

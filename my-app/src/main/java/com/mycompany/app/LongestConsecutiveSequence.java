@@ -31,6 +31,11 @@ import java.util.*;
  * src\main\resources\UnionFind.PNG
  */
 public class LongestConsecutiveSequence{
+    public static void main(String[] args){
+        LongestConsecutiveSequence instance = new LongestConsecutiveSequence();
+        int[] nums = new int[]{100, 4, 7, 200, 1, 6, 3, 2, 8, 9, 10};
+        System.out.println(instance.longestConsecutive(nums));
+    }
     //先把UnionFind的class写出来，而且不会变，所以记住就行
     class UnionFind{
         int[] parents;

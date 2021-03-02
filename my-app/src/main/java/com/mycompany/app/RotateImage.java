@@ -25,10 +25,12 @@ package com.mycompany.app;
  * the 2nd row become the 2nd right most column.
  * But with the matrix upside down, need to vertically reverse it.
  *
+ * 这个主要是要In place，否则很简单，关于matrix rotation的详细分析：
+ * src\main\resources\Matrix Rotation.docx
  */
 
 public class RotateImage {
-    public void rotate1(int[][] matrix){
+    public void rotate(int[][] matrix){
         if(matrix==null || matrix.length<=1) return;
         //swap along main diagonal
         for(int i=0; i<matrix.length; i++){
@@ -41,19 +43,31 @@ public class RotateImage {
         }
         //reverse horizontally
         for(int i=0; i<matrix.length; i++){
-            //for(int j=0; j<matrix.length; i++){
-            //    int tmp = matrix[i][j];
-            //    matrix[i][j] = matrix[i][matrix.length-1-j];
-            //    matrix[i][matrix.length-1-j] = tmp;
-            //}
             //When you do array reverse has to be 2 pointers.
             int head = 0, tail = matrix.length-1;
-            while(head<=tail){
+            while(head<tail){
                 int tmp = matrix[i][head];
                 matrix[i][head] = matrix[i][tail];
                 matrix[i][tail] = tmp;
                 head++;
                 tail--;
+            }
+        }
+        return;
+    }
+
+    public void rotateSln2(int[][] matrix) {
+        int n = matrix.length;
+        for(int layer = 0; layer < n/2; layer++){
+            int first = layer;
+            int last = n - layer - 1;//last = first + lengh = layer + (n-2*layer-1)=n-layer-1
+            for(int i = first; i < last; i++){
+                int offset = i - first;
+                int top = matrix[first][i];//buffer top entry
+                matrix[first][i] = matrix[last - offset][first];//left to top
+                matrix[last - offset][first] = matrix[last][last - offset];//bottom to left
+                matrix[last][last - offset] = matrix[i][last];//right to bottom
+                matrix[i][last] = top;//top to right
             }
         }
         return;
