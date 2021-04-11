@@ -51,7 +51,7 @@ public class LongestConsecutiveSequence{
 
         public int find(int x){
             if(x!=this.parents[x]){
-                this.parents[x] = find(this.parents[x]);
+                this.parents[x] = find(this.parents[x]);//path compression;
             }
             return this.parents[x];
         }
@@ -67,10 +67,10 @@ public class LongestConsecutiveSequence{
                 if(this.ranks[pX]>this.ranks[pY]){
                     this.parents[pY] = pX;
                 }
-                if(this.ranks[pX]<this.ranks[pY]){
+                else if(this.ranks[pX]<this.ranks[pY]){
                     this.parents[pX] = pY;
                 }
-                if(this.ranks[pX]==this.ranks[pY]){
+                else{
                     this.parents[pY] = pX;
                     this.ranks[pX]++;
                 }

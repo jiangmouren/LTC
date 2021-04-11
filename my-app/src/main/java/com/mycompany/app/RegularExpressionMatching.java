@@ -41,6 +41,8 @@ package com.mycompany.app;
  */
 
 public class RegularExpressionMatching {
+    //这里dp[i][j]所表达的意义：从s的position 'i'和p的position ‘j’开始，往后的的部分能否match
+    //所以dp[0][0]就表示，从s&p的0位置开始，往右都能match
     public boolean isMatch(String s, String p) {
         //注意这里都是length + 1
         boolean dp[][] = new boolean[s.length()+1][p.length()+1];
@@ -67,5 +69,57 @@ public class RegularExpressionMatching {
             }
         }
         return dp[0][0];
+    }
+
+
+    /**
+     * 以下是一种错误解法，却比较有利于帮助理解上面的解法。下面错误的原因是采取了一种greedy的思路，而非dp的思路
+     * 既尝试用".*"/"a*"去match尽可能多的情况，而不是取explore每一种可能的情况。
+     * 这就导致像：s="aaa", p="a*a"的情况会fail.
+     * 上面解的dp的Index跟下面ptr0, ptr1相对应。
+     */
+    //"a*"可以跟""empty string match, 核心就是"a*"要当成一组来处理
+    public boolean isMatchWrong(String s, String p) {
+        int ptr0 = 0;//for s
+        int ptr1 = 0;//for p
+
+        while(ptr1<p.length()){
+            if(ptr1+1<p.length() && p.charAt(ptr1+1)=='*'){
+                if(ptr0>=s.length()){
+                    ptr1++;
+                    ptr1++;
+                }
+                else{
+                    if(p.charAt(ptr1)=='.'){//".*" case
+                        ptr0++;
+                    }
+                    else{//"c*" case
+                        if(s.charAt(ptr0)==p.charAt(ptr1)){
+                            ptr0++;
+                        }
+                        else{
+                            ptr1++;
+                            ptr1++;
+                        }
+                    }
+                }
+            }
+            else{
+                if(ptr0>=s.length()){
+                    return false;
+                }
+                else{
+                    if(Character.isAlphabetic(p.charAt(ptr1)) && s.charAt(ptr0)!=p.charAt(ptr1)){
+                        return false;
+                    }
+                    else{
+                        ptr0++;
+                        ptr1++;
+                    }
+                }
+            }
+        }
+
+        return ptr0>=s.length();
     }
 }

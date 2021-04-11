@@ -24,56 +24,6 @@ import java.util.*;
  */
 public class FourSum {
     /**
-     * 下面这种是我第一印象就会想到的backtracking解法，"Time Limit Exceeded"
-     */
-    public List<List<Integer>> fourSum(int[] nums, int target) {
-        //backtrack then sort each quadruplet before puting them to set
-        //Also use a set to avoid duplicates,that's also the reason to sort before hand to match keys
-        List<Integer> buf = new ArrayList<>();
-        Set<List<Integer>> set = new HashSet<>();
-        search(nums, 0, target, buf, set);
-        List<List<Integer>> res = new ArrayList<>();
-        res.addAll(set);
-        return res;
-    }
-
-    private void search(int[] nums, int pos, int target, List<Integer> buf, Set<List<Integer>> res){
-        //termination
-        if(buf.size()>=4){
-            if(sum(buf)==target){
-                //一定要重建一个list接收buf里的东西，然后sort只能发生在这个新的token身上，而不是buf身上，否则责后面backtrack remove and swap会出错
-                List<Integer> token = new ArrayList<>();
-                token.addAll(buf);
-                Collections.sort(token);
-                res.add(token);
-            }
-            return;
-        }
-
-        for(int i=pos; i<nums.length; i++){
-            swap(nums, pos, i);
-            buf.add(nums[pos]);
-            search(nums, pos+1, target, buf, res);
-            buf.remove(buf.size()-1);
-            swap(nums, pos, i);
-        }
-    }
-
-    private void swap(int[] nums, int pos1, int pos2){
-        int temp = nums[pos1];
-        nums[pos1] = nums[pos2];
-        nums[pos2] = temp;
-    }
-
-    private int sum(List<Integer> buf){
-        int res = 0;
-        for(int value : buf){
-            res += value;
-        }
-        return res;
-    }
-
-    /**
      * 下面这种是在之前的3Sum的基础上演化出来的可以解决K-sum问题的方法
      */
     public List<List<Integer>> fourSumSln2(int[] nums, int target) {

@@ -23,20 +23,21 @@ public class LinkedListCycle{
         ListNode next;
         ListNode(int x){this.val = x;}
     }
-    public boolean linkedListCycle(ListNode head){
-        if(head==null) return false;
-        ListNode ptr1 = head, ptr2 = head.next;
-        while(ptr1!=null && ptr2!=null){
-            //if(ptr1==ptr2 && ptr1!=head) return true;
-            //Originally I was using this one to avoid the initial case, bad idea since they can rejoin at head.
-            //And once that it is the case they will rejoin again and again at head(if they also both started at head)
-            if(ptr1==ptr2) return true;
-            if(ptr1==ptr2 && ptr1!=head) return true;
-            ptr1 = ptr1.next;
-            ptr2=ptr2.next;
-            if(ptr2==null || ptr2.next==null) return false;
-            else ptr2=ptr2.next;
+    public boolean hasCycle(ListNode head) {
+        //直观的想法是用visited map
+        //O(1) memo的做法应该是chasing pointers，用一个两倍速和一个一倍速的pointer,而且两倍速的还在前面
+        //如果他们最后相遇的位置不是在null，那么就一定有cycle
+        if(head==null){
+            return false;
         }
-        return false;
+        ListNode ptr0 = head;
+        ListNode ptr1 = head.next;
+        while(ptr1!=null && ptr0!=ptr1){
+            ptr0 = ptr0.next;
+            ptr1 = ptr1.next;
+            ptr1 = ptr1==null ? null : ptr1.next;
+        }
+
+        return ptr1!=null;
     }
 }

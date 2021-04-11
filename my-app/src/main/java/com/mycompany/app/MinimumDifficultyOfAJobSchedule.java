@@ -48,7 +48,7 @@ public class MinimumDifficultyOfAJobSchedule {
         //初值： dp[1][1] = max{jobDifficulty[0]}
         //      dp[2][1] = max{jobDifficulty[0], jobDifficulty[1]}
         //     dp[n-d+1][1] = max{jobDifficulty[n-d], jobDifficulty[n-d-1], ... jobDifficulty[0]}
-        //注意上面的初值并不是整个第一列，而是只取了一段，这是由于递推关系里面只需要这一段做初值。
+        //注意上面的初值并不是整个第一列，而是只取了一段，这是由于递推关系里面只需要这一段做初值。也可以算正列，就是不够优化而已。
         //上面的初值求解本身是一个prefix最大值问题。
         //为了方便理解，这里dp[i][j]中的i&j分别指的是剩余长度：剩余i个job，剩余j天，而且j>=i
         //如此dp[][]就要把x&y的size个增大1。
@@ -61,7 +61,7 @@ public class MinimumDifficultyOfAJobSchedule {
 
         int[][] dp = new int[n+1][d+1];
         //set up initial values
-        for(int i=1; i<=n-d+1; i++){
+        for(int i=1; i<=n-d+1; i++){//注意dp是1-based，而jobDifficulty是0-based
             dp[i][1] = Math.max(jobDifficulty[i-1], dp[i-1][1]);//dp[0][1]本身是个没有意义的entry，刚好初值是0，不影响求解dp[1][1]
         }
 
@@ -71,6 +71,7 @@ public class MinimumDifficultyOfAJobSchedule {
                 int sufMax = 0;
                 dp[i][j] = Integer.MAX_VALUE;
                 for(int k=i-1; k>=j-1; k--){
+                    //jobDifficulty是0-based,所以k从i-1到j-1，刚好对应的是第i到第j个Job
                     sufMax = Math.max(sufMax, jobDifficulty[k]);
                     dp[i][j] = Math.min(dp[i][j], sufMax+dp[k][j-1]);
                 }

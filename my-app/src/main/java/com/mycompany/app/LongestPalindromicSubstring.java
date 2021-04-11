@@ -41,6 +41,30 @@ public class LongestPalindromicSubstring {
                 dp[i][i-1] = true;
             }
         }
+        for(int i=s.length()-2; i>=0; i--){
+            for(int j=i+1; j<s.length(); j++){
+                dp[i][j] = s.charAt(i)==s.charAt(j) && dp[i+1][j-1];
+                if(dp[i][j] && j-i>right-left){
+                    right = j;
+                    left = i;
+                }
+            }
+        }
+        return s.substring(left, right+1);
+    }
+
+    //跟上面的主要区别是递归的实现。采用一条斜线，接着一条斜线的方式写。
+    public String longestPalindromeImp2(String s) {
+        boolean[][] dp = new boolean[s.length()][s.length()];
+        int left = 0;
+        int right = 0;
+        //initiate starting values
+        for(int i=0; i<dp.length; i++){
+            dp[i][i] = true;
+            if(i-1>=0){
+                dp[i][i-1] = true;
+            }
+        }
         //k is the step not the index itself, 引入这个变量是为了，能够从左上往右下，斜着一排一排的递推
         //dp[i][j] = dp[i+1][j-1] && s.charAt(i)==s.charAt(j)
         for(int k=1; k<dp[0].length; k++){
@@ -58,25 +82,6 @@ public class LongestPalindromicSubstring {
         return s.substring(left, right+1);
     }
 
-    //跟上面的主要区别是递归的实现。避免了斜着一排排写的麻烦，而是巧妙的选择从右下角开始，一行一行往上写。
-    public String longestPalindromeImp2(String s) {
-        int n = s.length();
-        String res = null;
-
-        boolean[][] dp = new boolean[n][n];
-
-        for (int i = n - 1; i >= 0; i--) {
-            for (int j = i; j < n; j++) {
-                dp[i][j] = s.charAt(i) == s.charAt(j) && (j - i < 3 || dp[i + 1][j - 1]);
-
-                if (dp[i][j] && (res == null || j - i + 1 > res.length())) {
-                    res = s.substring(i, j + 1);
-                }
-            }
-        }
-
-        return res;
-    }
 
     //TODO: 抽时间看下！
     public String longestPalindromeManacher(String s) {

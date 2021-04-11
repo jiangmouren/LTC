@@ -52,7 +52,7 @@ public class CopyListWithRandomPointer {
         Node dummyHead = new Node(0);
         Node ptr = dummyHead;
         Node ptr2 = head;
-        Map<Node, Node> map = new HashMap<>();
+        Map<Node, Node> map = new HashMap<>();//用map记录两组object之间的映射关系
         while(ptr2!=null){
             Node temp = new Node(ptr2.val);
             map.put(ptr2, temp);

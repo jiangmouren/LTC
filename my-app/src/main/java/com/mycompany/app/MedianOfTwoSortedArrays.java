@@ -43,77 +43,82 @@ package com.mycompany.app;
  */
 
 class MedianOfTwoSortedArrays {
-    //这里的i&j表达的分别是划在左侧的两个的长度，即左侧最后一个的点分别为i-1 & j-1
-    //i+j = m-i+n-j or i+j = m-i+n-j+1
-    //if n>=m, we just need to set i=0~m, j=(m+n+1)/2 - i (这个式子，不管m+n是寄还是偶，都成立)
-    //B[j-1]<=A[i] && A[i-1]<=B[j]
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        //set m, n, nums1, nums2
-        int m = nums1.length>nums2.length ? nums2.length : nums1.length;
-        int n = nums1.length>nums2.length ? nums1.length : nums2.length;
-        if(nums1.length>nums2.length){
-            int[] temp = nums1;
+        //这是一个变向的binary search:找median的本质就是找到每个array在分到median左侧的位置
+        //let i & j分别表示nums1 & nums2分到median左边的长度，那么i & j的位置需要满足一下条件：
+        //i+j=m-i+n-j, if m+n is even; i+j=m-i+n-j+1, if m+n is odd and the mid is assigned to the left side.
+        //j=(m+n)/2 - i, if m+n is even; j = (m+n+1)/2 - i, if m+n is odd;而且后面的式子对于m+n为偶数的时候依然成立，因为round down
+        //所以给定一个i的位置，j的位置也就定了，我们需要做的就是找到一个符合一下条件的i的位置：
+        //A[i]>=B[j-1] && B[j]>=A[i-1], 而且注意，因为A,B都是sorted,以上两个不等式可以同时成立，但是不能同时不成立
+        //因为A,B都是sorted,可以根据上述不等式，针对i在A内做Binary Search
+        //注意这里用i来表达j, j = (m+n+1)/2 - i. i的区间是[0, m], n必须大于等于m，否则j会出现负数，所以第一步是先两个数组中确定m, n(找到长的那个)
+
+        //确定m, n
+        int m = nums1.length;
+        int n = nums2.length;
+        if(m>n){
+            int temp = n;
+            n = m;
+            m = temp;
+            int[] arr = nums1;
             nums1 = nums2;
-            nums2 = temp;
+            nums2 = arr;
         }
 
-        //handle m==0 case
+        //需要特殊处理m==0的情况，因为如果m==0,下面i==m & j==n会同时出现，就破坏了下面binary search的假设
         if(m==0){
-            int idx = (n-1)/2;//no matter n is even or odd, this holds true
+            int idx = (n-1)/2;
             if(n%2==0){
-                return (nums2[idx] + nums2[idx+1])/2.0;
+                return (nums2[idx]+nums2[idx+1])/2.0;//注意这里一定要写成2.0，否则参与运算的全是int,最后return的还是int，而且会做round down
             }
             else{
                 return nums2[idx];
             }
         }
 
-        //handle Binary Search case
+        //binary Search
         int iMin = 0;
         int iMax = m;
-        double minRight = 0;
-        double maxLeft = 0;
+        int leftMax = 0;
+        int rightMin = 0;
         while(iMin<=iMax){
             int i = (iMin+iMax)/2;
-            int j = (m+n+1)/2 - i;
-            //nums2[j-1]<=nums1[i] && nums2[j]>=nums1[i-1] 可以同时成立，但不可能同时不成立
-            if((j==0 || i==m || nums2[j-1]<=nums1[i]) && (i==0 || j==n || nums2[j]>=nums1[i-1])){
-                //get minRight
+            int j = (m+n+1)/2 -i ;
+            //下面的特殊情况首先可以简单的从边界条件的角度发现，其次有具体意涵：前两种特殊情况都对应i一路向右到头；后两种特殊情况都对应i一路向左到头
+            if((i==m || j==0 || nums1[i]>=nums2[j-1]) && (j==n || i==0 || nums2[j]>=nums1[i-1])){
                 if(i==m){
-                    minRight = nums2[j];
+                    rightMin = nums2[j];
                 }
                 else if(j==n){
-                    minRight = nums1[i];
+                    rightMin = nums1[i];
                 }
                 else{
-                    minRight = Math.min(nums2[j], nums1[i]);
+                    rightMin = Math.min(nums1[i], nums2[j]);
                 }
 
-                //get maxLeft
                 if(i==0){
-                    maxLeft = nums2[j-1];
+                    leftMax = nums2[j-1];
                 }
                 else if(j==0){
-                    maxLeft = nums1[i-1];
+                    leftMax = nums1[i-1];
                 }
                 else{
-                    maxLeft = Math.max(nums1[i-1], nums2[j-1]);
+                    leftMax = Math.max(nums1[i-1], nums2[j-1]);
                 }
-                //find result, stop search
                 break;
             }
-            else if(nums2[j-1]>nums1[i]){
-                iMin = i+1;
+            else if(nums1[i]<nums2[j-1]){
+                iMin = i + 1;
             }
             else{
-                iMax = i-1;
+                iMax = i - 1;
             }
         }
         if((m+n)%2==0){
-            return (minRight + maxLeft)/2.0;
+            return (leftMax+rightMin)/2.0;//注意这里一定要写成2.0
         }
         else{
-            return maxLeft;
+            return leftMax;
         }
     }
 }

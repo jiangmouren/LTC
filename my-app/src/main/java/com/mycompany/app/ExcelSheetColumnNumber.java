@@ -1,38 +1,51 @@
 package com.mycompany.app;
 
 /**
- * Created by jiangmouren on 6/4/17.
- */
-
-/**
- * Question:
- * Related to question Excel Sheet Column Title
- * Given a column title as appear in an Excel sheet, return its corresponding column number.
+ * Question: https://leetcode.com/problems/excel-sheet-column-number/
+ * Given a string columnTitle that represents the column title as appear in an Excel sheet,
+ * return its corresponding column number.
+ *
  * For example:
- *     A -> 1
- *     B -> 2
- *     C -> 3
- *     ...
- *     Z -> 26
- *     AA -> 27
- *     AB -> 28
+ * A -> 1
+ * B -> 2
+ * C -> 3
+ * ...
+ * Z -> 26
+ * AA -> 27
+ * AB -> 28
+ * ...
+ *
+ * Example 1:
+ * Input: columnTitle = "A"
+ * Output: 1
+ *
+ * Example 2:
+ * Input: columnTitle = "AB"
+ * Output: 28
+ *
+ * Example 3:
+ * Input: columnTitle = "ZY"
+ * Output: 701
+ *
+ * Example 4:
+ * Input: columnTitle = "FXSHRXW"
+ * Output: 2147483647
+ *
+ * Constraints:
+ * 1 <= columnTitle.length <= 7
+ * columnTitle consists only of uppercase English letters.
+ * columnTitle is in the range ["A", "FXSHRXW"].
  */
 
-/**
- * Analysis:
- * This is a Radix conversion problem. Convert a Radix 20 number to Radix 10 number.
- * And the Radix 26 number is right skewed by 1, since it starts from 1.
- */
 
 public class ExcelSheetColumnNumber {
     public int titleToNumber(String s) {
-        if(s==null) throw new IllegalArgumentException("input cannot be null");
-        if(s.length()==0) throw new IllegalArgumentException("input cannot be empty");
-        int result = 0;
-        //Attention: it is easy to make stupid mistake here: S.charAt(0) is MSB
+        long res = 0;
         for(int i=s.length()-1; i>=0; i--){
-            result += ((s.charAt(i)-'A' + 1) * Math.pow(26, s.length()-1-i));
+            char c = s.charAt(i);
+            long value = (c-'A'+1)*(long)Math.pow(26, s.length()-1-i);
+            res += value;
         }
-        return result;
+        return (int) res;
     }
 }

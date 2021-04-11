@@ -43,42 +43,4 @@ public class AddTwoNumbersIITest {
         l3.next.next = new ListNode(0);
         l3.next.next.next = new ListNode(7);
     }
-    @Test
-    public void add1() throws Exception {
-        ListNode res = obj.add1(l1, l2);
-        obj.printList(res);
-        assertTrue(checkList(res, l3));
-    }
-    @Test
-    public void add2() throws Exception {
-        ListNode res = obj.add2(l4, l5);
-        obj.printList(res);
-        assertTrue(checkList(res, l3));
-    }
-
-    @Test
-    public void add3() throws Exception {
-        ListNode res = obj.add3(l6, l7);
-        obj.printList(res);
-        assertTrue(checkList(res, l3));
-    }
-
-    private boolean checkList(ListNode l1, ListNode l2) {
-        if (l1 == null || l2 == null) {
-            throw new IllegalArgumentException("Inputs cannot be null");
-        }
-
-        ListNode ptr1 = l1, ptr2 = l2;
-        while (ptr1 != null && ptr2 != null) {
-            if(ptr1.val!=ptr2.val){
-                return false;
-            }
-            ptr1 = ptr1.next;
-            ptr2 = ptr2.next;
-        }
-        if (ptr1 != null || ptr2 != null) {
-            return false;
-        }
-        return true;
-    }
 }

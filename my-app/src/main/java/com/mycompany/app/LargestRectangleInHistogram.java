@@ -63,41 +63,44 @@ public class LargestRectangleInHistogram{
 
     public int largestRectangleArea(int[] heights) {
         int n = heights.length;
-        //离自己最近的左侧比自己小的位置
+
+        //左侧最近的比自己小的位置
         int[] left = new int[n];
-        //离自己最近的右侧比自己小的位置
-        int[] right = new int[n];
-        int maxArea = 0;
-        left[0] = -1;
-        for(int i=1; i<n; i++){
-            if(heights[i]>heights[i-1]){
-                left[i] = i-1;
+        for(int i=0; i<n; i++){
+            if(i==0){
+                left[i] = -1;
             }
             else{
-                int ptr = left[i-1];
+                int ptr = i - 1;
                 while(ptr>=0 && heights[ptr]>=heights[i]){
                     ptr = left[ptr];
                 }
                 left[i] = ptr;
             }
         }
-        right[n-1] = n;
-        for(int i=n-2; i>=0; i--){
-            if(heights[i]>heights[i+1]){
-                right[i] = i+1;
+
+        //右侧最近的比自己小的位置
+        int[] right = new int[n];
+        for(int i=n-1; i>=0; i--){
+            if(i==n-1){
+                right[i] = n;
             }
             else{
-                int ptr = right[i+1];
-                while(ptr<n&&heights[ptr]>=heights[i]){
+                int ptr = i + 1;
+                while(ptr<n && heights[ptr]>=heights[i]){
                     ptr = right[ptr];
                 }
                 right[i] = ptr;
             }
         }
+
+        int res = 0;
         for(int i=0; i<n; i++){
-            maxArea = Math.max(maxArea, heights[i]*(right[i]-left[i]-1));
+            int width = right[i] - left[i] - 1;
+            res = Math.max(res, width * heights[i]);
         }
-        return maxArea;
+
+        return res;
     }
 
     public int largestRectangleAreaSln2(int[] heights){

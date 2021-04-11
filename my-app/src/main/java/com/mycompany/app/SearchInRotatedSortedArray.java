@@ -29,52 +29,19 @@ package com.mycompany.app;
 
 public class SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
-        return searchHelper(nums, target, 0, nums.length-1);
-    }
-
-    private int searchHelper(int[] nums, int target, int left, int right){
-        //base case
-        if(right < left){
-            return -1;
-        }
-        int midIdx = (left + right) / 2;
-        //case 0: found at mid
-        if(nums[midIdx] == target){
-            return midIdx;
-        }
-        //case 1: ordered
-        else if(nums[left]<nums[right]){
-            //out of range, this is important to maintain O(lgn) complexity.
-            if(nums[left]>target || nums[right]<target){
-                return -1;
+        int start = 0, end = nums.length - 1;
+        while (start <= end) {
+            int mid = (start+end)/2;
+            if (nums[mid] == target) return mid;
+            else if (nums[mid] >= nums[start]) {
+                if (target >= nums[start] && target < nums[mid]) end = mid - 1;
+                else start = mid + 1;
             }
-
-            if(nums[midIdx] > target){
-                return searchHelper(nums, target, left, midIdx-1);
-            }
-            else{
-                return searchHelper(nums, target, midIdx+1, right);
+            else {
+                if (target <= nums[end] && target > nums[mid]) start = mid + 1;
+                else end = mid - 1;
             }
         }
-        //case 2: cross pivot
-        else{
-            //Always at least one side is ordered. I want to search that side first, so I can either found it or early terminate.
-            if(nums[midIdx]>nums[left]){
-                //pivot on right part
-                int leftResult = searchHelper(nums, target, left, midIdx-1);
-                if(leftResult == -1){
-                    return searchHelper(nums, target, midIdx+1, right);
-                }
-                return leftResult;
-            }
-            else{
-                //pivot on left part
-                int rightResult = searchHelper(nums, target, midIdx+1, right);
-                if(rightResult==-1){
-                    return searchHelper(nums, target, left, midIdx-1);
-                }
-                return rightResult;
-            }
-        }
+        return -1;
     }
 }

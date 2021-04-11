@@ -1,16 +1,25 @@
 package com.mycompany.app;
 
 /**
- * Created by jiangmouren on 6/4/17.
- */
-
-/**
- * Question:
- * Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.
- * For example:
- * Given num = 38, the process is like: 3 + 8 = 11, 1 + 1 = 2. Since 2 has only one digit, return it.
- * Follow up:
- * Could you do it without any loop/recursion in O(1) runtime?
+ * Question: https://leetcode.com/problems/add-digits/
+ * Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+ *
+ * Example 1:
+ * Input: num = 38
+ * Output: 2
+ * Explanation: The process is
+ * 38 --> 3 + 8 --> 11
+ * 11 --> 1 + 1 --> 2
+ * Since 2 has only one digit, return it.
+ *
+ * Example 2:
+ * Input: num = 0
+ * Output: 0
+ *
+ * Constraints:
+ * 0 <= num <= 231 - 1
+ *
+ * Follow up: Could you do it without any loop/recursion in O(1) runtime?
  */
 
 /**
@@ -35,9 +44,15 @@ package com.mycompany.app;
  *
  */
 public class AddDigits {
+    //参考：https://en.wikipedia.org/wiki/Digital_root
     public int addDigits(int num) {
-        int result = num % 9;
-        if(result==0) return 9;
-        else return result;
+        if(num==0){
+            return 0;
+        }
+        int res = num % 9;
+        if(res==0){
+            res = 9;
+        }
+        return res;
     }
 }

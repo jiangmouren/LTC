@@ -54,8 +54,8 @@ class IntegerToEnglishWords {
             }
         }
         if(num>999999){
-            temp = num / 1000000;
-            temp = temp % 1000;
+            temp = num / 1000000;//取高位，用除法
+            temp = temp % 1000;//去低位，用取模
             str = toString(temp);
             if(!str.isEmpty()){
                 addSpace(buf);

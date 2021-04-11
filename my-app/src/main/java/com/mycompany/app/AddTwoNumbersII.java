@@ -29,93 +29,41 @@ public class AddTwoNumbersII {
             this.val = x;
         }
     }
-    //Reverse the LinkedLists
-    public ListNode add1(ListNode l1, ListNode l2){
-        ListNode l1R = reverseList(l1);
-        ListNode l2R = reverseList(l2);
-        printList(l1R);
-        printList(l2R);
-        return reverseList(addFwd(l1R, l2R));
-    }
 
-    public void printList(ListNode l1){
-        for(ListNode ptr=l1; ptr!=null; ptr=ptr.next){
-            System.out.print(ptr.val);
-        }
-        System.out.println();
-    }
-
-    private ListNode addFwd(ListNode l1, ListNode l2) {
-        ListNode ptr1 = l1;
-        ListNode ptr2 = l2;
-        ListNode dummyHead = new ListNode(0);
-        ListNode ptr = dummyHead;
-        int c = 0;
-        while(ptr1!=null || ptr2!=null){
-            int tmp = c;
-            if(ptr1!=null){
-                tmp += ptr1.val;
-                ptr1 = ptr1.next;
-            }
-            if(ptr2!=null){
-                tmp += ptr2.val;
-                ptr2 = ptr2.next;
-            }
-            //remember to clear carry
-            c = 0;
-            if(tmp>9){//maximum 18 for LSB and 19 for others
-                tmp -= 10;
-                c = 1;
-            }
-            ListNode node = new ListNode(tmp);
-            ptr.next = node;
-            ptr = ptr.next;
-        }
-        return dummyHead.next;
-    }
-
-    //Your need 3 pointers to reverse a LinkedList
-    private ListNode reverseList(ListNode l1){
-        ListNode ptr1 = null;
-        ListNode ptr2 = l1;
-        ListNode ptr3 = l1.next;
-
-        while(ptr2!=null){
-            ptr2.next = ptr1;
-            ptr1 = ptr2;
-            ptr2 = ptr3;
-            if(ptr3!=null){
-                ptr3 = ptr3.next;
-            }
-        }
-        return ptr1;
-    }
-
-    //Use stack to reverse
-    public ListNode add2(ListNode l1, ListNode l2){
+    /**
+     * Solution 1: Use stack to reverse
+     * 最简单好写
+     */
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2){
         Stack<Integer> stack1 = new Stack<>();
         Stack<Integer> stack2 = new Stack<>();
         enStack(l1, stack1);
         enStack(l2, stack2);
-        int carry = 0;
+        int c = 0;
         ListNode ptr = null;
         while(!stack1.isEmpty() || !stack2.isEmpty()){
-            int tmp = carry;
             if(!stack1.isEmpty()){
-                tmp += stack1.pop();
+                c += stack1.pop();
             }
             if(!stack2.isEmpty()){
-                tmp += stack2.pop();
+                c += stack2.pop();
             }
-            //remember to clear carry
-            carry = 0;
-            if(tmp>9){
-                tmp -= 10;
-                carry = 1;
+            ListNode cur;
+            if(c>=10){
+                cur = new ListNode(c-10);
+                c = 1;
             }
-            ListNode node = new ListNode(tmp);
-            node.next = ptr;
-            ptr = node;
+            else{
+                cur = new ListNode(c);
+                c = 0;
+            }
+            cur.next = ptr;
+            ptr = cur;
+        }
+        if(c==1){
+            ListNode cur = new ListNode(1);
+            cur.next = ptr;
+            ptr = cur;
         }
         return ptr;
     }
@@ -126,8 +74,10 @@ public class AddTwoNumbersII {
         }
     }
 
-    //Add 0 and use recursion
-    public ListNode add3(ListNode l1, ListNode l2){
+    /**
+     * Solution 2: Add 0 and use recursion
+     */
+    public ListNode add2(ListNode l1, ListNode l2){
         int len1 = getLength(l1);
         int len2 = getLength(l2);
         int diff = Math.abs(len1-len2);
@@ -200,5 +150,60 @@ public class AddTwoNumbersII {
             this.node = node;
             this.carry = carry;
         }
+    }
+
+    /**
+     * Solution3: Reverse the LinkedLists
+     */
+    public ListNode add3(ListNode l1, ListNode l2){
+        ListNode l1R = reverseList(l1);
+        ListNode l2R = reverseList(l2);
+        return reverseList(addFwd(l1R, l2R));
+    }
+
+    private ListNode addFwd(ListNode l1, ListNode l2) {
+        ListNode ptr1 = l1;
+        ListNode ptr2 = l2;
+        ListNode dummyHead = new ListNode(0);
+        ListNode ptr = dummyHead;
+        int c = 0;
+        while(ptr1!=null || ptr2!=null){
+            int tmp = c;
+            if(ptr1!=null){
+                tmp += ptr1.val;
+                ptr1 = ptr1.next;
+            }
+            if(ptr2!=null){
+                tmp += ptr2.val;
+                ptr2 = ptr2.next;
+            }
+            //remember to clear carry
+            c = 0;
+            if(tmp>9){//maximum 18 for LSB and 19 for others
+                tmp -= 10;
+                c = 1;
+            }
+            ListNode node = new ListNode(tmp);
+            ptr.next = node;
+            ptr = ptr.next;
+        }
+        return dummyHead.next;
+    }
+
+    //Your need 3 pointers to reverse a LinkedList
+    private ListNode reverseList(ListNode l1){
+        ListNode ptr1 = null;
+        ListNode ptr2 = l1;
+        ListNode ptr3 = l1.next;
+
+        while(ptr2!=null){
+            ptr2.next = ptr1;
+            ptr1 = ptr2;
+            ptr2 = ptr3;
+            if(ptr3!=null){
+                ptr3 = ptr3.next;
+            }
+        }
+        return ptr1;
     }
 }

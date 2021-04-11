@@ -48,6 +48,7 @@ import java.util.*;
  * 再就是要区分要存2个状态跟2-D dp区别。
  * 前者是有n个子问题，但是描述每个问题需要两个状态变量,后者是有n*n个子问题，但是每个子问题只需要一个状态变量.
  * 参考：https://leetcode.com/problems/maximum-profit-in-job-scheduling/discuss/409009/JavaC%2B%2BPython-DP-Solution
+ * 本质上这是greedy的写法。
  */
 public class MaximumProfitInJobScheduling {
     public int jobScheduling(int[] startTime, int[] endTime, int[] profit) {
@@ -63,7 +64,7 @@ public class MaximumProfitInJobScheduling {
         dp.put(0, 0);
         for (int[] job : jobs) {
             int cur = dp.floorEntry(job[0]).getValue() + job[2];
-            //只有当cur跟大的时候才能去更新dp，千万不能cur没有跟大的时候，dp.put(job[1], dp.lastEntry().getValue())
+            //只有当cur更大的时候才能去更新dp，千万不能cur没有跟大的时候，dp.put(job[1], dp.lastEntry().getValue())
             //因为这样错误改变了系统的状态，因为“时间状态”所表达的不是“截止某个时间”，而是“取得最大值的结束时间”.
             //并不需要每个子问题都要在状态空间里面有一个对应的entry，而只是需要每个子问题去更新状态空间，使其能够有效表达每个子问题的解。
             //具体到这个问题来说每个job过完之后，dp.lastEntry().getValue()就是截止这个job所能获得的最大值。

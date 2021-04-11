@@ -39,9 +39,9 @@ import java.util.*;
  */
 
 /**
- * 这种TimestampedKeyValueStore是在kafka中真实存在的。
- * 简单的理解，这里每个key就是一个topic，或者channel
- * 每个value就是一个个的record/log，然后在get的时候，关心的是截止到某个时间的最新的record
+ * 要点在于“timestamps for all TimeMap.set operations are strictly increasing”
+ * 如此就等于说每个Map entry里面的list都是sorted by timestamp
+ * 所以就可以Binary Search
  */
 public class TimeBasedKeyValueStore {
     class Pair{
@@ -86,24 +86,29 @@ public class TimeBasedKeyValueStore {
                 return list.get(list.size()-1).value;
             }
             else{
-                int ptr0 = 0;
-                int ptr1 = list.size()-1;
-                while(ptr0<ptr1){
-                    if(ptr1-ptr0==1){
+                int left = 0;
+                int right = list.size()-1;
+                String res = "";
+                while(left<=right){
+                    int mid = (left + right)/2;
+                    if(list.get(mid).timestamp==timestamp){
+                        res = list.get(mid).value;
                         break;
                     }
-                    int mid = (ptr0 + ptr1)/2;
-                    if(list.get(mid).timestamp==timestamp){
-                        return list.get(mid).value;
-                    }
                     if(list.get(mid).timestamp<timestamp){
-                        ptr0 = mid;
+                        if(list.get(mid+1).timestamp<=timestamp){
+                            left = mid + 1;
+                        }
+                        else{
+                            res = list.get(mid).value;
+                            break;
+                        }
                     }
                     else{
-                        ptr1 = mid;
+                        right = mid - 1;
                     }
                 }
-                return list.get(ptr0).value;
+                return res;
             }
         }
     }

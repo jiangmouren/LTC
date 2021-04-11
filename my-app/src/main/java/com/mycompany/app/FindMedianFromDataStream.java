@@ -47,46 +47,43 @@ import java.util.*;
  * double param_2 = obj.findMedian();
  */
 public class FindMedianFromDataStream{
-    //直接想到的有两种解法：
-    //一种是用两个Heap，一个MinHeap，一个MaxHeap,各装一半的stream，每次insert的时候check两边的size，决定往哪边放。
-    //上面这种解法，insert是O(logN), findMedian是O(1)（不需要pop，只是peek）
-    //另外一种解法就是用一个sorted list去存stream
-    //每次insert的时候，用Binary Search来确定插入的位置, 但是要在list里insert,复杂度是O(n)
-    //所以放弃这种想法
-    PriorityQueue<Integer> hiQueue;
-    PriorityQueue<Integer> loQueue;
+    //核心是用两个PriorityQueue把data stream拆成上下两部分
+    //分别用一个minPriorityQueue和一个maxPriorityQueue
+    //这种解法，insert是O(logN), findMedian是O(1)（不需要pop，只是peek）
+    PriorityQueue<Integer> hiQ;//minQueue
+    PriorityQueue<Integer> loQ;//maxQueue
     /** initialize your data structure here. */
     public FindMedianFromDataStream() {
-        hiQueue = new PriorityQueue<>(11, (a,b)->a-b);
-        loQueue = new PriorityQueue<>(11, (a,b)->b-a);
+        this.hiQ = new PriorityQueue<>(11, (a,b)->a-b);
+        this.loQ = new PriorityQueue<>(11, (a,b)->b-a);
     }
 
     public void addNum(int num) {
-        //要领有个2个：
-        //1. 要保证loQueue里面的数字都比hiQueue里面的小
-        //2. 要保证两个Queue的size平衡
-        if(loQueue.size()>0 && num<loQueue.peek()){
-            loQueue.add(num);
+        //核心有两条：1. 保证hiQ的size不小于loQ；2. 要维持两边size的平衡
+        if(loQ.size()>0 && num<loQ.peek()){//只有确定要进lo的才进lo
+            loQ.add(num);
         }
-        else{
-            hiQueue.add(num);
+        else{//可进lo,也可进hi的,默认进hi，后面再来平衡size
+            hiQ.add(num);
         }
-        if(hiQueue.size()-loQueue.size()>=2){
-            int hiMin = hiQueue.poll();
-            loQueue.add(hiMin);
+
+        //balance size
+        if(hiQ.size()-loQ.size()>1){
+            int hiMin = hiQ.poll();
+            loQ.add(hiMin);
         }
-        if(loQueue.size()>hiQueue.size()){
-            int loMax = loQueue.poll();
-            hiQueue.add(loMax);
+        if(loQ.size()>hiQ.size()){
+            int loMax = loQ.poll();
+            hiQ.add(loMax);
         }
     }
 
     public double findMedian() {
-        if(hiQueue.size()>loQueue.size()){
-            return hiQueue.peek();
+        if(hiQ.size()>loQ.size()){
+            return hiQ.peek();
         }
         else{
-            return (hiQueue.peek()+loQueue.peek())*0.5;
+            return (hiQ.peek()+loQ.peek())*0.5;
         }
     }
 }

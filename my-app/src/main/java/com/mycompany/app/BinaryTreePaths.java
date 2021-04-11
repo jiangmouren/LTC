@@ -1,4 +1,5 @@
 /**
+ * https://leetcode.com/problems/binary-tree-paths/
  * Given a binary tree, return all root-to-leaf paths.
  * For example, given the following binary tree:
  *
@@ -12,10 +13,6 @@
  * ["1->2->5", "1->3"]
  */
 
-/**
- * Analysis:
- * Typical Backtracking problem.
- */
 package com.mycompany.app;
 import java.util.*;
 public class BinaryTreePaths {
@@ -27,41 +24,46 @@ public class BinaryTreePaths {
             this.val = x;
         }
     }
-    public List<List<TreeNode>> find(TreeNode root){
-        List<List<TreeNode>> result = new ArrayList<>();
-        List<TreeNode> buf = new LinkedList<>();
-        helper(root, result, buf);
-        return result;
+    public List<String> binaryTreePaths(TreeNode root) {
+        List<String> res = new ArrayList<>();
+        StringBuilder buf = new StringBuilder();
+        preOrder(res, buf, root);
+        return res;
     }
 
-    private void helper(TreeNode root, List<List<TreeNode>> result, List<TreeNode> buf){
-        /**
-         * Cannot use the following way to decide leaf node, otherwise 1->2 will also be added to the result
-         * in the above example.
-         * Need to check at current level, cannot let it fall to the null node.
-         * //edge case
-         * if(root==null){
-         *     List<TreeNode> tmp = new ArrayList<>();
-         *     tmp.addAll(buf);
-         *     result.add(tmp);
-         *     return;
-         * }
-         */
-
-        buf.add(root);
-        //edge case
+    /**
+     * Cannot use the following way to decide leaf node, otherwise 1->2 will also be added to the result
+     * in the above example.
+     * Need to check at current level, cannot let it fall to the null node.
+     * //edge case
+     * if(root==null){
+     *     List<TreeNode> tmp = new ArrayList<>();
+     *     tmp.addAll(buf);
+     *     result.add(tmp);
+     *     return;
+     * }
+     */
+    private void preOrder(List<String> res, StringBuilder buf, TreeNode root){
+        int l = buf.length();
+        if(buf.length()==0){
+            buf.append(root.val);
+        }
+        else{
+            buf.append("->");
+            buf.append(root.val);
+        }
+        //termination
         if(root.left==null && root.right==null){
-            List<TreeNode> tmp = new ArrayList<>();
-            tmp.addAll(buf);
-            result.add(tmp);
-            buf.remove(buf.size()-1);
+            res.add(buf.toString());
+            buf.setLength(l);
             return;
         }
-
-        //Normal cases
-        if(root.left!=null) helper(root.left, result, buf);
-        if(root.right!=null) helper(root.right, result, buf);
-        buf.remove(buf.size()-1);
+        if(root.left!=null){
+            preOrder(res, buf, root.left);
+        }
+        if(root.right!=null){
+            preOrder(res, buf, root.right);
+        }
+        buf.setLength(l);
     }
-
 }

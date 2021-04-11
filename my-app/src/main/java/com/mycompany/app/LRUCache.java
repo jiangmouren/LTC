@@ -48,6 +48,18 @@ import java.util.*;
  */
 
 public class LRUCache {
+    //double linked list node
+    private class Node{
+        int value;
+        int key;
+        Node next;
+        Node pre;
+        public Node(int key, int value){
+            this.key = key;
+            this.value = value;
+        }
+    }
+
     private Map<Integer, Node> map;
     private int capacity;
     private Node dummyHead;
@@ -86,7 +98,7 @@ public class LRUCache {
             if(map.size()>=this.capacity){
                 remove();
             }
-            insert(key, node);
+            insertMapAndList(node);
         }
     }
 
@@ -97,17 +109,17 @@ public class LRUCache {
         node.next.pre = node.pre;
 
         //reinsert
-        insert(node);
+        insertList(node);
         return;
     }
 
-    private void insert(int key, Node node){
-        insert(node);
-        this.map.put(key, node);
+    private void insertMapAndList(Node node){
+        insertList(node);
+        this.map.put(node.key, node);
         return;
     }
 
-    private void insert(Node node){
+    private void insertList(Node node){
         node.next = dummyHead.next;
         dummyHead.next.pre = node;
         node.pre = dummyHead;
@@ -121,16 +133,5 @@ public class LRUCache {
         dummyTail.pre = last.pre;
         this.map.remove(last.key);
         return;
-    }
-
-    private class Node{
-        int value;
-        int key;
-        Node next;
-        Node pre;
-        public Node(int key, int value){
-            this.key = key;
-            this.value = value;
-        }
     }
 }

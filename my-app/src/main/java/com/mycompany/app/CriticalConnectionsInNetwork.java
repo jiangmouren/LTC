@@ -23,36 +23,53 @@ package com.mycompany.app;
 import java.util.*;
 
 public class CriticalConnectionsInNetwork {
-    //下面第一种写法是比较naive的写法，会需要O(n^2)的time complexity.
-    //尤其对于“大圈套小圈”的情况对于下面这种写法非常不利，详细的分析见下图：
-    //src\main\resources\DfsWithBacktrackingComplexity.jpg
+    /**
+     * 这题是图论里面的"biconnected component"问题，具体说是找"bridge"的问题。
+     * 在CLRS里面"Problem 22-2"就是这个，具体可以网上查询相关关键词，比如：
+     * https://www.geeksforgeeks.org/biconnected-components/
+     * https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/
+     * 具体实现上，一种就是我下面的这种写法，用rank，就是每个vertex到root在dfs路径中的距离
+     * 还有一种就是用timestamp，或者discover time. 具体就是用一个global的时间，去标定每一个vertex在dfs中被发现的时刻，就是下面第2种解法。
+     * 这两种解法的主要的区别在于sibling tree所标定的数值上，但是每一个tree内部的child, parent, ancestor的相对标定值上一样的。
+     * 所以对于发现"back edge"这件事情来说是没有区别的。详见：src\main\resources\Timestamp-Rank.PNG
+     */
     public List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
-        //解题的思路就是如果[a,b]不是critical edge，说明从a到b右不止一条路径，所以在a,b之间有一个cycle
-        //所以一旦找到一个圆，那么dfs当下圆闭环的这个点沿着call stack backtrack，在回到这个点的路径就都不是critical edge
-        //沿着call stack往回找，不能直接return call，而应该选择用parent指针的方式，否则control will be very messy
         List<List<Integer>> graph = buildGraph(n, connections);
-        Set<Integer> excSet = new HashSet<>();
-        //0: not visited; 1: visiting; 2: visited
-        //这里一定要用到"visiting"这个状态，否则就会在"backTrack" method "pre = parent[pre]"
-        //位置出现index out of bound的问题，因为"pre==-1"，原因如下：
-        //src\main\resources\WhyUseVisiting.jpg
-        int[] visited = new int[n];
-        int[] parent = new int[n];
-        for(int i=0; i<n; i++){
-            parent[i]=-1;
-        }
-        //all connected, so simply pick to start from 0
-        dfs(0, excSet, graph, visited, parent, n);
         List<List<Integer>> res = new ArrayList<>();
-        for(List<Integer> edge : connections){
-            int d0 = edge.get(0)>edge.get(1) ? edge.get(0) : edge.get(1);
-            int d1 = edge.get(0)>edge.get(1) ? edge.get(1) : edge.get(0);
-            int key = d1*n + d0;
-            if(!excSet.contains(key)){
-                res.add(edge);
+        int[] low = new int[n];
+        int[] rank = new int[n];
+        for(int i=0; i<n; i++){
+            rank[i] = -1;
+        }
+        rank[0] = 0;
+        dfs(0, graph, low, rank, res, -1);//这里并不必须是-1， 0也不影响。
+        return res;
+    }
+
+    //用rank[i]==-1表达没有被visit过
+    //这里有一个问题就是既然已经有rank[i]用来表示visited，那么有为什么还需要pre避免parent?
+    //参考：src\main\resources\WhyNeedPre.jpg
+    //如果不阻止使用parent的rank作为low的开始，那么无法区分图中的两种情况，因为在1点的位置的Low都是0
+    private void dfs(int root, List<List<Integer>> graph, int[] low, int[] rank, List<List<Integer>> res, int pre){
+        int curRank = rank[root];
+        low[root] = curRank;//当前的low都是从当前的rank算起，而不是从parent的rank算起
+        for(int node : graph.get(root)){
+            if(node!=pre && rank[node]==-1){
+                rank[node] = curRank+1;
+                dfs(node, graph, low, rank, res, root);
+                low[root] = Math.min(low[root], low[node]);
+                if(rank[root] < low[node]){
+                    List<Integer> buf = new ArrayList<>();
+                    buf.add(node);
+                    buf.add(root);
+                    res.add(buf);
+                }
+            }
+            //遇到了一个已经被访问过的点，无法再traverse any further from there, so just take the rank
+            else if(node!=pre && rank[node]!=-1){
+                low[root] = Math.min(low[root], rank[node]);//而且发现的是Loop，不可能存在bridge，所以就不用考虑是否bridge
             }
         }
-        return res;
     }
 
     private List<List<Integer>> buildGraph(int n, List<List<Integer>> connections){
@@ -67,86 +84,10 @@ public class CriticalConnectionsInNetwork {
         return graph;
     }
 
-    private void dfs(int start, Set<Integer> excSet, List<List<Integer>> graph, int[] visited, int[] parent, int n){
-        visited[start] = 1;
-        for(int child : graph.get(start)){
-            if(child!=parent[start] && visited[child]==0){
-                parent[child] = start;
-                dfs(child, excSet, graph, visited, parent, n);
-                parent[child] = -1;
-            }
-            else if(child!=parent[start] && visited[child]==1){
-                backTrack(excSet, child, start, n, parent);
-            }
-        }
-        visited[start] = 2;
-    }
-
-    private void backTrack(Set<Integer> excSet, int end, int start, int n, int[] parent){
-        int pre = parent[start];
-        int cur = start;
-        while(cur!=end){
-            int d0 = cur > pre ? cur : pre;
-            int d1 = cur > pre ? pre : cur;
-            int key= d1*n + d0;
-            excSet.add(key);
-            cur = pre;
-            pre = parent[pre];
-        }
-        //add edge between start and end
-        int d0 = start > end ? start : end;
-        int d1 = start > end ? end : start;
-        int key = d1*n + d0;
-        excSet.add(key);
-    }
-
     /**
-     * 这题是图论里面的"biconnected component"问题，具体说是找"bridge"的问题。
-     * 在CLRS里面"Problem 22-2"就是这个，具体可以网上查询相关关键词，比如：
-     * https://www.geeksforgeeks.org/biconnected-components/
-     * https://www.geeksforgeeks.org/articulation-points-or-cut-vertices-in-a-graph/
+     * Timestamp based Implementation.
      */
-
-    //具体实现上，一种就是我下面的这种写法，用rank，就是每个vertex到root在dfs路径中的距离
-    //还有一种就是用timestamp，或者discover time. 具体就是用一个global的时间，去标定每一个vertex在dfs中被发现的时刻，就是下面第3种解法。
-    //这两种解法的主要的区别在于sibling tree所标定的数值上，但是每一个tree内部的child, parent, ancestor的相对标定值上一样的。
-    //所以对于发现"back edge"这件事情来说是没有区别的。详见：src\main\resources\Timestamp-Rank.PNG
     public List<List<Integer>> criticalConnectionsSln2(int n, List<List<Integer>> connections) {
-        List<List<Integer>> graph = buildGraph(n, connections);
-        List<List<Integer>> res = new ArrayList<>();
-        int[] low = new int[n];
-        int[] rank = new int[n];
-        for(int i=0; i<n; i++){
-            rank[i] = -1;
-        }
-        rank[0] = 0;
-        dfs(0, graph, low, rank, res, -1);
-        return res;
-    }
-    //不需要用parent pointer去backtracking,所以就不需要用array都记录下来了
-    //用rank[i]==-1表达没有被visit过
-    private void dfs(int root, List<List<Integer>> graph, int[] low, int[] rank, List<List<Integer>> res, int pre){
-        int curRank = rank[root];
-        low[root] = curRank;
-        for(int node : graph.get(root)){
-            if(node!=pre && rank[node]==-1){
-                rank[node] = curRank+1;
-                dfs(node, graph, low, rank, res, root);
-                low[root] = Math.min(low[root], low[node]);
-                if(rank[root] < low[node]){
-                    List<Integer> buf = new ArrayList<>();
-                    buf.add(node);
-                    buf.add(root);
-                    res.add(buf);
-                }
-            }
-            else if(node!=pre && rank[node]!=-1){
-                low[root] = Math.min(low[root], rank[node]);
-            }
-        }
-    }
-
-    public List<List<Integer>> criticalConnectionsSln3(int n, List<List<Integer>> connections) {
         int[] disc = new int[n], low = new int[n];
         // use adjacency list instead of matrix will save some memory, adjmatrix will cause MLE
         List<Integer>[] graph = new ArrayList[n];
@@ -191,4 +132,7 @@ public class CriticalConnectionsInNetwork {
             }
         }
     }
+
+
+
 }

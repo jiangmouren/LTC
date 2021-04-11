@@ -55,7 +55,7 @@ public class ReachingPoints {
                 diff %= ty;
                 diff += sx;
                 if(diff==tx){//减到最后的位置的条件
-                    break;
+                    break;//tx已经无法再往下减了，但是tx>ty，所以只能结束整个过程
                 }
                 else{
                     tx = diff;

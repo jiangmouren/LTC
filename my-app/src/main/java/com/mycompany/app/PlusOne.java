@@ -1,39 +1,54 @@
 package com.mycompany.app;
-/**
- * Question:
- * Given a non-negative integer represented as a non-empty array of digits, plus one to the integer.
- * You may assume the integer do not contain any leading zero, except the number 0 itself.
- * The digits are stored such that the most significant digit is at the head of the list.
- */
-
-/**
- * There are 2 catches:
- * 1. the order of the digits
- * 2. if a carry in the end is needed, i.e. the length of the result can be n+1.
- */
 import java.util.*;
 
+/**
+ * Question: https://leetcode.com/problems/plus-one/
+ * Given a non-empty array of decimal digits representing a non-negative integer, increment one to the integer.
+ * The digits are stored such that the most significant digit is at the head of the list,
+ * and each element in the array contains a single digit.
+ * You may assume the integer does not contain any leading zero, except the number 0 itself.
+ *
+ * Example 1:
+ * Input: digits = [1,2,3]
+ * Output: [1,2,4]
+ * Explanation: The array represents the integer 123.
+ *
+ * Example 2:
+ * Input: digits = [4,3,2,1]
+ * Output: [4,3,2,2]
+ * Explanation: The array represents the integer 4321.
+ *
+ * Example 3:
+ * Input: digits = [0]
+ * Output: [1]
+ *
+ * Constraints:
+ * 1 <= digits.length <= 100
+ * 0 <= digits[i] <= 9
+ */
+
 public class PlusOne {
-    public int[] plusOne(int[] nums){
-        //assume nums[0] is the least significant bit
-        List<Integer> list = new LinkedList<>();
-        int carry = 1;
-        for(int i=0; i<nums.length; i++){
-            int tmp = nums[i]+carry;
-            if(tmp>9){
-                carry = 1;
-                list.add(tmp-10);
+    public int[] plusOne(int[] digits) {
+        List<Integer> res = new ArrayList<>();
+        int c = 1;
+        for(int i=digits.length-1; i>=0; i--){
+            c += digits[i];
+            if(c>9){
+                res.add(0);
+                c = 1;
             }
             else{
-                carry = 0;
-                list.add(tmp);
+                res.add(c);
+                c = 0;
             }
         }
-        if(carry==1) list.add(1);
-        int[] result = new int[list.size()];
-        ListIterator<Integer> iterator = list.listIterator();
-        while(iterator.hasNext()){
-            result[iterator.nextIndex()] = iterator.next();
+        if(c==1){
+            res.add(c);
+        }
+
+        int[] result = new int[res.size()];
+        for(int i=0; i<res.size(); i++){
+            result[i] = res.get(res.size()-1-i);
         }
         return result;
     }

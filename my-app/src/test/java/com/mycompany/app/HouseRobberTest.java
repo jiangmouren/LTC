@@ -11,10 +11,5 @@ import static org.junit.Assert.*;
 public class HouseRobberTest {
     HouseRobber objectUnderTest = new HouseRobber();
     int[] money = {0, 2, 4, 2, 7};
-    @Test
-    public void maxRobber() throws Exception {
-        int result = objectUnderTest.maxRobber(money);
-        assertEquals(result, 11);
-    }
 
 }

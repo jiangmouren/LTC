@@ -10,9 +10,5 @@ import static org.junit.Assert.*;
  */
 public class ValidPalindromeTest {
     ValidPalindrome objectUnderTest = new ValidPalindrome();
-    @Test
-    public void validPalindrome() throws Exception {
-        assertTrue(objectUnderTest.validPalindrome("A man, a plan, a canal: Panama"));
-    }
 
 }

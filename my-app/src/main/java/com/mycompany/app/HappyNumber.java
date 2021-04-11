@@ -32,23 +32,38 @@ package com.mycompany.app;
 import java.util.*;
 
 public class HappyNumber {
-    Set<Integer> set = new HashSet<>();
+    //Recursive Solution
     public boolean isHappy(int n) {
-        //Termination Conditions
-        if(n==1) return true;
-        if(set.contains(n)) return false;
+        Set<Integer> set = new HashSet<>();
+        return search(n, set);
+    }
 
-        //Recursive Conditions
+    private boolean search(int n, Set<Integer> set){
+        //termination
+        if(n==1){
+            return true;
+        }
+        if(set.contains(n)){
+            return false;
+        }
+
         set.add(n);
-        long tmp = 0;
+        return search(getNum(n), set);
+    }
+
+    private int getNum(int n){
+        int nxt = 0;
         while(n>0){
             int digit = n%10;
-            tmp += Math.pow(digit, 2);
-            n = (n-digit)/10;
+            nxt += Math.pow(digit, 2);
+            n /= 10;
         }
-        return isHappy((int)tmp);
+        return nxt;
     }
+
+    //Iterative Solution
     public boolean isHappyLoop(int n){
+        Set<Integer> set = new HashSet<>();
         while(n!=1){
             if(set.contains(n)) return false;
             set.add(n);

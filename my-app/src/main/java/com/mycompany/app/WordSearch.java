@@ -32,7 +32,7 @@ public class WordSearch{
         boolean[][] visit = new boolean[board.length][board[0].length];
         for(int i=0; i<board.length; i++){
             for(int j=0; j<board[0].length; j++){
-                if(dfs(board, word, visit, i, j, 0)){
+                if(backtrack(board, word, visit, i, j, 0)){
                     return true;
                 }
             }
@@ -40,7 +40,11 @@ public class WordSearch{
         return false;
     }
 
-    private boolean dfs(char[][] board, String word, boolean[][] visit, int startX, int startY, int pos){
+    private boolean backtrack(char[][] board, String word, boolean[][] visit, int startX, int startY, int pos){
+        //termination不能这么写是因为，matrix可能会限制无法走到这一步，比如对于：[["a"]]， "a". 所以不能等到"下一步"再判断。
+        //if(pos>=word.length()){
+        //    return true;
+        //}
         if(board[startX][startY] != word.charAt(pos)){
             return false;
         }
@@ -54,12 +58,12 @@ public class WordSearch{
                 int xNew = startX + dirc[0];
                 int yNew = startY + dirc[1];
                 if(xNew<board.length && xNew>=0 && yNew<board[0].length && yNew>=0 && !visit[xNew][yNew]){
-                    if(dfs(board, word, visit, xNew, yNew, pos+1)){
+                    if(backtrack(board, word, visit, xNew, yNew, pos+1)){
                         return true;
                     }
                 }
             }
-            visit[startX][startY] = false;
+            visit[startX][startY] = false;//只关心visiting，所以一旦off path，就要reset
             return false;
         }
     }

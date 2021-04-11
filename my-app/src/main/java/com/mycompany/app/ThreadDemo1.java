@@ -4,11 +4,11 @@ package com.mycompany.app;
  * Created by eljian on 10/18/2017.
  */
 
-public class ThreadDemo extends Thread {
+public class ThreadDemo1 extends Thread {
     //private Thread t;
     private String threadName;
 
-    ThreadDemo(String name) {
+    ThreadDemo1(String name) {
         threadName = name;
         System.out.println("Creating " +  threadName );
     }
@@ -26,19 +26,11 @@ public class ThreadDemo extends Thread {
         System.out.println("Thread " +  threadName + " exiting.");
     }
 
-    //public void start () {
-    //    System.out.println("Starting " +  threadName );
-    //    if (t == null) {
-    //        t = new Thread (this, threadName);
-    //        t.start ();
-    //    }
-    //}
-
     public static void main(String args[]) {
-        ThreadDemo T1 = new ThreadDemo( "Thread-1");
+        ThreadDemo1 T1 = new ThreadDemo1( "Thread-1");
         T1.start();
 
-        ThreadDemo T2 = new ThreadDemo( "Thread-2");
+        ThreadDemo1 T2 = new ThreadDemo1( "Thread-2");
         T2.start();
     }
 }

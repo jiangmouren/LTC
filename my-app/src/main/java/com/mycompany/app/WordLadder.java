@@ -44,7 +44,6 @@ package com.mycompany.app;
  * Start word is the root, target word is the node, you want to find.
  * The topology is a tree structure, meaning there is not loop.
  * Meaning if A is connected to B directly, then that's the only possible connection they have.
- * TODO: BFS
  */
 
 import java.util.*;
@@ -113,6 +112,69 @@ public class WordLadder {
         System.out.println(res);
     }
 
+    /**
+     * BFS
+     */
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        Set<String> dict = new HashSet<>();
+        for(String word : wordList){
+            dict.add(word);
+        }
+        //shortcut for easy cases:
+        if(!dict.contains(endWord)){
+            return 0;
+        }
+
+        Set<String> visited = new HashSet<>();
+        Queue<String> queue = new LinkedList<>();
+        int distance = 1;
+        queue.add(beginWord);
+        visited.add(beginWord);
+        int cnt = queue.size();
+        boolean found = false;
+        while(!queue.isEmpty()){
+            while(cnt>0){
+                String word = queue.poll();
+                if(word.equals(endWord)){
+                    found = true;
+                    break;
+                }
+                cnt--;
+                List<String> neighbors = getNeighbors(word);
+                for(String neighbor : neighbors){
+                    if(!visited.contains(neighbor) && dict.contains(neighbor)){
+                        queue.add(neighbor);
+                        visited.add(neighbor);
+                    }
+                }
+            }
+            if(found){
+                break;
+            }
+            cnt = queue.size();
+            distance++;
+        }
+
+        return found ? distance : 0;
+    }
+
+    private List<String> getNeighbors(String word){
+        List<String> res = new ArrayList<>();
+        StringBuilder buf = new StringBuilder();
+        buf.append(word);
+        for(int i = 0; i<word.length(); i++){
+            char c = buf.charAt(i);
+            for(int j=0; j<26; j++){
+                char candidate = (char)('a'+j);
+                if(candidate!=c){
+                    buf.setCharAt(i, candidate);
+                    res.add(buf.toString());
+                }
+            }
+            buf.setCharAt(i, c);
+        }
+        return res;
+    }
 
     /**
      *

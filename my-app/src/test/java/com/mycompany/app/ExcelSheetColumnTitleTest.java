@@ -11,10 +11,10 @@ public class ExcelSheetColumnTitleTest {
 
     @Test
     public void title() throws Exception {
-        System.out.println(objectUnderTest.title(1));
-        System.out.println(objectUnderTest.title(2));
-        System.out.println(objectUnderTest.title(27));
-        System.out.println(objectUnderTest.title(677));
+        //System.out.println(objectUnderTest.title(1));
+        //System.out.println(objectUnderTest.title(2));
+        //System.out.println(objectUnderTest.title(27));
+        //System.out.println(objectUnderTest.title(677));
     }
 
 }

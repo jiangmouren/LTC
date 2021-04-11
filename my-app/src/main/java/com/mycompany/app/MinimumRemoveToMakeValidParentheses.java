@@ -56,7 +56,7 @@ public class MinimumRemoveToMakeValidParentheses {
             }
         }
         if(cnt>0){
-            for(int i=buf.length()-1; i>=0 && cnt>0; i--){
+            for(int i=buf.length()-1; i>=0 && cnt>0; i--){//之所以反向写是为了应对: "())()((("
                 if(buf.charAt(i)=='('){
                     buf.deleteCharAt(i);
                     cnt--;

@@ -1,6 +1,6 @@
 package com.mycompany.app;
 /**
- * Question:
+ * Question: https://leetcode.com/problems/intersection-of-two-linked-lists/
  * Write a program to find the node at which the intersection of two singly linked lists begins.
  * For example, the following two linked lists:
  *
@@ -29,31 +29,37 @@ package com.mycompany.app;
  * length difference, then move both pointers, they will meet at the intersection.
  */
 public class IntersectionOfTwoLinkedLists{
-    public static class Node{
+    public static class ListNode{
         int val;
-        Node next;
-        Node(int x){
+        ListNode next;
+        ListNode(int x){
             this.val = x;
         }
     }
 
-    public Node find(Node root1, Node root2){
-        Node ptr1 = root1;
-        Node ptr2 = root2;
+    public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+        //不考虑O(1)的memory要求有很多种解法，比如把两个list补成一样长，然后同步开始走，找交叉
+        //或者把一个list过一遍把每个node的reference都存到map里，然后走第二个list，找第一个在map里Hit的Node
+        //要O(1)的memory，就让他们绕圈，然后相会在相交点
+        ListNode ptrA = headA;
+        ListNode ptrB = headB;
         int loop = 0;
-        while(ptr1!=ptr2 && loop<2){
-            if(ptr1.next==null){
+        while(ptrA!=ptrB){
+            if(ptrA==null){
+                ptrA = headB;
                 loop++;
-                ptr1 = root2;
             }
-            else ptr1 = ptr1.next;
-
-            if(ptr2.next==null){
-                ptr2 = root1;
+            else{
+                ptrA = ptrA.next;
             }
-            else ptr2 = ptr2.next;
+            if(ptrB==null){
+                ptrB = headA;
+            }
+            else{
+                ptrB = ptrB.next;
+            }
         }
-        if(ptr1==ptr2) return ptr1;
-        else return null;
+        return loop<2 ? ptrA : null;
     }
+
 }

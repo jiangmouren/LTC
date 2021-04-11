@@ -20,12 +20,10 @@ package com.mycompany.app;
 
 public class SingleNumber {
     public int singleNumber(int[] nums) {
-        int result=0;
+        int res = 0;
         for(int num : nums){
-            result = result ^ num;
+            res ^= num;
         }
-        return result;
-
+        return res;
     }
-
 }

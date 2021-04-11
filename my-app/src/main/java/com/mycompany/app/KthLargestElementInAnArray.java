@@ -77,6 +77,7 @@ public class KthLargestElementInAnArray{
         return search(nums, 0, nums.length-1, k);
     }
 
+    //下面这个search function也可以用iteration写，详见"MajorityElement.java"里第二种解法。
     private int search(int[] nums, int left, int right, int k){
         //termination condition
         if(left==right){
@@ -98,6 +99,7 @@ public class KthLargestElementInAnArray{
     private int partition(int[] nums, int start, int end){
         int left = start + 1;
         int right = end;
+        //这里一定要有等号！是为了保证right严格指向<=的位置，如果nums={1, 2}，开始left && right都指向2，如果没有等号，那么right就不会动，那么会面的swap(nums, start, right)就错了
         while(left<=right){
             while(right>=start && nums[right]>nums[start]){
                 right--;

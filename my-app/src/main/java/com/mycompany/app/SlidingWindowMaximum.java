@@ -50,8 +50,9 @@ public class SlidingWindowMaximum{
      * 用这个deque存储的是running maximum candidates，可以看做是"running maximum"的一个拓展。
      * 然后其complexity是O(n)，并没有因为要回头去deque里面把比当前小的entry都删掉，而变成O(nk).
      * 其原因，与内在的过程与“LargestRectangleInHistogram”里面构造left[] & right[]时是一样的。
+     * 另外类似的一道题是：DailyTemperatures.
      * 如在下图中：
-     * src\main\resources\MaximumSlidingWindow.PNG
+     * src\main\resources\SlidingWindowMaximum.PNG
      * 0进deque不需要比较，进入cost为0
      * 1进入需要跟0做一次比较，进入cost为1
      * 2进入需要跟1做一次比较，进入cost为1

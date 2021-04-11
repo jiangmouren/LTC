@@ -87,33 +87,8 @@ public class LeftmostColumnWithALeastAOne {
         }
     }
 
-    //底下这种iterative的Binary Search的写法，虽然通过了，其实并不Optimal，因为在mid是1的时候，会多call一次matrix.get()
-    //要作为改动的话就是要parameter里面在加一个flag来记录是否已经找到1, 然后在while loop开始的时候，最右端是否为0，且已经found
-    //这种情况就return right+1，但和又多加了一在while loop开始的call，而且代码很messy.不好！
-    private int binarySearch(BinaryMatrix matrix, int rowNum, int left, int right){
-        int res = -1;
-        boolean found = false;
-        while(left<=right){
-            int mid = (left+right)/2;
-            if(matrix.get(rowNum, mid)==0){
-                left = mid + 1;
-            }
-            else{
-                right = mid - 1;
-                if(mid-1<left || matrix.get(rowNum, mid-1)==0){
-                    res = mid;
-                    break;
-                }
-                else{
-                    continue;
-                }
-            }
-        }
-        return res;
-    }
-
     //下面这种recursive的写法，保证每一个call stack里面只call matrix.get()一次，所以最优的。
-    private int binarySearch2(BinaryMatrix matrix, int rowNum, int left, int right){
+    private int binarySearch(BinaryMatrix matrix, int rowNum, int left, int right){
         //termination
         if(left>right){
             return -1;
@@ -133,4 +108,30 @@ public class LeftmostColumnWithALeastAOne {
             }
         }
     }
+
+    //底下这种iterative的Binary Search的写法，虽然通过了，其实并不Optimal，因为在mid是1的时候，会多call一次matrix.get()
+    //要作为改动的话就是要parameter里面在加一个flag来记录是否已经找到1, 然后在while loop开始的时候，最右端是否为0，且已经found
+    //这种情况就return right+1，但和又多加了一在while loop开始的call，而且代码很messy.不好！
+    private int binarySearchIter(BinaryMatrix matrix, int rowNum, int left, int right){
+        int res = -1;
+        boolean found = false;
+        while(left<=right){
+            int mid = (left+right)/2;
+            if(matrix.get(rowNum, mid)==0){
+                left = mid + 1;
+            }
+            else{
+                if(mid-1<left || matrix.get(rowNum, mid-1)==0){
+                    res = mid;
+                    break;
+                }
+                else{
+                    right = mid - 1;
+                    continue;
+                }
+            }
+        }
+        return res;
+    }
+
 }

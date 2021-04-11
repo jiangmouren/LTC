@@ -46,8 +46,10 @@ class TrappingRainWater {
           for(int i=1; i<height.length-1; i++){
               int waterHeight = Math.min(leftMax[i], rightMax[i]);
               int waterAmnt = waterHeight-height[i];
-              int temp = (waterAmnt)>0 ? waterAmnt : 0;
-              result += temp;
+              //因为之前的leftMax & rightMax都是包含当下位置的，
+              //所以这里担心的当下位置高于prefix & suffix最大值得情况不会出现,最多就是相等
+              //int temp = (waterAmnt)>0 ? waterAmnt : 0;
+              result += waterAmnt;
           }
           return result;
       }

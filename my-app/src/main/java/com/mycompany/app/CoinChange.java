@@ -44,76 +44,32 @@ public class CoinChange{
     }
 
     /**
-     * 这题目用DFS解，会timeout!!!
-     */
-    public int coinChange(int[] coins, int amount) {
-        Arrays.sort(coins);
-        int h = amount/coins[0];
-        h = h*coins[0]<amount ? h+1 : h;
-        int l = amount/coins[coins.length-1];
-        l = l*coins[coins.length-1]<amount ? l+1 : l;
-        System.out.println("h: "+h);
-        System.out.println("l: "+l);
-        Map<int[], Boolean> map = new HashMap<>();
-
-        for(int i=l; i<=h; i++){
-            if(dfs(coins, amount, 0, 0, i, map)){
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    private boolean dfs(int[] coins, int amount, int pos, int sum, int cnt, Map<int[], Boolean> map){
-        //termination condition
-        if(pos>=cnt){
-            return sum==amount;
-        }
-        int[] key = {amount-sum, cnt-pos};
-        if(map.containsKey(key)){
-            return map.get(key);
-        }
-
-        for(int coin : coins){
-            if(dfs(coins, amount, pos+1, sum+coin, cnt, map)){
-                map.put(key, true);
-                return true;
-            }
-        }
-        map.put(key, false);
-        return false;
-    }
-
-    /**
      * 照理来说，这应该是一道很经典的切香肠，或者backpack，类的DP问题，但是我却第一个想到的是遍历，惭愧！
      */
-    public int coinChangeDp(int[] coins, int amount) {
-        //long length = amount + 1;
-        int[] dp = new int[amount + 1];
-        System.out.println(dp.length);
-        //initialization
-        int minC = Integer.MAX_VALUE;
+    public int coinChange(int[] coins, int amount) {
+        int[] dp = new int[amount+1];
+        int minCoin = Integer.MAX_VALUE;
         for(int coin : coins){
-            minC = Math.min(minC, coin);
+            minCoin = Math.min(minCoin, coin);
         }
+        //set up initial values
         dp[0] = 0;
-        for(int i=1; i<minC && i<dp.length; i++){
-            dp[i] = -1;
+        for(int i=1; i<minCoin && i<dp.length; i++){//注意：不要忘记i<dp.length !
+            dp[i] = Integer.MAX_VALUE;
         }
-
-        for(int i=minC; i<=amount; i++){
+        //calculate dp
+        for(int i=minCoin; i<=amount; i++){
             dp[i] = Integer.MAX_VALUE;
             for(int coin : coins){
-                if(i-coin>=0 && dp[i-coin]!=-1){
-                    dp[i] = Math.min(dp[i], dp[i-coin]+1);
+                int j = i-coin;
+                if(j>=0){
+                    dp[i] = Math.min(dp[i], dp[j]);
                 }
             }
-            if(dp[i]==Integer.MAX_VALUE){
-                dp[i] = -1;
+            if(dp[i]!=Integer.MAX_VALUE){
+                dp[i] += 1;
             }
         }
-
-        return dp[amount];
+        return dp[amount]==Integer.MAX_VALUE ? -1 : dp[amount];
     }
-
 }

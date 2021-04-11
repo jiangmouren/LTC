@@ -20,13 +20,4 @@ public class ClimbingStairsTest {
         assertTrue(objectUnderTest.climbStairs(6)==13);
     }
 
-    @Test
-    public void climbStairsRecur() throws Exception {
-        assertTrue(objectUnderTest.climbStairsRecur(1)==1);
-        assertTrue(objectUnderTest.climbStairsRecur(2)==2);
-        assertTrue(objectUnderTest.climbStairsRecur(3)==3);
-        assertTrue(objectUnderTest.climbStairsRecur(4)==5);
-        assertTrue(objectUnderTest.climbStairsRecur(5)==8);
-        assertTrue(objectUnderTest.climbStairsRecur(6)==13);
-    }
 }

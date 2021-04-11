@@ -1,6 +1,6 @@
 package com.mycompany.app;
 /**
- * Question:
+ * Question: https://leetcode.com/problems/path-sum/
  * Given a binary tree and a sum,
  * determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.
  * For example:
@@ -20,7 +20,7 @@ package com.mycompany.app;
  * This is a typical Backtracking problem.
  */
 public class PathSum {
-    public static class TreeNode{
+    public class TreeNode{
         TreeNode left;
         TreeNode right;
         int val;
@@ -28,20 +28,23 @@ public class PathSum {
             this.val = x;
         }
     }
-    public boolean find(TreeNode root, int target){
-        return helper(root, target, 0);
-    }
-
-    private boolean helper(TreeNode root, int target, int sum){
-        //edge case
+    public boolean hasPathSum(TreeNode root, int targetSum) {
         if(root==null){
-            return target==sum;
+            return false;
         }
-
-        //normal cases
-        if(helper(root.left, target, sum+root.val)) return true;//return true if any of children paths match
-        else if(helper(root.right, target, sum+root.val)) return true;
-        else return false;//only return false, when all children paths do not match.
+        return backtracking(root, targetSum, 0);
     }
 
+    private boolean backtracking(TreeNode root, int target, int sum){
+        //注意判断leaf node，只能通过判断左右子树均为null来确定，不能认为null的parent，就一定是leaf node
+        sum += root.val;
+        if(root.left==null && root.right==null){
+            return sum == target;
+        }
+        if(root.left!=null && backtracking(root.left, target, sum) || root.right!=null && backtracking(root.right, target, sum)){
+            return true;
+        }
+        sum -= root.val;
+        return false;
+    }
 }
