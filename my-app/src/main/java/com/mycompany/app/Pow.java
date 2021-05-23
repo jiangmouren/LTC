@@ -25,6 +25,24 @@ import java.util.*;
  */
 
 public class Pow {
+    public double myPowBit(double x, int n) {
+        long N = n;
+        if (N < 0) {
+            x = 1 / x;
+            N = -N;
+        }
+        double ans = 1;//running product
+        double current_product = x;//当前位所对应的应乘的x个数
+        //每次除2就相当于往右shift一位，然后每当最后一位是1的时候，就把当前位置对应的乘多少个x，乘上去
+        for (long i = N; i > 0; i /= 2) {
+            if ((i % 2) == 1) {
+                ans *= current_product;
+            }
+            current_product *= current_product;
+        }
+        return ans;
+    }
+
     public double myPow(double x, int n) {
         //最简单的想法就是把n个x依次相乘
         //优化一下的思路，就是x^n = x^(n/2) * x^(n/2)

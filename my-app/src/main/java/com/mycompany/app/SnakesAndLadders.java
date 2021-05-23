@@ -97,6 +97,7 @@ public class SnakesAndLadders {
     }
 
     private int[] getIndex(int n, int x){
+        //这里要用x-1，才能保证最后一行，不会出现满行的情况，因为只要求当前行之前出现了多少行
         int row = n-1-(x-1)/n;
         int col;
         if(((x-1)/n)%2==0){//->

@@ -66,16 +66,27 @@ public class RobotBoundedInCircle {
         }
     }
 
+    //private int normalize(int degree){
+    //    if(degree>180){
+    //        while(degree>180){
+    //            degree -= 360;
+    //        }
+    //    }
+    //    else if(degree<=-180){
+    //        while(degree<=-180){
+    //            degree += 360;
+    //        }
+    //    }
+    //    return degree;
+    //}
+    //normalize degree to (-180, 180]
     private int normalize(int degree){
-        if(degree>180){
-            while(degree>180){
-                degree -= 360;
-            }
+        degree %= 360;//normalize degree to (-360, 360)
+        if(degree<=-180){//shift (-360, -180] to [0, 180)
+            degree += 360;
         }
-        else if(degree<=-180){
-            while(degree<=-180){
-                degree += 360;
-            }
+        if(degree>180){//shift (180, 360) to (-180, 0)
+            degree -= 360;
         }
         return degree;
     }

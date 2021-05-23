@@ -36,28 +36,20 @@ public class RemoveAllAdjacentDuplicatesInStringII {
         StringBuilder buf = new StringBuilder();
         boolean found = false;
         int ptr0 = 0;
-        int ptr1 = 1;
+        int ptr1 = 0;
         while(ptr0<s.length()){
-            if(ptr1<s.length() && s.charAt(ptr0)==s.charAt(ptr1)){
-                while(ptr1<s.length() && ptr1<ptr0+k && s.charAt(ptr0)==s.charAt(ptr1)){
-                    ptr1++;
-                }
-                if(ptr1-ptr0==k){
-                    found = true;
-                }
-                else{
-                    buf.append(s.substring(ptr0, ptr1));//注意这里不要忘记
-                }
-                ptr0 = ptr1;
+            while(ptr1<s.length() && ptr1-ptr0<k && s.charAt(ptr0)==s.charAt(ptr1)){
                 ptr1++;
+            }
+            if(ptr1-ptr0<k){
+                buf.append(s.substring(ptr0, ptr1));
             }
             else{
-                buf.append(s.charAt(ptr0));
-                ptr0++;
-                ptr1++;
+                found = true;
             }
+            ptr0 = ptr1;
         }
-        //System.out.println(buf.toString());
+        //没有改动，说明不会有变化，所以就可以停止了
         return found ? removeDuplicates(buf.toString(), k) : s;
     }
 }

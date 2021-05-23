@@ -1,61 +1,53 @@
 package com.mycompany.app;
+import java.util.*;
+
 /**
- * Question:
- * Given a set of distinct integers, nums, return all possible subsets.
- * Note: The solution set must not contain duplicate subsets.
- * For example,
- * If nums = [1,2,3], a solution is:
+ * Question: https://leetcode.com/problems/subsets/
+ * Given an integer array nums of unique elements, return all possible subsets (the power set).
+ * The solution set must not contain duplicate subsets. Return the solution in any order.
  *
- * [
- *   [3],
- *   [1],
- *   [2],
- *   [1,2,3],
- *   [1,3],
- *   [2,3],
- *   [1,2],
- *   []
- * ]
+ * Example 1:
+ * Input: nums = [1,2,3]
+ * Output: [[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]
+ *
+ * Example 2:
+ * Input: nums = [0]
+ * Output: [[],[0]]
+ *
+ * Constraints:
+ * 1 <= nums.length <= 10
+ * -10 <= nums[i] <= 10
+ * All the numbers of nums are unique.
  */
 
 /**
  * Analysis:
- * It is trivial to see the empty set and those single elements sets.
- * The only trap is for none single subsets, how to avoid duplication?
- * The answer is always look forward no backward, say 2nd element should be on the right of 1st element,
- * and 3rd on the right of the 2nd. That's also how you do it manually.
- * The above are the permutation rules.
+ * 跟permutation的不同就是不做swap，这样避免duplicate
  */
-import java.util.*;
 public class Subsets{
-    public List<List<Integer>> subsets(int[] input){
-        if(input==null) throw new IllegalArgumentException("Input cannot be null");
-
-        int length = input.length;
-        List<List<Integer>> result = new ArrayList<>();
+    public List<List<Integer>> subsets(int[] nums) {
+        List<List<Integer>> res = new ArrayList<>();
+        res.add(new ArrayList<>());
         List<Integer> buf = new ArrayList<>();
-        for(int i=0; i<=length; i++){
-            getSubset(input, result, buf, 0, i);
+        for(int i=1; i<=nums.length; i++){
+            backtracking(res, buf, nums, 0, i);
         }
-        return result;
+        return res;
     }
 
-    private void getSubset(int[] input, List<List<Integer>> result, List<Integer> buf, int pos, int size){
-        //edge case
-        if(size==0){
-            List<Integer> tmp = new ArrayList<>();
-            tmp.addAll(buf);
-            result.add(tmp);
+    private void backtracking(List<List<Integer>> res, List<Integer> buf, int[] nums, int start, int k){
+        //termination
+        if(buf.size()==k){
+            List<Integer> temp = new ArrayList<>();
+            temp.addAll(buf);
+            res.add(temp);
             return;
         }
 
-        //normal cases
-        //Need to make sure we leave enough room for next level
-        for(int i=pos; i<=input.length-size; i++){
-            buf.add(input[i]);
-            getSubset(input, result, buf, i+1, size-1);
+        for(int i=start; i<nums.length-k+1+buf.size(); i++){//这里i的上限，这么控制更优，直接写成i<nums.length也可以
+            buf.add(nums[i]);
+            backtracking(res, buf, nums, i+1, k);//注意这里一定是"i+1"，不是start+1，易犯错误
             buf.remove(buf.size()-1);
         }
     }
-
 }

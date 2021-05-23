@@ -37,10 +37,12 @@ public class FindTheSmallestDivisorGivenAThreshold {
         //用最大值为上限，因为 nums.length <= threshold <= 10^6 表达的就是每个都去最大值，那么每项都是1，因为threshold大于长度，所以就一定是一个解
         //然后就在1到上限之间做 Binary Search，最多尝试lg(n)次每次要把每项都算出来需要O(n)，所以一共需要O(nlgn)
         int max = 0;
+        int total = 0;
         for(int num : nums){
+            total += num;
             max = Math.max(max, num);
         }
-        int left = 1;
+        int left = total%threshold==0 ? total/threshold : total/threshold+1;
         int right = max;
         int res = 1;
         while(left<=right){

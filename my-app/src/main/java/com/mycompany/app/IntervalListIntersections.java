@@ -39,6 +39,7 @@ import java.util.*;
 public class IntervalListIntersections {
     /**
      * Leetcode这道题的答案还是比较简洁的，直接处理两边的interval，也是借鉴mergeSort中Merge差不多的思路
+     * 判断Interval是否Overlap的写法，跟RectangleArea里面判断矩形是否相交一样
      */
     public int[][] intervalIntersection(int[][] A, int[][] B) {
         int ptr1 = 0;
@@ -47,7 +48,6 @@ public class IntervalListIntersections {
         while(ptr1<A.length && ptr2<B.length){
             // Let's check if A[i] intersects B[j].
             // start - the startpoint of the intersection
-            // end - the endpoint of the intersection
             int start = Math.max(A[ptr1][0], B[ptr2][0]);
             int end = Math.min(A[ptr1][1], B[ptr2][1]);
             if(start<=end){

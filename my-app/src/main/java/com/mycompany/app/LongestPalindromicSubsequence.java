@@ -22,13 +22,8 @@ package com.mycompany.app;
 
 /**
  * Analysis:
- * First of all the following recursive function is not correct for this:
- * dp[i][j] = (s.charAt(i)==s.charAt(j)) ? dp[i+1][j-1]+2 : dp[i+1][j-1];
- * It will be correct, if the problem is asking from the longest substring instead of subsequence.
- * Because consider the following example "bcbbabc",
- * even if 'b'!='c', but either left side 'b' or right side 'c' can still contribute to the subsequence,
- * and each results in: "bbbb" and "cbbbc"/"cbabc"
- * Now what?
+ * 首先注意这道题问的是subsequence,跟另外一道类似的substring题目是不一样的！！!
+ *
  * Now we have 2 possibilities:
  * 1. left==right, so both left and right will counted.
  * 2. left!=right, in this case, either left, or right could potentially be counted, but not both at the same time.
@@ -39,15 +34,16 @@ package com.mycompany.app;
  * Base case: i==j, dp[i][i] == 1
  *
  * Topological order: smaller substrings to larger substrings;
- *                    for i: large-->small, for j: small--large;
  *                    for row: bottom-->up, for column: left-->right.
+ *                    具体是一列一列construct还是一行一行construct都可以，只要遵照上面的顺序
  *
  * Prove when s.charAt(i)==s.charAt(j), dp[i+1][j-1]+2 is at least as good as Max{dp[i][j-1], dp[i+1][j]}?
  * Let's say s.charAt(i)==s.charAt(j)=='c'.
- * For dp[i][j-1], it's only different from dp[i+1][j-1], when 'c' is counted.
- * So the pattern will be like:
- * c+(some palindrom)+c+s.charAt(j)
- * when s.charAt(j)==c, you will at least have that same (some palindrom)
+ * For dp[i][j-1], it's only different from dp[i+1][j-1], when s.charAt(i) is counted.
+ * when it is not counted, dp[i+1][j-1] is the same as dp[i][j-1]. So dp[i+1][j-1]+2>dp[i][j-1].
+ * When it is counted, dp[i][j-1] 中最长的palindromic subsequence will have following pattern: c+(some palindrom)+c
+ * dp[i+1][j-1]当中最起码有如下满足条件的subsequence: (some palindrom)
+ * 然后再加上2，最起码跟dp[i][j-1]结果是一样的。
  */
 
 class LongestPalindromicSubsequence {

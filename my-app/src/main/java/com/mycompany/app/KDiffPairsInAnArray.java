@@ -45,33 +45,29 @@ public class KDiffPairsInAnArray{
     //主要的注意k==0的情况下出现重复数字的问题，这也是为什么要用多一个set存结果的原因
     //比如：nums={1, 1, 1, 1, 1}, k=0
     public int findPairs(int[] nums, int k) {
-        Set<Integer> set = new HashSet<>();
-        //注意可以使用List<Integer>做hashKey，不能用int[]做hashkey,因为前者实际是根据内容求hashcode
-        //后者看的就是reference地址。
-        Set<List<Integer>> res = new HashSet<>();
+        //这里用map而不用set，主要是为了处理nums={1, 1, 1, 1, 1}, k=0 的情况
+        Map<Integer, Boolean> map = new HashMap<>();
         int cnt = 0;
         for(int num : nums){
-            if(set.contains(num) && k!=0){
+            if(map.containsKey(num)){
+                if(k==0 && map.get(num)){
+                    cnt++;
+                    map.put(num, false);
+                }
                 continue;
             }
-            int key1 = num+k;
-            int key2 = num-k;
-            if(set.contains(key1)){
-                //System.out.println(key1);
-                List<Integer> temp = new ArrayList<>();
-                temp.add(num>key1 ? num : key1);
-                temp.add(num>key1 ? key1: num);
-                res.add(temp);
+
+            int key1 = num - k;
+            int key2 = num + k;
+            if(map.containsKey(key1)){
+                cnt++;
             }
-            if(k!=0 && set.contains(key2)){
-                //System.out.println(key2);
-                List<Integer> temp = new ArrayList<>();
-                temp.add(num>key2 ? num : key2);
-                temp.add(num>key2 ? key2: num);
-                res.add(temp);
+            //不用担心k==0的时候重复算两次，如果k==0 && map.containsKey(),在前面已经就被continue了
+            if(map.containsKey(key2)){
+                cnt++;
             }
-            set.add(num);
+            map.put(num, true);
         }
-        return res.size();
+        return cnt;
     }
 }

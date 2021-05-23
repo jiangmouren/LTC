@@ -22,11 +22,51 @@ import java.util.Queue;
  * grid[i][j] is 0 or 1
  */
 
-//BFS with cache WON'T work!
-//这题目我开始想用一个Cache记录已经做过BFS的位置所找到的距离，那么后面的位置再次搜多的这个点的时候，就可以直接在这个记录的距离上+1
-//这样子是错误的！这种思路来自于tree的某subtree的结果可以拿来用。在某些树Tree的问题里面可以这么做是因为subtree可以被看作“子问题”
-//而在这个问题里面(i,j)位置的搜索结果并不构成(l,k)位置的搜索问题的“子问题”！本质上说这是两个“平行”“独立”的问题。
 public class AsFarFromLandAsPossible {
+    /**
+     * Multi-Source BFS
+     */
+    public int maxDistance2(int[][] grid){
+        //Pay attention, LinkedList can represent either a queue or a stack.
+        //add() is adding to the end of the list like that of a "Queue".
+        //push() is adding to the "Stack", or adding to the first of the list.
+        Queue<int[]> queue = new LinkedList<>();
+        boolean[][] visited = new boolean[grid.length][grid[0].length];
+        for(int i=0; i<grid.length; i++){
+            for(int j=0; j<grid[0].length; j++){
+                if(grid[i][j]==1){
+                    queue.add(new int[]{i, j});
+                    visited[i][j] = true;
+                }
+            }
+        }
+
+        int[][] dirs = {{1,0}, {-1,0}, {0,1}, {0,-1}};
+        int distance = 0;
+        while(!queue.isEmpty()){
+            int size = queue.size();//Must take this value before adding new ones into the queue
+            //for(int i=0; i<size; i++){
+            while(!queue.isEmpty()){
+                int[] cur = queue.poll();
+                int x = cur[0];
+                int y = cur[1];
+                for(int[] dir : dirs){
+                    int xNew = x + dir[0];
+                    int yNew = y + dir[1];
+                    if(xNew>=0 && xNew<grid.length && yNew>=0 && yNew<grid[0].length && grid[xNew][yNew]==0 && !visited[xNew][yNew]){
+                        queue.add(new int[]{xNew, yNew});
+                        visited[xNew][yNew] = true;
+                    }
+                }
+            }
+            //注意通常increment batch的distance的时候，都需要做某种check某些条件
+            distance = queue.size()>0 ? distance + 1: distance;
+        }
+
+        return distance==0 ? -1 : distance;
+    }
+
+
     //BFS with cache WON'T work!
     //这题目我开始想用一个Cache记录已经做过BFS的位置所找到的距离，那么后面的位置再次搜多的这个点的时候，就可以直接在这个记录的距离上+1
     //这样子是错误的！这种思路来自于tree的某subtree的结果可以拿来用。在某些树Tree的问题里面可以这么做是因为subtree可以被看作“子问题”
@@ -88,47 +128,4 @@ public class AsFarFromLandAsPossible {
             this.dist2Src = dist2Src;
         }
     }
-
-    //这种写法很有意思，仔细考虑一下，首先把上面 n^2的复杂度降到了n。
-    //上面这种写法也就仅仅比暴力的拿所有的0根所有的1比较稍微好一点点，而且两者在复杂度上还是一样的。
-    public int maxDistance2(int[][] grid){
-        //Pay attention, LinkedList can represent either a queue or a stack.
-        //add() is adding to the end of the list like that of a "Queue".
-        //push() is adding to the "Stack", or adding to the first of the list.
-        LinkedList<int[]> queue = new LinkedList<>();
-        boolean[][] visited = new boolean[grid.length][grid[0].length];
-        for(int i=0; i<grid.length; i++){
-            for(int j=0; j<grid[0].length; j++){
-                if(grid[i][j]==1){
-                    queue.add(new int[]{i, j});
-                    visited[i][j] = true;
-                }
-            }
-        }
-
-        int[][] dirs = {{1,0}, {-1,0}, {0,1}, {0,-1}};
-        int distance = 0;
-        while(!queue.isEmpty()){
-            int size = queue.size();//Must take this value before adding new ones into the queue
-            for(int i=0; i<size; i++){
-                int[] cur = queue.pop();
-                int x = cur[0];
-                int y = cur[1];
-                for(int[] dir : dirs){
-                    int xNew = x + dir[0];
-                    int yNew = y + dir[1];
-                    if(xNew>=0 && xNew<grid.length && yNew>=0 && yNew<grid[0].length && grid[xNew][yNew]==0 && !visited[xNew][yNew]){
-                        queue.add(new int[]{xNew, yNew});
-                        visited[xNew][yNew] = true;
-                    }
-                }
-            }
-
-            distance = queue.size()>0 ? distance + 1: distance;
-        }
-
-        return distance==0 ? -1 : distance;
-    }
-    //TODO: 用这种类似的与Bi-Directional的写法，解决的是距离陆地最远的水域，也可以改动之后用来求解任意两个岛屿之间的最短的距离，有几个不同的岛屿，就用几个不同的
-    //TODO: 染色版,当一块水域被染了不同的额色之后，就知道相交了，就找了最短距离
 }

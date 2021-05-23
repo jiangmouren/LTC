@@ -37,28 +37,25 @@ import java.util.*;
  */
 
 public class CoinChange{
-    public static void main(String[] args){
-        CoinChange instance = new CoinChange();
-        int[] coins = {1, 2, 5};
-        System.out.println(instance.coinChange(coins, 70));
-    }
-
     /**
      * 照理来说，这应该是一道很经典的切香肠，或者backpack，类的DP问题，但是我却第一个想到的是遍历，惭愧！
      */
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount+1];
-        int minCoin = Integer.MAX_VALUE;
-        for(int coin : coins){
-            minCoin = Math.min(minCoin, coin);
-        }
+
+        //不需要下面的操作，只要有dp[0]一个初值就可以了，其余的要么都会折算到负值区间，然后直接留下一个max_value
+        //int minCoin = Integer.MAX_VALUE;
+        //for(int coin : coins){
+        //    minCoin = Math.min(minCoin, coin);
+        //}
+        //for(int i=1; i<minCoin && i<dp.length; i++){//注意：不要忘记i<dp.length !
+        //    dp[i] = Integer.MAX_VALUE;
+        //}
+
         //set up initial values
         dp[0] = 0;
-        for(int i=1; i<minCoin && i<dp.length; i++){//注意：不要忘记i<dp.length !
-            dp[i] = Integer.MAX_VALUE;
-        }
         //calculate dp
-        for(int i=minCoin; i<=amount; i++){
+        for(int i=1; i<=amount; i++){
             dp[i] = Integer.MAX_VALUE;
             for(int coin : coins){
                 int j = i-coin;

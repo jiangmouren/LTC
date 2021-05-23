@@ -16,17 +16,61 @@ import java.util.List;
  * Note: Do not use the eval built-in library function.
  */
 
-/**
- * Analysis:
- * 这道题我的解法属于典型的"divide and conquer"的思路。
- * 这道题目相较于BasicCalculator多了乘除法，那就把整个expression根据加减法，先分段。
- * 分段之后的每个expression之内就没有运算优先级的问题了。
- * 那么top level就是一个加减法的运算，每个分段全是乘除法的运算，而且也可以类似加减法一样解决。
- * Time: O(n); Space: O(n), because of the plusMinusPositions.
- */
 
 public class BasicCalculatorII {
+    //要注意计算过程中出现Overflow的问题
     public int calculate(String s) {
+        long l1 = 0; //partial result for + & -
+        int o1 = 1; // 1: +; -1: -
+        long l2 = 1; //partial result for * & /
+        int o2 = 1; // 1: *; -1: /
+
+        for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
+            if(c==' '){
+                continue;
+            }
+            else if(Character.isDigit(c)){
+                int temp = c - '0';
+                while(i+1<s.length() && Character.isDigit(s.charAt(i+1))){
+                    temp = temp*10 + s.charAt(++i)-'0';
+                }
+                l2 = (o2==1) ? l2*temp : l2/temp;
+            }
+            else if(c=='*'){
+                o2 = 1;
+            }
+            else if(c=='/'){
+                o2 = -1;
+            }
+            else if(c=='+'){
+                l1 += o1*l2;
+                o1 = 1;
+                //reset segment
+                l2 = 1;
+                o2 = 1;
+            }
+            else{
+                l1 += o1*l2;
+                o1 = -1;
+                //reset segment
+                o2 = 1;
+                l2 = 1;
+            }
+        }
+        //handle the last segment
+        return (int)(l1+o1*l2);
+    }
+
+    /**
+     * Analysis:
+     * 这道题我的解法属于典型的"divide and conquer"的思路。
+     * 这道题目相较于BasicCalculator多了乘除法，那就把整个expression根据加减法，先分段。
+     * 分段之后的每个expression之内就没有运算优先级的问题了。
+     * 那么top level就是一个加减法的运算，每个分段全是乘除法的运算，而且也可以类似加减法一样解决。
+     * Time: O(n); Space: O(n), because of the plusMinusPositions.
+     */
+    public int calculateSln2(String s) {
         List<Integer> plusMinusPositions = parse(s);
         int ptr = 0;
         int sign = 1;//这个top level的加减法没有括号，所以不需要用stack去buffer 括号外层的sign

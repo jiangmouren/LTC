@@ -25,50 +25,6 @@ import java.util.*;
  */
 public class MinimumKnightMoves {
     /**
-     * 这个问题下面这也写，逻辑上是正确的的，但是会"TimelimitExceeded".
-     */
-    public int minKnightMoves(int x, int y) {
-        int[][] dirs = {{2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}, {1, -2}, {2, -1}};
-        Set<List<Integer>> visited = new HashSet<>();
-        Queue<List<Integer>> queue = new LinkedList<>();
-        List<Integer> start = new ArrayList<>();
-        start.add(0);
-        start.add(0);
-        queue.add(start);
-        visited.add(start);
-        int step = -1;
-        boolean found = false;
-        while(!found && !queue.isEmpty()){
-            int cnt = queue.size();
-            step++;
-            while(cnt>0){
-                List<Integer> pos0 = queue.poll();
-                int x0 = pos0.get(0);
-                int y0 = pos0.get(1);
-                if(x0==x && y0==y){
-                    found = true;
-                    break;
-                }
-                else{
-                    for(int[] dir : dirs){
-                        int x1 = x0 + dir[0];
-                        int y1 = y0 + dir[1];
-                        List<Integer> pos1 = new ArrayList<>();
-                        pos1.add(x1);
-                        pos1.add(y1);
-                        if(!visited.contains(pos1)){
-                            visited.add(pos1);
-                            queue.add(pos1);
-                        }
-                    }
-                }
-                cnt--;
-            }
-        }
-        return step;
-    }
-
-    /**
      * 我的第一反应是“难道要写BiDirectionalBFS?”
      * 因为那样确实可以让搜索空间减半（因而时间也减半）
      * 但其实这道题的trick在于，4个象限的对称性！但其实感觉这种解法有点Hacky!尤其，允许x>=-1, y>=-1，只是为了(1, 1).
@@ -114,4 +70,50 @@ public class MinimumKnightMoves {
         }
         return -1;
     }
+
+    /**
+     * 这个问题下面这也写，逻辑上是正确的的，但是会"TimelimitExceeded".
+     */
+    public int minKnightMoves(int x, int y) {
+        int[][] dirs = {{2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}, {1, -2}, {2, -1}};
+        Set<List<Integer>> visited = new HashSet<>();
+        Queue<List<Integer>> queue = new LinkedList<>();
+        List<Integer> start = new ArrayList<>();
+        start.add(0);
+        start.add(0);
+        queue.add(start);
+        visited.add(start);
+        int step = -1;
+        boolean found = false;
+        while(!found && !queue.isEmpty()){
+            int cnt = queue.size();
+            step++;
+            while(cnt>0){
+                List<Integer> pos0 = queue.poll();
+                int x0 = pos0.get(0);
+                int y0 = pos0.get(1);
+                if(x0==x && y0==y){
+                    found = true;
+                    break;
+                }
+                else{
+                    for(int[] dir : dirs){
+                        int x1 = x0 + dir[0];
+                        int y1 = y0 + dir[1];
+                        List<Integer> pos1 = new ArrayList<>();
+                        pos1.add(x1);
+                        pos1.add(y1);
+                        if(!visited.contains(pos1)){
+                            visited.add(pos1);
+                            queue.add(pos1);
+                        }
+                    }
+                }
+                cnt--;
+            }
+        }
+        return step;
+    }
+
 }
+

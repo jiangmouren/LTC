@@ -1,5 +1,8 @@
+package com.mycompany.app;
+import java.util.*;
+
 /**
- * Question:
+ * Question: https://leetcode.com/problems/group-shifted-strings/
  * Given a string, we can "shift" each of its letter to its successive letter, for example: "abc" -> "bcd".
  * We can keep "shifting" which forms the sequence:
  * "abc" -> "bcd" -> ... -> "xyz"
@@ -15,55 +18,35 @@
  */
 
 
-/**
- * Analysis:
- * This is essentially a simple HashMap question. 
- * Only trick is you need to realized this and able to design the <Key, Value> pair
- * Pay attention to the "rotation case".
- */
-package com.mycompany.app;
-import java.util.*;
 public class GroupShiftedStrings{
-    public List<List<String>> find(List<String> list){
+    public List<List<String>> groupStrings(String[] strings) {
         Map<String, List<String>> map = new HashMap<>();
-        for(String str : list){
-            String key = getKey(str);
-            if(!map.containsKey(key)){
-                List<String> tmp = new ArrayList<>();
-                tmp.add(str);
-                map.put(key, tmp);
+        for(String str : strings){
+            if(str.length()==1){
+                if(!map.containsKey("a")){
+                    map.put("a", new ArrayList<>());
+                }
+                map.get("a").add(str);
             }
             else{
+                StringBuilder buf = new StringBuilder();
+                for(int i=1; i<str.length(); i++){
+                    int diff = str.charAt(i)-str.charAt(i-1);
+                    diff = diff<0 ? diff + 26 : diff;//注意按照周期律，把差值全都normalize到[0, 25]
+                    if(buf.length()>0){
+                        buf.append("-");//注意这里要加个分割符，否则2+3根23就变成一样了
+                    }
+                    buf.append(diff);
+                }
+                String key = buf.toString();
+                if(!map.containsKey(key)){
+                    map.put(key, new ArrayList<>());
+                }
                 map.get(key).add(str);
             }
         }
-
-        List<List<String>> result = new ArrayList<>();
-        for(List<String> value : map.values()){
-            result.add(value);
-        }
-        return result;
+        List<List<String>> res = new ArrayList<>();
+        res.addAll(map.values());
+        return res;
     }
-
-    private String getKey(String str){
-        StringBuilder buf = new StringBuilder();
-        if(str.length()==1){
-            buf.append(0);
-        }
-        else{
-            for(int i=0; i<str.length()-1; i++){
-                char tmp1 = str.charAt(i);
-                char tmp2 = str.charAt(i+1);
-                int tmp = tmp1-tmp2;
-                //This is how we deal with the rotation case
-                if(tmp<0){
-                    tmp+=26;
-                }
-                buf.append(tmp);
-            }
-        }
-
-        return buf.toString();
-    }
-
 }

@@ -43,8 +43,8 @@ package com.mycompany.app;
 
 public class HouseRobber{
     public int rob(int[] nums) {
-        //dp[n-1] = max{a[n-1]+dp[n-3], dp[n-2]}
-        //initial values: dp[0] = a[0], dp[1] = max{a[0], a[1]}
+        //dp[i] = max{nums[i]+dp[i-2], dp[i-1]}
+        //initial values: dp[0] = nums[0], dp[1] = max{nums[0], nums[1]}
         if(nums==null || nums.length==0){
             return 0;
         }

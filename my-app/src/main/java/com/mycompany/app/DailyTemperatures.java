@@ -21,24 +21,19 @@ public class DailyTemperatures {
         int[] idx = new int[n];
         for(int i=n-1; i>=0; i--){
             if(i==n-1){
-                idx[i] = -1;
+                idx[i] = n;
             }
             else{
                 int ptr = i+1;
-                while(ptr<n && T[i]>=T[ptr] && idx[ptr]!=-1){
+                while(ptr<n && T[i]>=T[ptr]){
                     ptr = idx[ptr];
                 }
-                if(T[i]<T[ptr]){
-                    idx[i] = ptr;
-                }
-                else{
-                    idx[i] = -1;
-                }
+                idx[i] = ptr;
             }
         }
 
         for(int i=0; i<n; i++){
-            if(idx[i]==-1){
+            if(idx[i]==n){
                 idx[i] = 0;
             }
             else{

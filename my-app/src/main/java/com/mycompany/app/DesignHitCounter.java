@@ -42,6 +42,7 @@ public class DesignHitCounter {
 
     Queue<Integer> queue;
     /** Initialize your data structure here. */
+    //注意这里要用queue，而不是list，因为这样在去除前面的entry时，避免O(n)的shift
     public DesignHitCounter() {
         this.queue = new LinkedList<>();
     }
@@ -55,6 +56,8 @@ public class DesignHitCounter {
     /** Return the number of hits in the past 5 minutes.
      @param timestamp - The current timestamp (in seconds granularity). */
     public int getHits(int timestamp) {
+        //这里之所以选择在getHits的时候去除过时entry是因为不管在不在hit的时候做这件事情，这里都必须得做
+        //因为getHits跟上一次hit可能间隔很久。
         while(!queue.isEmpty() && timestamp - this.queue.peek()>=300){
             queue.poll();
         }

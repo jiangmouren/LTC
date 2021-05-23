@@ -1,5 +1,8 @@
 package com.mycompany.app;
+import java.util.*;
+
 /**
+ * https://leetcode.com/problems/clone-graph/
  * Clone an undirected graph. Each node in the graph contains a label and a list of its neighbors.
  * OJ's undirected graph serialization:
  * Nodes are labeled uniquely.
@@ -19,67 +22,52 @@ package com.mycompany.app;
             \_/
  */
 
-import java.util.*;
 
 /**
- * Analysis:
- * Essentially this is a traversal issue.
- * The key to this problem is you need to traverse both graph simultaneously.
- * Either BFS/DFS will work.
+ * 这个题目跟copy List with random pointers是一回事，基本思路就是：
+ * 先把所有的新Node都建一遍，同步，把新旧Node的对应关系，保存在一个map里面，
+ * 然后再把老graph过一遍，把每个node对应的新node的adjacency list建好
+ * 再上面的思路基础上再改进一下，就是可以把两件事合并到一遍traversal完成
  */
 public class CloneGraph {
-    //dFS
-    public UndirectedGraphNode cloneGraph(UndirectedGraphNode node) {
-        UndirectedGraphNode newRoot = new UndirectedGraphNode(node.label);
-        dFS(node, newRoot);
-        return newRoot;
+    public Node cloneGraph(Node node) {
+        if(node==null){
+            return null;
+        }
+
+        Map<Node, Node> map = new HashMap<>();
+        dfs(node, map);
+        return map.get(node);
     }
 
-    //bFS
-    public UndirectedGraphNode cloneGraph2(UndirectedGraphNode node) {
-        UndirectedGraphNode newRoot = new UndirectedGraphNode(node.label);
-        bFS(node, newRoot);
-        return newRoot;
-    }
+    private void dfs(Node root, Map<Node, Node> map){
+        if(!map.containsKey(root)){
+            map.put(root, new Node(root.val));
+        }
+        Node copy = map.get(root);
 
-    private void bFS(UndirectedGraphNode oldRoot, UndirectedGraphNode newRoot){
-        Queue<UndirectedGraphNode> queue1 = new LinkedList<>();
-        Queue<UndirectedGraphNode> queue2 = new LinkedList<>();
-        queue1.add(oldRoot);
-        queue2.add(newRoot);
-        while(!queue1.isEmpty()){
-            UndirectedGraphNode tmp1 = queue1.remove();
-            UndirectedGraphNode tmp2 = queue2.remove();
-            for(UndirectedGraphNode tmp : tmp1.neighbors){
-                UndirectedGraphNode tmp3 = new UndirectedGraphNode(tmp.label);
-                tmp2.neighbors.add(tmp3);
-                queue1.add(tmp);
-                queue2.add(tmp3);
+        for(Node nbor : root.neighbors){
+            if(!map.containsKey(nbor)){//avoid cycle
+                dfs(nbor, map);
             }
-        }
-        return;
-    }
-
-    private void dFS(UndirectedGraphNode oldRoot, UndirectedGraphNode newRoot){
-        //base case
-        if(oldRoot==null){
-            return;
-        }
-        for(UndirectedGraphNode tmp : oldRoot.neighbors){
-            UndirectedGraphNode tmpNew = new UndirectedGraphNode(tmp.label);
-            newRoot.neighbors.add(tmpNew);
-            dFS(tmp, tmpNew);
-        }
-        return;
-    }
-
-    public static class UndirectedGraphNode {
-        int label;
-        List<UndirectedGraphNode> neighbors;
-        UndirectedGraphNode(int x){
-            label = x;
-            neighbors = new ArrayList<UndirectedGraphNode>();
+            copy.neighbors.add(map.get(nbor));
         }
     }
 
+    class Node {
+        public int val;
+        public List<Node> neighbors;
+        public Node() {
+            val = 0;
+            neighbors = new ArrayList<Node>();
+        }
+        public Node(int _val) {
+            val = _val;
+            neighbors = new ArrayList<Node>();
+        }
+        public Node(int _val, ArrayList<Node> _neighbors) {
+            val = _val;
+            neighbors = _neighbors;
+        }
+    }
 }

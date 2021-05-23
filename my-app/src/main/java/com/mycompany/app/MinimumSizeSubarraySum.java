@@ -40,6 +40,7 @@ public class MinimumSizeSubarraySum{
             if(sum>=target){
                 minL = Math.min(minL, ptr1-ptr0);
             }
+            //这里能提前break的原因是else if上面的条件，就是：sum<target && ptr1>=n，这个时候ptr0向前缩进，不可能再有解。
             else if(ptr1>=n){
                 break;
             }

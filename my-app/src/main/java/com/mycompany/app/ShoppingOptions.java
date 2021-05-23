@@ -16,6 +16,7 @@ import java.util.*;
 
 /**
  * Amazon online screening遇到的：这个题本质上是4SumII的一个变化。除了用两个Map之外，要做一些小的优化，比如BinarySearch, PrefixSum.
+ * 时间复杂度：O(n^2*lg(n^2))
  */
 public class ShoppingOptions {
     public int numberOfOptions(List<Integer> price1, List<Integer> price2,

@@ -38,6 +38,123 @@ import java.util.List;
  * s is a valid expression.
  */
 public class BasicCalculatorIII {
+    /**
+     * Solution 2
+     * 下面这种写法其实源自于下面这个Link:
+     * https://leetcode.com/problems/basic-calculator-iii/discuss/113592/Development-of-a-generic-solution-for-the-series-of-the-calculator-problems
+     * 思路上，跟我的下面的解法思路一致，也是逻辑上从top level根据“+/-”号，把整个expression拆分成一个段段的只有乘除的。
+     * 各段算出来，然后汇总到一起。在各段当中，如果有括号，就recurse。
+     * 只不过下面这个Implementation要比我上面的优雅的多！！！
+     */
+    public int calculate(String s) {
+        long l1 = 0; //partial result for + & -
+        int o1 = 1; // 1: +; -1: -
+        long l2 = 1; //partial result for * & /
+        int o2 = 1; // 1: *; -1: /
+
+        for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
+            if(c==' '){
+                continue;
+            }
+            else if(Character.isDigit(c)){
+                int temp = c - '0';
+                while(i+1<s.length() && Character.isDigit(s.charAt(i+1))){
+                    temp = temp*10 + s.charAt(++i)-'0';
+                }
+                l2 = (o2==1) ? l2*temp : l2/temp;
+            }
+            else if(c=='('){
+                int leftCnt = 1;
+                int k = i+1;
+                while(k<s.length()){
+                    if(s.charAt(k)=='('){
+                        leftCnt++;
+                    }
+                    else if(s.charAt(k)==')'){
+                        leftCnt--;
+                    }
+                    if(leftCnt==0){
+                        break;
+                    }
+                    k++;
+                }
+                long temp = calculate(s.substring(i+1, k));
+                l2 = (o2==1) ? l2*temp: l2/temp;
+                i = k; //i will increment in the for loop, no need to manually increment
+            }
+            else if(c=='*'){
+                o2 = 1;
+            }
+            else if(c=='/'){
+                o2 = -1;
+            }
+            else{  //(c=='+' || c=='-')
+                l1 += o1*l2;
+                o1 = (c=='+') ? 1 : -1;
+                //reset segment
+                l2 = 1;
+                o2 = 1;
+            }
+        }
+        //handle the last segment
+        return (int)(l1+o1*l2);
+    }
+
+
+    /**
+     * Iterative版本
+     */
+    public int calculate_iterative(String s) {
+        int l1 = 0, o1 = 1;
+        int l2 = 1, o2 = 1;
+
+        Deque<Integer> stack = new ArrayDeque<>(); // stack to simulate recursion
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+
+            if (Character.isDigit(c)) {
+                int num = c - '0';
+
+                while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1))) {
+                    num = num * 10 + (s.charAt(++i) - '0');
+                }
+
+                l2 = (o2 == 1 ? l2 * num : l2 / num);
+
+            } else if (c == '(') {
+                // First preserve current calculation status
+                stack.offerFirst(l1); stack.offerFirst(o1);
+                stack.offerFirst(l2); stack.offerFirst(o2);
+
+                // Then reset it for next calculation
+                l1 = 0; o1 = 1;
+                l2 = 1; o2 = 1;
+
+            } else if (c == ')') {
+                // First preserve the result of current calculation
+                int num = l1 + o1 * l2;
+
+                // Then restore previous calculation status
+                o2 = stack.poll(); l2 = stack.poll();
+                o1 = stack.poll(); l1 = stack.poll();
+
+                // Previous calculation status is now in effect
+                l2 = (o2 == 1 ? l2 * num : l2 / num);
+
+            } else if (c == '*' || c == '/') {
+                o2 = (c == '*' ? 1 : -1);
+
+            } else if (c == '+' || c == '-') {
+                l1 = l1 + o1 * l2;
+                o1 = (c == '+' ? 1 : -1);
+
+                l2 = 1; o2 = 1;
+            }
+        }
+
+        return (l1 + o1 * l2);
+    }
 
     /**
      *我自己想到的解法:
@@ -49,7 +166,7 @@ public class BasicCalculatorIII {
      * 处理每一个括号就要O(n),然后每个里面的括号的recursive call又要take O(n):
      * n + n-1 + n-2 + n-3 + ... = O(n^2)
      */
-    public int calculate_solution1(String s) {
+    public int calculateSln1(String s) {
         return (int)solve(s, 0, s.length()-1);
     }
 
@@ -136,126 +253,5 @@ public class BasicCalculatorIII {
         return empty ? 0 : res;
     }
 
-    /**
-     *
-     * Solution 2
-     * 下面这种写法其实源自于下面这个Link:
-     * https://leetcode.com/problems/basic-calculator-iii/discuss/113592/Development-of-a-generic-solution-for-the-series-of-the-calculator-problems
-     * 思路上，跟我的上面的解法完全一致，也是逻辑上从top level根据“+/-”号，把整个expression拆分成一个段段的只有乘除的。
-     * 各段算出来，然后汇总到一起。在各段当中，如果有括号，就recurse。
-     * 只不过下面这个Implementation要比我上面的优雅的多！！！
-     */
-    public int calculate_solution2(String s) {
-        long l1 = 0; //partial result for + & -
-        int o1 = 1; // 1: +; -1: -
-        long l2 = 1; //partial result for * & /
-        int o2 = 1; // 1: *; -1: /
 
-        for(int i=0; i<s.length(); i++){
-            char c = s.charAt(i);
-            if(c==' '){
-                continue;
-            }
-            else if(Character.isDigit(c)){
-                int temp = c - '0';
-                while(i+1<s.length() && Character.isDigit(s.charAt(i+1))){
-                    temp = temp*10 + s.charAt(++i)-'0';
-                }
-                l2 = (o2==1) ? l2*temp : l2/temp;
-            }
-            else if(c=='('){
-                int leftCnt = 1;
-                int k = i+1;
-                while(k<s.length()){
-                    if(s.charAt(k)=='('){
-                        leftCnt++;
-                    }
-                    else if(s.charAt(k)==')'){
-                        leftCnt--;
-                    }
-                    if(leftCnt==0){
-                        break;
-                    }
-                    k++;
-                }
-                long temp = calculate_solution2(s.substring(i+1, k));
-                l2 = (o2==1) ? l2*temp: l2/temp;
-                i = k; //i will increment in the for loop, no need to manually increment
-            }
-            else if(c=='*'){
-                o2 = 1;
-            }
-            else if(c=='/'){
-                o2 = -1;
-            }
-            else if(c=='+'){
-                l1 += o1*l2;
-                o1 = 1;
-                //reset segment
-                l2 = 1;
-                o2 = 1;
-            }
-            else{
-                l1 += o1*l2;
-                o1 = -1;
-                //reset segment
-                o2 = 1;
-                l2 = 1;
-            }
-        }
-        //handle the last segment
-        return (int)(l1+o1*l2);
-    }
-
-    //Solution2 的Iterative版本
-    public int calculate_iterative(String s) {
-        int l1 = 0, o1 = 1;
-        int l2 = 1, o2 = 1;
-
-        Deque<Integer> stack = new ArrayDeque<>(); // stack to simulate recursion
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-
-            if (Character.isDigit(c)) {
-                int num = c - '0';
-
-                while (i + 1 < s.length() && Character.isDigit(s.charAt(i + 1))) {
-                    num = num * 10 + (s.charAt(++i) - '0');
-                }
-
-                l2 = (o2 == 1 ? l2 * num : l2 / num);
-
-            } else if (c == '(') {
-                // First preserve current calculation status
-                stack.offerFirst(l1); stack.offerFirst(o1);
-                stack.offerFirst(l2); stack.offerFirst(o2);
-
-                // Then reset it for next calculation
-                l1 = 0; o1 = 1;
-                l2 = 1; o2 = 1;
-
-            } else if (c == ')') {
-                // First preserve the result of current calculation
-                int num = l1 + o1 * l2;
-
-                // Then restore previous calculation status
-                o2 = stack.poll(); l2 = stack.poll();
-                o1 = stack.poll(); l1 = stack.poll();
-
-                // Previous calculation status is now in effect
-                l2 = (o2 == 1 ? l2 * num : l2 / num);
-
-            } else if (c == '*' || c == '/') {
-                o2 = (c == '*' ? 1 : -1);
-
-            } else if (c == '+' || c == '-') {
-                l1 = l1 + o1 * l2;
-                o1 = (c == '+' ? 1 : -1);
-
-                l2 = 1; o2 = 1;
-            }
-        }
-
-        return (l1 + o1 * l2);
-    }
 }

@@ -45,42 +45,34 @@ public class NextPermutation {
         int ptr = nums.length - 1;
         int m = -1;
         int n = -1;
-        while(ptr>0){
-            //find m, look back to find n, do the swap and return
-            if(nums[ptr-1]<nums[ptr]){
-                m = ptr - 1;
-                while(ptr<nums.length){
-                    if(nums[ptr]<=nums[m]){
-                        n = ptr - 1;
-                        swap(nums, m, n);
-                        reverse(nums, m+1, nums.length-1);
-                        return;
-                    }
-                    ptr++;
-                }
-                //reach here, take nums[nums.length-1] as n
-                n = nums.length - 1;
-                swap(nums, m, n);
-                reverse(nums, m+1, nums.length-1);
-                return;
-            }
+        while(ptr>0 && nums[ptr-1]>=nums[ptr]){
             ptr--;
         }
-        //reach here, did not find m. do reverse.
-        reverse(nums, 0, nums.length-1);
-    }
-
-    private void reverse(int[] nums, int ptr0, int ptr1){
-        while(ptr0<ptr1){
-            swap(nums, ptr0, ptr1);
-            ptr0++;
-            ptr1--;
+        if(ptr<=0){//whole nums in desending order
+            reverse(nums, 0, nums.length-1);
+        }
+        else{
+            m = ptr - 1;
+            while(ptr<nums.length && nums[ptr]>nums[m]){//find the first place on the right side nums[ptr]<=nums[m]
+                ptr++;
+            }
+            n = ptr - 1;
+            swap(nums, m, n);
+            reverse(nums, m+1, nums.length-1);
         }
     }
 
-    private void swap(int[] nums, int ptr0, int ptr1){
-        int temp = nums[ptr1];
-        nums[ptr1] = nums[ptr0];
-        nums[ptr0] = temp;
+    private void swap(int[] nums, int left, int right){
+        int temp = nums[left];
+        nums[left] = nums[right];
+        nums[right] = temp;
+    }
+
+    private void reverse(int[] nums, int left, int right){
+        while(left<right){
+            swap(nums, left, right);
+            left++;
+            right--;
+        }
     }
 }

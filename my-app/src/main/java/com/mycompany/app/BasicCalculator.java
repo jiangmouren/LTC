@@ -58,4 +58,49 @@ class BasicCalculator {
         }
         return res;
     }
+
+    public int calculateRecur(String s) {
+        long l1 = 0; //partial result for + & -
+        int o1 = 1; // 1: +; -1: -
+        long l2 = 0; //partial result
+
+        for(int i=0; i<s.length(); i++){
+            char c = s.charAt(i);
+            if(c==' '){
+                continue;
+            }
+            else if(Character.isDigit(c)){
+                l2 = c - '0';
+                while(i+1<s.length() && Character.isDigit(s.charAt(i+1))){
+                    l2 = l2*10 + s.charAt(++i)-'0';
+                }
+            }
+            else if(c=='('){
+                int leftCnt = 1;
+                int k = i+1;
+                while(k<s.length()){
+                    if(s.charAt(k)=='('){
+                        leftCnt++;
+                    }
+                    else if(s.charAt(k)==')'){
+                        leftCnt--;
+                    }
+                    if(leftCnt==0){
+                        break;
+                    }
+                    k++;
+                }
+                l2 = calculateRecur(s.substring(i+1, k));
+                i = k; //i will increment in the for loop, no need to manually increment
+            }
+            else{ //(c=='+' || c=='-')
+                l1 += o1*l2;
+                o1 = (c=='+') ? 1 : -1;
+                //reset segment
+                l2 = 0;
+            }
+        }
+        //handle the last segment
+        return (int)(l1+o1*l2);
+    }
 }

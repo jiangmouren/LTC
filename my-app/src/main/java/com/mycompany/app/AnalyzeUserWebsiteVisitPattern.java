@@ -50,7 +50,7 @@ import java.util.*;
 
 /**
  * 整体上说这是一道偏engineering的题目，并不是特别的算法。
- * 比较讨厌的是这个题目说饿很不清楚。
+ * 比较讨厌的是这个题目说的很不清楚。
  * 首先什么东西构成一个3-sequence? 同一个用户，前后3次访问的网址构成一个3-sequence.
  * 然后题目给人一种错觉就是给定的3个array是按照timestamp排序，并按照username聚类过的，其实并没有。
  * 更一般性的输入如下：
@@ -74,35 +74,41 @@ public class AnalyzeUserWebsiteVisitPattern {
             touples[i].username = username[i];
             touples[i].website = website[i];
         }
-        Arrays.sort(touples, (a, b)->a.timestamp-b.timestamp);
-
-        Map<String, List<String>> visitMap = new HashMap<>();
-        for(Touple touple : touples){
-            String key = touple.username;
-            if(visitMap.containsKey(key)){
-                visitMap.get(key).add(touple.website);
+        Arrays.sort(touples, (a, b)->{
+            int cmp = a.username.compareTo(b.username);
+            if(cmp==0){
+                cmp = a.timestamp-b.timestamp;
             }
-            else{
-                List<String> list = new ArrayList<>();
-                list.add(touple.website);
-                visitMap.put(key, list);
-            }
-        }
+            return cmp;
+        });
 
-        List<String> buf = new ArrayList<>();
         Map<List<String>, Integer> map = new HashMap<>();
-        for(Map.Entry<String,List<String>> entry : visitMap.entrySet()){
+        int ptr0 = 0;
+        int ptr1 = 0;
+        while(ptr0<n){
+            while(ptr1<n && touples[ptr1].username.equals(touples[ptr0].username)){
+                ptr1++;
+            }
+            //这里之所以用一个set是因为，leetcode test里面要求来自同一个user的重复的3-seq只能被计算一次
             Set<List<String>> set = new HashSet<>();
-            backtracking(entry.getValue(), 0, entry.getValue().size(), set, buf);
-            for(List<String> list : set){
-                if(map.containsKey(list)){
-                    int cnt = map.get(list);
-                    map.put(list, ++cnt);
-                }
-                else{
-                    map.put(list, 1);
+            for(int i=ptr0; i<ptr1-2; i++){
+                for(int j=i+1; j<ptr1-1; j++){
+                    for(int k=j+1; k<ptr1; k++){
+                        List<String> buf = new ArrayList<>();
+                        buf.add(touples[i].website);
+                        buf.add(touples[j].website);
+                        buf.add(touples[k].website);
+                        set.add(buf);
+                    }
                 }
             }
+            for(List<String> seq : set){
+                if(!map.containsKey(seq)){
+                    map.put(seq, 0);
+                }
+                map.put(seq, map.get(seq)+1);
+            }
+            ptr0 = ptr1;
         }
 
         Set<Map.Entry<List<String>,Integer>> entrySet = map.entrySet();
@@ -118,26 +124,6 @@ public class AnalyzeUserWebsiteVisitPattern {
             }
         }
         return res;
-    }
-
-    //right-left>=3 to call this function, if not, nothing will happen, so no need to check before calling
-    private void backtracking(List<String> website, int left, int right, Set<List<String>> set, List<String> buf){
-        //termination
-        if(buf.size()>=3){
-            List<String> key = new ArrayList<>();
-            key.addAll(buf);
-            set.add(key);
-            return;
-        }
-
-        int rightBnd = right - (2 - buf.size()); //right is not inclusive
-        for(int i=left; i<rightBnd; i++){//left inclusive
-            buf.add(website.get(i));
-            //注意这里不做swap，因为要遵循time order，被用过的后面就不能再用了
-            backtracking(website, i+1, right, set, buf);
-            buf.remove(buf.size()-1);
-        }
-        return;
     }
 
     //return neg if list1<list2

@@ -34,38 +34,29 @@ package com.mycompany.app;
  */
 
 public class ContainerWithMostWater{
+    //整体思路跟"Sorted 2-Sum"有点像
+    //本质上说，这个也也是已经sorted by distance
+    //找到短的那根移动，才有可能找到跟大的。所有被抛在ptr0/1后面的，都不肯能以其为边找到更大的
     public int maxArea(int[] height) {
-        //整体思路跟"Sorted 2-Sum"有点像
-        //本质上说，这个也也是已经sorted by distance
         int res = Integer.MIN_VALUE;
-        int ptr0 = 0;
-        int ptr1 = height.length - 1;
-        while(ptr0<ptr1){
-            int area = (ptr1-ptr0) * Math.min(height[ptr0], height[ptr1]);
+        int left = 0;
+        int right = height.length - 1;
+        while(left<right){
+            int area = (right-left) * Math.min(height[left], height[right]);
             res = Math.max(res, area);
-            if(height[ptr0]<height[ptr1]){//找到短的那根移动，才有可能找到跟大的。所有被抛在ptr0/1后面的，都不肯能以其为边找到更大的
-                int ptr = ptr0+1;
-                while(ptr<ptr1){
-                    if(height[ptr]<=height[ptr0]){
-                        ptr++;
-                    }
-                    else{
-                        break;
-                    }
+            if(height[left]<height[right]){
+                int ptr = left;
+                while(ptr<right && height[ptr]<=height[left]){
+                    ptr++;
                 }
-                ptr0 = ptr;
+                left = ptr;
             }
             else{
-                int ptr = ptr1-1;
-                while(ptr>ptr0){
-                    if(height[ptr]<=height[ptr1]){
-                        ptr--;
-                    }
-                    else{
-                        break;
-                    }
+                int ptr = right;
+                while(ptr>left && height[ptr]<=height[right]){
+                    ptr--;
                 }
-                ptr1 = ptr;
+                right = ptr;
             }
         }
         return res;

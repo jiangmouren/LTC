@@ -1,5 +1,8 @@
+package com.mycompany.app;
+import java.util.Stack;
+
 /**
- * Question:
+ * Question: https://leetcode.com/problems/binary-search-tree-iterator/
  * Implement an iterator over a binary search tree (BST).
  * Your iterator will be initialized with the root node of a BST.
  * Calling next() will return the next smallest number in the BST.
@@ -12,45 +15,39 @@
  * Cannot do it recursively, because we need that stack in our control.
  */
 
-package com.mycompany.app;
-
-import java.util.Stack;
 
 public class BinarySearchTreeIterator {
-    public static class Node{
-        Node left;
-        Node right;
+    class TreeNode{
+        TreeNode left;
+        TreeNode right;
         int val;
-        Node(int x){
+        TreeNode(int x){
             this.val = x;
         }
     }
-    private Stack<Node> stack = new Stack<>();
 
-    //Initializer
-    BinarySearchTreeIterator(Node root){
-        pushStack(root, this.stack);
+    Stack<TreeNode> stack;
+    public BinarySearchTreeIterator(TreeNode root) {
+        this.stack = new Stack<>();
+        pushRoot(root);
     }
 
-    public boolean hasNext(){
-        return stack.size()!=0;
+    public int next() {
+        TreeNode cur = this.stack.pop();
+        pushRoot(cur.right);
+        return cur.val;
     }
 
-    public Node next(){
-        if(stack.isEmpty()) return null;
-        else{
-            Node result = stack.pop();
-            pushStack(result.right, this.stack);
-            return result;
-        }
+    public boolean hasNext() {
+        return !this.stack.isEmpty();
     }
-    private void pushStack(Node root, Stack<Node> stack){
-        Node ptr = root;
+
+    private void pushRoot(TreeNode root){
+        TreeNode ptr = root;
         while(ptr!=null){
-            stack.push(ptr);
+            this.stack.push(ptr);
             ptr = ptr.left;
         }
-        return;
     }
 
 }

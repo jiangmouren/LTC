@@ -37,31 +37,28 @@ public class ReverseLinkedListII {
     //要注意两个点：一个是left可能从head开始，所以要建一个dummyHead->pre，以防最后面return的时候需要用
     //再就是在reverse LinkedList的时候，注意ptr2可能出现的null
     public ListNode reverseBetween(ListNode head, int m, int n) {
-        ListNode pre = new ListNode();
-        pre.next = head;
-        ListNode nxt;
-        ListNode right = head;
-        ListNode left = head;
-        for(int i=0; i<n-m; i++){
-            right = right.next;
+        ListNode dummyHead = new ListNode();
+        dummyHead.next = head;
+        ListNode pre = dummyHead;
+        ListNode cur = head;
+        ListNode nxt = head.next;
+        ListNode ptr = dummyHead;
+        int pos = 0;
+        while(pos<n){
+            if(pos==m-1){
+                ptr = pre;
+            }
+            if(pos>=m){
+                cur.next = pre;
+            }
+            pre = cur;
+            cur = nxt;
+            nxt = nxt==null ? null : nxt.next;
+            pos++;
         }
-        for(int i=1; i<m; i++){
-            pre = pre.next;
-            left = left.next;
-            right = right.next;
-        }
-        nxt = right.next;
-        ListNode ptr0 = left;
-        ListNode ptr1 = left.next;
-        ListNode ptr2 = ptr1==null ? null : ptr1.next;
-        while(ptr0!=right){
-            ptr1.next = ptr0;
-            ptr0 = ptr1;
-            ptr1 = ptr2;
-            ptr2 = ptr2==null ? null : ptr2.next;
-        }
-        pre.next = right;
-        left.next = nxt;
-        return m>1 ? head : pre.next;
+        ListNode tail = ptr.next;
+        tail.next = cur;
+        ptr.next = pre;
+        return dummyHead.next;
     }
 }
