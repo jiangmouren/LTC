@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.BasicCalculatorII;
+import com.mycompany.app.calculator.BasicCalculatorII;
 import org.junit.Test;
 
 /**

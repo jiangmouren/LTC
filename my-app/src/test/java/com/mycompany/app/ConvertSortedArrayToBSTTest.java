@@ -1,8 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.ConvertSortedArrayToBST;
+import com.mycompany.app.tree.ConvertSortedArrayToBST;
 import org.junit.Test;
-import com.mycompany.app.ConvertSortedArrayToBST.*;
+import com.mycompany.app.tree.ConvertSortedArrayToBST.*;
 
 /**
  * Created by jiangmouren on 6/9/17.

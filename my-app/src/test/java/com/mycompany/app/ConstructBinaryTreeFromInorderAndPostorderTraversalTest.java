@@ -1,8 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.ConstructBinaryTreeFromInorderAndPostorderTraversal;
+import com.mycompany.app.tree.ConstructBinaryTreeFromInorderAndPostorderTraversal;
 import org.junit.Test;
-import com.mycompany.app.ConstructBinaryTreeFromInorderAndPostorderTraversal.*;
+import com.mycompany.app.tree.ConstructBinaryTreeFromInorderAndPostorderTraversal.*;
 
 /**
  * Say we have the following inputs:

@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.CountingSort;
+import com.mycompany.app.sort.CountingSort;
 import org.junit.Test;
 
 /**

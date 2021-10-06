@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.CountPrimes;
+import com.mycompany.app.math.CountPrimes;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

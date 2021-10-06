@@ -1,8 +1,7 @@
 package com.mycompany.app;
 
-import com.mycompany.app.CloneGraph;
+import com.mycompany.app.graph.CloneGraph;
 import org.junit.Test;
-import com.mycompany.app.CloneGraph.*;
 
 import java.util.*;
 

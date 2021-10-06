@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.BasicCalculator;
+import com.mycompany.app.calculator.BasicCalculator;
 import org.junit.Test;
 
 public class BasicCalculatorTest {

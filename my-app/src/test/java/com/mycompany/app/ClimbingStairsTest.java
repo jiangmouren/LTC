@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.ClimbingStairs;
+import com.mycompany.app.dp.ClimbingStairs;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

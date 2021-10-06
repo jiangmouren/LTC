@@ -1,8 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.BinaryTreeVerticalOrderTraversal;
+import com.mycompany.app.tree.BinaryTreeVerticalOrderTraversal;
 import org.junit.Test;
-import com.mycompany.app.BinaryTreeVerticalOrderTraversal.*;
+import com.mycompany.app.tree.BinaryTreeVerticalOrderTraversal.*;
 import java.util.*;
 
 /**

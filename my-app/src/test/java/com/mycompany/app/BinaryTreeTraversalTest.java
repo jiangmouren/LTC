@@ -1,8 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.BinaryTreeTraversal;
+import com.mycompany.app.tree.BinaryTreeTraversal;
 import org.junit.Test;
-import com.mycompany.app.BinaryTreeTraversal.*;
+import com.mycompany.app.tree.BinaryTreeTraversal.*;
 import java.util.*;
 
 /**

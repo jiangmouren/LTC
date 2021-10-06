@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.BubbleSort;
+import com.mycompany.app.sort.BubbleSort;
 import org.junit.Test;
 
 import java.util.*;
