@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.InsertionSort;
+import com.mycompany.app.sort.InsertionSort;
 import org.junit.Test;
 import java.util.*;
 import static org.junit.Assert.*;

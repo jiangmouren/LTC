@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.GrayCode;
+import com.mycompany.app.bitManipulation.GrayCode;
 import org.junit.Test;
 
 /**

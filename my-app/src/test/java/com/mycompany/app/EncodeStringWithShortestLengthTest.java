@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.EncodeStringWithShortestLength;
+import com.mycompany.app.dp.EncodeStringWithShortestLength;
 import org.junit.Test;
 
 /**

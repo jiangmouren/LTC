@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.FlipGame;
+import com.mycompany.app.linearStructure.FlipGame;
 import org.junit.Test;
 
 import java.util.*;

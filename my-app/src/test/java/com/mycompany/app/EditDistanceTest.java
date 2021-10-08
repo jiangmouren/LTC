@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.EditDistance;
+import com.mycompany.app.dp.EditDistance;
 import org.junit.Test;
 
 /**

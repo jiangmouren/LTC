@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.InvertBinaryTree;
+import com.mycompany.app.tree.InvertBinaryTree;
 import org.junit.Test;
 
 /**

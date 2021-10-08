@@ -1,8 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.FlattenBinaryTreeToLinkedList;
+import com.mycompany.app.tree.FlattenBinaryTreeToLinkedList;
 import org.junit.Test;
-import com.mycompany.app.FlattenBinaryTreeToLinkedList.*;
+import com.mycompany.app.tree.FlattenBinaryTreeToLinkedList.*;
 
 /**
  * Created by eljian on 8/3/2017.

@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.ImplementQueueUsingStacks;
+import com.mycompany.app.stack.ImplementQueueUsingStacks;
 import org.junit.Test;
 
 public class ImplementQueueUsingStacksTest {

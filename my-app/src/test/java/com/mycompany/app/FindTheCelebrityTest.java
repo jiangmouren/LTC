@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.FindTheCelebrity;
+import com.mycompany.app.slidingWindow.FindTheCelebrity;
 import org.junit.Test;
 
 /**

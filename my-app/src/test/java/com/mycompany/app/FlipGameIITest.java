@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.FlipGameII;
+import com.mycompany.app.backtracking.FlipGameII;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

@@ -1,9 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.InorderSuccessorInBST;
+import com.mycompany.app.tree.InorderSuccessorInBST;
 import org.junit.Test;
-import com.mycompany.app.InorderSuccessorInBST.*;
-import static org.junit.Assert.*;
+import com.mycompany.app.tree.InorderSuccessorInBST.*;
 
 /**
  * Created by eljian on 7/20/2017.

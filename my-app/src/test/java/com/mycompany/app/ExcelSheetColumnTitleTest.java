@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.ExcelSheetColumnTitle;
+import com.mycompany.app.math.ExcelSheetColumnTitle;
 import org.junit.Test;
 
 /**

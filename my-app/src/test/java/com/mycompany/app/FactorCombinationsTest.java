@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.FactorCombinations;
+import com.mycompany.app.backtracking.FactorCombinations;
 import org.junit.Test;
 import java.util.*;
 import static org.junit.Assert.*;

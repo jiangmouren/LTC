@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.EvaluateReversePolishNotation;
+import com.mycompany.app.calculator.EvaluateReversePolishNotation;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

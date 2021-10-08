@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.GraphValidTree;
+import com.mycompany.app.graph.GraphValidTree;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
