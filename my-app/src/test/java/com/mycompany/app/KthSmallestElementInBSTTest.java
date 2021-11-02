@@ -1,8 +1,8 @@
 package com.mycompany.app;
 
-import com.mycompany.app.KthSmallestElementInBST;
+import com.mycompany.app.tree.KthSmallestElementInBST;
 import org.junit.Test;
-import com.mycompany.app.KthSmallestElementInBST.*;
+import com.mycompany.app.tree.KthSmallestElementInBST.*;
 import static org.junit.Assert.*;
 
 /**

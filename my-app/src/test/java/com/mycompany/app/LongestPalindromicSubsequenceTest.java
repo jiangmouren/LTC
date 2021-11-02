@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.LongestPalindromicSubsequence;
+import com.mycompany.app.graph.LongestPalindromicSubsequence;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

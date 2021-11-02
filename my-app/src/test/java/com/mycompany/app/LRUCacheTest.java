@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.LRUCache;
+import com.mycompany.app.cache.LRUCache;
 import org.junit.Test;
 
 import static org.junit.Assert.*;

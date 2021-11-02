@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.MaximumSubarray;
+import com.mycompany.app.dp.MaximumSubarray;
 import org.junit.Test;
 
 /**

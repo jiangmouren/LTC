@@ -1,8 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.LowestCommonAncestorOfABinaryTree;
-import org.junit.Test;
-import com.mycompany.app.LowestCommonAncestorOfABinaryTree.*;
+import com.mycompany.app.tree.LowestCommonAncestorOfABinaryTree;
 
 /**
  * Created by eljian on 9/19/2017.

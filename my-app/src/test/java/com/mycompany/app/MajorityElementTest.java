@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.MajorityElement;
+import com.mycompany.app.majorityVote.MajorityElement;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
