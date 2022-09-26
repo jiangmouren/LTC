@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.mycompany.app.sort.quickSelect;
 
 /**
  * quickSelect的复杂度：
@@ -10,14 +10,13 @@ package com.mycompany.app;
 public class QuickSelect {
     public static void main(String[] args){
         QuickSelect instance = new QuickSelect();
-        int[] nums = {4, 1, 2, 4, 6, 10};
+        int[] nums = {3,2,3,1,2,4,5,5,6};
         System.out.println(instance.quickSelect(nums, 1));
         System.out.println(instance.quickSelect(nums, 2));
         System.out.println(instance.quickSelect(nums, 3));
         System.out.println(instance.quickSelect(nums, 4));
         System.out.println(instance.quickSelect(nums, 5));
         System.out.println(instance.quickSelect(nums, 6));
-        System.out.println(instance.quickSelect(nums, 7));
     }
 
     /**
@@ -44,24 +43,26 @@ public class QuickSelect {
             }
             else if(idx<k-1){
                 left = idx+1;
-                continue;
             }
             else{
-                right = idx-1;
-                continue;
+                right = idx-1;//就是这里右边界的向左移动，导致最终search的结果右侧不再像partition里面那样严格大于，而是大于等于
             }
         }
         return res;
     }
 
+    //shuffle array make left of pivot all less or equal to the pivot point, while all right larger than the pivot point
+    //return the idx of pivot point after the shuffle.
     private int partition(int[] nums, int start, int end){
         int left = start + 1;
         int right = end;
         //注意这里要包含等号，为了处理left和right起始位置相同(既只有2个元素的情况)，但right需要左移的情况
         while(left<=right){
+            //找到右侧第一个小于等于pivot point的位置
             while(right>=left && nums[right]>nums[start]){
                 right--;
             }
+            //找到左侧第一个大于pivot point的位置
             while(left<=right && nums[left]<=nums[start]){
                 left++;
             }
@@ -69,6 +70,7 @@ public class QuickSelect {
                 swap(nums, right, left);
             }
         }
+        //最后right一定是指向小于等于pivot point的位置，而left指向大于pivot point的位置
         swap(nums, start, right);
         return right;
     }

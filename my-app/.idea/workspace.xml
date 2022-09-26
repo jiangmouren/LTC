@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -130,6 +133,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -141,15 +147,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="SDKs" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.27868852" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/Downloads/IdeaVim-1.11.1.zip&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  }
+}</component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mycompany.app" />
@@ -165,23 +173,9 @@
       <recent name="C:\Users\eljian\gitHome\LTC\my-app\src\main\java\com\mycompany\app" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CombinationSum">
+  <component name="RunManager" selected="Application.QuickSelect">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.App" />
-      <module name="my-app" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.mycompany.app.matrixTraversal.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -228,6 +222,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="QuickSelect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.sort.quickSelect.QuickSelect" />
+      <module name="my-app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mycompany.app.sort.quickSelect.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mycompany.app.SortList" />
       <module name="my-app" />
@@ -258,34 +266,6 @@
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
       <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -309,7 +289,7 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.App" />
+      <item itemvalue="Application.QuickSelect" />
       <item itemvalue="Application.MyCalendarII" />
       <item itemvalue="Application.ExclusiveTimeOfFunctions" />
       <item itemvalue="Application.SortList" />
@@ -317,14 +297,15 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CombinationSum" />
+        <item itemvalue="Application.QuickSelect" />
         <item itemvalue="Application.SortList" />
-        <item itemvalue="Application.ExclusiveTimeOfFunctions" />
         <item itemvalue="Application.MyCalendarII" />
-        <item itemvalue="Application.App" />
+        <item itemvalue="Application.ExclusiveTimeOfFunctions" />
+        <item itemvalue="Application.CombinationSum" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -338,6 +319,9 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.sq" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -348,24 +332,9 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="2147" y="431" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1633666133508">
-      <screen x="1920" y="-433" width="1200" height="1880" />
-    </state>
-    <state x="2147" y="431" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/1920.-433.1200.1880/0.0.1920.1160@1920.-433.1200.1880" timestamp="1633666133508" />
-    <state x="2316" y="388" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1633666135469">
-      <screen x="1920" y="-433" width="1200" height="1880" />
-    </state>
-    <state x="2316" y="388" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/1920.-433.1200.1880/0.0.1920.1160@1920.-433.1200.1880" timestamp="1633666135469" />
-    <state x="2183" y="2" width="672" height="678" key="search.everywhere.popup" timestamp="1633671262475">
-      <screen x="1920" y="-433" width="1200" height="1880" />
-    </state>
-    <state x="2183" y="2" width="672" height="678" key="search.everywhere.popup/1920.-433.1200.1880/0.0.1920.1160@1920.-433.1200.1880" timestamp="1633671262475" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -404,7 +373,7 @@
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
-        <PinnedItemInfo typeName="com.mycompany.app.LFUCache" fieldName="cntMap" />
+        <PinnedItemInfo />
       </pinned-members>
     </pin-to-top-manager>
   </component>

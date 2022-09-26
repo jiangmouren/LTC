@@ -11,18 +11,17 @@ package com.mycompany.app;
 import java.util.*;
 
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target){
-        //Assume always has one valid solution
+    public int[] twoSum(int[] nums, int target) {
+        int[] res = new int[2];
         Map<Integer, Integer> map = new HashMap<>();
-        int[] result = new int[2];
         for(int i=0; i<nums.length; i++){
             if(map.containsKey(target-nums[i])){
-                result[0] = map.get(target-nums[i]);
-                result[1] = i;
-                return result;
+                res[0] = i;
+                res[1] = map.get(target-nums[i]);
+                break;
             }
-            else map.put(nums[i], i);
+            map.put(nums[i], i);
         }
-        return result;
+        return res;
     }
 }

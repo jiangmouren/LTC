@@ -1,5 +1,3 @@
-package com.mycompany.app.sql;
-
 /**
  * https://leetcode.com/problems/combine-two-tables/
  * Table: Person
@@ -31,9 +29,7 @@ package com.mycompany.app.sql;
  */
 
 //# Write your MySQL query statement below
-//Select Person.FirstName, Person.LastName, Address.City, Address.State
-//From Person
-//Left Join Address
-//On Person.PersonId = Address.PersonId
-public class CombineTwoTables {
-}
+Select Person.FirstName, Person.LastName, Address.City, Address.State
+From Person
+Left Join Address
+On Person.PersonId = Address.PersonId

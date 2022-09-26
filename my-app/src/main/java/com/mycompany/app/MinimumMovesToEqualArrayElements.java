@@ -18,12 +18,10 @@ package com.mycompany.app;
  */
 public class MinimumMovesToEqualArrayElements {
     //这是十分“骚气”的一道题！
-    //举例[1, 3, 7, 4]来理解该怎么操作
-    //首先对上述array做一个sort来帮助理解，实际并不需要sort,得到：[1, 3, 4, 7]
-    //观察这个sort过的array，最大值是7，因为在move的过程中，是只增不减的，所以最起码应该把min加到7
-    //得到:[7, 9, 10, 7]，原来的第二大，现在成了最大，同理下一步，最起码要加到10，得到[10, 12, 10, 10]，进而类推得到：[12, 12, 12, 12]
-    //回顾上面每一步增加的了多少？实际上依次把每一个数与最小的值得差， aggregate起来，就是我们实际增加的量。
-    //Sum(a[i]-min) for i=[0, n-1] --> {Sum(a[i]) for i=[0, n-1]} - n*min
+    //这道题最好的理解方式是“运动是相对的”.
+    //思考每次往上移动(n-1)个，跟思考每次往下移动1个，效果是一样的
+    //所以为了“拉平”，每次挑最大的那个，把它拉到底
+    //所以结果就是把每个数跟最小值的差，求和: Sum(a[i]-min) = Sum(a[i]) - Sum(min) = Sum(a[i]) - n*min
     public int minMoves(int[] nums) {
         int min = Integer.MAX_VALUE;
         int sum = 0;

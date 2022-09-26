@@ -24,17 +24,20 @@ package com.mycompany.app.dp;
 
 public class JumpGame{
     public int jump(int[] nums) {
-        int n = nums.length;
-        int[] dp = new int[n];
-        dp[n-1] = 0;
-        for(int i=n-2; i>=0; i--){
-            dp[i] = Integer.MAX_VALUE;
-            for(int j=1; j<=nums[i]; j++){
-                if(i+j<n){
-                    dp[i] = Math.min(dp[i], dp[i+j]);
-                }
+        int[] dp = new int[nums.length];
+        dp[nums.length-1] = 0;
+        for(int i=nums.length-2; i>=0; i--){
+            if(i+nums[i]>=nums.length){
+                dp[i] = 1;
             }
-            dp[i] = dp[i]!=Integer.MAX_VALUE ? dp[i]+1 : dp[i];//当中有一些点可能调不到尾部，就保留Max_Value
+            else{
+                int min = Integer.MAX_VALUE;
+                for(int j=1; j<=nums[i]; j++){
+                    min = Math.min(min, dp[i+j]);
+                }
+                //Needs to take care of nums[i]==0, which will bypass the above loop and have min as Integer.MAX_VALUE
+                dp[i] = (min==Integer.MAX_VALUE) ? min : 1 + min;
+            }
         }
         return dp[0];
     }

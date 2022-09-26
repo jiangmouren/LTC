@@ -38,6 +38,7 @@ public class FactorialTrailingZeroes{
     //每一个trailing zero的出现，都源自于一对5*2的组合，而2出现的频次显然是高于5的
     //所以问题的关键就落在了能拆出多少个5上
     //每一个是5的倍数的数，必然可以拆出1个5；每一个是25的倍数的数，必然还能比满足前面条件的数再多拆出1个5；每个是125的倍数的数，必然还能比满足前面条件的数再多拆出1个5
+    //Time Complexity O(log(5, n)), Space Complexity O(1)
     public int trailingZeroes(int n) {
         int divisor = 5;
         int res = 0;

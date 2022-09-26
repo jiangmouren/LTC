@@ -31,27 +31,26 @@ public class ConstructBinaryTreeFromPreorderAndInorderTraversal {
             this.right = right;
         }
     }
+
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        int[] prePos = {0};
-        return helper(preorder, prePos, inorder, 0, inorder.length-1);
+        int[] idx = {0};
+        return construct(preorder, idx, inorder, 0, preorder.length-1);
     }
 
-    private TreeNode helper(int[] preorder, int[] prePos, int[] inorder, int left, int right){
-        TreeNode root = new TreeNode(preorder[prePos[0]]);
-        int idx = left;
-        for(int i=left; i<=right; i++){
-            if(inorder[i]==preorder[prePos[0]]){
-                idx = i;
-                break;
-            }
+    private TreeNode construct(int[] preorder, int[] idx, int[] inorder, int left, int right){
+        if(left>right){
+            return null;
         }
-        prePos[0]++;
-        if(idx>left){
-            root.left = helper(preorder, prePos, inorder, left, idx-1);
+        int val = preorder[idx[0]];
+        TreeNode root = new TreeNode(val);
+        idx[0]++;
+        int ptr = left;
+        while(inorder[ptr]!=val){
+            ptr++;
         }
-        if(idx<right){
-            root.right = helper(preorder, prePos, inorder, idx+1, right);
-        }
+
+        root.left = construct(preorder, idx, inorder, left, ptr-1);
+        root.right = construct(preorder, idx, inorder, ptr+1, right);
         return root;
     }
 }

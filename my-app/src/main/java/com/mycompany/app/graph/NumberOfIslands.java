@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.mycompany.app.graph;
 
 /**
  * https://leetcode.com/problems/number-of-islands/

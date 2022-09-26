@@ -32,8 +32,11 @@ public class KthMissingPositiveNumber {
         int right = arr.length - 1;
         while (left <= right) {
             //不用(left+right)/2 避免(left+right)出现overflow
+            //具体在这个题目中因为限定条件不会出现，但是养成这个习惯
             int mid = left + (right - left) / 2;
-            if (arr[mid] - (mid + 1) < k) {//注意这里不能有等号
+            //注意这里不能有等号,也就是说如果出现了等号把right降到mid左侧，
+            //这样才能保证最后right严格处在要找的位置的左侧, left或者最后处于要找位置的右侧，或者处于要找位置之上
+            if (arr[mid] - (mid + 1) < k) {
                 left = mid + 1;
             }
             else {// Otherwise, go left.
@@ -43,8 +46,16 @@ public class KthMissingPositiveNumber {
 
         // At the end of the loop, left = right + 1,
         // 这个时候，其实要根据最上面分析的第3点，分3种情况讨论：
+        // 如果要找的数在原区间外左侧或者右侧，那么现在也在right的左侧或者left的右侧
+        // 如果要找的数在原区间中间，那么现在也在(right, left)当中
         // 1. the kth missing is in-between arr[right] and arr[left]:
-        //    arr[right] + k - (arr[right] - (right + 1)) = k + left
+        //    arr[right] + (k - (arr[right] - (right + 1))) = k + left
+        //    解释：
+        //    arr[right] - (right+1)： 是arr[right]左侧missing的正数的个数
+        //    k - 左侧missing个数 = k - (arr[right] - (right + 1)): 是还应该往arr[right]右侧找几个数
+        //    result = arr[right] + 还应该往arr[right]右侧找几个数 = arr[right] + (k - (arr[right] - (right + 1)))
+        //           = arr[right] + k - (arr[right] - (right + 1)) = arr[right] + k - arr[right] + (right + 1)
+        //           = k + (right + 1) = k +left
         // 2. the kth missing在区间右侧：同上
         // 3. 在区间左侧： k，刚好也等于left + k,因为这种情况left==0
         return left + k;

@@ -16,28 +16,34 @@ import java.util.*;
 
 public class MergeIntervals {
     public int[][] merge(int[][] intervals) {
-        //After java 8, you can use lambda function instead of implement comparator.
-        Arrays.sort(intervals, (a, b) -> a[0] - b[0]);
-        List<int[]> resultList = new ArrayList<>();
-        int ptr0 = 0;
-        int ptr1 = 0;
-        int end = intervals[0][1];
-        while(ptr1<intervals.length){
-            if(intervals[ptr1][0]<=end && intervals[ptr1][1]>end){
-                end = intervals[ptr1][1];
-            }
-            else if(intervals[ptr1][0]>end){
-                int[] temp = {intervals[ptr0][0], end};
-                resultList.add(temp);
-                ptr0 = ptr1;
-                end = intervals[ptr0][1];
-            }
-            ptr1++;
+        if(intervals.length==1){
+            return intervals;
         }
-        //add the last interval
-        resultList.add(new int[]{intervals[ptr0][0], end});
-        int[][] result = new int[resultList.size()][resultList.get(0).length];
-        result = resultList.toArray(result);
+        //Use lambda to pass in a comparator
+        Arrays.sort(intervals, (a, b) -> a[0]-b[0]);
+        int start = intervals[0][0];
+        int end = intervals[0][1];
+        List<int[]> res = new ArrayList<>();
+        int ptr = 1;
+        while(ptr<intervals.length){
+            if(intervals[ptr][0]<=end){
+                end = Math.max(end, intervals[ptr][1]);
+            }
+            else{
+                int[] temp = new int[2];
+                temp[0] = start;
+                temp[1] = end;
+                res.add(temp);
+                start = intervals[ptr][0];
+                end = intervals[ptr][1];
+            }
+            ptr++;
+        }
+
+        //Don't forget to add the last start & end
+        res.add(new int[]{start, end});
+        int[][] result = new int[res.size()][2];
+        result = res.toArray(result);
         return result;
     }
 }

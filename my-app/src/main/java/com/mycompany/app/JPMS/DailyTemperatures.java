@@ -1,4 +1,5 @@
 package com.mycompany.app.JPMS;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/daily-temperatures/
@@ -14,32 +15,46 @@ package com.mycompany.app.JPMS;
 /**
  * 本质上是要找到右侧最近的比自己大的数的位置。可以用“Jumping Pointer”的办法，具体思路分析详见“SlidingWindowMaximum”
  * 这种办法整个的complexity是O(n)
+ * 典型的Jumping pointer or monotonic stack.
  */
 public class DailyTemperatures {
-    public int[] dailyTemperatures(int[] T) {
-        int n = T.length;
-        int[] idx = new int[n];
-        for(int i=n-1; i>=0; i--){
-            if(i==n-1){
-                idx[i] = n;
-            }
-            else{
-                int ptr = i+1;
-                while(ptr<n && T[i]>=T[ptr]){
-                    ptr = idx[ptr];
+    public int[] dailyTemperatures(int[] temperatures) {
+        int l = temperatures.length;
+        int[] ptrs = new int[l];
+        int[] res = new int[l];
+        ptrs[l-1] = l;
+        for(int i=l-2; i>=0; i--){
+            int ptr = i+1;
+            while(ptr<l){
+                if(temperatures[i]<temperatures[ptr]){
+                    ptrs[i] = ptr;
+                    break;
                 }
-                idx[i] = ptr;
+                ptr = ptrs[ptr];
             }
+            if(ptr>=l){
+                ptrs[i] = l;
+            }
+            res[i] = ptrs[i]==l ? 0 : ptrs[i] - i;
         }
+        return res;
+    }
 
-        for(int i=0; i<n; i++){
-            if(idx[i]==n){
-                idx[i] = 0;
+    public int[] dailyTemperaturesMonotonicStack(int[] temperatures) {
+        Stack<Integer> stack = new Stack<>();
+        int[] res = new int[temperatures.length];
+        for(int i = temperatures.length-1; i>=0; i--){
+            while(!stack.isEmpty() && temperatures[stack.peek()]<=temperatures[i]){
+                stack.pop();
+            }
+            if(stack.isEmpty()){
+                res[i] = 0;
             }
             else{
-                idx[i] = idx[i] - i;
+                res[i] = stack.peek() - i;
             }
+            stack.push(i);
         }
-        return idx;
+        return res;
     }
 }

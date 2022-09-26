@@ -1,5 +1,7 @@
 package com.mycompany.app;
 
+import java.util.*;
+
 /**
  * https://leetcode.com/problems/verifying-an-alien-dictionary/
  * In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters.
@@ -29,40 +31,28 @@ package com.mycompany.app;
  */
 public class VerifyingAlienDictionary {
     public boolean isAlienSorted(String[] words, String order) {
-        int[] map = new int[26];
-        for(int i=0; i<order.length(); i++){
-            map[order.charAt(i)-'a'] = i;
+        Map<Character, Integer> map = new HashMap<>();
+        for(int i=0; i<26; i++){
+            map.put(order.charAt(i), i);
         }
         for(int i=0; i<words.length-1; i++){
-            if(compare(words[i], words[i+1], map)>0){
+            if(!check(words[i], words[i+1], map)){
                 return false;
             }
         }
         return true;
     }
 
-    //return: 0 if word1==word2; 1 if word1>word2; -1 if word1<word2
-    private int compare(String word1, String word2, int[] map){
-        int ptr=0;
-        while(ptr<word1.length() && ptr<word2.length()){
-            int c1 = word1.charAt(ptr)-'a';
-            int c2 = word2.charAt(ptr)-'a';
-            if(map[c1]<map[c2]){
-                return -1;
+    private boolean check(String str1, String str2, Map<Character, Integer> map){
+        for(int i=0; i<Math.min(str1.length(), str2.length()); i++){
+            if(map.get(str1.charAt(i))<map.get(str2.charAt(i))){
+                return true;
             }
-            if(map[c1]>map[c2]){
-                return 1;
+            if(map.get(str1.charAt(i))>map.get(str2.charAt(i))){
+                return false;
             }
-            ptr++;
         }
-        if(word1.length()<word2.length()){
-            return -1;
-        }
-        else if(word1.length()>word2.length()){
-            return 1;
-        }
-        else{
-            return 0;
-        }
+        return str1.length()<=str2.length();//["apple","app"]
     }
+
 }

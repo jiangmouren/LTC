@@ -30,28 +30,27 @@ public class BinaryTreeRightSideView {
             this.right = right;
         }
     }
+
     public List<Integer> rightSideView(TreeNode root) {
-        //level order "group traversal" and each time, take the last one
         List<Integer> res = new ArrayList<>();
         if(root==null){
             return res;
         }
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
+        int cnt = 1;
         while(!queue.isEmpty()){
-            int cnt = queue.size();
-            while(cnt>0){
-                TreeNode cur = queue.poll();
-                if(cnt==1){
-                    res.add(cur.val);
-                }
-                if(cur.left!=null){
-                    queue.add(cur.left);
-                }
-                if(cur.right!=null){
-                    queue.add(cur.right);
-                }
-                cnt--;
+            TreeNode node = queue.poll();
+            cnt--;
+            if(node.left!=null){
+                queue.add(node.left);
+            }
+            if(node.right!=null){
+                queue.add(node.right);
+            }
+            if(cnt==0){
+                res.add(node.val);
+                cnt = queue.size();
             }
         }
         return res;

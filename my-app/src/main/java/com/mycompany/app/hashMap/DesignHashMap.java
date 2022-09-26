@@ -60,81 +60,78 @@ import java.util.*;
  * How can this be achieved? By choosing m to be a number that has very few factors: a prime number.
  */
 public class DesignHashMap {
-    class Pair<U, V>{
-        public U first;
-        public V second;
-        public Pair(U first, V second){
-            this.first = first;
-            this.second = second;
+    List<Bucket> map;
+    int mapSize = 2069;//选一个big prime number做bucket size
+
+    class Pair{
+        int key;
+        int value;
+        public Pair(int key, int value){
+            this.key = key;
+            this.value = value;
         }
     }
 
     class Bucket{
-        private List<Pair<Integer, Integer>> bucket;
-
+        List<Pair> bucket;
         public Bucket(){
-            //We do not need random access(always need to search) to the list but we need to do delete, which favors LinkedList over ArrayList
-            this.bucket = new LinkedList<Pair<Integer, Integer>>();
+            this.bucket = new LinkedList<>();
         }
 
-        public Integer get(Integer key){
-            for(Pair<Integer, Integer> pair : this.bucket){
-                if(pair.first.equals(key)){
-                    return pair.second;
+        public void put(int key, int value){
+            for(Pair pair : bucket){
+                if(pair.key==key){
+                    pair.value = value;
+                    return;
+                }
+            }
+            this.bucket.add(new Pair(key, value));
+        }
+
+        public int get(int key){
+            for(Pair pair : bucket){
+                if(pair.key==key){
+                    return pair.value;
                 }
             }
             return -1;
         }
 
-        public void update(Integer key, Integer value){
-            for(Pair<Integer, Integer> pair : this.bucket){
-                if(pair.first.equals(key)){
-                    pair.second = value;
-                    return;
-                }
-            }
-            //if reaches here meaning we didn't find the pair, insert new pair.
-            this.bucket.add(new Pair<Integer, Integer>(key, value));
-        }
-
-        public void remove(Integer key){
-            for(Pair<Integer, Integer> pair : this.bucket){
-                //Question: why are we not getting concurrentmodificationexception? Because of the "break"?
-                if(pair.first.equals(key)){
-                    this.bucket.remove(pair);
+        public void remove(int key){
+            //java不能一边iterate一边改动原collection的结构，否则就会有concurrentModificatoinException
+            //要先找到要移除的，再移除
+            int idx = -1;
+            for(int i=0; i<this.bucket.size(); i++){
+                if(this.bucket.get(i).key==key){
+                    idx = i;
                     break;
                 }
             }
+            if(idx!=-1){
+                this.bucket.remove(idx);
+            }
         }
     }
 
-    //this needs to be a large prime number.
-    private int bucketSize;
-    private List<Bucket> hashMap;
-    /** Initialize your data structure here. */
     public DesignHashMap() {
-        this.bucketSize = 2069;
-        this.hashMap = new ArrayList<>();
-        for(int i=0; i<bucketSize; i++){
-            hashMap.add(new Bucket());
+        this.map = new ArrayList<>();
+        for(int i=0; i<this.mapSize; i++){
+            this.map.add(new Bucket());
         }
     }
 
-    /** value will always be non-negative. */
     public void put(int key, int value) {
-        int hashCode = key % bucketSize;
-        this.hashMap.get(hashCode).update(key, value);
+        int hashCode = key%this.mapSize;
+        this.map.get(hashCode).put(key, value);
     }
 
-    /** Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key */
     public int get(int key) {
-        int hashCode = key % bucketSize;
-        return this.hashMap.get(hashCode).get(key);
+        int hashCode = key%this.mapSize;
+        return this.map.get(hashCode).get(key);
     }
 
-    /** Removes the mapping of the specified value key if this map contains a mapping for the key */
     public void remove(int key) {
-        int hashCode = key % bucketSize;
-        this.hashMap.get(hashCode).remove(key);
+        int hashCode = key%this.mapSize;
+        this.map.get(hashCode).remove(key);
     }
 }

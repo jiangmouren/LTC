@@ -30,7 +30,7 @@ public class ReverseInteger{
         String max = Integer.toString(Integer.MAX_VALUE);
         String min = Integer.toString(Integer.MIN_VALUE);
         min = min.substring(1, min.length());
-        if(x==0){
+        if(x==0 || x==Integer.MIN_VALUE){
             return 0;
         }
         else if(x>0){
@@ -43,7 +43,7 @@ public class ReverseInteger{
 
     private int process(int x, String target){
         StringBuilder xBuf = new StringBuilder();
-        xBuf.append(Math.abs(x));
+        xBuf.append(Math.abs(x));//这里要注意MIN_VALUE = -2147483648，去abs之后还是它本身（参见Math.abs说明）
         String res = xBuf.reverse().toString();
         if(res.length()<target.length()){
             int val = Integer.parseInt(res);//This parseInt() method will handle leading 0s

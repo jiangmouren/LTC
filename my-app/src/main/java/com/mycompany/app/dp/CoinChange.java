@@ -32,13 +32,16 @@ import java.util.*;
  *
  * Constraints:
  * 1 <= coins.length <= 12
- * 1 <= coins[i] <= 231 - 1
- * 0 <= amount <= 104
+ * 1 <= coins[i] <= 2^31 - 1
+ * 0 <= amount <= 10^4
  */
 
 public class CoinChange{
     /**
      * 照理来说，这应该是一道很经典的切香肠，或者backpack，类的DP问题，但是我却第一个想到的是遍历，惭愧！
+     * 这道题跟另外一道coin change2是一对经典题，同样的条件，一个求的是组合优化问题，一个求的是组合个数问题。
+     * 对于组合优化问题，按照最后一个用的那个coin来拆分问题。
+     * 对于组合个数问题，通过限制coin的类型，来拆分问题。
      */
     public int coinChange(int[] coins, int amount) {
         int[] dp = new int[amount+1];

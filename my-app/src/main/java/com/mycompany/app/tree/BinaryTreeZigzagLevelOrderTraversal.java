@@ -51,38 +51,38 @@ public class BinaryTreeZigzagLevelOrderTraversal {
     }
 
     public List<List<Integer>> zigzagLevelOrder(TreeNode root) {
-        //原则上就是一个批量的bfs， 因为要zig-zag，所以需要时不时的对一个批次的entry reverse一下
-        //这种情况下使用list+pointers可以做到读出的时候直接倒着读，免去reverse的运算
-        //但是这样pointer的manipulation会比较复杂，不划算
         List<List<Integer>> res = new ArrayList<>();
         if(root==null){
             return res;
         }
-
         Queue<TreeNode> queue = new LinkedList<>();
+        List<Integer> buf = new ArrayList<>();
         queue.add(root);
-        int cnt = queue.size();
+        int cnt = 1;
         boolean reverse = false;
         while(!queue.isEmpty()){
-            List<Integer> buf = new ArrayList<>();
-            while(cnt>0){
-                TreeNode cur = queue.poll();
-                cnt--;
-                if(cur.left!=null){
-                    queue.add(cur.left);
-                }
-                if(cur.right!=null){
-                    queue.add(cur.right);
-                }
-                buf.add(cur.val);
+            TreeNode node = queue.poll();
+            cnt--;
+            if(node.left!=null){
+                queue.add(node.left);
             }
-            cnt = queue.size();
-            if(reverse){
-                Collections.reverse(buf);
+            if(node.right!=null){
+                queue.add(node.right);
             }
-            res.add(buf);
-            reverse = !reverse;
+            buf.add(node.val);
+            if(cnt==0){
+                cnt = queue.size();
+                List<Integer> list = new ArrayList<>();
+                if(reverse){
+                    Collections.reverse(buf);
+                }
+                list.addAll(buf);
+                res.add(list);
+                buf.clear();
+                reverse = !reverse;
+            }
         }
         return res;
     }
+
 }

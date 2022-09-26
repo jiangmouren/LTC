@@ -27,7 +27,7 @@ import java.util.*;
 /**
  * 注意两个点：
  * 1. 不需要priorityQueue来track minCnt。开始之所以想着需要用PriorityQueue，是因为考虑当有entry被kick out之后，
- * 如何获得新的minCnt，其实在这里不是问题，因为有东西呗kick out，说明有全新的东西进来，所以新的minCnt=1
+ * 如何获得新的minCnt，其实在这里不是问题，因为有东西被kick out，说明有全新的东西进来，所以新的minCnt=1
  * 2. 借鉴LRU的思想，处理cnt tie的情况，但是这里不是吧所有的node都link起来，而是只把相同cnt需要arbitrate的node link起来。
  */
 public class LFUCache {

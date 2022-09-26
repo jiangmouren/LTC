@@ -19,52 +19,54 @@ import java.util.*;
  *
  * Constraints:
  * 0 <= nums.length <= 200
- * -109 <= nums[i] <= 109
- * -109 <= target <= 109
+ * -10^9 <= nums[i] <= 10^9
+ * -10^9 <= target <= 10^9
  */
 public class FourSum {
     /**
      * 下面这种是在之前的3Sum的基础上演化出来的可以解决K-sum问题的方法
+     * 下面这种解法的时间复杂度是N^(k-1)，原因是从O(k) = n * O(k-1) = n * n * ...O(2)
+     * 前面一共有(k-2)个n相乘，所以是n^(k-2)，而O(2) = n，所以总的复杂度是O(n^(k-1))
      */
-    public List<List<Integer>> fourSumSln2(int[] nums, int target) {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
         Arrays.sort(nums);
         return kSum(nums, target, 4, 0);
     }
 
-    private List<List<Integer>> kSum(int[] nums, int target, int k, int start){
+    //注意防止溢出，所以target跟sum都加强成long，因为题目里nums[i]的范围可以到10^9，就已经到了溢出的边缘
+    private List<List<Integer>> kSum(int[] nums, long target, int k, int start){
         List<List<Integer>> res = new ArrayList<>();
-        if(k==2){
-            int ptr0 = start;
-            int ptr1 = nums.length-1;
-            while(ptr0<ptr1){
-                int sum = nums[ptr0]+nums[ptr1];
+        if(k==2){//termination case
+            int left = start;
+            int right = nums.length - 1;
+            while(left<right){
+                long sum = nums[left] + nums[right];
                 if(sum==target){
-                    List<Integer> temp = new ArrayList<>();
-                    temp.add(nums[ptr0]);
-                    temp.add(nums[ptr1]);
-                    res.add(temp);
-                    int ptr = ptr0;
-                    while(ptr<=ptr1 && nums[ptr]==nums[ptr0]){
-                        ptr++;
+                    List<Integer> buf = new ArrayList<>();
+                    buf.add(nums[left]);
+                    buf.add(nums[right]);
+                    res.add(buf);
+                    left++;
+                    while(left<right && nums[left]==nums[left-1]){
+                        left++;
                     }
-                    ptr0 = ptr;
                 }
                 else if(sum<target){
-                    ptr0++;
+                    left++;
                 }
                 else{
-                    ptr1--;
+                    right--;
                 }
             }
         }
-        else{
+        else{//recursion case
             for(int i=start; i<nums.length; i++){
                 if(i==start || nums[i]!=nums[i-1]){
-                    List<List<Integer>> resPartial = kSum(nums, target-nums[i], k-1, i+1);
-                    for(List<Integer> list : resPartial){
+                    List<List<Integer>> partialRes = kSum(nums, target-nums[i], k-1, i+1);
+                    for(List<Integer> list : partialRes){
                         list.add(nums[i]);
+                        res.add(list);
                     }
-                    res.addAll(resPartial);
                 }
             }
         }

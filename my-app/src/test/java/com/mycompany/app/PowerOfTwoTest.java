@@ -22,11 +22,11 @@ public class PowerOfTwoTest {
 
     @Test
     public void isPowerOfTwoLoop() throws Exception {
-        assertTrue(objectUnderTest.isPowerOfTwoLoop(1));
-        assertTrue(objectUnderTest.isPowerOfTwoLoop(2));
-        assertTrue(objectUnderTest.isPowerOfTwoLoop(4));
-        assertFalse(objectUnderTest.isPowerOfTwoLoop(3));
-        assertFalse(objectUnderTest.isPowerOfTwoLoop(5));
-        assertFalse(objectUnderTest.isPowerOfTwoLoop(14));
+        assertTrue(objectUnderTest.isPowerOfTwo(1));
+        assertTrue(objectUnderTest.isPowerOfTwo(2));
+        assertTrue(objectUnderTest.isPowerOfTwo(4));
+        assertFalse(objectUnderTest.isPowerOfTwo(3));
+        assertFalse(objectUnderTest.isPowerOfTwo(5));
+        assertFalse(objectUnderTest.isPowerOfTwo(14));
     }
 }

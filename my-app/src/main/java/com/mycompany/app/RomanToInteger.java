@@ -1,5 +1,5 @@
 package com.mycompany.app;
-
+import java.util.*;
 /**
  * https://leetcode.com/problems/roman-to-integer/
  * Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
@@ -55,7 +55,38 @@ package com.mycompany.app;
  */
 
 public class RomanToInteger {
+    //用HashMap直接把所有情况罗列出来，最简单直接
     public int romanToInt(String s) {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("I", 1);
+        map.put("V", 5);
+        map.put("X", 10);
+        map.put("L", 50);
+        map.put("C", 100);
+        map.put("D", 500);
+        map.put("M", 1000);
+        map.put("IV", 4);
+        map.put("IX", 9);
+        map.put("XL", 40);
+        map.put("XC", 90);
+        map.put("CD", 400);
+        map.put("CM", 900);
+        int res = 0;
+
+        for(int i=0; i<s.length(); i++){
+            if((s.charAt(i)=='I' || s.charAt(i)=='X' || s.charAt(i)=='C') && i+1<s.length() && map.containsKey(s.substring(i, i+2))){
+                res += map.get(s.substring(i, i+2));
+                i++;
+            }
+            else{
+                res += map.get(s.substring(i, i+1));
+            }
+        }
+        return res;
+    }
+
+    //下面这种写法执行效率更好，但不简洁
+    public int romanToInt2(String s) {
         int sum = 0;
         for(int i=0; i<s.length(); i++){
             if(subCase(i, s)){

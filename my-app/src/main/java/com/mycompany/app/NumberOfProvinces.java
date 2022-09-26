@@ -25,10 +25,9 @@ package com.mycompany.app;
  */
 public class NumberOfProvinces {
     public int findCircleNum(int[][] isConnected) {
+        boolean[] visited = new boolean[isConnected.length];
         int cnt = 0;
-        int n = isConnected.length;
-        boolean[] visited = new boolean[n];
-        for(int i=0; i<n; i++){
+        for(int i=0; i<isConnected.length; i++){
             if(!visited[i]){
                 cnt++;
                 dfs(isConnected, visited, i);
@@ -37,11 +36,11 @@ public class NumberOfProvinces {
         return cnt;
     }
 
-    private void dfs(int[][] graph, boolean[] visited, int cur){
+    private void dfs(int[][] isConnected, boolean[] visited, int cur){
         visited[cur] = true;
-        for(int i=0; i<graph.length; i++){
-            if(graph[cur][i]==1 && i!=cur && !visited[i]){
-                dfs(graph, visited, i);
+        for(int i=0; i<isConnected[cur].length; i++){
+            if(i!=cur && isConnected[cur][i]==1 && !visited[i]){
+                dfs(isConnected, visited, i);
             }
         }
     }

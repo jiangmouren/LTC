@@ -49,11 +49,14 @@ public class SubtreeOfAnotherTree {
              this.right = right;
         }
     }
+
+    //这题有点意思就在于是一个nested recursion.
+    //就是外围函数是个recursion，然后里面的子函数自己也是个recursion，
+    //这个问题比较难回答的应该是“complexity”，每一个Node都可能被所有的ancestor查一次（包括自己），所以这个问题时间上限就是O(L*n)
+    //这里面L是tree的depth, n是Node的个数
     public boolean isSubtree(TreeNode s, TreeNode t) {
-        if(s.val==t.val){
-            if(isIdentical(s, t)){
-                return true;
-            }
+        if(isIdentical(s, t)){
+            return true;
         }
         if(s.left!=null && isSubtree(s.left, t)){
             return true;

@@ -29,20 +29,22 @@ public class ClosestBinarySearchTreeValue {
     }
 
     public int closestValue(TreeNode root, double target) {
-        int[] value = {root.val};
-        inOrder(root, target, value);
-        return value[0];
+        int[] res = {root.val};
+        binarySearch(root, target, res);
+        return res[0];
     }
 
-    private void inOrder(TreeNode root, double target, int[] value){
-        //termination
-        if(root==null){
+    private void binarySearch(TreeNode root, double target, int[] res){
+        res[0] = Math.abs(res[0]-target)>Math.abs(root.val-target) ? root.val : res[0];
+        if(root.val == target){
             return;
         }
-        inOrder(root.left, target, value);
-        if(Math.abs((double)value[0]-target)>Math.abs((double)root.val-target)){
-            value[0] = root.val;
+        if(root.val<target && root.right!=null){
+            binarySearch(root.right, target, res);
         }
-        inOrder(root.right, target, value);
+        if(root.val>target && root.left!=null){
+            binarySearch(root.left, target, res);
+        }
     }
+
 }

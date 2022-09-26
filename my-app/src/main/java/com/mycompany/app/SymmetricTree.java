@@ -36,20 +36,19 @@ public class SymmetricTree{
             this.right = right;
         }
     }
-    //比较明显的有3中解法：
-    //1. 做一个in-order的traversal,生成一个list,这个list应该是中心对称的。
-    //2. 写一个function去比较left-subtree & right-subtree，判断他们互为revert，可以recursively写
-    //3. 与2相同的思路，但是iteratively写，类似于BFS的写法，但是左右两边访问desendents的顺序反过来，然后每次从各自queue里出来的应该都是一样的
+    //2种解法：
+    //1. 写一个function去比较left-subtree & right-subtree，判断他们互为mirror，可以recursively写
+    //2. 第二种解法，写一个level order traversal的变种，改变node进和出的安排
     public boolean isSymmetric(TreeNode root) {
         if(root==null){
             return true;
         }
         else{
-            return isRevert(root.left, root.right);
+            return isMirror(root.left, root.right);
         }
     }
 
-    private boolean isRevert(TreeNode root1, TreeNode root2){
+    private boolean isMirror(TreeNode root1, TreeNode root2){
         //termination cases
         if(root1==null && root2==null){
             return true;
@@ -58,73 +57,76 @@ public class SymmetricTree{
             return false;
         }
         else{//recursive case
-            return root1.val == root2.val && isRevert(root1.left, root2.right) && isRevert(root1.right, root2.left);
+            return root1.val == root2.val && isMirror(root1.left, root2.right) && isMirror(root1.right, root2.left);
         }
     }
 
     public boolean isSymmetricSln2(TreeNode root) {
-        if(root==null){
-            return true;
-        }
-        else{
-            return isRevertSln2(root.left, root.right);
-        }
-    }
-
-    private boolean isRevertSln2(TreeNode root1, TreeNode root2){
-        //termination cases
-        if(root1==null && root2==null){
-            return true;
-        }
-        else if(root1==null && root2!=null || root1!=null && root2==null){
-            return false;
-        }
-        else{//recursive case
-            Queue<TreeNode> queue1 = new LinkedList<>();
-            Queue<TreeNode> queue2 = new LinkedList<>();
-            //Because dealing with tree no need to worry about cycle
-            queue1.add(root1);
-            queue2.add(root2);
-            while(!queue1.isEmpty() && !queue2.isEmpty()){
-                TreeNode node1 = queue1.poll();
-                TreeNode node2 = queue2.poll();
+        Queue<TreeNode> q = new LinkedList<>();
+        q.add(root);
+        q.add(root);
+        while(!q.isEmpty()){
+            TreeNode node1 = q.poll();
+            TreeNode node2 = q.poll();
+            if(node1==null && node2==null){
+                //return true;注意这里应该是continue，而是不是return true!!!!
+                continue;
+            }
+            else if(node1==null || node2==null){
+                return false;
+            }
+            else{
                 if(node1.val!=node2.val){
                     return false;
                 }
-                if(node1.left!=null){
-                    queue1.add(node1.left);
-                }
-                else{//对null的case做了测试就没必要测非null的case了，对称的。
-                    if(node2.right!=null){
-                        return false;
-                    }
-                }
-                if(node1.right!=null){
-                    queue1.add(node1.right);
-                }
-                else{
-                    if(node2.left!=null){
-                        return false;
-                    }
-                }
-                if(node2.right!=null){
-                    queue2.add(node2.right);
-                }
-                else{
-                    if(node1.left!=null){
-                        return false;
-                    }
-                }
-                if(node2.left!=null){
-                    queue2.add(node2.left);
-                }
-                else{
-                    if(node1.right!=null){
-                        return false;
-                    }
-                }
+                q.add(node1.left);
+                q.add(node2.right);
+                q.add(node1.right);
+                q.add(node2.left);
             }
-            return queue1.isEmpty() && queue2.isEmpty();
         }
+        return true;
     }
+
+    //当心下面一种错误的解法，用stack消元的办法，存在逻辑漏洞，在下面这种情况下就会出错
+    //                     1
+    //                   /   \
+    //                  2     2
+    //                    \     \
+    //                      3     3
+    /**
+     *     public boolean isSymmetric(TreeNode root) {
+     *         Stack<TreeNode> stack = new Stack<>();
+     *         Queue<TreeNode> queue = new LinkedList<>();
+     *         queue.add(root);
+     *         stack.push(root);
+     *         while(!queue.isEmpty()){
+     *             TreeNode top = queue.poll();
+     *             if(top.left!=null){
+     *                 queue.add(top.left);
+     *                 pushStack(stack, top.left);
+     *             }
+     *             if(top.right!=null){
+     *                 queue.add(top.right);
+     *                 pushStack(stack, top.right);
+     *             }
+     *         }
+     *         return stack.size()==1 && stack.peek()==root;
+     *     }
+     *
+     *     private void pushStack(Stack<TreeNode> stack, TreeNode root){
+     *         if(stack.isEmpty()){
+     *             stack.push(root);
+     *         }
+     *         else{
+     *             if(stack.peek().val==root.val){
+     *                 stack.pop();
+     *             }
+     *             else{
+     *                 stack.push(root);
+     *             }
+     *         }
+     *     }
+     */
+
 }

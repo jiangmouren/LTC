@@ -1,5 +1,5 @@
 package com.mycompany.app;
-
+import java.util.*;
 /**
  * https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
  * Given a string s of '(' , ')' and lowercase English characters.
@@ -55,12 +55,49 @@ public class MinimumRemoveToMakeValidParentheses {
                 }
             }
         }
+        //选择再弄一个StringBuilder而不是在原来的上面deleteCharAt()因为，后者会是O(n)的操作，再加上外面的loop，就成O(n*n)了
+        StringBuilder res = new StringBuilder();
         if(cnt>0){
             for(int i=buf.length()-1; i>=0 && cnt>0; i--){//之所以反向写是为了应对: "())()((("
-                if(buf.charAt(i)=='('){
-                    buf.deleteCharAt(i);
+                if(buf.charAt(i)!='('){
+                    res.append(buf.charAt(i));
+                }
+                else{
                     cnt--;
                 }
+            }
+        }
+        return res.reverse().toString();
+    }
+
+    //还可以用两个stack，一个存char，一个存位置
+    public String minRemoveToMakeValidStack(String s) {
+        Stack<Character> stack = new Stack<>();
+        //用deque存位置，因为后面populate结果的时候方便从左往右Iterate
+        Deque<Integer> queue = new ArrayDeque<>();
+        for(int i=0; i<s.length(); i++){
+            if(s.charAt(i)=='('){
+                stack.push(s.charAt(i));
+                queue.addLast(i);
+            }
+            if(s.charAt(i)==')'){
+                if(!stack.isEmpty() && stack.peek()=='('){
+                    stack.pop();
+                    queue.removeLast();
+                }
+                else{
+                    stack.push(s.charAt(i));
+                    queue.addLast(i);
+                }
+            }
+        }
+        StringBuilder buf = new StringBuilder();
+        for(int i=0; i<s.length(); i++){
+            if(!queue.isEmpty() && i==queue.getFirst()){
+                queue.removeFirst();
+            }
+            else{
+                buf.append(s.charAt(i));
             }
         }
         return buf.toString();

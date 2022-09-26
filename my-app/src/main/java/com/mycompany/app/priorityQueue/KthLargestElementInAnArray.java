@@ -47,7 +47,7 @@ public class KthLargestElementInAnArray {
         }
         return minHeap.peek();
     }
-
+/*
     public int kthSmallest(int k, int[] array){
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
         for(int tmp : array){
@@ -63,7 +63,7 @@ public class KthLargestElementInAnArray {
         }
         return maxHeap.peek();
     }
-
+*/
     //下面这种是用quickSelect实现的O(n)的算法。
     //关于quickSelect的复杂度分析详见：com\mycompany\app\QuickSelect.java
     public int findKthLargest(int[] nums, int k) {

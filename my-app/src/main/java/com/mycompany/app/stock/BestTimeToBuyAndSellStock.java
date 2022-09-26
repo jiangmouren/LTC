@@ -25,6 +25,7 @@ package com.mycompany.app.stock;
  * Basically if it is not the current min/max, I do not care about the diff it has with other nodes.
  */
 class BestTimeToBuyAndSellStock {
+    //常见的应该有3种解法，1. keep track of min form the left; sliding window;一种是先转换成差值array，然后求maxSubArray
     public int maxProfit(int[] prices) {
         //只需要关注任何一个点的左侧最小值，就能知道当天卖出所可能获得的最大收获
         //keep一个running左侧最小值，就可以获得每天可能的最大值，进而获得全域最大值
@@ -38,5 +39,19 @@ class BestTimeToBuyAndSellStock {
             min = Math.min(min, prices[i]);
         }
         return max;
+    }
+
+    public int maxProfitSln2(int[] prices) {
+        int ptr0 = 0;
+        int ptr1 = 1;
+        int max = Integer.MIN_VALUE;
+        while(ptr1<prices.length){
+            max = Math.max(max, prices[ptr1]-prices[ptr0]);
+            if(prices[ptr1]<prices[ptr0]){
+                ptr0 = ptr1;
+            }
+            ptr1++;
+        }
+        return max<0 ? 0 : max;
     }
 }

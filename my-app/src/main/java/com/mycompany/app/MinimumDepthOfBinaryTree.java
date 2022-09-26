@@ -22,60 +22,34 @@ public class MinimumDepthOfBinaryTree {
             this.val = x;
         }
     }
-    public int minDepth(TreeNode root){
+    public int minDepth(TreeNode root) {
         if(root==null){
             return 0;
         }
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-        int cnt = q.size();
-        int depth = 1;
-        boolean found = false;
-        while(!q.isEmpty()){
-            while(cnt>0){
-                TreeNode cur = q.poll();
-                cnt--;
-                if(cur.left==null && cur.right==null){
-                    found = true;
-                    break;
-                }
-                if(cur.left!=null){
-                    q.add(cur.left);
-                }
-                if(cur.right!=null){
-                    q.add(cur.right);
-                }
-            }
-            if(found){
-                break;
-            }
-            cnt = q.size();
-            depth++;
-        }
-        return depth;
-    }
 
-    public int minDepthDfs(TreeNode root) {
-        if(root==null){
-            return 0;
-        }
-        int[] min = {Integer.MAX_VALUE};
-        preOrder(root, 1, min);
+        int[] min = new int[1];
+        min[0] = Integer.MAX_VALUE;
+        dfs(root, min, 0);
         return min[0];
     }
 
-    private void preOrder(TreeNode root, int depth, int[] min){
-        //termination
-        if(root.left==null && root.right==null){
-            min[0] = Math.min(min[0], depth);
+    private void dfs(TreeNode root, int[] min, int cnt){
+        cnt ++;
+        if(cnt>=min[0]){
             return;
         }
-
-        if(root.left!=null){
-            preOrder(root.left, depth+1, min);
+        if(root.left==null && root.right==null){
+            min[0] = Math.min(min[0], cnt);
+            return;
         }
-        if(root.right!=null){
-            preOrder(root.right, depth+1, min);
+        else{
+            if(root.left!=null){
+                dfs(root.left, min, cnt);
+            }
+            if(root.right!=null){
+                dfs(root.right, min, cnt);
+            }
         }
     }
+
 }

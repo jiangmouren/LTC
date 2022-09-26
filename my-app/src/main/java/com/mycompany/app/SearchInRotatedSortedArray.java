@@ -27,6 +27,7 @@ package com.mycompany.app;
  * -104 <= target <= 104
  */
 
+//还是正常的binary search的思路，就是先分清在left segment or right segment，然后向左或者向右的条件稍微复杂一点
 public class SearchInRotatedSortedArray {
     public int search(int[] nums, int target) {
         int start = 0, end = nums.length - 1;

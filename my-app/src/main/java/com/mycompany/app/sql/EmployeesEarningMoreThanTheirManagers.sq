@@ -1,5 +1,3 @@
-package com.mycompany.app.sql;
-
 /**
  * https://leetcode.com/problems/employees-earning-more-than-their-managers/
  * The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id.
@@ -21,13 +19,9 @@ package com.mycompany.app.sql;
  * +----------+
  */
 
-/**
- * Select a.Name as Employee
- * From Employee as a
- * Inner Join Employee as b
- * ON a.ManagerId=b.Id
- * Where a.Salary>b.Salary
- */
+Select a.Name as Employee
+From Employee as a
+Inner Join Employee as b
+ON a.ManagerId=b.Id
+Where a.Salary>b.Salary
 
-public class EmployeesEarningMoreThanTheirManagers {
-}

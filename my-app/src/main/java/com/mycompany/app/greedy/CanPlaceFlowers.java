@@ -23,6 +23,12 @@ package com.mycompany.app.greedy;
  */
 public class CanPlaceFlowers {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
+        //4 -> 2, 3 -> 2, 5 -> 3 --> flowerbed can fit in at most (l+1)/2
+        //下面这段early termination加上跟快，不加更简洁
+        //int max = (flowerbed.length+1)/2;
+        //    if(n>max){
+        //    return false;
+        //}
         for(int i=0; i<flowerbed.length && n>0; i++){
             if(flowerbed[i]==0 && (i==0 || flowerbed[i-1]==0) && (i==flowerbed.length-1 || flowerbed[i+1]==0)){
                 flowerbed[i] = 1;//don't forget to set position i to 1

@@ -1,6 +1,6 @@
 package com.mycompany.app;
 
-import com.mycompany.app.RadixSort;
+import com.mycompany.app.sort.RadixSort;
 import org.junit.Test;
 
 /**

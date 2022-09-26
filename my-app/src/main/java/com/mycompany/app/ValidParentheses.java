@@ -58,5 +58,45 @@ public class ValidParentheses {
         }
         return stack.size()==0;
     }
+
+    //注意不要犯下面错误，下面这种写法不能处理 "([)]"
+    //想要改一下的话，我就必须加3个boolean type，来标记上一次的“开括号”是哪种类型
+    /**
+     *     public boolean isValid(String s) {
+     *         int a = 0;
+     *         int b = 0;
+     *         int c = 0;
+     *         for(int i=0; i<s.length(); i++){
+     *             if(s.charAt(i)=='('){
+     *                 a++;
+     *             }
+     *             else if(s.charAt(i)==')'){
+     *                 a--;
+     *                 if(a<0){
+     *                     return false;
+     *                 }
+     *             }
+     *             else if(s.charAt(i)=='['){
+     *                 b++;
+     *             }
+     *             else if(s.charAt(i)==']'){
+     *                 b--;
+     *                 if(b<0){
+     *                     return false;
+     *                 }
+     *             }
+     *             else if(s.charAt(i)=='{'){
+     *                 c++;
+     *             }
+     *             else{
+     *                 c--;
+     *                 if(c<0){
+     *                     return false;
+     *                 }
+     *             }
+     *         }
+     *         return a==0 && b==0 && c==0;
+     *     }
+     */
 }
 

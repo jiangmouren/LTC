@@ -17,7 +17,7 @@ package com.mycompany.app;
  * Output: 16
  *
  * Constraints:
- * -104 <= A, B, C, D, E, F, G, H <= 104
+ * -10^4 <= A, B, C, D, E, F, G, H <= 10^4
  */
 public class RectangleArea {
     public int computeArea(int A, int B, int C, int D, int E, int F, int G, int H) {

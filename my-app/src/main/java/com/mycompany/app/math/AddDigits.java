@@ -27,14 +27,11 @@ package com.mycompany.app.math;
  * Typical approach would be using while loop or recursion.
  * But if no "loop/recursion" and even O(1) time, it is obvious that some kind of math tricks or pattern must exists.
  * In this case, the final results can only be 1, 2, 3, ... , 9.
- * All integers will converge into these 9 single digits and overall all integers will connected into a graph.
- * The questions is at any given vertex, there is a way I can tell immediately which leaf node I will converge to.
- * Which implies all vertices that converge to the same leave node, share some common properties.
- * And from those properties we can tell which leave you will converge to.
- * By looking at examples and intuitively all integers will converge into 1-9, you will think about "remainder" of 9.
- * Why not reminder of 10? Because that would mean 10 possibilities.
+ * 也就是说不管从任何一个数出发，最终一定都收敛到上述9个Node上。
+ * 那我们就从这9个node往回反着看，看能找到什么规律
+ * 规律就是在迭代的过程中，整个链条上的数，对9求余数，都是一样的。
+ * 那么给定任何一个数，就可以知道他会最终收敛在1-9那个数上了：看它对9求余数，跟1-9当中哪个对9求余数结果相同
  *
- * That's actually true.
  * The next problem is mathematically how to prove this.
  * Because of the recursive nature of this problem, all we need to prove is that:
  * A=x+10y+100z and B=x+y+z will have the same remainder when divided by 9.

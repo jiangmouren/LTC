@@ -26,15 +26,10 @@ package com.mycompany.app;
  */
 public class RunningSumOf1DArray {
     public int[] runningSum(int[] nums) {
-        int n = nums.length;
-        int[] sum = new int[n];
-        for(int i=0; i<n; i++){
-            if(i==0){
-                sum[i] = nums[i];
-            }
-            else{
-                sum[i] = sum[i-1]+nums[i];
-            }
+        int[] sum = new int[nums.length];
+        sum[0] = nums[0];
+        for(int i=1; i<nums.length; i++){
+            sum[i] = sum[i-1] + nums[i];
         }
         return sum;
     }

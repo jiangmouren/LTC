@@ -15,33 +15,11 @@ package com.mycompany.app;
  */
 
 public class ProductOfArrayExceptSelf{
-    //这个题目的里面有两个重要提示：1.O(n); 2. Prefix & Suffix
-    //要求解的就是每个element左侧全部的乘积，乘上右侧全部的乘积。
-    //左侧就是一个prefix问题，右侧就是一个suffix问题
-    public int[] productExceptSelf(int[] nums) {
-        int[] prefix = new int[nums.length];
-        int[] suffix = new int[nums.length];
-        int[] result = new int[nums.length];
-        int temp = 1;
-        for(int i=0; i<nums.length; i++){
-            prefix[i] = temp;
-            temp *= nums[i];
-        }
-        temp = 1;
-        for(int i=nums.length-1; i>=0; i--){
-            suffix[i] = temp;
-            temp *= nums[i];
-        }
-        for(int i=0; i<nums.length; i++){
-            result[i] = prefix[i]*suffix[i];
-        }
-        return result;
-    }
-
+    //最直观的想法就是构造一个Prefix Array再构造一个Suffix Array,然后就可以往res array里Populated结果了
     //至于说NO extra space，其实就是要把上面用的3个array合并到一个，
     //reuse prefix array for result，然后suffix的结果就不存在array里面
     //而是选择keep一个running result，即算即用。
-    public int[] productExceptSelfSln2(int[] nums){
+    public int[] productExceptSelf(int[] nums){
         int[] buf = new int[nums.length];
         int temp = 1;
         //buf store prefix results

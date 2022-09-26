@@ -19,62 +19,25 @@ package com.mycompany.app.graph;
  * 1^2 + 0^2 + 0^2 = 1
  */
 
-/**
- * Analysis:
- * Like many math trick problems, this one you need to go through some examples to find a pattern.
- * Unlike that add digits problem, no magic pattern here.
- * When doing the square sum operations, it's like traversing through a Directed Graph.
- * As long as you are not yet in a loop, there is a chance to find 1.
- * Whenever you found a loop, you stop.
- * In the question, this is also the hint given.
- */
-
 import java.util.*;
 
 public class HappyNumber {
-    //Recursive Solution
     public boolean isHappy(int n) {
         Set<Integer> set = new HashSet<>();
-        return search(n, set);
+        while(!set.contains(n)){
+            set.add(n);
+            n = getNext(n);
+        }
+        return n==1;
     }
 
-    private boolean search(int n, Set<Integer> set){
-        //termination
-        if(n==1){
-            return true;
-        }
-        if(set.contains(n)){
-            return false;
-        }
-
-        set.add(n);
-        return search(getNum(n), set);
-    }
-
-    private int getNum(int n){
-        int nxt = 0;
+    private int getNext(int n){
+        int res = 0;
         while(n>0){
             int digit = n%10;
-            nxt += Math.pow(digit, 2);
+            res += digit*digit;
             n /= 10;
         }
-        return nxt;
-    }
-
-    //Iterative Solution
-    public boolean isHappyLoop(int n){
-        Set<Integer> set = new HashSet<>();
-        while(n!=1){
-            if(set.contains(n)) return false;
-            set.add(n);
-            long tmp = 0;
-            while(n>0){
-                int digit = n%10;
-                tmp += Math.pow(digit, 2);
-                n = (n-digit)/10;
-            }
-            n=(int)tmp;
-        }
-        return true;
+        return res;
     }
 }

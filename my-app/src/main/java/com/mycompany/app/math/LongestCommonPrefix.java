@@ -24,6 +24,26 @@ import java.util.*;
 
 public class LongestCommonPrefix{
     public String longestCommonPrefix(String[] strs) {
+        StringBuilder buf = new StringBuilder();
+        boolean exit = false;
+        for(int i=0; i<strs[0].length(); i++){
+            for(int j=1; j<strs.length; j++){
+                if(i>=strs[j].length() || strs[j].charAt(i)!=strs[0].charAt(i)){
+                    exit = true;
+                    break;
+                }
+            }
+            if(!exit){
+                buf.append(strs[0].charAt(i));
+            }
+            else{
+                break;
+            }
+        }
+        return buf.toString();
+    }
+
+    public String longestCommonPrefixSln2(String[] strs) {
         if(strs==null || strs.length==0){
             return "";
         }

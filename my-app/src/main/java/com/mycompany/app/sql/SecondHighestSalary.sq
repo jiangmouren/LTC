@@ -1,5 +1,3 @@
-package com.mycompany.app.unsolved;
-
 /**
  * https://leetcode.com/problems/second-highest-salary/
  * Write a SQL query to get the second highest salary from the Employee table.
@@ -27,12 +25,19 @@ https://dev.mysql.com/doc/refman/8.0/en/scalar-subqueries.html
 里面明确说明了“SELECT (SELECT s2 FROM t1)”，如果subquery是empty,外面的select return NULL
 */
 
-/*
-SELECT
-(SELECT DISTINCT
-Salary
-FROM
-Employee
-ORDER BY Salary DESC
-LIMIT 1 OFFSET 1) AS SecondHighestSalary ;
- */
+select(
+select distinct salary
+    from Employee
+    order by salary desc
+    limit 1 offset 1
+)
+as SecondHighestSalary
+
+//Solution 2
+select(
+    select salary from Employee E1 where
+(2-1) = (select count(distinct (salary))
+         from Employee E2
+         where E2.salary>E1.salary)
+    limit 1
+    ) as SecondHighestSalary

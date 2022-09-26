@@ -28,33 +28,29 @@ public class DiameterOfBinaryTree {
             this.right = right;
         }
     }
+
+    //我只要知道left往下的最大深度，以及right往下的最大深度，那么就可以知道通过root的最大的diameter
+    //同样的道理可以获得通过每个node的最大的diameter，只要求得每个点往下的最大深度，就可以求的通过每个点的最大的diameter
     public int diameterOfBinaryTree(TreeNode root) {
-        if(root==null){
-            return 0;
-        }
-        //我只要知道left往下的最大深度，以及right往下的最大深度，那么就可以知道通过root的最大的diameter
-        //同样的道理可以获得通过每个node的最大的diameter，只要求得每个点往下的最大深度，就可以求的通过每个点的最大的diameter
-        int[] diameter = new int[1];
-        int[] depth = new int[1];
-        getDepth(root, depth, diameter);
-        return diameter[0];
+        int[] max = {0};
+        postOrder(root, max);
+        return max[0];
     }
 
-    private void getDepth(TreeNode root, int[] depth, int[] diameter){
-        int[] leftD = new int[1];
-        int[] rightD = new int[1];
-        int left = 0;
-        int right = 0;
+    //需要global access的做成int[]传，只有Local需要的值，就直接return
+    private int postOrder(TreeNode root, int[] max){
+        int maxPath = 0;
+        int depthLeft = 0;
+        int depthRight = 0;
+
         if(root.left!=null){
-            getDepth(root.left, leftD, diameter);
-            left = leftD[0] + 1;
+            depthLeft = postOrder(root.left, max) + 1;
         }
         if(root.right!=null){
-            getDepth(root.right, rightD, diameter);
-            right = rightD[0] + 1;
+            depthRight = postOrder(root.right, max) + 1;
         }
-        depth[0] = Math.max(left, right);
-        diameter[0] = Math.max(diameter[0], left+right);
-        return;
+        maxPath = depthLeft + depthRight;
+        max[0] = Math.max(max[0], maxPath);
+        return Math.max(depthLeft, depthRight);
     }
 }

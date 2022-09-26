@@ -26,60 +26,47 @@ package com.mycompany.app.graph;
  */
 import java.util.*;
 public class GraphValidTree {
-    public boolean graphValidTree(int[][] edgeList, int n){
-        if(edgeList==null) throw new IllegalArgumentException("Inputs cannot be null");
-        if(edgeList.length<2) return true;
-        List<Set<Integer>> graph = constructGraph(edgeList, n);
-        boolean[] color = new boolean[n];
-        boolean noLoop = checkLoop(graph, 0, color);
-        boolean connected = true;
-        for(boolean visited : color){
-            connected = connected && visited;
+    public boolean validTree(int n, int[][] edges) {
+        //For a graph to be a tree, there are two conditions:
+        //1. All connected; 2. No loop
+        List<List<Integer>> graph = buildGraph(n, edges);
+        boolean[] visited = new boolean[n];
+        if(!dfs(graph, 0, -1, visited)){
+            return false;
         }
-        return noLoop&&connected;
+        for(boolean visit : visited){
+            if(!visit){
+                return false;
+            }
+        }
+        return true;
     }
 
-    //Better to use array of list since we already not the number of nodes
-    //because we need to remove, so it is better use HashSet
-    private List<Set<Integer>> constructGraph(int[][] edgeList, int n){
-        List<Set<Integer>> graph = new ArrayList<Set<Integer>>(n);
-        //initialize the graph list, it has to be initialized before used.
+    private List<List<Integer>> buildGraph(int n, int[][] edges){
+        List<List<Integer>> graph = new ArrayList<>();
         for(int i=0; i<n; i++){
-            graph.add(i, new HashSet<Integer>());
+            graph.add(new ArrayList<Integer>());
         }
-        for(int[] edge : edgeList){
-            //ArrayList is different from array,
-            //even though you can specify the initial capacity, it still can be empty.
-            //And you cannot just insert to any place and assuming that entry is already there like an array.
+        for(int[] edge : edges){
             graph.get(edge[0]).add(edge[1]);
             graph.get(edge[1]).add(edge[0]);
         }
         return graph;
     }
 
-    /**
-     * Only use DFS to check for loops, cannot check for connectivity, because don't know the sub-graph size.
-     * And check sub-graph connectivity is not necessary.
-     * @param graph
-     * @param node
-     * @param color: 0-->clean; 1-->visited; For undirected graph, there is no grey state
-     * @return
-     */
-    private boolean checkLoop(List<Set<Integer>> graph, int node, boolean[] color){
-        //Termination Cases
-        if(color[node]) return false;
-
-        else {
-            color[node] = true;
-            for(int neighbor : graph.get(node)){
-                //Because we have to do this remove operation, it's better to use "Set" instead of "List"
-                //It will be O(n) operation to remove.
-                graph.get(neighbor).remove(node);//Need to remove to avoid looking back
-                if(!checkLoop(graph, neighbor, color)) return false;
-                //graph.get(neighbor).add()//If we don't care about protecting the graph, no need to add it back.
+    //return true if no loop, otherwise return false.
+    private boolean dfs(List<List<Integer>> graph, int cur, int parent, boolean[] visited){
+        visited[cur] = true;
+        for(int nbor : graph.get(cur)){
+            if(nbor!=parent){
+                if(visited[nbor]){
+                    return false;
+                }
+                if(!dfs(graph, nbor, cur, visited)){
+                    return false;
+                }
             }
-            return true;
         }
-
+        return true;
     }
 }

@@ -15,6 +15,7 @@ package com.mycompany.app;
  * The string will only contain lowercase characters a-z. The maximum length of the string is 50000.
  */
 //一个简单的Backtracking，注意两点：只能有一次；遇到不相等，两种方式都要试
+//"lcupuupucul"这种情况，如果只试一种就有可能出错
 public class ValidPalindromeII {
     public boolean validPalindrome(String s) {
         return helper(s, 0, s.length()-1, false);

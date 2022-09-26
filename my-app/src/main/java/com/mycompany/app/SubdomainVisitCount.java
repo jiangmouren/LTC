@@ -52,7 +52,7 @@ public class SubdomainVisitCount {
                 String segment = segments[i];
                 buf.add(segment);
                 Collections.reverse(buf);//这里需要按词把顺序反一下，所以用List做buf，而不是StringBuilder比较顺手。
-                String key = String.join(".", buf);
+                String key = String.join(".", buf);//当只有"com"一个element的时候，join出来还是其自己
                 Collections.reverse(buf);
                 if(map.containsKey(key)){
                     map.put(key, cnt+map.get(key));

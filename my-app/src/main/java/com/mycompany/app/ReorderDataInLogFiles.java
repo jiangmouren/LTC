@@ -38,8 +38,11 @@ import java.util.Arrays;
 public class ReorderDataInLogFiles {
     public String[] reorderLogFiles(String[] logs) {
         //java Arrays.sort(object[]) is using merge sort, which is stable
+        //Being stable is important here, because we want to maintain the original order of digit logs
+        //Even if we return 0 for digit to digit comparison, if stability not guaranteed then original order of digit logs is not kept.
         //But for primitive types, like Arrays.sort(int[]) for Arrays.sort(float[]) will use 3-way quick sort, which is not stable.
         Arrays.sort(logs, (log1, log2) -> {
+            // "limit" controls the number of times the pattern is applied, at most apply "limit-1" time
             String[] split1 = log1.split(" ", 2);
             String[] split2 = log2.split(" ", 2);
             boolean isDigit1 = Character.isDigit(split1[1].charAt(0));
