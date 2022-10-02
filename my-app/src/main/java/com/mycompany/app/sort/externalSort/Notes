@@ -1,0 +1,7 @@
+When the number of records to sort exceeded the size of memory can hold, we need to use external sort.
+
+The scope of this package is mainly limited to:
+External Merge Sort
+External Bucket Sort using MapReduce
+
+For more external sort refer to <The Art of Computer Programming Volume 3>
