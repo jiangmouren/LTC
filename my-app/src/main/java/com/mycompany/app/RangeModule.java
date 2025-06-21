@@ -32,6 +32,7 @@ public class RangeModule {
         this.map = new TreeMap<>();
     }
 
+    //注意类似于[1, 3) [3, 7)的情况，我们不允许存在，要合并成[1, 7)
     public void addRange(int left, int right) {
         //注意要用Integer，而不是int，因为有可能为null
         Integer pre = this.map.floorKey(left);

@@ -1,4 +1,4 @@
-package com.mycompany.app.JPMS;
+package com.mycompany.app.monostack_jumpingpointer;
 import java.util.*;
 
 /**

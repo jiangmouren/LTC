@@ -1,4 +1,4 @@
-package com.mycompany.app.JPMS;
+package com.mycompany.app.monostack_jumpingpointer;
 
 /**
  * https://leetcode.com/problems/car-fleet-ii/

@@ -46,7 +46,7 @@ public class DecodeString{
                 while(ptr<=end && Character.isDigit(s.charAt(ptr))){
                     ptr++;
                 }
-                int value = Integer.parseInt(s.substring(i, ptr));
+                int value = Integer.parseInt(s.substring(i, ptr));//不要忘记数字可能有多位数
                 int ptr2 = ptr + 1;
                 int cnt = 1;
                 while(ptr2<=end){

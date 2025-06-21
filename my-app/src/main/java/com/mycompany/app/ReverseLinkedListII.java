@@ -36,29 +36,29 @@ public class ReverseLinkedListII {
     }
     //要注意两个点：一个是left可能从head开始，所以要建一个dummyHead->pre，以防最后面return的时候需要用
     //再就是在reverse LinkedList的时候，注意ptr2可能出现的null
-    public ListNode reverseBetween(ListNode head, int m, int n) {
+    public ListNode reverseBetween(ListNode head, int left, int right) {
         ListNode dummyHead = new ListNode();
         dummyHead.next = head;
+        ListNode ptr = head;
         ListNode pre = dummyHead;
         ListNode cur = head;
-        ListNode nxt = head.next;
-        ListNode ptr = dummyHead;
+        ListNode next = head.next;
         int pos = 0;
-        while(pos<n){
-            if(pos==m-1){
+        while(pos<right){
+            if(pos==left-1){
                 ptr = pre;
             }
-            if(pos>=m){
+            if(pos>left-1){
                 cur.next = pre;
             }
             pre = cur;
-            cur = nxt;
-            nxt = nxt==null ? null : nxt.next;
+            cur = next;
+            next = next==null ? null : next.next;
             pos++;
         }
         ListNode tail = ptr.next;
-        tail.next = cur;
         ptr.next = pre;
+        tail.next = cur;
         return dummyHead.next;
     }
 }

@@ -47,27 +47,9 @@ import java.util.*;
 public class SlidingWindowMaximum{
     /**
      * 这个Deque的使用非常巧妙!!!
-     * 用这个deque存储的是running maximum candidates，可以看做是"running maximum"的一个拓展。
-     * 然后其complexity是O(n)，并没有因为要回头去deque里面把比当前小的entry都删掉，而变成O(nk).
-     * 其原因，与内在的过程与“LargestRectangleInHistogram”里面构造left[] & right[]时是一样的。
-     * 另外类似的一道题是：DailyTemperatures.
-     * 如在下图中：
-     * src\main\resources\SlidingWindowMaximum.PNG
-     * 0进deque不需要比较，进入cost为0
-     * 1进入需要跟0做一次比较，进入cost为1
-     * 2进入需要跟1做一次比较，进入cost为1
-     * 3进入需要跟2做一次比较，进入cost为1
-     * 4进入，需要跟3，2，1，0都发生一次比较，跟3,2,1的比较算作3,2,1删除的cost，各自为1, 跟0的比较算作4进入的cost为1
-     * 5跟4， 0都有比较，跟4的比较算在4的删除cost，跟0的比较算作5的进入cost。
-     * 6根5， 0斗鱼比较，跟6的比较算作5的删除cost，跟0的比较算作0的删除cost, 然后6进入跟0进入一样没有cost
-     * 像上面这样搞清楚cost是如何amortized很重要！！！否则如果只是祖略的看每个element被操作了几次，并不能直接得出整个过程
-     * 就是O(n)的结论。因为比如上图0的位置，就被比较了很多次。但通过上面的分析，可以看到所有这些的operation都可以分摊到不同的
-     * element的entry/exit cost上去，而且amortize之后每个element的entry && exit cost都是O(1)的。
-     * 所以这整个过程就是O(n)的。
-     * 前面说这个过程跟“LargestRectangleInHistogram”里面构造left[] & right[]时是一样的，
-     * 这里往回删的时候是遇到比自己大的就停止，LargestRectangleInHistogram里面的情况是，遇到比自己小的就停止。
-     * 这里是，通过直接删除的方式来跳过一些点，跟LargestRectangleInHistogram通过Pointer跳跃，
-     * 或者是用stack直接删除效果是一样的。
+     * 这个Deque的使用可以看成是单调栈的一种拓展
+     * 简单的单调栈都是存从最左侧或者最右侧到当下位置累积的elements，而现在需要的是一个sliding window里面的elements
+     * 所以就用一个deque，可以从头部把window外的element祛除掉。
      */
     public int[] maxSlidingWindow(int[] nums, int k) {
         Deque<Integer> deque = new ArrayDeque<>();
@@ -87,6 +69,7 @@ public class SlidingWindowMaximum{
                 deque.removeFirst();
             }
         }
+        //注意这里必须不能包含等号，也就是说相等的时候要存多份，否则上面的左侧移除逻辑就错了
         while(!deque.isEmpty() && deque.getLast()<nums[i]){
             deque.removeLast();
         }

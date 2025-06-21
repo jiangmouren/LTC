@@ -43,9 +43,11 @@ package com.mycompany.app.graph;
  * Analysis:
  * 关于要in place的问题，下面的解法已经处理了，就是设计好一个比较合理的mapping关系就可以了
  * 关于infinite size的问题，就要从两个方面处理：首先不能把真个board存下，其次不可能全都fit in memory需要写上disk
- * 简单来说可以理解为，用一个HashSet，把所有值是1的位置全都记录下来,然后更新状态的时候，对每一个1的位置操作，判断周围有几个1，
- * 就是HashSet的lookup，然后对每个1周围的(8个位置)上的0，也要操作；这整个打的HashSet无法fit in Memory没关系，
- * 可以写回disk，这是一个很好的使用key-value Store(比如DynamoDB)的很好的use case.
+ * 我们只存值是1的location，而且存在DB里面，这样做有2个原因：
+ * 1. 节省空间；2. 只有位置是1的位置本身，及其周围才有可能发生变化
+ * 怎么更新状态：
+ * 1. 读取每个是1的位置，需要跟新他自身的状态，一直它周围8个邻居的状态
+ * 2. 更新的方式也是先用alias，然后再改回来
  *
  */
 public class GameOfLife{

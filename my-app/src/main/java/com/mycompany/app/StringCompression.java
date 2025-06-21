@@ -53,32 +53,23 @@ public class StringCompression {
     public int compress(char[] chars) {
         int ptr0 = 0;
         int ptr1 = 0;
-        int ptr2 = 0;
         while(ptr1<chars.length){
-            while(ptr2<chars.length && chars[ptr2]==chars[ptr1]){
-                ptr2++;
+            int ptr = ptr1;
+            while(ptr<chars.length && chars[ptr1]==chars[ptr]){
+                ptr++;
             }
-            int cnt = ptr2 - ptr1;
-
-            if(cnt>1){
-                List<Integer> digits = new ArrayList<>();
-                while(cnt>0){
-                    int digit = cnt%10;
-                    digits.add(digit);
-                    cnt /= 10;
-                }
-                chars[ptr0] = chars[ptr1];
-                ptr0++;
-                for(int i=digits.size()-1; i>=0; i--){
-                    chars[ptr0] = (char)(digits.get(i)+'0');
+            int delta = ptr - ptr1;
+            chars[ptr0] = chars[ptr1];
+            ptr0++;
+            if(delta>1){
+                String cnt = String.valueOf(delta);
+                char[] arr = cnt.toCharArray();
+                for(char c : arr){
+                    chars[ptr0] = c;
                     ptr0++;
                 }
             }
-            else{
-                chars[ptr0] = chars[ptr1];
-                ptr0++;
-            }
-            ptr1 = ptr2;
+            ptr1 = ptr;
         }
         return ptr0;
     }

@@ -37,55 +37,37 @@ import java.util.*;
 //首先判断这个题可以使用Dijkstra: 在一条路径上前进，其cost不会变小，对应的就是weight non-negtive的要求
 //具体到这个题目来看，一条path上出现的maxDiff，as you moving forward,要么不变，要么变大，不会变小，所以满足条件
 public class PathWithMinimumEffort {
-    class Cell{
-        int x;
-        int y;
-        int diff;
-        public Cell(int x, int y, int diff){
-            this.x = x;
-            this.y = y;
-            this.diff = diff;
+    public int minimumEffortPath(int[][] heights) {
+        //往前找的过程edgeCost是非负数，到每个点的cost就是从parent继承来的cost跟当下edge取最大
+        int[][] distances = new int[heights.length][heights[0].length];
+        for(int[] row : distances){
+            Arrays.fill(row, Integer.MAX_VALUE);
         }
-    }
-
-    public int minimumEffortPath(int[][] heights){
-        int row = heights.length;
-        int col = heights[0].length;
-        int[][] diffMatrix = new int[row][col];
-        for(int[] arr : diffMatrix){
-            Arrays.fill(arr, Integer.MAX_VALUE);
-        }
-        diffMatrix[0][0] = 0;
-        //这里通过visited[][] and diffMatrix[][]避免了使用Cell的Set，就免了写hashCode and equal function
-        boolean[][] visited = new boolean[row][col];
-        PriorityQueue<Cell> pq = new PriorityQueue<>((a, b)->a.diff-b.diff);
-        pq.add(new Cell(0, 0, diffMatrix[0][0]));
+        distances[0][0] = 0;
+        Queue<int[]> queue = new PriorityQueue<>((a, b)->a[0]-b[0]);
         int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
-
-        while(!pq.isEmpty()){
-            Cell cur = pq.poll();
-            visited[cur.x][cur.y] = true;
-            if(cur.x==row-1 && cur.y==col-1){
-                return cur.diff;
+        queue.add(new int[]{distances[0][0], 0, 0});
+        while(!queue.isEmpty()){
+            int[] cur = queue.poll();
+            int cost = cur[0];
+            int x = cur[1];
+            int y = cur[2];
+            if(x==heights.length-1 && y==heights[0].length-1){
+                return cost;
             }
-
             for(int[] dir : dirs){
-                //注意这里会出现往回走向parent的问题，但是这种情况diff不会变，所以不会在PriorityQueue里因此再把parent加一遍
-                int xNew = cur.x + dir[0];
-                int yNew = cur.y + dir[1];
-                if(xNew>=0 && xNew<row && yNew>=0 && yNew<col && !visited[xNew][yNew]){
-                    //这里不要忘记取绝对值
-                    int curDiff = Math.abs(heights[xNew][yNew] - heights[cur.x][cur.y]);
-                    int maxDiff = Math.max(curDiff, diffMatrix[cur.x][cur.y]);
-                    if(diffMatrix[xNew][yNew]>maxDiff){//relax when smaller diff found
-                        //无法选择只在从priorityQueue抽出的时候update diffMatrix
-                        //因为diffMatrix还要用来记录一些intermediate的值，因为java PriorityQueue不支持Decrease-Key for Min-Heap
-                        diffMatrix[xNew][yNew] = maxDiff;
-                        pq.add(new Cell(xNew, yNew, diffMatrix[xNew][yNew]));
+                int xNew = x + dir[0];
+                int yNew = y + dir[1];
+                if(xNew>=0 && yNew>=0 && xNew<heights.length && yNew<heights[0].length){
+                    int edgeCost = Math.abs(heights[xNew][yNew]-heights[x][y]);
+                    edgeCost = Math.max(edgeCost, cost);
+                    if(edgeCost<distances[xNew][yNew]){
+                        queue.add(new int[]{edgeCost, xNew, yNew});
+                        distances[xNew][yNew] = edgeCost;
                     }
                 }
             }
         }
-        return diffMatrix[row-1][col-1];
+        return -1;
     }
 }

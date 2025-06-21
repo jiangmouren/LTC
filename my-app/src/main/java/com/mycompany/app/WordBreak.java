@@ -28,8 +28,40 @@ import java.util.*;
  */
 
 public class WordBreak{
-    //Top Down DP with Memo
+    //dp[i] = dp[i-1]s[i:i] || dp[i-2]s[i-1:i] ||...|| dp[i-L]s[i-L+1:i]
+    //上面dp[i]表示s[0:i]可以break，L是所有word的最长的length，这里中括号表示inclusive
     public boolean wordBreak(String s, List<String> wordDict) {
+        boolean[] dp = new boolean[s.length()];//default is false
+
+        //L is the maxLength of word
+        int maxL = 0;
+        Set<String> dict = new HashSet<>();
+        for(String word : wordDict){
+            maxL = Math.max(maxL, word.length());
+            dict.add(word);
+        }
+
+        for(int i=0; i<s.length(); i++){
+            for(int j=i-1; j>=i-maxL; j--){
+                if(j<0){//这一段其实相当于在set up初值
+                    if(dict.contains(s.substring(0, i+1))){
+                        dp[i] = true;
+                        break;
+                    }
+                }
+                else{
+                    if(dp[j]&&dict.contains(s.substring(j+1, i+1))){
+                        dp[i] = true;
+                        break;
+                    }
+                }
+            }
+        }
+        return dp[s.length()-1];
+    }
+
+    //Top Down DP with Memo
+    public boolean wordBreakSln2(String s, List<String> wordDict) {
         Set<String> set = new HashSet<String>();
         int maxLength = 0;
         for(String word : wordDict){
@@ -62,37 +94,6 @@ public class WordBreak{
         }
         cache.put(start, false);
         return false;
-    }
-
-    //Bottom Up DP
-    public boolean wordBreakSln2(String s, List<String> wordDict) {
-        boolean[] dp = new boolean[s.length()];//default is false
-        //dp[i] = dp[i-1]s[i:i] || dp[i-2]s[i-1:i] ||...|| dp[i-L]s[i-L+1:i]
-        //L is the maxLength of word
-        int maxL = 0;
-        Set<String> dict = new HashSet<>();
-        for(String word : wordDict){
-            maxL = Math.max(maxL, word.length());
-            dict.add(word);
-        }
-
-        for(int i=0; i<s.length(); i++){
-            for(int j=i-1; j>=i-maxL; j--){
-                if(j<0){
-                    if(dict.contains(s.substring(0, i+1))){
-                        dp[i] = true;
-                        continue;
-                    }
-                }
-                else{
-                    if(dp[j]&&dict.contains(s.substring(j+1, i+1))){
-                        dp[i] = true;
-                        continue;
-                    }
-                }
-            }
-        }
-        return dp[s.length()-1];
     }
 }
 

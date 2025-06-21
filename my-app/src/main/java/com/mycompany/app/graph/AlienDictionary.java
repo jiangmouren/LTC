@@ -35,110 +35,96 @@ class AlienDictionary {
     public String alienOrder(String[] words) {
         Map<Character, List<Character>> graph = buildGraph(words);
         if(graph==null){
-            System.out.println("Here");
             return "";
         }
-        //for(Map.Entry<Character, List<Character>> entry : graph.entrySet()){
-        //    List<Character> values = entry.getValue();
-        //    System.out.println("key: "+entry.getKey());
-        //    for(char c : values){
-        //        System.out.print(c + " ");
-        //    }
-        //    System.out.println("");
-        //}
+
+        int[] visit = new int[26];
         StringBuilder res = new StringBuilder();
-        int[] visit = new int[26];//0: not; 1: visiting; 2: visited
-        boolean cycle = false;
-        for(Map.Entry<Character,List<Character>> entry : graph.entrySet()){
-            char c = entry.getKey();
-            if(visit[c-'a']==0){
-                if(!dfs(res, graph, c, visit)){
-                    cycle = true;
-                    break;
+        for(char key : graph.keySet()){
+            if(visit[key-'a']==0){
+                if(!dfs(res, graph, visit, key)){
+                    return "";
                 }
             }
-        }
-        if(cycle){
-            return "";
         }
         return res.reverse().toString();
     }
 
+    //return null if the inputs are not valid for example ["abc", "ab"]
     private Map<Character, List<Character>> buildGraph(String[] words){
-        Map<Character, List<Character>> graph = new HashMap<>();
+        Map<Character, List<Character>> map = new HashMap<>();
+        //要给每个Node都生成一个entry，而不是只处理edge情况，如果给的图就是一堆node，没有edge，就出问题了
+        for(String word : words){
+            populateMap(word, map);
+        }
+
         int ptr0 = 0;
         int ptr1 = 1;
-        while(ptr0<words.length){
-            for(int i=0; i<words[ptr0].length(); i++){
-                char key = words[ptr0].charAt(i);
-                if(!graph.containsKey(key)){
-                    graph.put(key, new ArrayList<Character>());
+        while(ptr1<words.length){
+            List<Character> pair = findDiff(words[ptr0], words[ptr1]);
+            if(!pair.isEmpty()){
+                if(!map.containsKey(pair.get(0))){
+                    List<Character> list = new ArrayList<>();
+                    map.put(pair.get(0), list);
                 }
+                map.get(pair.get(0)).add(pair.get(1));
             }
-            if(ptr1<words.length){
-                List<Character> list = findDiff(words[ptr0], words[ptr1]);
-                //System.out.println(words[ptr0] + ", " + words[ptr1]);
-                //System.out.println(list.get(0) + ", " + list.get(1));
-                if(list==null){
+            else{
+                if(words[ptr0].length()>words[ptr1].length()){
                     return null;
-                }
-                if(!list.isEmpty()){
-                    char key = list.get(0);
-                    char value = list.get(1);
-                    graph.get(key).add(value);
                 }
             }
             ptr0++;
             ptr1++;
         }
-        return graph;
+        return map;
     }
 
-    //return a list, where first char is ahead of second char
-    //if return empty list, means no order pair found
-    private List<Character> findDiff(String word1, String word2){
-        int ptr = 0;
-        int l1 = word1.length();
-        int l2 = word2.length();
-        List<Character> list = new ArrayList<>();
-        while(ptr<l1 && ptr<l2){
-            if(word1.charAt(ptr)!=word2.charAt(ptr)){
-                list.add(word1.charAt(ptr));
-                list.add(word2.charAt(ptr));
+    //return edge start and end, return empty list if no edge can be identified.
+    private List<Character> findDiff(String word0, String word1){
+        int ptr0 = 0;
+        int ptr1 = 0;
+        List<Character> res = new ArrayList<>();
+        while(ptr0<word0.length() && ptr1<word1.length()){
+            if(word0.charAt(ptr0)!=word1.charAt(ptr1)){
+                res.add(word0.charAt(ptr0));
+                res.add(word1.charAt(ptr1));
                 break;
             }
-            ptr++;
+            ptr0++;
+            ptr1++;
         }
-        //if l2 shorter and all chars matches, incorrect! for example: ["abc","ab"], we cannot detect this during dfs, need to find this during building graph.
-        if(ptr>=l2 && ptr<l1){
-            return null;
-        }
-        return list;
+        return res;
     }
 
-    private boolean dfs(StringBuilder res, Map<Character, List<Character>> graph, char root, int[] visit){
+    private boolean dfs(StringBuilder res, Map<Character, List<Character>> graph, int[] visit, char root){
+        visit[root-'a'] = 1;//0: not visited; 1: visiting; 2: visited
+        //System.out.println(root);
         List<Character> children = graph.get(root);
-        visit[root-'a'] = 1;
-        //termination
-        if(children.isEmpty()){
-            res.append(root);
-            visit[root-'a'] = 2;
-            return true;
-        }
-
-        for(char c : children){
-            if(visit[c-'a']==1){
-                return false;
-            }
-            if(visit[c-'a']==0){
-                if(!dfs(res, graph, c, visit)){
+        if(children!=null && !children.isEmpty()){
+            for(char child : children){
+                if(visit[child - 'a']==1){
                     return false;
+                }
+                if(visit[child-'a']==0){
+                    if(!dfs(res, graph, visit, child)){
+                        return false;
+                    }
                 }
             }
         }
         res.append(root);
-        visit[root -'a'] = 2;
+        visit[root-'a'] = 2;
         return true;
+    }
+
+    private void populateMap(String word, Map<Character, List<Character>> map){
+        for(int i=0; i<word.length(); i++){
+            if(!map.containsKey(word.charAt(i))){
+                List<Character> list = new ArrayList<>();
+                map.put(word.charAt(i), list);
+            }
+        }
     }
 }
 

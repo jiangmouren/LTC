@@ -9,7 +9,7 @@ import java.util.*;
  * to get to that node from current node. Find the shortest path from "start" to "dest".
  * All the costs are non-negative.
  */
-public class Dijkstra {
+public class ShortestPath {
     //TODO: test this.
     public List<Integer> shortestPath(int start, int dest, List<List<int[]>> graph){
         //use int[] for Dijkstra node, arr[0]: node_id; arr[1]: distance from Start; arr[2]: parent for shortest path

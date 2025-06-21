@@ -59,21 +59,23 @@ import java.util.*;
  * website = ["hibympufi","hibympufi","hibympufi","hibympufi","hibympufi","hibympufi","hibympufi","hibympufi","yljmntrclw","hibympufi","yljmntrclw"]
  */
 public class AnalyzeUserWebsiteVisitPattern {
-    class Touple{
+    class Tuple{
         String username;
         int timestamp;
         String website;
     }
 
     public List<String> mostVisitedPattern(String[] username, int[] timestamp, String[] website) {
+        //create and sort tuples
         int n = username.length;
-        Touple[] touples = new Touple[n];
+        Tuple[] touples = new Tuple[n];
         for(int i=0; i<n; i++){
-            touples[i] = new Touple();
+            touples[i] = new Tuple();
             touples[i].timestamp = timestamp[i];
             touples[i].username = username[i];
             touples[i].website = website[i];
         }
+        //按名字分类排序，相同名字的再按时间排序
         Arrays.sort(touples, (a, b)->{
             int cmp = a.username.compareTo(b.username);
             if(cmp==0){
@@ -82,6 +84,7 @@ public class AnalyzeUserWebsiteVisitPattern {
             return cmp;
         });
 
+        //aggregate patterns
         Map<List<String>, Integer> map = new HashMap<>();
         int ptr0 = 0;
         int ptr1 = 0;

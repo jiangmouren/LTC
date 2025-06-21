@@ -38,34 +38,31 @@ package com.mycompany.app.prefixSurfix;
  * -1000 <= nums[i] <= 1000
  */
 public class FindPivotIndex {
+    //分别用一个Prefix Running Sum && Suffix Running Sum，然后找里面最左边第一个相等的位置
     public int pivotIndex(int[] nums) {
-        //分别用一个Prefix Running Sum && Suffix Running Sum，然后找里面最左边第一个相等的位置
-        int n = nums.length;
-        int[] prefix = new int[n];
-        int[] suffix = new int[n];
-        for(int i=0; i<n; i++){
+        int[] preSum = new int[nums.length];
+        int[] surSum = new int[nums.length];
+        for(int i=0; i<nums.length; i++){
             if(i==0){
-                prefix[i] = nums[i];
+                preSum[i] = 0;
             }
             else{
-                prefix[i] = nums[i] + prefix[i-1];
+                preSum[i] = preSum[i-1] + nums[i-1];
             }
         }
-        for(int i=n-1; i>=0; i--){
-            if(i==n-1){
-                suffix[i] = nums[i];
+        for(int i=nums.length-1; i>=0; i--){
+            if(i==nums.length-1){
+                surSum[i] = 0;
             }
             else{
-                suffix[i] = nums[i] + suffix[i+1];
+                surSum[i] = surSum[i+1] + nums[i+1];
             }
         }
-        int idx = -1;
-        for(int i=0; i<n; i++){
-            if(prefix[i]==suffix[i]){
-                idx = i;
-                break;
+        for(int i=0; i<nums.length; i++){
+            if(preSum[i]==surSum[i]){
+                return i;
             }
         }
-        return idx;
+        return -1;
     }
 }

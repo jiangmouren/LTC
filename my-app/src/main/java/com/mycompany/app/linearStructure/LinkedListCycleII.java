@@ -59,7 +59,7 @@ public class LinkedListCycleII {
             ptr0 = ptr0.next;
             ptr1 = ptr1.next;
             ptr1 = ptr1==null ? null : ptr1.next;
-        }while(ptr0!=ptr1 && ptr1!=null); //注意这里要加ptr1==null的判断
+        }while(ptr0!=ptr1 && ptr1!=null); //注意这里要加ptr1==null的判断，另外注意这里有个分号，do-while比较少用
         if(ptr1==null){//注意这里判断的是ptr1，因为它会先撞线
             return null;
         }

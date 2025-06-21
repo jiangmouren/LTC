@@ -24,27 +24,24 @@ public class ConstructBinaryTreeFromInorderAndPostorderTraversal {
     }
 
     public TreeNode buildTree(int[] inorder, int[] postorder) {
-        return helper(inorder, postorder, postorder.length-1, 0, inorder.length-1);
+        int[] pos = {postorder.length-1};
+        return helper(inorder, postorder, 0, inorder.length-1, pos);
     }
 
-    private TreeNode helper(int[] inorder, int[] postorder, int postEnd, int inStart, int inEnd){
-        //edge case
-        if(inStart>inEnd){
-            return null;
+    private TreeNode helper(int[] inorder, int[] postorder, int left, int right, int[] pos){
+        int val = postorder[pos[0]];
+        pos[0]--;
+        TreeNode root = new TreeNode(val);
+        int ptr = left;
+        while(ptr<=right && inorder[ptr]!=val){
+            ptr++;
         }
-        //recursive case
-        TreeNode root = new TreeNode(postorder[postEnd]);
-        //find position in inorder
-        int rootIdx=inStart;
-        for(int i=inStart; i<inEnd; i++){
-            if(inorder[i]==postorder[postEnd]){
-               rootIdx = i;
-            }
+        if(ptr<right){
+            root.right = helper(inorder, postorder, ptr+1, right, pos);
         }
-        //because we have postorder, so do right subtree first
-        root.right = helper(inorder, postorder, postEnd-1, rootIdx+1, inEnd);
-        //inEnd-rootIdx is the number of elements in right subtree
-        root.left = helper(inorder, postorder, postEnd-1-inEnd+rootIdx, inStart, rootIdx-1);
+        if(ptr>left){
+            root.left = helper(inorder, postorder, left, ptr-1, pos);
+        }
         return root;
     }
 }

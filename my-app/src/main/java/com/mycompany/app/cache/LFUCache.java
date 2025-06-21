@@ -22,6 +22,11 @@ import java.util.*;
  * cache.get(1);       // returns -1 (not found)
  * cache.get(3);       // returns 3
  * cache.get(4);       // returns 4
+ *
+ * Your LFUCache object will be instantiated and called as such:
+ * LFUCache obj = new LFUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
  */
 
 /**
@@ -167,9 +172,151 @@ public class LFUCache {
         }
     }
 }
-/**
- * Your LFUCache object will be instantiated and called as such:
- * LFUCache obj = new LFUCache(capacity);
- * int param_1 = obj.get(key);
- * obj.put(key,value);
- */
+
+//下面是另外一种实现方法，两种解法各有利弊。第一种解法，复杂度更有，但是实现起来要update minCnt更麻烦一点，下面这种解法少了update minCnt
+//的麻烦，复杂度上没有上一种好
+class LFUCacheSln2 {
+    class LRU{
+        class Node{
+            int key;
+            Node pre;
+            Node nxt;
+            public Node(int key){
+                this.key = key;
+            }
+        }
+        Map<Integer, Node> map;
+        Node dummyHead;
+        Node dummyTail;
+        public LRU(){
+            this.map = new HashMap<>();
+            this.dummyHead = new Node(0);
+            this.dummyTail = new Node(0);
+            this.dummyHead.nxt = this.dummyTail;
+            this.dummyTail.pre = this.dummyHead;
+        }
+
+        //delete a key
+        public void remove(int key){
+            Node node = this.map.get(key);
+            this.map.remove(key);
+            liftNode(node);
+        }
+
+        public void add(int key){
+            if(!this.map.containsKey(key)){
+                Node node = new Node(key);
+                this.map.put(key, node);
+                addToFirst(node);
+            }
+            else{
+                Node node = this.map.get(key);
+                liftNode(node);
+                addToFirst(node);
+            }
+        }
+
+        private void addToFirst(Node node){
+            node.nxt = this.dummyHead.nxt;
+            this.dummyHead.nxt.pre = node;
+            this.dummyHead.nxt = node;
+            node.pre = this.dummyHead;
+        }
+
+        private void liftNode(Node node){
+            node.nxt.pre = node.pre;
+            node.pre.nxt = node.nxt;
+        }
+
+        //return the evicted key
+        public int evict(){
+            Node node = this.dummyTail.pre;
+            this.map.remove(node.key);
+            //System.out.println("first: "+dummyHead.nxt.key);
+            //System.out.println("evicting: "+node.key);
+            liftNode(node);
+            return node.key;
+        }
+
+        public int size(){
+            return this.map.size();
+        }
+    }
+
+    class ValObj{
+        int val;
+        int cnt;
+        public ValObj(int val){
+            this.val = val;
+            this.cnt = 1;
+        }
+    }
+
+    Map<Integer, ValObj> keyMap;
+    TreeMap<Integer, LRU> cntMap;
+    int cap;
+
+    public LFUCacheSln2(int capacity) {
+        this.keyMap = new HashMap<>();
+        this.cntMap = new TreeMap<>();
+        this.cap = capacity;
+    }
+
+    public int get(int key) {
+        if(this.keyMap.containsKey(key)){
+            ValObj valObj = this.keyMap.get(key);
+            int val = valObj.val;
+            touch(key, valObj);
+            return val;
+        }
+        else{
+            return -1;
+        }
+    }
+
+    public void put(int key, int value) {
+        if(this.cap<=0){
+            return;
+        }
+
+        if(this.keyMap.containsKey(key)){
+            ValObj valObj = this.keyMap.get(key);
+            valObj.val = value;
+            touch(key, valObj);
+        }
+        else{
+            if(this.keyMap.size()==this.cap){
+                int minCnt = this.cntMap.firstKey();
+                //System.out.println("minCnt: "+minCnt);
+                int evictedKey = this.cntMap.get(minCnt).evict();
+                cleanUpCntMap(minCnt);
+                //System.out.println("evictedKey: "+evictedKey);
+                this.keyMap.remove(evictedKey);
+            }
+            ValObj valObj = new ValObj(value);
+            this.keyMap.put(key, valObj);
+            updateCntMap(key, 1);
+        }
+    }
+
+    private void touch(int key, ValObj valObj){
+        this.cntMap.get(valObj.cnt).remove(key);
+        cleanUpCntMap(valObj.cnt);
+        valObj.cnt++;
+        updateCntMap(key, valObj.cnt);
+    }
+
+    private void updateCntMap(int key, int cnt){
+        if(!this.cntMap.containsKey(cnt)){
+            LRU lru = new LRU();
+            this.cntMap.put(cnt, lru);
+        }
+        this.cntMap.get(cnt).add(key);
+    }
+
+    private void cleanUpCntMap(int cnt){
+        if(this.cntMap.get(cnt).size()==0){
+            this.cntMap.remove(cnt);
+        }
+    }
+}

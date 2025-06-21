@@ -26,24 +26,21 @@ package com.mycompany.app.dp;
  * https://leetcode.com/discuss/62835/o-n-time-manacher-algorithm
  * https://www.geeksforgeeks.org/manachers-algorithm-linear-time-longest-palindromic-substring-part-1/
  * TODO: 抽时间看下！
- * 下面的第三种解法。
+ * 下面的第2种解法。
  */
 
 public class LongestPalindromicSubstring {
     public String longestPalindrome(String s) {
-        boolean[][] dp = new boolean[s.length()][s.length()];
+        int n = s.length();
+        boolean[][] dp = new boolean[n][n];
         int left = 0;
         int right = 0;
-        //initiate starting values
-        for(int i=0; i<dp.length; i++){
-            dp[i][i] = true;
-            if(i-1>=0){
-                dp[i][i-1] = true;
-            }
-        }
-        for(int i=s.length()-2; i>=0; i--){
-            for(int j=i+1; j<s.length(); j++){
-                dp[i][j] = s.charAt(i)==s.charAt(j) && dp[i+1][j-1];
+        for(int i=n-1; i>=0; i--){
+            for(int j=i; j<n; j++){
+                dp[i][j] = s.charAt(i)==s.charAt(j);
+                if(i+1<=j-1){
+                    dp[i][j] = dp[i][j] && dp[i+1][j-1];
+                }
                 if(dp[i][j] && j-i>right-left){
                     right = j;
                     left = i;
@@ -52,36 +49,6 @@ public class LongestPalindromicSubstring {
         }
         return s.substring(left, right+1);
     }
-
-    //跟上面的主要区别是递归的实现。采用一条斜线，接着一条斜线的方式写。
-    public String longestPalindromeImp2(String s) {
-        boolean[][] dp = new boolean[s.length()][s.length()];
-        int left = 0;
-        int right = 0;
-        //initiate starting values
-        for(int i=0; i<dp.length; i++){
-            dp[i][i] = true;
-            if(i-1>=0){
-                dp[i][i-1] = true;
-            }
-        }
-        //k is the step not the index itself, 引入这个变量是为了，能够从左上往右下，斜着一排一排的递推
-        //dp[i][j] = dp[i+1][j-1] && s.charAt(i)==s.charAt(j)
-        for(int k=1; k<dp[0].length; k++){
-            for(int i=0; i<dp.length; i++){
-                int j=i+k;
-                if(j<dp[0].length && dp[i+1][j-1] && s.charAt(i)==s.charAt(j)){
-                    dp[i][j] = true;
-                    if(j-i>right-left){
-                        left = i;
-                        right = j;
-                    }
-                }
-            }
-        }
-        return s.substring(left, right+1);
-    }
-
 
     //TODO: 抽时间看下！
     public String longestPalindromeManacher(String s) {

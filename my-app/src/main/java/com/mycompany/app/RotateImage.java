@@ -30,30 +30,25 @@ package com.mycompany.app;
  */
 
 public class RotateImage {
-    public void rotate(int[][] matrix){
-        if(matrix==null || matrix.length<=1) return;
-        //swap along main diagonal
-        for(int i=0; i<matrix.length; i++){
-            //Attention: must start as j==i, either wise double reverse, functionally will be wrong.
-            for(int j=i; j<matrix.length; j++){
-                int tmp = matrix[i][j];
+    public void rotate(int[][] matrix) {
+        int n = matrix.length;
+        //fold by y axis
+        for(int i=0; i<n/2; i++){
+            for(int j=0; j<n; j++){
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[n-1-i][j];
+                matrix[n-1-i][j] = temp;
+            }
+        }
+
+        //fold by main diagnal
+        for(int i=0; i<n; i++){
+            for(int j=i+1; j<n; j++){
+                int temp = matrix[i][j];
                 matrix[i][j] = matrix[j][i];
-                matrix[j][i] = tmp;
+                matrix[j][i] = temp;
             }
         }
-        //reverse horizontally
-        for(int i=0; i<matrix.length; i++){
-            //When you do array reverse has to be 2 pointers.
-            int head = 0, tail = matrix.length-1;
-            while(head<tail){
-                int tmp = matrix[i][head];
-                matrix[i][head] = matrix[i][tail];
-                matrix[i][tail] = tmp;
-                head++;
-                tail--;
-            }
-        }
-        return;
     }
 
     public void rotateSln2(int[][] matrix) {

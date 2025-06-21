@@ -23,18 +23,6 @@ package com.mycompany.app;
  */
 
 /**
- * Analysis:
- * A good backtracking problem.
- * There are two ways to write it.
- * At every step, you change one bit of at a time and see if the result is in the dictionary or not.
- * This way requires we put the wordlist into a Set.
- * Another way at every step, we loop through the wordlist and try to find a dif by one word, until find the target.
- * In the first approach, the complexity is (26^k)*k!, because at 1st step we have 26k options, next step
- * will have 26(k-1), then 26(k-2), total (26^k)*k!.
- * In the second approach, the complexity is n!. Because at 1st step, n options and then n-1, then n-2, total n!.
- */
-
-/**
  * New Analysis:
  * In the above analysis, the second approach is actually not a backtracking, but a DFS.
  * But actually even the first approach can be viewed as a DFS.
@@ -114,64 +102,63 @@ public class WordLadder {
 
     /**
      * BFS
+     * 时间和空间复杂度都是O(N*l^2)，这当中N是wordList的长度，l是单个word的长度
+     * 把wordList过一遍是N，每次生成(26*l)个nbor，每个nbor的长度还是l，所以光生成nbors的时间和空间复杂度就是O(N*l^2)
+     * 每次把东西存queue的时间和空间复杂度是O(Nl)，所以总的时间和空间复杂度就是O(N*l^2)
      */
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        Set<String> dict = new HashSet<>();
+        Set<String> set = new HashSet<>();
+        Set<String> visited= new HashSet<>();
         for(String word : wordList){
-            dict.add(word);
-        }
-        //shortcut for easy cases:
-        if(!dict.contains(endWord)){
-            return 0;
+            set.add(word);
         }
 
-        Set<String> visited = new HashSet<>();
+        //Start BFS
         Queue<String> queue = new LinkedList<>();
-        int distance = 1;
         queue.add(beginWord);
-        visited.add(beginWord);
-        int cnt = queue.size();
+        visited.add(beginWord);//一旦进入queue，就要标记成visited
+        int distance = 0;
         boolean found = false;
         while(!queue.isEmpty()){
+            int cnt = queue.size();
+            //System.out.println(cnt);
             while(cnt>0){
                 String word = queue.poll();
+                cnt--;//记得不要忘记update cnt.
+                //System.out.println(word);
                 if(word.equals(endWord)){
                     found = true;
                     break;
                 }
-                cnt--;
-                List<String> neighbors = getNeighbors(word);
-                for(String neighbor : neighbors){
-                    if(!visited.contains(neighbor) && dict.contains(neighbor)){
-                        queue.add(neighbor);
-                        visited.add(neighbor);
+                else{
+                    List<String> nbors = getNbors(word);
+                    for(String nbor : nbors){
+                        if(set.contains(nbor) && !visited.contains(nbor)){
+                            queue.add(nbor);
+                            visited.add(nbor);
+                        }
                     }
                 }
             }
+            distance++;
             if(found){
                 break;
             }
-            cnt = queue.size();
-            distance++;
         }
-
         return found ? distance : 0;
     }
 
-    private List<String> getNeighbors(String word){
+    private List<String> getNbors(String word){
         List<String> res = new ArrayList<>();
-        StringBuilder buf = new StringBuilder();
-        buf.append(word);
-        for(int i = 0; i<word.length(); i++){
-            char c = buf.charAt(i);
-            for(int j=0; j<26; j++){
-                char candidate = (char)('a'+j);
-                if(candidate!=c){
-                    buf.setCharAt(i, candidate);
-                    res.add(buf.toString());
+        for(int i=0; i<word.length(); i++){
+            String prefix = word.substring(0, i);
+            String suffix = word.substring(i+1);
+            for(char c='a'; c<='z'; c++){
+                if(c!=word.charAt(i)){
+                    String str = prefix + c + suffix;
+                    res.add(str);
                 }
             }
-            buf.setCharAt(i, c);
         }
         return res;
     }

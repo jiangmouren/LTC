@@ -12,82 +12,60 @@ import java.util.*;
  * Can be called as a prefix Tree, every unique prefix correspond to a unique path.
  */
 public class Trie {
-    Node head;
-
-    /** Initialize your data structure here. */
-    public Trie() {
-        this.head = new Node('$');
-    }
-    
-    /** Inserts a word into the trie. */
-    public void insert(String word) {
-        Node ptr = head;
-        for(int i=0; i<word.length(); i++){
-            char tmp = word.charAt(i);
-            if(!ptr.map.containsKey(tmp)){
-                ptr.map.put(tmp, new Node(tmp));
-            }
-            ptr = ptr.map.get(tmp);
-            if(i==word.length()-1){
-                ptr.tail = true;
-            }
-        }
-    }
-    
-    /** Returns if the word is in the trie. */
-    public boolean search(String word) {
-        return searchHelper(word, 0, this.head);
-    }
-
-
-    /** Returns if there is any word in the trie that starts with the given prefix. */
-    public boolean startsWith(String prefix) {
-        return startWithHelper(prefix, 0, this.head);
-    }
-
-    private boolean searchHelper(String word, int pos, Node ptr){
-        char key = word.charAt(pos);
-        boolean containsKey = ptr.map.containsKey(key);
-
-        //backtracking case
-        if(pos==word.length()-1){
-            return containsKey&&ptr.map.get(key).tail;
-        }
-
-        //forward case
-        if(containsKey){
-            return searchHelper(word, pos+1, ptr.map.get(key));
-        }
-        else{
-            return false;
-        }
-    }
-
-    private boolean startWithHelper(String word, int pos, Node ptr){
-        char key = word.charAt(pos);
-        boolean containsKey = ptr.map.containsKey(key);
-        //backtracking case
-        if(pos==word.length()-1){
-            return containsKey;
-        }
-
-        //forward case
-        if(containsKey){
-            return startWithHelper(word, pos+1, ptr.map.get(key));
-        }
-        else{
-            return false;
-        }
-    }
-
-    private class Node{
-        char val;
+    class Node{
+        char c;
         Map<Character, Node> map;
-        boolean tail = false;
-        Node(char x){
-            this.val = x;
-            map = new HashMap<>();
+        boolean end;
+        public Node(char c){
+            this.c = c;
+            this.map = new HashMap<>();
+            this.end = false;
         }
+    }
+
+    Node dummyHead;
+
+    public Trie() {
+        this.dummyHead = new Node('0');
+    }
+
+    public void insert(String word) {
+        Node ptr = dummyHead;
+        for(int i=0; i<word.length(); i++){
+            char c = word.charAt(i);
+            if(!ptr.map.containsKey(c)){
+                Node child = new Node(c);
+                ptr.map.put(c, child);
+            }
+            ptr = ptr.map.get(c);
+        }
+        ptr.end = true;//注意ptr指向上一个char,而不是当前char
+    }
+
+    public boolean search(String word) {
+        Node ptr = dummyHead;
+        for(int i=0; i<word.length(); i++){
+            if(!ptr.map.containsKey(word.charAt(i))){
+                return false;
+            }
+            else{
+                ptr = ptr.map.get(word.charAt(i));
+            }
+        }
+        return ptr.end==true;//注意ptr指向上一个char,而不是当前char
+    }
+
+    public boolean startsWith(String prefix) {
+        Node ptr = dummyHead;
+        for(int i=0; i<prefix.length(); i++){
+            if(!ptr.map.containsKey(prefix.charAt(i))){
+                return false;
+            }
+            else{
+                ptr = ptr.map.get(prefix.charAt(i));
+            }
+        }
+        return true;
     }
 }
 

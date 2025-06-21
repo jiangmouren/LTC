@@ -1,7 +1,5 @@
 package com.mycompany.app.calculator;
-
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Question:
@@ -18,8 +16,50 @@ import java.util.List;
 
 
 public class BasicCalculatorII {
-    //要注意计算过程中出现Overflow的问题
     public int calculate(String s) {
+        Stack<Integer> stack = new Stack<>();
+        int ptr = 0;
+        char op = '+';
+        while(ptr<s.length()){
+            if(s.charAt(ptr)==' '){
+                ptr++;
+                continue;
+            }
+            else if(Character.isDigit(s.charAt(ptr))){
+                int temp = 0;
+                while(ptr<s.length() && Character.isDigit(s.charAt(ptr))){
+                    temp = 10 * temp + (int)(s.charAt(ptr)-'0');
+                    ptr++;
+                }
+                if(op=='+'){
+                    stack.push(temp);
+                }
+                else if(op=='-'){
+                    stack.push(-temp);
+                }
+                else if(op=='*'){
+                    int pre = stack.pop();
+                    stack.push(pre * temp);
+                }
+                else{
+                    int pre = stack.pop();
+                    stack.push(pre / temp);
+                }//这种情况ptr不用再++了
+            }
+            else{
+                op = s.charAt(ptr);
+                ptr++;
+            }
+        }
+        int temp = 0;
+        while(!stack.isEmpty()){
+            temp += stack.pop();
+        }
+        return temp;
+    }
+
+    //这种解法思路上跟上面相同，可以理解为对上面我的解法的一种优化，用partial result的方式，不用两边loop就可以
+    public int calculatesln2(String s) {
         long l1 = 0; //partial result for + & -
         int o1 = 1; // 1: +; -1: -
         long l2 = 1; //partial result for * & /
@@ -60,70 +100,5 @@ public class BasicCalculatorII {
         }
         //handle the last segment
         return (int)(l1+o1*l2);
-    }
-
-    /**
-     * Analysis:
-     * 这道题我的解法属于典型的"divide and conquer"的思路。
-     * 这道题目相较于BasicCalculator多了乘除法，那就把整个expression根据加减法，先分段。
-     * 分段之后的每个expression之内就没有运算优先级的问题了。
-     * 那么top level就是一个加减法的运算，每个分段全是乘除法的运算，而且也可以类似加减法一样解决。
-     * Time: O(n); Space: O(n), because of the plusMinusPositions.
-     */
-    public int calculateSln2(String s) {
-        List<Integer> plusMinusPositions = parse(s);
-        int ptr = 0;
-        int sign = 1;//这个top level的加减法没有括号，所以不需要用stack去buffer 括号外层的sign
-        long res = 0;
-        for(int position : plusMinusPositions){
-            //evaluate sub-expression
-            res += sign * evaluateMulDiv(s, ptr, position-1);
-            //update sign for next sub-expression
-            sign = s.charAt(position)=='-' ? -1 : 1;
-            ptr = position+1;
-        }
-        //handle remaining expressions
-        res += sign * evaluateMulDiv(s, ptr, s.length()-1);
-        return (int)res;
-    }
-
-    //find positions of + & -
-    private List<Integer> parse(String s){
-        List<Integer> positions = new ArrayList<>();
-        for(int i=0; i<s.length(); i++){
-            if(s.charAt(i)=='+' || s.charAt(i)=='-'){
-                positions.add(i);
-            }
-        }
-        return positions;
-    }
-
-    //evaluate expressions with only multiplication and division
-    //pay attention to empty spaces
-    private long evaluateMulDiv(String s, int start, int end){
-        long res = 1l;
-        boolean empty = true;
-        boolean mul = true;
-        for(int i=start; i<=end; i++){
-            if(s.charAt(i)==' '){
-                continue;
-            }
-            else if(Character.isDigit(s.charAt(i))){//for a valid expression, guaranteed operand come before operators
-                empty = false;
-                int temp = s.charAt(i) - '0';
-                while(i+1<=end && Character.isDigit(s.charAt(i+1))){
-                    temp = temp*10 + s.charAt(++i) - '0';
-                }
-                res = mul ? res * temp : res / temp;
-            }
-            else if(s.charAt(i)=='*'){// mul
-                mul = true;
-            }
-            else{// div
-                mul = false;
-            }
-        }
-        //this handles the single operand case
-        return empty ? 0 : res;
     }
 }

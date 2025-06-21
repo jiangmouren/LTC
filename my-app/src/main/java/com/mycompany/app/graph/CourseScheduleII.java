@@ -36,67 +36,47 @@ import java.util.List;
 
 public class CourseScheduleII {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
-        List<Integer> result = new ArrayList<>();
-        //Better to use Enum. 0: unvisited; 1: visiting; 2 visited.
-        int[] status = new int[numCourses];
         List<List<Integer>> graph = buildGraph(numCourses, prerequisites);
+        int[] visited = new int[numCourses];//0: not visited; 1: visiting; 2: visited
+        List<Integer> res = new ArrayList<>();
         for(int i=0; i<numCourses; i++){
-            if(status[i]==0){
-                if(!dfs(result, graph, status, i)){
-                    //found cycle, return empty array(length 0 array)
-                    //System.out.println("exit here");
-                    //System.out.println("i: "+i );
+            if(visited[i]==0){
+                if(!dfs(graph, i, visited, res)){
                     return new int[0];
                 }
             }
         }
-        int[] resultArray = new int[numCourses];
-        //System.out.println("I'm here");
-        //System.out.println(result);
+        int[] result = new int[numCourses];
+        //res.toArray(result) 不行，如果result是integer[]才可以
         for(int i=0; i<numCourses; i++){
-            resultArray[i] = result.get(i);
+            result[i] = res.get(i);
         }
-        return resultArray;
+        return result;
     }
 
-    //return true if no cycle found
-    private boolean dfs(List<Integer> result, List<List<Integer>> graph, int[] status, int cur){
-        //set cur to visiting first
-        status[cur] = 1;
-
-        //end condition
-        if(graph.get(cur).size()==0){//find a leaf node
-            result.add(cur);
-            status[cur] = 2;
-            return true;
-        }
-
-        for(int prerequisite : graph.get(cur)){
-            if(status[prerequisite]==1){
-                return false;//found cycle
-            }
-            if(status[prerequisite]==0){
-                if(!dfs(result, graph, status, prerequisite)){
-                    return false;//found cycle
-                }
-            }
-        }
-        //After all children visited, add cur to result
-        result.add(cur);
-        //set cur to visited before end
-        status[cur] = 2;
-        return true;
-    }
-
-    //Better to create Node class.
-    private List<List<Integer>> buildGraph(int numCourses, int[][] prerequisites){
+    private List<List<Integer>> buildGraph(int n, int[][] edges){
         List<List<Integer>> graph = new ArrayList<>();
-        for(int i=0; i<numCourses; i++){
-            graph.add(new ArrayList<Integer>());
+        for(int i=0; i<n; i++){
+            graph.add(new ArrayList<>());
         }
-        for(int[] prerequisite : prerequisites){
-            graph.get(prerequisite[0]).add(prerequisite[1]);
+        for(int[] edge : edges){
+            graph.get(edge[0]).add(edge[1]);
         }
         return graph;
+    }
+
+    private boolean dfs(List<List<Integer>> graph, int start, int[] visited, List<Integer> res){
+        visited[start] = 1;
+        for(int child : graph.get(start)){
+            if(visited[child]==1){
+                return false;
+            }
+            if(visited[child]==0 && !dfs(graph, child, visited, res)){
+                return false;
+            }
+        }
+        res.add(start);
+        visited[start] = 2;
+        return true;
     }
 }

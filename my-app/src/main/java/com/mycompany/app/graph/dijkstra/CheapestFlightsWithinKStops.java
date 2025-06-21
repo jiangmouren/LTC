@@ -37,66 +37,83 @@ import java.util.*;
  * There will not be any duplicated flights or self cycles.
  */
 
+/**
+ * 借着这个题把Dijkstra一类问题讲清楚
+ * 首先是Dijkstra算法的适用条件：
+ * 算法导论的原文是这么写的：Dijkstra's algorithm solves the single-source shortest-paths problem on a weighted,
+ * directed graph G=(V,E) for the case in which all edges weights are nonnegative.
+ * 1. 但凡是能solve directed graph问题，自然也能solve undirected graph问题
+ * 2. 对于graph里面有没有cycle是没有要求的
+ * 3. 唯一的要求就是所有edge的weight必须是非负数，其实还要额外加一个条件就是不能有non-positive weighted cycle
+ *
+ * 然后是Dijkstra的implementation:
+ * 1. graph的表示，相较于其它很多graph的问题，除了需要存储所有的children之外，还要存储到每个child的cost
+ * 所以graph的表示从：
+ * List<List<Integer>>(如果node可以用int来identity)或者Map<String, List<String>>(如果node需要用string来identify)
+ * 变化成：
+ * List<List<int[]>> (int[]: id, cost) 或者 Map<String, List<Node>> (Node{id, cost})
+ *
+ * 2. 不需要visited来记录已经访问过的node，以为我们的relaxation条件，以及不能有non-positive weighted cycle，
+ * 所以无限循环的loop必然倒是cost上升，所以就不会被选中去expand，也就是不会stuck在loop里面的原因
+ *
+ * 3. 需要一个int[] distances或者 Map<Integer> distances来记录每个node最新的relaxation的结果
+ *
+ * 4. PriorityQueue里面需要记录(cost, node_id)，通常需要加一个comparator
+ */
 //首先可以判断这是一道Dijkstra问题，然后这是一道变种题
-//多了Path长度<=K+2这个限制条件，需要把原来的distance[] & visited[]都扩展成一个2-D数组
-//本质上说，我需要keet track of在每个path长度上，每个node所能取得的最小值。
-//以为，对某个Id来说，在长度要求内它能取得的最小值，不见得是可以帮助dst在长度要求内取得最小值
+//多了Path长度<=K+2这个限制条件
 public class CheapestFlightsWithinKStops {
     public int findCheapestPrice(int n, int[][] flights, int src, int dst, int K) {
-        //int[0]: id; int[1]: dist
         List<List<int[]>> graph = buildGraph(n, flights);
-        int[][] distance = new int[n][K+2];//src+K+dst， 一共K+2
-        for(int[] row : distance){
-            Arrays.fill(row, Integer.MAX_VALUE);
-        }
-        distance[src][0] = 0;
-        boolean[][] visited = new boolean[n][K+2];
-
-        PriorityQueue<Node> pq = new PriorityQueue<>((a, b)->a.dist-b.dist);
-        pq.add(new Node(src, 0, distance[src][0]));
-        while(!pq.isEmpty()){
-            Node cur = pq.poll();
-            visited[cur.id][cur.pos] = true;
-            if(cur.pos<=K){
-                for(int[] nbor : graph.get(cur.id)){
-                    if(!visited[nbor[0]][cur.pos+1]){
-                        int distNew = cur.dist + nbor[1];
-                        if(distNew<distance[nbor[0]][cur.pos+1]){
-                            distance[nbor[0]][cur.pos+1] = distNew;
-                            pq.add(new Node(nbor[0], cur.pos+1, distNew));
-                        }
+        //cost, id, stops
+        Queue<int[]> queue = new PriorityQueue<>((a, b)->a[0]-b[0]);
+        int[] distance = new int[n];
+        int[] curStops = new int[n];
+        Arrays.fill(distance, Integer.MAX_VALUE);
+        Arrays.fill(curStops, Integer.MAX_VALUE);
+        distance[src] = 0;
+        curStops[src] = 0;
+        queue.add(new int[]{distance[src], src, 0});
+        while(!queue.isEmpty()){
+            int[] cur = queue.poll();
+            int cost = cur[0];
+            int id = cur[1];
+            int stops = cur[2];
+            if(id==dst){
+                return cost;
+            }
+            if(stops<=K){
+                for(int[] child : graph.get(id)){
+                    int city = child[0];
+                    int edgeCost = child[1];
+                    int totalCost = cost + edgeCost;
+                    int newStops = stops + 1;
+                    //Better choice
+                    if(totalCost<distance[city]){
+                        queue.add(new int[]{totalCost, city, newStops});
+                        distance[city] = totalCost;
+                        curStops[city] = newStops;
+                    }
+                    //better steps，这个新加的relaxation条件是限定步数之后做的相应的算法改动
+                    else if(newStops<curStops[city]){
+                        queue.add(new int[]{totalCost, city, newStops});
                     }
                 }
             }
         }
-
-        int res = Integer.MAX_VALUE;
-        for(int val : distance[dst]){
-            res = Math.min(res, val);
-        }
-        return res==Integer.MAX_VALUE ? -1 : res;
+        return -1;
     }
-
     private List<List<int[]>> buildGraph(int n, int[][] flights){
         List<List<int[]>> graph = new ArrayList<>();
         for(int i=0; i<n; i++){
             graph.add(new ArrayList<>());
         }
-
         for(int[] flight : flights){
-            graph.get(flight[0]).add(new int[]{flight[1], flight[2]});
+            int src = flight[0];
+            int dst = flight[1];
+            int cost = flight[2];
+            graph.get(src).add(new int[]{dst, cost});
         }
         return graph;
-    }
-
-    class Node{
-        int id;
-        int pos;
-        int dist;
-        public Node(int id, int pos, int dist){
-            this.id = id;
-            this.pos = pos;
-            this.dist = dist;
-        }
     }
 }

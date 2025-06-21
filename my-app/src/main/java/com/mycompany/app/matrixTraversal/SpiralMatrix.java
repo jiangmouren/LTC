@@ -22,46 +22,32 @@ import java.util.*;
  */
 public class SpiralMatrix {
     public List<Integer> spiralOrder(int[][] matrix) {
-        int width = matrix[0].length-1;
-        int height = matrix.length-1;
-        int cnt = 0;
-        int[] pos = {0, 0};
         List<Integer> res = new ArrayList<>();
-        res.add(matrix[pos[0]][pos[1]]);
-
-        while(width>0 || height>0){
-            int[] dirc = getNext(cnt);
-            if(dirc[0]==0){//moving horizontally
-                for(int i=0; i<width; i++){
-                    pos[1] += dirc[1];
-                    res.add(matrix[pos[0]][pos[1]]);
-                }
-                if(height==0){//这是避免回头的情况，就是height已经是0，但是width还没减到0，那么还会回来横向反方向走一次
-                    break;
-                }
-                if(cnt>0){//第一次不减，后面每次都要减
-                    width--;
-                }
+        int w = matrix[0].length;
+        int h = matrix.length;
+        int l = w;
+        int cnt = 0;
+        int[] dir = getDir(cnt);
+        int ptr = 0;
+        int[] pos = {0, 0};
+        while(ptr<l){
+            res.add(matrix[pos[0]][pos[1]]);
+            if(ptr==l-1){
                 cnt++;
+                dir = getDir(cnt);
+                ptr = 0;
+                l = l==w ? --h : --w;
             }
             else{
-                for(int i=0; i<height; i++){
-                    pos[0] += dirc[0];
-                    res.add(matrix[pos[0]][pos[1]]);
-                }
-                if(width==0){
-                    break;
-                }
-                if(cnt>0){
-                    height--;
-                }
-                cnt++;
+                ptr++;
             }
+            pos[0] += dir[0];
+            pos[1] += dir[1];
         }
         return res;
     }
 
-    private int[] getNext(int cnt){
+    private int[] getDir(int cnt){
         int[][] dircs = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
         int idx = cnt%4;
         return dircs[idx];

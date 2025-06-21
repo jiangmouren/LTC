@@ -36,16 +36,12 @@ import java.util.*;
  */
 public class RottingOranges {
     public int orangesRotting(int[][] grid) {
-        //这就是一个multi-source的BFS
-        //跟https://leetcode.com/problems/as-far-from-land-as-possible/ 一样
-        //先把source都找出来
-        Queue<List<Integer>> queue = new LinkedList<>();
+        //find all the sources
+        Queue<int[]> queue = new LinkedList<>();
         for(int i=0; i<grid.length; i++){
             for(int j=0; j<grid[0].length; j++){
                 if(grid[i][j]==2){
-                    List<Integer> pos = new ArrayList<>();
-                    pos.add(i);
-                    pos.add(j);
+                    int[] pos = {i, j};
                     queue.add(pos);
                 }
             }
@@ -54,33 +50,84 @@ public class RottingOranges {
         int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
         while(!queue.isEmpty()){
             int cnt = queue.size();
+            boolean updated = false;
             while(cnt>0){
-                List<Integer> cur = queue.poll();
+                int[] pos = queue.poll();
+                cnt--;
                 for(int[] dir : dirs){
-                    int xNew = cur.get(0) + dir[0];
-                    int yNew = cur.get(1) + dir[1];
-                    if(xNew>=0 && yNew>=0 && xNew<grid.length && yNew<grid[0].length && grid[xNew][yNew]==1){
-                        List<Integer> temp = new ArrayList<>();
-                        temp.add(xNew);
-                        temp.add(yNew);
-                        grid[xNew][yNew] = 2;
-                        queue.add(temp);
+                    int x = pos[0] + dir[0];
+                    int y = pos[1] + dir[1];
+                    if(x>=0 && y>=0 && x<grid.length && y<grid[0].length && grid[x][y]==1){
+                        //you can set to 2 instead of 3, becasue we don't need to worry about consusing others
+                        grid[x][y] = 2;
+                        updated = true;
+                        int[] posNew = {x, y};
+                        queue.add(posNew);
                     }
                 }
-                cnt--;
             }
-            time++;
+            if(updated){
+                time++;
+            }
         }
-        time = time>0 ? time -1 : 0;//这种情况是为了处理grid里压根没有2的情况
-
-        boolean clear = true;
+        //check if there is still fresh
         for(int i=0; i<grid.length; i++){
             for(int j=0; j<grid[0].length; j++){
                 if(grid[i][j]==1){
-                    clear = false;
+                    return -1;
                 }
             }
         }
-        return clear ? time : -1;
+        return time;
+    }
+
+    //以下是类似game of life的一种写法，这种写法不是最优的，但实际在leetcode上跑出来的结果还不错，进了100%
+    public int orangesRottingUpdate(int[][] grid) {
+        boolean update = true;
+        int cnt = 0;
+        while(update){
+            update = update(grid);
+            if(update){
+                cnt++;
+            }
+        }
+
+        for(int i=0; i<grid.length; i++){
+            for(int j=0; j<grid[0].length; j++){
+                if(grid[i][j]==1){
+                    return -1;
+                }
+            }
+        }
+
+        return cnt;
+    }
+
+    private boolean update(int[][] grid){
+        int[][] dirs = {{-1, 0}, {1, 0}, {0, 1}, {0, -1}};
+        boolean update = false;
+        for(int i=0; i<grid.length; i++){
+            for(int j=0; j<grid[0].length; j++){
+                if(grid[i][j]==1){
+                    for(int[] dir : dirs){
+                        int x = i + dir[0];
+                        int y = j + dir[1];
+                        if(x>=0 && y>=0 && x<grid.length && y<grid[0].length && grid[x][y]==2){
+                            grid[i][j] = 3;
+                            update = true;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+        for(int i=0; i<grid.length; i++){
+            for(int j=0; j<grid[0].length; j++){
+                if(grid[i][j]==3){
+                    grid[i][j] = 2;
+                }
+            }
+        }
+        return update;
     }
 }

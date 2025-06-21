@@ -47,34 +47,28 @@ public class ReverseNodesInKGroup {
      * 底下这种是recursion的写法，用iterative写，思路是一样的，只不过写起来控制条件共复杂，需要考虑的edgecase也更多
      */
     public ListNode reverseKGroup(ListNode head, int k) {
-        ListNode dummyHead = new ListNode();
-        dummyHead.next = head;
-        ListNode ptr = dummyHead;
-        ListNode dummyTail;
         int cnt = 0;
-        while(cnt<k && ptr!=null){
+        ListNode ptr = head;
+        while(ptr!=null && cnt<k){
             ptr = ptr.next;
             cnt++;
         }
-        if(cnt<k || ptr==null){
+        if(cnt<k){
             return head;
         }
-        else{
-            dummyTail = ptr;
-            ListNode ptr0 = head;
-            ListNode ptr1 = ptr0==null ? null : ptr0.next;
-            ListNode ptr2 = ptr1==null ? null : ptr1.next;
-            while(ptr0!=dummyTail){
-                ptr1.next = ptr0;
-                ptr0 = ptr1;
-                ptr1 = ptr2;
-                ptr2 = ptr2==null ? null : ptr2.next;
-            }
-            ListNode temp = dummyHead.next;
-            dummyHead.next = dummyTail;
-            dummyTail = temp;
-            dummyTail.next = reverseKGroup(ptr1, k);
+
+        ListNode dummyTail = ptr;
+        ListNode pre = head;
+        ListNode cur = head.next;
+        ListNode next = cur==null ? null : cur.next;
+        while(cur!=dummyTail){
+            cur.next = pre;
+            pre = cur;
+            cur = next;
+            next = next==null ? null : next.next;
         }
-        return dummyHead.next;
+        head.next = reverseKGroup(dummyTail, k);
+        //pre is the new head
+        return pre;
     }
 }

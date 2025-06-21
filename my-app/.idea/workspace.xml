@@ -151,7 +151,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/Downloads/IdeaVim-1.11.1.zip&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jiang/gitHome/Yatzy-Refactoring-Kata/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
@@ -159,34 +159,36 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\priorityQueue" />
+      <recent name="C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\graph" />
+      <recent name="C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app" />
+      <recent name="D:\gitHome\LTC\my-app\src\main\java\com\mycompany\app\unsolved" />
+      <recent name="D:\gitHome\LTC\my-app\src\main\java\com\mycompany\app\tree" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.mycompany.app" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mycompany.app.graph" />
       <recent name="com.mycompany.app.hashMap" />
       <recent name="com.mycompany.app.modulo" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\gitHome\LTC\my-app\src\main\java\com\mycompany\app\unsolved" />
-      <recent name="D:\gitHome\LTC\my-app\src\main\java\com\mycompany\app\tree" />
-      <recent name="D:\gitHome\LTC\my-app\src\main\java\com\mycompany\app\hashMap" />
-      <recent name="C:\Users\eljian\gitHome\LTC\my-app\src\main\java\com\mycompany\app" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.QuickSelect">
+  <component name="RunManager" selected="Application.TheSkylineProblem">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CombinationSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.dp.CombinationSum" />
+    <configuration name="PackingRectangles" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.companies.tuSimple.PackingRectangles" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mycompany.app.matrixTraversal.*" />
+          <option name="PATTERN" value="com.mycompany.app.companies.tuSimple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,13 +196,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ExclusiveTimeOfFunctions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.stack.ExclusiveTimeOfFunctions" />
+    <configuration name="ReOrderArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.companies.tuSimple.ReOrderArray" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mycompany.app.matrixTraversal.*" />
+          <option name="PATTERN" value="com.mycompany.app.companies.tuSimple.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,13 +210,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyCalendarII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.MyCalendarII" />
+    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.companies.wonders.Solution" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mycompany.app.matrixTraversal.*" />
+          <option name="PATTERN" value="com.mycompany.app.companies.wonders.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -222,13 +224,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuickSelect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.sort.quickSelect.QuickSelect" />
+    <configuration name="TaskScheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.companies.spotnana.TaskScheduler" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mycompany.app.sort.quickSelect.*" />
+          <option name="PATTERN" value="com.mycompany.app.companies.spotnana.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,13 +238,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.SortList" />
+    <configuration name="TheSkylineProblem" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mycompany.app.priorityQueue.TheSkylineProblem" />
       <module name="my-app" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.mycompany.app.matrixTraversal.*" />
+          <option name="PATTERN" value="com.mycompany.app.priorityQueue.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -289,19 +291,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.QuickSelect" />
-      <item itemvalue="Application.MyCalendarII" />
-      <item itemvalue="Application.ExclusiveTimeOfFunctions" />
-      <item itemvalue="Application.SortList" />
-      <item itemvalue="Application.CombinationSum" />
+      <item itemvalue="Application.PackingRectangles" />
+      <item itemvalue="Application.ReOrderArray" />
+      <item itemvalue="Application.TaskScheduler" />
+      <item itemvalue="Application.TheSkylineProblem" />
+      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.QuickSelect" />
-        <item itemvalue="Application.SortList" />
-        <item itemvalue="Application.MyCalendarII" />
-        <item itemvalue="Application.ExclusiveTimeOfFunctions" />
-        <item itemvalue="Application.CombinationSum" />
+        <item itemvalue="Application.TheSkylineProblem" />
+        <item itemvalue="Application.TaskScheduler" />
+        <item itemvalue="Application.PackingRectangles" />
+        <item itemvalue="Application.ReOrderArray" />
+        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -355,11 +357,6 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/PathWithMinimumEffort.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/SortList.java</url>
           <line>182</line>
           <option name="timeStamp" value="12" />
@@ -368,6 +365,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/dp/CombinationSum.java</url>
           <line>51</line>
           <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/mycompany/app/priorityQueue/TheSkylineProblem.java</url>
+          <line>95</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

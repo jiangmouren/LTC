@@ -31,62 +31,41 @@ import java.util.List;
 
 public class CourseSchedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
+        //不能认为fully connected
+        //对全部vertices做toplogical sort，没有出现loop则可以完成
         List<List<Integer>> graph = buildGraph(numCourses, prerequisites);
-        return !findCycle(graph);
+        int[] visit = new int[numCourses];
+        for(int i=0; i<numCourses; i++){
+            if(visit[i]==0 && !dfs(i, graph, visit)){
+                return false;
+            }
+        }
+        return true;
     }
 
-    //Better to create a Node class
-    private List<List<Integer>> buildGraph(int numCourses, int[][] prerequisites){
+    private List<List<Integer>> buildGraph(int n, int[][] prerequisites){
         List<List<Integer>> graph = new ArrayList<>();
-        for(int i=0; i<numCourses; i++){
-            graph.add(new ArrayList<Integer>());
+        for(int i=0; i<n; i++){
+            graph.add(new ArrayList<>());
         }
         for(int[] pair : prerequisites){
-            graph.get(pair[0]).add(pair[1]);
+            graph.get(pair[1]).add(pair[0]);
         }
         return graph;
     }
 
-    //do dfs, return true if find cycle.
-    private boolean findCycle(List<List<Integer>> graph){
-        List<Integer> status = new ArrayList<>();
-        for(int i=0; i<graph.size(); i++){
-            status.add(0);
-        }
-        for(int i=0; i<graph.size(); i++){
-            if(status.get(i)==0){
-                if(dfs(graph, status, i)){
-                    return true;
-                }
+    //visit: 0->not visited; 1->visiting; 2->visited
+    private boolean dfs(int root, List<List<Integer>> graph, int[] visit){
+        visit[root] = 1;
+        for(int child : graph.get(root)){
+            if(visit[child]==1){
+                return false;
+            }
+            if(visit[child]==0 && !dfs(child, graph, visit)){
+                return false;
             }
         }
-        return false;
-    }
-
-    //better to create Enum for different status
-    //0: unvisited; 1: visiting; 2: visited
-    //return true if find cycle
-    private boolean dfs(List<List<Integer>> graph, List<Integer> status, int cur){
-        //termination, no need to handle, empty prerequisites list will stop automatically
-
-        //set cur to visiting
-        status.set(cur, 1);
-
-        //recursion
-        for(int prerequisite : graph.get(cur)){
-            if(status.get(prerequisite)==1){
-                //find cycle
-                return true;
-            }
-            if(status.get(prerequisite)==0){//only traverse unvisited nodes
-                if(dfs(graph, status, prerequisite)){
-                    return true;
-                }
-            }
-        }
-
-        //set cur to visited after all children visited
-        status.set(cur, 2);
-        return false;
+        visit[root] = 2;
+        return true;
     }
 }

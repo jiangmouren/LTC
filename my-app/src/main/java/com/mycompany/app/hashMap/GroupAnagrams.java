@@ -27,27 +27,20 @@ import java.util.*;
  */
 public class GroupAnagrams {
     public List<List<String>> groupAnagrams(String[] strs) {
-        //面试这么写，平时一般避免用List type做hashKey，因位其mutable
-        //具体这里可以转成String，再用作Key
-        Map<List<Character>, List<String>> map = new HashMap<>();
+        Map<String, List<String>> map = new HashMap<>();
         for(String str : strs){
-            List<Character> buf = new ArrayList<>();
-            for(int i=0; i<str.length(); i++){
-                buf.add(str.charAt(i));
+            char[] arr = str.toCharArray();
+            Arrays.sort(arr);
+            String key = new String(arr);
+            if(!map.containsKey(key)){
+                map.put(key, new ArrayList<>());
             }
-            Collections.sort(buf);
-            if(!map.containsKey(buf)){
-                List<String> list = new ArrayList<>();
-                list.add(str);
-                map.put(buf, list);
-            }
-            else{
-                map.get(buf).add(str);
-            }
+            map.get(key).add(str);
         }
-        Collection<List<String>> values = map.values();
         List<List<String>> res = new ArrayList<>();
-        res.addAll(values);
+        for(String key : map.keySet()){
+            res.add(map.get(key));
+        }
         return res;
     }
 }

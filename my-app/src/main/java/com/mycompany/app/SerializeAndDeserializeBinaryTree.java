@@ -63,40 +63,28 @@ public class SerializeAndDeserializeBinaryTree {
 
     // Encodes a tree to a single string.
     public String serialize(TreeNode root) {
-        List<TreeNode> list = new ArrayList<>();
-        list.add(root);
-        int ptr0 = 0;
-        int ptr1 = 1;
-        while(ptr0<list.size()){
-            while(ptr0<ptr1){
-                TreeNode cur = list.get(ptr0);
-                if(cur!=null){
-                    list.add(cur.left);
-                    list.add(cur.right);
-                }
-                ptr0++;
-            }
-            ptr1 = list.size();
-        }
-        while(!list.isEmpty() && list.get(list.size()-1)==null){
-            list.remove(list.size()-1);
-        }
-        StringBuilder buf = new StringBuilder();
-        for(TreeNode node : list){
+        Queue<TreeNode> queue = new LinkedList<>();
+        List<String> list = new ArrayList<>();
+        queue.add(root);
+        while(!queue.isEmpty()){
+            TreeNode node = queue.poll();
             if(node!=null){
-                if(buf.length()>0){
-                    buf.append(",");
-                }
-                buf.append(node.val);
+                list.add(""+node.val);
+                queue.add(node.left);
+                queue.add(node.right);
             }
             else{
-                if(buf.length()>0){
-                    buf.append(",");
-                }
-                buf.append("null");
+                list.add("null");
             }
         }
-        return buf.toString();
+        int ptr = list.size()-1;
+        while(ptr>=0 && list.get(ptr).equals("null")){
+            list.remove(ptr);
+            ptr--;
+        }
+        String res = String.join(",", list);//用逗号不能用"-"，因为会有负数
+        //System.out.println(res);
+        return res;
     }
 
     // Decodes your encoded data to tree.
@@ -104,43 +92,39 @@ public class SerializeAndDeserializeBinaryTree {
         if(data==null || data.length()==0){
             return null;
         }
+        //System.out.println(data);
         String[] tokens = data.split(",");
-        List<TreeNode> list = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         TreeNode root = new TreeNode(Integer.parseInt(tokens[0]));
-        list.add(root);
-        int ptr0 = 0;
-        int ptr1 = 1;
-        int ptr2 = 1;
-
-        while(ptr2<tokens.length && ptr0<list.size()){
-            while(ptr0<ptr1){
-                TreeNode cur = list.get(ptr0);
-                if(cur!=null){
-                    TreeNode left = null;
-                    if(!tokens[ptr2].equals("null")){
-                        left = new TreeNode(Integer.parseInt(tokens[ptr2]));
-                    }
-                    list.add(left);
-                    cur.left = left;
-                    ptr2++;
-                    if(ptr2>=tokens.length){
-                        break;
-                    }
-                    TreeNode right = null;
-                    if(!tokens[ptr2].equals("null")){
-                        right = new TreeNode(Integer.parseInt(tokens[ptr2]));
-                    }
-                    list.add(right);
-                    cur.right = right;
-                    ptr2++;
-                    if(ptr2>=tokens.length){
-                        break;
-                    }
-                }
-                ptr0++;
+        queue.add(root);
+        int ptr = 1;
+        while(!queue.isEmpty() && ptr<tokens.length){
+            TreeNode node = queue.poll();
+            String leftStr = tokens[ptr];
+            node.left = getNode(leftStr);
+            ptr++;
+            if(ptr<tokens.length){
+                String rightStr = tokens[ptr];
+                node.right = getNode(rightStr);
+                ptr++;
             }
-            ptr1 = ptr2;
+            if(node.left!=null){
+                queue.add(node.left);
+            }
+            if(node.right!=null){
+                queue.add(node.right);
+            }
         }
         return root;
+    }
+
+    private TreeNode getNode(String str){
+        //System.out.println(str);
+        if(str.equals("null")){
+            return null;
+        }
+        else{
+            return new TreeNode(Integer.parseInt(str));
+        }
     }
 }

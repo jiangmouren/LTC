@@ -1,6 +1,4 @@
-package com.mycompany.app.JPMS;
-
-import java.util.*;
+package com.mycompany.app.monostack_jumpingpointer;
 
 /**
  * https://leetcode.com/problems/maximal-rectangle/
