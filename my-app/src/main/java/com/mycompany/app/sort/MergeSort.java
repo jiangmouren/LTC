@@ -1,4 +1,4 @@
-package com.mycompany.app;
+package com.mycompany.app.sort;
 
 /**
  * Created by jiangmouren on 6/17/17.
@@ -21,12 +21,11 @@ package com.mycompany.app;
  * Only drawback is the extra array needed.
  */
 public class MergeSort {
-    public int[] mergeSort1(int[] nums){
+    public void mergeSort1(int[] nums){
         if(nums==null) throw new IllegalArgumentException("input cannot be null");
-        if(nums.length==0) return nums;
+        if(nums.length==0) return;
         int[] helper = new int[nums.length];
         mergeSortHelper(nums, helper, 0, nums.length-1);
-        return nums;
     }
 
     private void mergeSortHelper(int[] nums, int[] helper, int start, int end){
@@ -42,7 +41,7 @@ public class MergeSort {
 
     private void merge(int[] nums, int[] helper, int start, int mid, int end){
         //early termination for mid>=end
-        if(mid>=end) return;
+        //if(mid>=end) return;
         //Copy everything from nums into helper, then merge back
         for(int i=start; i<=end; i++){
             helper[i] = nums[i];
@@ -61,13 +60,11 @@ public class MergeSort {
             ptr++;
         }
 
+        //Left and Right part won't terminate at the same time
         //if remainder is from left part, then we need to copy them;
         //if remainder is from right part, then they are already in nums.
-        //Left and Right part won't terminate at the same time
-        if(ptr1<=mid){
-            for(int i=ptr1; i<=mid; i++){
-                nums[end-mid+i] = helper[i];
-            }
+        for(int i=ptr1; i<=mid; i++){
+            nums[end-mid+i] = helper[i];
         }
     }
 

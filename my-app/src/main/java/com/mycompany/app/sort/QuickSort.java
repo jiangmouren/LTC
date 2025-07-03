@@ -9,7 +9,10 @@ package com.mycompany.app.sort;
  * Implement QuickSort
  */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Queue;
 
 /**
  * Analysis:
@@ -50,7 +53,7 @@ public class QuickSort {
         while(ptr1<=ptr2){
             //Because, right >, left <=, ptr1 and ptr2 will never stop at the same point
             //Common mistake is to miss the boundary check, or not putting it as the first check.
-            while(ptr2>=start && nums[ptr2]>nums[start]){
+            while(ptr2>start && nums[ptr2]>nums[start]){
                 //Because I am using ">", ptr2 will never go beyond start
                 ptr2--;
             }
@@ -59,7 +62,7 @@ public class QuickSort {
                 //Shouldn't matter, but just cleaner to keep it this way.
                 ptr1++;
             }
-            if(ptr1<ptr2){
+            if(ptr1<ptr2){//only swap when they have not crossed each other
                 swap(nums, ptr1, ptr2);
             }
         }

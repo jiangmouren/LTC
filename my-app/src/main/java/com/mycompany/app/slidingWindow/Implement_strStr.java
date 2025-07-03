@@ -43,5 +43,6 @@ public class Implement_strStr{
         }
         return res;
     }
-    //TODO:用 sliding window解决，可以O(n)处理掉
+    //Knuth–Morris–Pratt algorithm O(T(text) + P(pattern))
+    //https://www.youtube.com/watch?v=ynv7bbcSLKE
 }
