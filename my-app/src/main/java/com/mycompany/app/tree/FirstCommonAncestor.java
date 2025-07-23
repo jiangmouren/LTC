@@ -3,64 +3,51 @@ package com.mycompany.app.tree;
 /**
  * Find the first common ancestor or two nodes in a binary tree(not a binary search tree).
  */
-public class FirstCommonAncestor {
-    class TreeNode{
-        TreeNode left;
-        TreeNode right;
-        int value;
-        TreeNode(int value){
-            this.value = value;
+import java.util.*;
+
+class TreeNode{
+    TreeNode left;
+    TreeNode right;
+    int value;
+    TreeNode(int value){
+        this.value = value;
+    }
+}
+
+class Solution {
+    class Status{
+        boolean findP;
+        boolean findQ;
+        TreeNode node;
+        public Status(boolean p, boolean q, TreeNode node){
+            this.findP = p;
+            this.findQ = q;
+            // only when both p and q are found, the node is set
+            this.node = node;
         }
     }
-    class Result{
-        public TreeNode node;
-        public boolean isAncestor;
-        public Result(TreeNode n, boolean isAnc){
-            this.node = n;
-            this.isAncestor = isAnc;
-        }
+    
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        return search(root, p, q).node;
     }
-
-    TreeNode commonAncestor(TreeNode root, TreeNode p, TreeNode q){
-        Result r = Helper(root, p, q);
-        if(r.isAncestor){
-            return r.node;
+    
+    private Status search(TreeNode root, TreeNode p, TreeNode q){
+        //termination
+        if(root==null){
+            return new Status(false, false, null);
         }
-        return null;
-    }
-
-    Result Helper(TreeNode root, TreeNode p, TreeNode q){
-        //base case
-        if(root == null){
-            return new Result(null, false);
+        
+        Status leftRes = search(root.left, p, q);
+        if(leftRes.findP && leftRes.findQ){
+            return leftRes;
         }
-        if(root == p && root == q){
-            return new Result(root, true);
+        Status rightRes = search(root.right, p, q);
+        if(rightRes.findP && rightRes.findQ){
+            return rightRes;
         }
-
-        //Mostly a post-order with some in-order check for performance gain.
-        Result rLeft = Helper(root.left, p, q);
-        if(rLeft.isAncestor){
-            return rLeft;
-        }
-        //This is the in-order check moved ahead from post-order check
-        else if(rLeft.node != null && (root == p || root == q)){
-            return new Result(root, true);
-        }
-
-        Result rRight = Helper(root.right, p, q);
-        if(rRight.isAncestor){
-            return rRight;
-        }
-        else if(rRight.node != null && (root == p || root == q)){
-            return new Result(root, true);
-        }
-
-        if(rLeft.node != null && rRight.node != null){
-            return new Result(root, true);
-        }
-        else{
-            return new Result(rLeft != null ? rLeft.node : rRight.node, false);
-        }
+        boolean findP = leftRes.findP || rightRes.findP || root==p;
+        boolean findQ = leftRes.findQ || rightRes.findQ || root==q;
+        TreeNode node = findP && findQ ? root : null;
+        return new Status(findP, findQ, node);
     }
 }

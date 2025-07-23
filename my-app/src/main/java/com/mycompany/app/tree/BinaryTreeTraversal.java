@@ -23,7 +23,11 @@
  */
 
 package com.mycompany.app.tree;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Stack;
 public class BinaryTreeTraversal {
     public static class TreeNode{
         TreeNode left;
@@ -164,10 +168,10 @@ public class BinaryTreeTraversal {
      * PostOrder iterative solution is the most fun part of all the 3 traversals. 
      * I can prove that without an extened TreeNode, I cannot do a intuitive stack approach.
      * The typical way for post-order is to use a reversed a pre-order.
-     * for pre-order, we have left-right-root, what we want for post-order is left-right-root. 
+     * for pre-order, we have root-left-right, what we want for post-order is left-right-root. 
      * As you can see there is a rotation between root, and left-right. 
      * With the knowledge of the array rotation, what I can do is at every level of the traversal, make sure left-right is reversed first.
-     * That is to say we will have right-left-root, as result of a pre-order like traversal. 
+     * That is to say we will have root-right-left, as result of a pre-order like traversal. 
      * Then all we need is just reverse the result from the above, we will have root-left-right.
      * Doesn't matter which pre-order traversal you choose to use, mathmatically the above theory will hold true.
      * TODO: prove cannot to left-first stack approach without using ExtendedTreeNode.

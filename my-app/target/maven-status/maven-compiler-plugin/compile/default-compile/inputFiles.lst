@@ -140,7 +140,6 @@ C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MeetingRooms.j
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MeetingRoomsII.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MergeIntervals.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MergeKSortedLists.java
-C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MergeSort.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MergeSortedArray.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MergeTwoSortedLists.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\MinimalBst.java
@@ -269,6 +268,7 @@ C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\CountingS
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\externalSort\ExternalMergeSort.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\InsertionSort.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\KthSmallestElementInASortedMatrix.java
+C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\MergeSort.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\quickSelect\KClosestPointsToOrigin.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\quickSelect\KthLargestElementInAnArray.java
 C:\Users\jiang\gitHome\LTC\my-app\src\main\java\com\mycompany\app\sort\quickSelect\MajorityElement.java
