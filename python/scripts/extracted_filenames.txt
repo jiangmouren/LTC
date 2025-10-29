@@ -1,0 +1,131 @@
+1) #5147 Fidelity IRA 21-05-25 to 25-07-31_Redacted.pdf
+2) #3256 Fidelity Roth IRA 22-06-10 to 25-07-31_Redacted.pdf
+3) Expedia Retirement Savings Plan 22-11-01 to 25-03-31.pdf
+4) 2022 Fidelity 1099 (Petitioner)_Redacted.pdf
+5) #0183 Accenture Retirement Savings 20-10-01 to 20-12-31_Redacted.pdf
+6) Compass 401k 21-09-01 to 23-07-25.pdf
+7) 2021 Fidelity 1099 (Respondent)_Redacted.pdf
+8) Microsoft 401k 17-07-01 to 23-07-25.pdf
+9) #2291 MGS CD 23-12-15 to 24-05-31_Redacted.pdf
+10) #2494 MGS CD 20-01-23 to 21-03-01_Redacted.pdf
+11) #6926 MGS CD 19-01-10 to 19-12-31.pdf
+12) #7872 MGS CD 23-04-21 to 24-02-21_Redacted.pdf
+13) #8583 Marcus Goldman Sachs CD (Jialing) Statements 23-07-01 to 24-04-05_Redacted.pdf
+14) #7171 MGS CD Statements 24-02-05 to 25-04-30.pdf
+15) #6816 MGS CD Statements 24-02-05 to 25-04-07_Redacted.pdf
+16) Treasury Direct 24-03-01 to 25-08-13_Redacted.pdf
+17) #6880 Chase Savings 21-12-28 to 25-07-01_Redacted.pdf
+18) #2902 Chase Checking 18-04-23 to 24-05-31_Redacted.pdf
+19) #5060 Chase Checking Savings 18-04-23 to 22-10-31_Redacted.pdf
+20) #8335 Chase Savings 17-07-12 to 22-12-08_Redacted.pdf
+21) #6237 Chase Checking 17-07-12 to 25-08-08_redacted.pdf
+22) #6601 Chase Checking 21-12-28 to 25-04-08_Redacted.pdf
+23) #7197 BoA Checking 17-06-27 to 19-06-24_Redacted.pdf
+24) #4187 BoA Checking 17-05-24 to 19-06-21_Redacted.pdf
+25) #7655 Citibank Checking 22-03-23 to 25-08-10_Redacted.pdf
+26) #7446 Citibank Savings 21-11-26 to 25-07-09_Redacted.pdf
+27) #8169 Chase Bank Checking 17-06-22 to 19-10-22_Redacted.pdf
+28) #5723 MGS Savings 23-09-08 to 25-07-31_Redacted.pdf
+29) #6712#6720#5336#5872 BECU SavingsCheckingCDs (Jialing) Statement 23-11-17 to 25-07-18_Redacted.pdf
+30) #1728 TD Ameritrade 18-02-01 to 23-05-31_Redacted.pdf
+31) #0117 Chase TOD 18-06-01 to 23-06-30_Redacted.pdf
+32) #5551 Fidelity Cash 23-01-30 to 25-07-31_Redacted.pdf
+33) #3843 Citi Cash 23-11-15 to 25-07-14.pdf
+34) #4427 Betterment 21-01-01 to 23-09-30_Redacted.pdf
+35) Compass RSUs_Redacted.pdf
+36) #1145 Morgan Stanley Compass RSUs 22-07-01 to 24-12-31_Redacted.pdf
+37) Betterment Accounts 19-07-01 to 25-03-31_Redacted.pdf
+38) Wealthfront Investment 22-04-01 to 22-04-30; 22-11-01 to 24-01-31_Redacted.pdf
+39) #9168 Fidelity Investment 17-07-01 to 25-03-31_Redacted.pdf
+40) #0064 Charles Schwab Investment Acct 23-06-01 to 25-07-31.pdf
+41) #7489 Morgan Stanley ESPP 22-07-01 to 23-09-30_Redacted.pdf
+42) #8208 ETrade Expedia ESPP Plan 23-11-01 to 24-12-31_Redacted.pdf
+43) Expedia FSA 22-06-01 to 23-05-17.pdf
+44) #8142 HealthEquity HSA 23-01-01 to 25-07-31_Redacted.pdf
+45) #6870 Optum CYC HSA 20-01-01 to 25-03-31.pdf
+46) UMB Statement 24-03-31_Redacted.pdf
+47) #2157 Synchrony Amazon CC 20-10-16 to 21-03-16; 21-07-17 to 22-01-16.pdf
+48) #9069 Chase CC 20-09-19 to 21-02-18_Redacted.pdf
+49) #6280 Chase CC 17-07-05 to 23-06-18; 23-10-19 to 25-02-18_Redacted.pdf
+50) #3795 Chase CC 18-06-18 to 25-04-17_Redacted.pdf
+51) #4682 Bilt Wells Fargo CC 23-12-29 to 25-07-29_Redacted.pdf
+52) #8911 Chase CC 19-01-05 to 25-04-04_Redacted.pdf
+53) Apple CC 22-11-25 to 25-07-31.pdf
+54) #9743 Chase Marriott CC 23-03-27 to 25-07-09_Redacted.pdf
+55) #8279 BoA Loan 18-12-19 to 23-10-19.pdf
+56) #7496 Citibank Costco Visa 21-11-16 to 25-07-15_Redacted.pdf
+57) #3590 CapitalOne 20-12-15 to 21-04-13; 21-08-15 to 21-10-14_Redacted.pdf
+58) #5968 Citi CC 17-07-18 to 20-11-16.pdf
+59) #6731#3824 Chase CC 22-02-10 to 25-04-02_Redacted.pdf
+60) #8390 Fidelity Visa Card 22-09-29 to 25-01-08.pdf
+61) #8660 Scottrade Brokerage 17-07-01 to 18-03-31.pdf
+62) #8822 Discover CC 20-09-10 to 21-03-09.pdf
+63) #8934 Synchrony CC 21-01-12 to 21-04-09; 21-06-11 to 22-01-11.pdf
+64) #9824 Discovery Checking 17-07-01 to 21-02-28; 21-10-01 to 21-12-23_Redacted.pdf
+65) #4921 Nationwide Life Insurance Policy (Jialing)_Redacted.pdf
+66) T-Mobile Invoices.pdf
+67) Accenture Paystubs 20-09-01 to 21-02-28_Redacted.pdf
+68) Aerotek Paystubs 21-12-05 to 22-01-15_Redacted.pdf
+69) Aston Carter Paystubs 22-01-16 to 22-02-26_Redacted.pdf
+70) Expedia Paystubs 22-11-28 to 24-03-17_Redacted.pdf
+71) Compass Paystubs 21-12-19 to 22-02-12.pdf
+72)  Amazon Offer Letter.pdf
+73) 2017-2021 W2s Accenture_Redacted.pdf
+74) 2018-2020 W2 Microsoft_Redacted.pdf
+75) 2021 W2 Aerotek_Redacted.pdf
+76) 2021 W2 Docugami_Redacted.pdf
+77) 2019 Tax Return_Redacted.pdf
+78) 2020 Tax Return (CPA)_Redactedv2_Redacted.pdf
+79) 2022 Tax Return (CPA)_Redacted.pdf
+80) 21-11-20 Redmond Police Report and Pictures.pdf
+81) Police Report re CPS re Angel.pdf
+82) Letter from CPS re unfounded.pdf
+83) Honda Pilot KBB Value.pdf
+84) VW KBB Value.pdf
+85) Approval Letter for Sparc Apartment rental (XiaoguangJialing) 17-06-07.pdf
+86) Wells Fargo Preapproval notice re loan (Jialing) 17-11-20.pdf
+87) Quit Claim Deed 19-05-13.pdf
+88) Statutory Warranty Deed.pdf
+89) Revised Mortgage Loan Refinance Disclosure 20-11-24_Redactedv2.pdf
+90) ALTA Settlement Statement re Refinance.pdf
+91) #6576 Amerihome Mortgage Statement (Jialing) 21-04-01 to 21-07-01_Redacted.pdf
+92) #6576 AmeriHome Mortgage Annual Escrow Disclosure Statement (Jialing) 21-08-16_Redacted.pdf
+93) #6576 AmeriHome Mortgage Payoff Confirmation Letter 21-07-26_Redacted.pdf
+94) ALTA Final Sale Disclosure 21-07-22.pdf
+95) SAU Statutory Referral  - #C23002759 Zhou, Angel.pdf
+96) #1297 Fidelity Individual stmts 24-02-01 to 24-05-31_Redacted.pdf
+97) Paystubs (Tiktok).pdf
+98) TikTok Offer Letter.pdf
+99) Aston Carter 2022 W-2_Redacted.pdf
+100) Expedia W-2s 2022 to 2023_Redacted.pdf
+101) #6907 UMB HSA (Elon) Statements 16-05-25 to 20-03-31_Redacted.pdf
+102) #4761 Citi Card stmts 24-02-20 to 25-04-17.pdf
+103) Summary of Xiaoguang 2012 DV Case.pdf
+104) Ann Arbor Police Report.pdf
+105) Medical Records.pdf
+106) #8006 Citi Costco Card (Xiaoguang) Statements 24-10-26 to 25-04-25.pdf
+107) 2020 Betterment Form 1099 (Respondent)_Redacted.pdf
+108) 2024_Tax Filed_Redacted.pdf
+109) Amazon Development Center Paystubs.pdf
+110) Escrow Email 2017.pdf
+111) Furniture Your Houzz Order Confirmation.pdf
+112) Hawaii.pdf
+113) LA Trip March 2017.pdf
+114) May 2017.pdf
+115) Newcastle Dentistry record - recieved from PE separately.pdf
+116) Zhou 22-04-27 Ltr from Fidelity re OP.pdf
+117) #2972 Vanguard ByteDance 401(k) 24-07-01 to 25-06-30_Redacted.pdf
+118) #1387 BofA CC 24-08-29 to 25-07-28_Redacted.pdf
+119) [Certified] 3-Xiaoguang Jiang's Huawei Offer Letter_01.pdf
+120) 2024 W2_Redacted.pdf
+121) Account Statement 2025 HealthFSA March to Aug.pdf.pdf
+122) #2850 Fidelity TOD (Xiaoguang) Statements 24-10-01 to 25-03-31_Redacted.pdf
+123) #3561 MGS CD Statements 25-03-01 to 25-07-31_Redacted.pdf
+124) #4632 MGS CD Statements 25-05-01 to 25-07-31_Redacted.pdf
+125) #5778 Chase Sapphire Card (Xiaoguang) Statement 24-10-03 to 25-04-02_Redacted.pdf
+126) #6543 UMB HSA Statements 25-03-31_Redacted.pdf
+127) #7062#0868#2779 Fidelity Rollover IRA Roth IRA HSA (Xiaoguang) Statements 24-10-01 to 25-03-31_Redacted.pdf
+128) #7091 MGS CD Statements 25-03-13 to 25-07-31_Redacted.pdf
+129) PSE Jan Invoice (Nov Dec 2021 PSE Bills).pdf
+130) Avalon Nov-Dec 2021 Utilities Bills.pdf
+desktop.ini

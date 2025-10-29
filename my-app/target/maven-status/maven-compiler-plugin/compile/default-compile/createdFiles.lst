@@ -1,3 +1,6 @@
 com\mycompany\app\graph\dijkstra\ShortestPath.class
+com\mycompany\app\tree\TreeNode.class
+com\mycompany\app\tree\Solution$Status.class
 com\mycompany\app\sort\MergeSort.class
+com\mycompany\app\tree\Solution.class
 com\mycompany\app\companies\cruise\TransactionalCache.class

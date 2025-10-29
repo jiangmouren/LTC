@@ -1,5 +1,11 @@
 package com.mycompany.app.graph;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 /**
  * https://leetcode.com/problems/accounts-merge/
@@ -115,6 +121,7 @@ public class AccountsMerge {
             Set<String> set = buf.get(i);
             String name = accounts.get(i).get(0);
             if(!set.isEmpty()){
+                //TODO: Some very bad code in the following few lines
                 List<String> temp = new ArrayList<>();
                 temp.addAll(set);
                 Collections.sort(temp);
