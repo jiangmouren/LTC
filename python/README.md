@@ -2,7 +2,7 @@ When coding in python for leetcode, pay attention to the following:
 
 1. You don't always need classes, if it is just to implement some algorithm, you can simplly put done a bunch of methods, that way no need to worry about 'self' in every method, no need to worry about instantiation, etc. Focus purely on algorithm. 
 
-2. You do not add type hints, that's best practice, but waste time for interview. You can always come back to add those after you are done with everything, but not doing that upfront which might slow you down. 
+2. You do not add type hints, that's best practice, but a waste of time for interviews. You can always come back to add those after you are done with everything, but not doing that upfront which might slow you down. 
 
 3. When you do need to do Object Oriented Design, make sure don't forget to include 'self' for instance method. 
 
@@ -65,8 +65,10 @@ https://docs.python.org/3.12/library/index.html
 Sort
 ```python
 a = [5, 2, 3, 1, 4]
-a.sort() # will sort a in place
-sorted(a) # will create a new sorted list out of a, no need to import anything
+# will sort a in place
+a.sort() 
+# will create a new sorted list out of a, no need to import anything. The sort is stable.
+sorted(a) 
 ```
 
 Heap & Priority Queue
@@ -134,6 +136,29 @@ The way you do this in python is with built-in enumerate method:
 ```python
 for idx, num in enumerate(nums):
     # you loop through with index and element
+```
+
+Zip
+```python
+x = [1, 2, 3]
+y = [4, 5, 6]
+list(zip(x, y))
+# Get the following: [(1, 4), (2, 5), (3, 6)]
+"""
+zip(*zip(x, y)), uses this operator to effectively perform a transpose or an "unzip" operation.
+
+x = [1, 2, 3] and y = [4, 5, 6]
+
+First zip(x, y) creates: [(1, 4), (2, 5), (3, 6)] (a list of tuples, where each tuple is a "row").
+
+*zip(x, y) unpacks this list into the arguments of the outer zip() function, turning it into: zip((1, 4), (2, 5), (3, 6)).
+
+The outer zip() then groups the first elements, second elements, etc., resulting in: ((1, 2, 3), (4, 5, 6)).
+
+This effectively reverses the original zip() operation.
+"""
+x2, y2 = zip(*zip(x, y))
+x == list(x2) and y == list(y2) # will return True
 ```
 # TODO:
 bisect
